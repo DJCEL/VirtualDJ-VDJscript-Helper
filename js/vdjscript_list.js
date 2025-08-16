@@ -101,27 +101,27 @@ const vdjscript_list =
         },
         "variables":
         {
-            "controllervar": "TODO",
-            "cycle": "TODO",
-            "get_var": "TODO",
-            "set": "TODO",
-            "set_var": "TODO",
-            "set_var_dialog": "TODO",
-            "toggle": "TODO",
-            "var": "TODO",
-            "var_equal": "TODO",
-            "var_greater": "TODO",
-            "var_list": "TODO",
-            "var_not_equal": "TODO",
-            "var_smaller": "TODO"
+            "controllervar": "variable that is unique to each controller. You can add # in front of the variable name to make it both deck and controller-dependent",
+            "cycle": "syntax: 'cycle \"my_var\" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle \"my_var\" -42' decrements my_var, and goes to 41 after it reached 0.",
+            "get_var": "get the value of the specified variable",
+            "set": "set 'varname' 5 sets variable varname to the value 5 set 'varname' 'var2' sets variable varname to the value of variable var2 set 'varname' `play` sets variable varname to the value of the action play",
+            "set_var": "set the value of the specified variable",
+            "set_var_dialog": "set_var_dialog 'varname' opens a dialog to enter the value of varname set_var_dialog 'varname' 'information text' opens a dialog to enter the value of varname, and shows the second parameter as informational text",
+            "toggle": "syntax: 'toggle \"my_var\"'. toggle my_var between true and false.",
+            "var": "var \"my_var\" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: 'var \"my_var\" 1 ? my_action1 : my_action2' execute my_action1 is my_var is 1, or my_action2 otherwise",
+            "var_equal": "syntax: 'var_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: 'var_equal \"this_var\" \"that_var\" ? action1 : action2' execute action1 if this_var equals that_var, execute action2 otherwise",
+            "var_greater": "syntax: 'var_greater \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise.",
+            "var_list": "show a window with a list of your current variables and their values",
+            "var_not_equal": "syntax: 'var_not_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise.",
+            "var_smaller": "syntax: 'var_smaller \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise."
         },
         "window":
         {
-            "close": "TODO",
-            "maximize": "TODO",
-            "minimize": "TODO",
+            "close": "close the application.",
+            "maximize": "maximize the application to maximized, full screen, or back to windowed. A specific mode can be selected using \"maximize 'windowed'\", \"maximize 'maximized'\" or \"maximize 'fullscreen'\"",
+            "minimize": "minimize the application in the taskbar.",
             "open_stem_creator": "TODO",
-            "show_window": "TODO"
+            "show_window": "on skin with multiple windows, show or hide the specified window"
         },
         "audio":
         {
