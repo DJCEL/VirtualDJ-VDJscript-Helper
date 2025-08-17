@@ -103,7 +103,7 @@
                         let parts = description_full.split("\n\n-----Alias-----\n");
                         let description_tmp = parts[0] ? parts[0].trim() : "";
                         let alias_tmp1 = parts[1] ? parts[1].trim() : "";
-                        let alias_tmp2 = alias_tmp1.replace("\n", "|");
+                        let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
 
                         let description = description_tmp.replace(/"/g, '""'); // escape quotes for CSV
                         let alias = alias_tmp2.replace(/"/g, '""'); // escape quotes for CSV
