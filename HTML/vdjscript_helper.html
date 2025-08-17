@@ -55,8 +55,8 @@
         const descriptionBox = document.getElementById("vdjscriptlist_description");
         const actionInput = document.getElementById("action");
 
-        const vdjbuild = vdjscript_list["VdjBuild"];
-        vdjbuildLabel.textContent = "List of verbs based on VirtualDJ build " + vdjbuild
+        const vdjbuildNo = vdjscript_list["VdjBuild"];
+        vdjbuildLabel.textContent = "List of verbs based on VirtualDJ build " + vdjbuildNo
 
         // vdjdata structure: category → action → description
         const vdjdata = vdjscript_list["Items"];
@@ -157,7 +157,7 @@
         }
 
         function ExportXML() {
-            let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<VDJScriptList vdjbuild="` + vdjbuild + `">\n`;
+            let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<VDJScriptList VdjBuild="` + vdjbuildNo + `">\n`;
 
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
@@ -175,12 +175,12 @@
                         .replace(/"/g, "&quot;")
                         .replace(/'/g, "&apos;");
 
-                    xmlContent += `  <Verb>\n`;
+                    xmlContent += `  <Item>\n`;
                     xmlContent += `    <Category>${escapeXml(category)}</Category>\n`;
                     xmlContent += `    <Action>${escapeXml(action)}</Action>\n`;
                     xmlContent += `    <Alias>${escapeXml(alias)}</Alias>\n`;
                     xmlContent += `    <Description>${escapeXml(description)}</Description>\n`;
-                    xmlContent += `  </Verb>\n`;
+                    xmlContent += `  </Item>\n`;
                 });
             });
 
@@ -220,8 +220,14 @@
                 });
             });
 
+            // Add vdjbuild before Items
+            let jsonData = {
+                VdjBuild: vdjbuildNo,
+                Items: items
+            };
+
             // Wrap in an object for clarity
-            let jsonContent = JSON.stringify({ Items: items }, null, 2);
+            let jsonContent = JSON.stringify(jsonData, null, 2);
 
             // Create downloadable blob
             let blob = new Blob([jsonContent], { type: "application/json;charset=utf-8;" });
