@@ -4,5408 +4,3753 @@
     {
       "category": "flow",
       "action": "down",
-      "alias": "",
       "description": "execute different actions depending if the key if pressed or released: 'down ? action1 : action2'"
     },
     {
       "category": "flow",
       "action": "isrepeat",
-      "alias": "",
       "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down): 'isrepeat ? nothing : goto_cue')"
     },
     {
       "category": "flow",
       "action": "nothing",
-      "alias": "",
       "description": "Do nothing."
     },
     {
       "category": "flow",
       "action": "up",
-      "alias": "",
       "description": "execute different actions depending if the key if pressed or released: 'up ? action1 : action2'"
     },
     {
       "category": "param",
       "action": "blink",
-      "alias": "",
       "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'"
     },
     {
       "category": "param",
       "action": "color",
-      "alias": "",
       "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)"
     },
     {
       "category": "param",
       "action": "color_mix",
-      "alias": "",
       "description": "Mix two colors based on an action in the third parameter color_mix white red `get_limiter`"
     },
     {
       "category": "param",
       "action": "constant",
-      "alias": "get_constant",
-      "description": "Return the specified value Example: 'get constant 75%' always returns 75%"
+      "description": "Return the specified value Example: 'get constant 75%' always returns 75%",
+      "alias": "get_constant"
     },
     {
       "category": "param",
       "action": "dim",
-      "alias": "",
       "description": "equivalent of \"constant 0.1\""
     },
     {
       "category": "param",
       "action": "fadeout",
-      "alias": "",
       "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'"
     },
     {
       "category": "param",
       "action": "false",
-      "alias": "no|off",
-      "description": "returns false"
+      "description": "returns false",
+      "alias": "no|off"
     },
     {
       "category": "param",
       "action": "param_1_x",
-      "alias": "",
       "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'"
     },
     {
       "category": "param",
       "action": "param_add",
-      "alias": "",
       "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'"
     },
     {
       "category": "param",
       "action": "param_bigger",
-      "alias": "param_greater",
-      "description": "check if the value of the calling slider/encoder/button is bigger than something: 'param_bigger 0 ? sampler loop 200% : sampler loop 50%' compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: 'param_bigger pitch pitch_slider'"
+      "description": "check if the value of the calling slider/encoder/button is bigger than something: 'param_bigger 0 ? sampler loop 200% : sampler loop 50%' compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: 'param_bigger pitch pitch_slider'",
+      "alias": "param_greater"
     },
     {
       "category": "param",
       "action": "param_cast",
-      "alias": "",
       "description": "cast the value of the previous query action into a new type: 'pitch_range & param_cast \"percentage\"'. Valid types are 'integer', 'float', 'percentage', 'ms', 'boolean', 'beats', 'text'. casting to text can also optionally limit the number of characters: 'get_browsed_song \"artist\" & param_cast \"text\" 5' to format a number as text with a specific number of digits: 'get_bpm & param_cast \"000\"' param_cast 'int_trunc' : provides the integer part of a number without rounding to the nearest integer param_cast 'frac' : provides the decimal part of a number. param_cast 'relative' and param_cast 'absolute' : change the parameter to be a relative or absolute value"
     },
     {
       "category": "param",
       "action": "param_contains",
-      "alias": "",
       "description": "Check if the value of the calling action contains the string in the parameter."
     },
     {
       "category": "param",
       "action": "param_delta",
-      "alias": "",
       "description": "transform an absolute value into relative (example: 0.5, 0.7, 0.8 will become +0.0, +0.2, +0.1)"
     },
     {
       "category": "param",
       "action": "param_equal",
-      "alias": "",
       "description": "Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` \"string\". For example: param_equal `get_browsed_song 'type'` \"audio\""
     },
     {
       "category": "param",
       "action": "param_invert",
-      "alias": "",
       "description": "invert the value of the calling slider/encoder/button (1-x): 'param_invert & pitch_slider'"
     },
     {
       "category": "param",
       "action": "param_lowercase",
-      "alias": "",
       "description": "change the text result of the previous element in the script into lowercase"
     },
     {
       "category": "param",
       "action": "param_make_discrete",
-      "alias": "",
       "description": "useful for smooth endless encoders, to make them discrete Example: 'param_make_discrete 0.1 & param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%'"
     },
     {
       "category": "param",
       "action": "param_mod",
-      "alias": "",
       "description": "wrap the value of the calling slider/encoder if more than the given value"
     },
     {
       "category": "param",
       "action": "param_multiply",
-      "alias": "",
       "description": "multiply the value of the calling slider/encoder/button by the given value: 'param_multiply 300% & effect slider' The parameter can also be an action 'cue_pos 0 & param_multiply \"get_time total 1000\"'"
     },
     {
       "category": "param",
       "action": "param_pingpong",
-      "alias": "",
       "description": "transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale"
     },
     {
       "category": "param",
       "action": "param_pow",
-      "alias": "",
       "description": "param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root."
     },
     {
       "category": "param",
       "action": "param_smaller",
-      "alias": "",
       "description": "check if the value of the calling slider/encoder/button is smaller than something: 'param_smaller 0 ? sampler loop 200% : sampler loop 50%'"
     },
     {
       "category": "param",
       "action": "param_ucfirst",
-      "alias": "",
       "description": "change the first letter into upper case and the rest in lower case"
     },
     {
       "category": "param",
       "action": "param_uppercase",
-      "alias": "",
       "description": "change the text result of the previous element in the script into uppercase"
     },
     {
       "category": "param",
       "action": "pulse",
-      "alias": "",
       "description": "return true when the previous action turns to true only for the duration specified: 'is_using 'equalizer' & pulse 2000ms'"
     },
     {
       "category": "param",
       "action": "true",
-      "alias": "on|yes",
-      "description": "returns true"
+      "description": "returns true",
+      "alias": "on|yes"
     },
     {
       "category": "repeat",
       "action": "doubleclick",
-      "alias": "",
       "description": "execute different actions depending if the key is pressed twice in a short period of time or not: 'doubleclick ? automix : mix_now'. you can specify the time between two presses ('doubleclick 1000ms'), by default it's 300ms."
     },
     {
       "category": "repeat",
       "action": "holding",
-      "alias": "",
       "description": "execute different actions depending if the key is pressed for a long time or not: 'holding ? automix : mix_now'. you can specify the time ('holding 1000ms'), by default it's 500ms."
     },
     {
       "category": "repeat",
       "action": "repeat",
-      "alias": "",
       "description": "repeat the actions every x ms as long as the key is pressed: 'repeat 1000ms & browser_scroll +1' (default is 500ms if no speed is specified. Second parameter can specify a delay before repeating the first time)"
     },
     {
       "category": "repeat",
       "action": "repeat_start",
-      "alias": "",
       "description": "Repeat an action at a specified interval: 'repeat_start 'myrepeatname' 1000ms 5 & browser_scroll +1' (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed after an interval has passed. The interval can be specified in milliseconds, beats, or can be an action of itself. 'repeat_start 'myrepeatname' 1bt' or 'repeat_start 'myrepeatname `get_var a`'"
     },
     {
       "category": "repeat",
       "action": "repeat_start_instant",
-      "alias": "",
       "description": "Repeat an action at a specified interval: 'repeat_start_instant 'myrepeatname' 1000ms 5 & browser_scroll +1' (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed immediately."
     },
     {
       "category": "repeat",
       "action": "repeat_stop",
-      "alias": "",
       "description": "stop a previous repeat_start or repeat_start_instant action: 'repeat_stop 'myrepeatname''"
     },
     {
       "category": "repeat",
       "action": "wait",
-      "alias": "",
       "description": "wait for the specified amount of time between two script actions: 'wait 1bt & pause', 'wait 500ms & play'"
     },
     {
       "category": "skin",
       "action": "custom_button",
-      "alias": "",
       "description": "a custom button is a button with initially no action, but the action can be written in VDJScript by the user"
     },
     {
       "category": "skin",
       "action": "custom_button_edit",
-      "alias": "",
       "description": "open the custom button editor to set or change the action"
     },
     {
       "category": "skin",
       "action": "custom_button_name",
-      "alias": "",
       "description": "return (or set) the name for this custom button"
     },
     {
       "category": "skin",
-      "action": "get_skin_color",
-      "alias": "",
-      "description": ""
+      "action": "get_skin_color"
     },
     {
       "category": "skin",
-      "action": "has_cover",
-      "alias": "",
-      "description": ""
+      "action": "has_cover"
     },
     {
       "category": "skin",
       "action": "has_custom_button",
-      "alias": "",
       "description": "returns true if this custom button has an action assigned to it"
     },
     {
       "category": "skin",
-      "action": "has_logo",
-      "alias": "",
-      "description": ""
+      "action": "has_logo"
     },
     {
       "category": "skin",
       "action": "is_using",
-      "alias": "",
-      "description": "check if a particular feature is being used('filter', 'equalizer', 'loop', 'cue', 'sample', 'pads', 'effect', 'load')"
+      "description": "check if a particular feature is being used('filter', 'equalizer', 'loop', 'cue', 'sample', 'pads', 'effect', 'load') "
     },
     {
       "category": "skin",
       "action": "load_skin",
-      "alias": "",
       "description": "load a new skin. Use syntax \" load_skin ':newvariation' \" to load a different variation inside the same skin file."
     },
     {
       "category": "skin",
       "action": "lock_panel",
-      "alias": "lock_pannel",
-      "description": "NOTE: despite the name, this action acts on <split> elements, not <panel>"
+      "description": "NOTE: despite the name, this action acts on <split> elements, not <panel>",
+      "alias": "lock_pannel"
     },
     {
       "category": "skin",
       "action": "multibutton",
-      "alias": "",
       "description": "Click on the named multibutton: 'multibutton \"my_button\"'"
     },
     {
       "category": "skin",
       "action": "multibutton_select",
-      "alias": "",
       "description": "Open the selection menu for the named multibutton. If a second text parameter is provided after the name, use it as the new action to load in the multibutton: 'multibutton_select \"my_button\" \"goto_cue 2 & play\"'"
     },
     {
       "category": "skin",
       "action": "rack",
-      "alias": "",
       "description": "Open/close a unit in specified rack. Example: \"rack 'rack1' 'unit1'\""
     },
     {
       "category": "skin",
       "action": "rack_prioritize",
-      "alias": "",
       "description": "Prioritizes a unit of the specified rack. When more configurations with same size are available, the prioritized unit will get most space. Example: \"rack_prioritize 'rack1' 'unit1'\""
     },
     {
       "category": "skin",
       "action": "rack_solo",
-      "alias": "",
       "description": "Open/close a unit in full size on the specified rack. Closing the unit will re-open the previous configuration. Example: \"rack_solo 'rack1' 'unit1'\""
     },
     {
       "category": "skin",
       "action": "show_splitpanel",
-      "alias": "",
       "description": "Show/hide the specified split panel Examples: \"show_splitpanel 'sidelist'\", \"show_splitpanel 'sideview' on\", \"show_splitpanel 'sidelist' 50 %\""
     },
     {
       "category": "skin",
-      "action": "skin_empty_buttons",
-      "alias": "",
-      "description": ""
+      "action": "skin_empty_buttons"
     },
     {
       "category": "skin",
-      "action": "skin_height",
-      "alias": "",
-      "description": ""
+      "action": "skin_height"
     },
     {
       "category": "skin",
       "action": "skin_panel",
-      "alias": "skin_pannel",
-      "description": "show or hide a panel on the skin. \"skin_panel 'my_panel' on\""
+      "description": "show or hide a panel on the skin. \"skin_panel 'my_panel' on\"",
+      "alias": "skin_pannel"
     },
     {
       "category": "skin",
       "action": "skin_panelgroup",
-      "alias": "skin_pannelgroup",
-      "description": "change which panel from a skin panel group is shown. syntax \"skin_panelgroup 'groupname' 'panelname'\" or \"skin_panelgroup 'groupname' +1\" or \"skin_panelgroup 'groupname' 0.75\""
+      "description": "change which panel from a skin panel group is shown. syntax \"skin_panelgroup 'groupname' 'panelname'\" or \"skin_panelgroup 'groupname' +1\" or \"skin_panelgroup 'groupname' 0.75\"",
+      "alias": "skin_pannelgroup"
     },
     {
       "category": "skin",
       "action": "skin_panelgroup_available",
-      "alias": "",
       "description": "set a panel to be available or not. panels that are not available will not show up in group cycles"
     },
     {
       "category": "skin",
-      "action": "skin_starter_tip",
-      "alias": "",
-      "description": ""
+      "action": "skin_starter_tip"
     },
     {
       "category": "skin",
-      "action": "skin_width",
-      "alias": "",
-      "description": ""
+      "action": "skin_width"
     },
     {
       "category": "skin",
-      "action": "switch_skin_variation",
-      "alias": "",
-      "description": ""
+      "action": "switch_skin_variation"
     },
     {
       "category": "skin",
       "action": "zoom",
-      "alias": "zoom_scratch",
-      "description": "zoom horizontal rhythm and scratch visual"
+      "description": "zoom horizontal rhythm and scratch visual",
+      "alias": "zoom_scratch"
     },
     {
       "category": "skin",
       "action": "zoom_vertical",
-      "alias": "",
       "description": "zoom vertical scratch wave"
     },
     {
       "category": "system",
       "action": "debug",
-      "alias": "",
       "description": "display the value of the parameter (you can use this to see what values controllers are sending, for example)"
     },
     {
       "category": "system",
       "action": "get_battery",
-      "alias": "",
       "description": "returns how much battery is left on your laptop"
     },
     {
       "category": "system",
       "action": "get_clock",
-      "alias": "",
       "description": "get the current time (use 'get_clock 12' to display AM/PM)"
     },
     {
       "category": "system",
       "action": "get_cpu",
-      "alias": "",
       "description": "get the cpu activity"
     },
     {
       "category": "system",
       "action": "get_date",
-      "alias": "",
       "description": "get the current date (use 'get_date \"format\"' to get the date in a specific format. format can include %Y, %m, %d for year, month and day, %A for weekday)"
     },
     {
       "category": "system",
-      "action": "get_peak_audio",
-      "alias": "",
-      "description": ""
+      "action": "get_peak_audio"
     },
     {
       "category": "system",
       "action": "getfood",
-      "alias": "",
       "description": "because no DJ should work on an empty stomach"
     },
     {
       "category": "system",
       "action": "handshake",
-      "alias": "",
       "description": "Perform an encrypted handshake to ensure that this plugin is currently being called by a real VirtualDJ environment. Call this passing any string, decrypt the result using VirtualDJ's handshake public key, and check that it matches what you passed. See the developer documentation on our website for example code."
     },
     {
       "category": "system",
       "action": "has_battery",
-      "alias": "",
       "description": "returns true if your computer has batteries"
     },
     {
       "category": "system",
       "action": "has_notch",
-      "alias": "",
       "description": "return true when the display has a notch at the top center and the skin is maximized, false otherwise"
     },
     {
       "category": "system",
       "action": "has_system_volume",
-      "alias": "",
       "description": "Returns true when the system volume can be modified"
     },
     {
       "category": "system",
       "action": "is_battery",
-      "alias": "",
       "description": "returns true if your computer is running on batteries"
     },
     {
       "category": "system",
       "action": "is_mac",
-      "alias": "is_macos",
-      "description": "return true if the computer is a MAC, false if it's a PC"
+      "description": "return true if the computer is a MAC, false if it's a PC",
+      "alias": "is_macos"
     },
     {
       "category": "system",
       "action": "is_pc",
-      "alias": "is_windows",
-      "description": "return true if the computer is a PC, false if it's a MAC (example: <panel visible=\"is_pc\" />)"
+      "description": "return true if the computer is a PC, false if it's a MAC (example: <panel visible=\"is_pc\" />)",
+      "alias": "is_windows"
     },
     {
       "category": "system",
       "action": "open_help",
-      "alias": "",
       "description": "open the user guide"
     },
     {
       "category": "system",
       "action": "show_keyboard",
-      "alias": "",
       "description": "display an onscreen keyboard"
     },
     {
       "category": "system",
-      "action": "system",
-      "alias": "",
-      "description": ""
+      "action": "system"
     },
     {
       "category": "system",
       "action": "system_volume",
-      "alias": "",
       "description": "Change the system volume of the active sound card when available (use has_system_volume to check)"
     },
     {
       "category": "variables",
       "action": "controllervar",
-      "alias": "",
       "description": "variable that is unique to each controller. You can add # in front of the variable name to make it both deck and controller-dependent"
     },
     {
       "category": "variables",
       "action": "cycle",
-      "alias": "",
       "description": "syntax: 'cycle \"my_var\" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle \"my_var\" -42' decrements my_var, and goes to 41 after it reached 0."
     },
     {
       "category": "variables",
       "action": "get_var",
-      "alias": "",
       "description": "get the value of the specified variable"
     },
     {
       "category": "variables",
       "action": "set",
-      "alias": "",
       "description": "set 'varname' 5 sets variable varname to the value 5 set 'varname' 'var2' sets variable varname to the value of variable var2 set 'varname' `play` sets variable varname to the value of the action play"
     },
     {
       "category": "variables",
       "action": "set_var",
-      "alias": "",
       "description": "set the value of the specified variable"
     },
     {
       "category": "variables",
       "action": "set_var_dialog",
-      "alias": "",
       "description": "set_var_dialog 'varname' opens a dialog to enter the value of varname set_var_dialog 'varname' 'information text' opens a dialog to enter the value of varname, and shows the second parameter as informational text"
     },
     {
       "category": "variables",
       "action": "toggle",
-      "alias": "",
       "description": "syntax: 'toggle \"my_var\"'. toggle my_var between true and false."
     },
     {
       "category": "variables",
       "action": "var",
-      "alias": "",
       "description": "var \"my_var\" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: 'var \"my_var\" 1 ? my_action1 : my_action2' execute my_action1 is my_var is 1, or my_action2 otherwise"
     },
     {
       "category": "variables",
       "action": "var_equal",
-      "alias": "",
       "description": "syntax: 'var_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: 'var_equal \"this_var\" \"that_var\" ? action1 : action2' execute action1 if this_var equals that_var, execute action2 otherwise"
     },
     {
       "category": "variables",
       "action": "var_greater",
-      "alias": "",
       "description": "syntax: 'var_greater \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise."
     },
     {
       "category": "variables",
       "action": "var_list",
-      "alias": "",
       "description": "show a window with a list of your current variables and their values"
     },
     {
       "category": "variables",
       "action": "var_not_equal",
-      "alias": "",
       "description": "syntax: 'var_not_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise."
     },
     {
       "category": "variables",
       "action": "var_smaller",
-      "alias": "",
       "description": "syntax: 'var_smaller \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise."
     },
     {
       "category": "window",
       "action": "close",
-      "alias": "",
       "description": "close the application."
     },
     {
       "category": "window",
       "action": "maximize",
-      "alias": "",
       "description": "maximize the application to maximized, full screen, or back to windowed. A specific mode can be selected using \"maximize 'windowed'\", \"maximize 'maximized'\" or \"maximize 'fullscreen'\""
     },
     {
       "category": "window",
       "action": "minimize",
-      "alias": "",
       "description": "minimize the application in the taskbar."
     },
     {
       "category": "window",
-      "action": "open_stem_creator",
-      "alias": "",
-      "description": ""
+      "action": "open_stem_creator"
     },
     {
       "category": "window",
       "action": "show_window",
-      "alias": "",
       "description": "on skin with multiple windows, show or hide the specified window"
     },
     {
       "category": "audio",
-      "action": "beat_juggle",
-      "alias": "",
-      "description": ""
+      "action": "beat_juggle"
     },
     {
       "category": "audio",
-      "action": "beatjump",
-      "alias": "",
-      "description": ""
+      "action": "beatjump"
     },
     {
       "category": "audio",
-      "action": "beatjump_pad",
-      "alias": "",
-      "description": ""
+      "action": "beatjump_pad"
     },
     {
       "category": "audio",
-      "action": "beatjump_page",
-      "alias": "",
-      "description": ""
+      "action": "beatjump_page"
     },
     {
       "category": "audio",
-      "action": "beatjump_select",
-      "alias": "",
-      "description": ""
+      "action": "beatjump_select"
     },
     {
       "category": "audio",
-      "action": "clone_deck",
-      "alias": "",
-      "description": ""
+      "action": "clone_deck"
     },
     {
       "category": "audio",
-      "action": "clone_from_deck",
-      "alias": "",
-      "description": ""
+      "action": "clone_from_deck"
     },
     {
       "category": "audio",
-      "action": "dualdeckmode",
-      "alias": "",
-      "description": ""
+      "action": "dualdeckmode"
     },
     {
       "category": "audio",
-      "action": "dualdeckmode_decks",
-      "alias": "",
-      "description": ""
+      "action": "dualdeckmode_decks"
     },
     {
       "category": "audio",
-      "action": "dump",
-      "alias": "",
-      "description": ""
+      "action": "dump"
     },
     {
       "category": "audio",
-      "action": "goto",
-      "alias": "",
-      "description": ""
+      "action": "goto"
     },
     {
       "category": "audio",
-      "action": "goto_bar",
-      "alias": "",
-      "description": ""
+      "action": "goto_bar"
     },
     {
       "category": "audio",
-      "action": "goto_first_beat",
-      "alias": "",
-      "description": ""
+      "action": "goto_first_beat"
     },
     {
       "category": "audio",
-      "action": "goto_start",
-      "alias": "",
-      "description": ""
+      "action": "goto_start"
     },
     {
       "category": "audio",
-      "action": "mixermode",
-      "alias": "",
-      "description": ""
+      "action": "mixermode"
     },
     {
       "category": "audio",
-      "action": "move_deck",
-      "alias": "",
-      "description": ""
+      "action": "move_deck"
     },
     {
       "category": "audio",
-      "action": "reverse",
-      "alias": "",
-      "description": ""
+      "action": "reverse"
     },
     {
       "category": "audio",
-      "action": "seek",
-      "alias": "",
-      "description": ""
+      "action": "seek"
     },
     {
       "category": "audio",
-      "action": "song_pos",
-      "alias": "",
-      "description": ""
+      "action": "song_pos"
     },
     {
       "category": "audio",
-      "action": "songpos_remain",
-      "alias": "",
-      "description": ""
+      "action": "songpos_remain"
     },
     {
       "category": "audio",
-      "action": "songpos_warning",
-      "alias": "",
-      "description": ""
+      "action": "songpos_warning"
     },
     {
       "category": "audio",
-      "action": "stems_split",
-      "alias": "",
-      "description": ""
+      "action": "stems_split"
     },
     {
       "category": "audio",
-      "action": "stems_split_unlink",
-      "alias": "",
-      "description": ""
+      "action": "stems_split_unlink"
     },
     {
       "category": "audio",
-      "action": "swap_decks",
-      "alias": "",
-      "description": ""
+      "action": "swap_decks"
     },
     {
       "category": "audio_controls",
-      "action": "auto_sync_options",
-      "alias": "",
-      "description": ""
+      "action": "auto_sync_options"
     },
     {
       "category": "audio_controls",
-      "action": "blink_play",
-      "alias": "",
-      "description": ""
+      "action": "blink_play"
     },
     {
       "category": "audio_controls",
-      "action": "deck_options",
-      "alias": "",
-      "description": ""
+      "action": "deck_options"
     },
     {
       "category": "audio_controls",
-      "action": "emergency_play",
-      "alias": "",
-      "description": ""
+      "action": "emergency_play"
     },
     {
       "category": "audio_controls",
-      "action": "pause",
-      "alias": "",
-      "description": ""
+      "action": "pause"
     },
     {
       "category": "audio_controls",
-      "action": "pause_stop",
-      "alias": "",
-      "description": ""
+      "action": "pause_stop"
     },
     {
       "category": "audio_controls",
-      "action": "play",
-      "alias": "",
-      "description": ""
+      "action": "play"
     },
     {
       "category": "audio_controls",
       "action": "play_button",
-      "alias": "play_3button",
-      "description": ""
+      "alias": "play_3button"
     },
     {
       "category": "audio_controls",
-      "action": "play_options",
-      "alias": "",
-      "description": ""
+      "action": "play_options"
     },
     {
       "category": "audio_controls",
-      "action": "play_pause",
-      "alias": "",
-      "description": ""
+      "action": "play_pause"
     },
     {
       "category": "audio_controls",
-      "action": "play_stutter",
-      "alias": "",
-      "description": ""
+      "action": "play_stutter"
     },
     {
       "category": "audio_controls",
-      "action": "stop",
-      "alias": "",
-      "description": ""
+      "action": "stop"
     },
     {
       "category": "audio_controls",
       "action": "stop_button",
-      "alias": "stop_3button",
-      "description": ""
+      "alias": "stop_3button"
     },
     {
       "category": "audio_inputs",
-      "action": "aux_volume",
-      "alias": "",
-      "description": ""
+      "action": "aux_volume"
     },
     {
       "category": "audio_inputs",
-      "action": "djc_mic",
-      "alias": "",
-      "description": ""
+      "action": "djc_mic"
     },
     {
       "category": "audio_inputs",
-      "action": "linein",
-      "alias": "",
-      "description": ""
+      "action": "linein"
     },
     {
       "category": "audio_inputs",
-      "action": "linein_rec",
-      "alias": "",
-      "description": ""
+      "action": "linein_rec"
     },
     {
       "category": "audio_inputs",
       "action": "mic",
-      "alias": "microphone",
-      "description": ""
+      "alias": "microphone"
     },
     {
       "category": "audio_inputs",
-      "action": "mic_eq_high",
-      "alias": "",
-      "description": ""
+      "action": "mic_eq_high"
     },
     {
       "category": "audio_inputs",
-      "action": "mic_eq_low",
-      "alias": "",
-      "description": ""
+      "action": "mic_eq_low"
     },
     {
       "category": "audio_inputs",
-      "action": "mic_eq_mid",
-      "alias": "",
-      "description": ""
+      "action": "mic_eq_mid"
     },
     {
       "category": "audio_inputs",
-      "action": "mic_rec",
-      "alias": "",
-      "description": ""
+      "action": "mic_rec"
     },
     {
       "category": "audio_inputs",
-      "action": "mic_talkover",
-      "alias": "",
-      "description": ""
+      "action": "mic_talkover"
     },
     {
       "category": "audio_scratch",
-      "action": "get_scratch_direction",
-      "alias": "",
-      "description": ""
+      "action": "get_scratch_direction"
     },
     {
       "category": "audio_scratch",
-      "action": "get_slip_active",
-      "alias": "",
-      "description": ""
+      "action": "get_slip_active"
     },
     {
       "category": "audio_scratch",
-      "action": "get_slip_time",
-      "alias": "",
-      "description": ""
+      "action": "get_slip_time"
     },
     {
       "category": "audio_scratch",
       "action": "hold",
-      "alias": "scratch_hold",
-      "description": ""
+      "alias": "scratch_hold"
     },
     {
       "category": "audio_scratch",
       "action": "jogwheel",
-      "alias": "jog|jog_wheel",
-      "description": ""
+      "alias": "jog|jog_wheel"
     },
     {
       "category": "audio_scratch",
-      "action": "motorwheel",
-      "alias": "",
-      "description": ""
+      "action": "motorwheel"
     },
     {
       "category": "audio_scratch",
-      "action": "nudge",
-      "alias": "",
-      "description": ""
+      "action": "nudge"
     },
     {
       "category": "audio_scratch",
-      "action": "scratch",
-      "alias": "",
-      "description": ""
+      "action": "scratch"
     },
     {
       "category": "audio_scratch",
-      "action": "scratch_dna",
-      "alias": "",
-      "description": ""
+      "action": "scratch_dna"
     },
     {
       "category": "audio_scratch",
-      "action": "scratch_dna_editor",
-      "alias": "",
-      "description": ""
+      "action": "scratch_dna_editor"
     },
     {
       "category": "audio_scratch",
-      "action": "scratch_dna_option",
-      "alias": "",
-      "description": ""
+      "action": "scratch_dna_option"
     },
     {
       "category": "audio_scratch",
-      "action": "slip",
-      "alias": "",
-      "description": ""
+      "action": "slip"
     },
     {
       "category": "audio_scratch",
-      "action": "slip_mode",
-      "alias": "",
-      "description": ""
+      "action": "slip_mode"
     },
     {
       "category": "audio_scratch",
-      "action": "speedwheel",
-      "alias": "",
-      "description": ""
+      "action": "speedwheel"
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel",
-      "alias": "scratch_wheel| scratchwheel",
-      "description": ""
+      "alias": "scratch_wheel|scratchwheel"
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel_touch",
-      "alias": "scratch_wheel_touch|scratchwheel_touch|speedwheel_touch",
-      "description": ""
+      "alias": "scratch_wheel_touch|scratchwheel_touch|speedwheel_touch"
     },
     {
       "category": "audio_scratch",
-      "action": "vinyl_mode",
-      "alias": "",
-      "description": ""
+      "action": "vinyl_mode"
     },
     {
       "category": "audio_scratch",
-      "action": "wheel_mode",
-      "alias": "",
-      "description": ""
+      "action": "wheel_mode"
     },
     {
       "category": "audio_volumes",
       "action": "auto_crossfade",
-      "alias": "auto_crossfader",
-      "description": ""
+      "alias": "auto_crossfader"
     },
     {
       "category": "audio_volumes",
-      "action": "booth_volume",
-      "alias": "",
-      "description": ""
+      "action": "booth_volume"
     },
     {
       "category": "audio_volumes",
-      "action": "colorfx_prefader",
-      "alias": "",
-      "description": ""
+      "action": "colorfx_prefader"
     },
     {
       "category": "audio_volumes",
       "action": "crossfader",
-      "alias": "crossfader_slider",
-      "description": ""
+      "alias": "crossfader_slider"
     },
     {
       "category": "audio_volumes",
-      "action": "crossfader_curve",
-      "alias": "",
-      "description": ""
+      "action": "crossfader_curve"
     },
     {
       "category": "audio_volumes",
-      "action": "crossfader_disable",
-      "alias": "",
-      "description": ""
+      "action": "crossfader_disable"
     },
     {
       "category": "audio_volumes",
-      "action": "crossfader_hamster",
-      "alias": "",
-      "description": ""
+      "action": "crossfader_hamster"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_eq",
-      "alias": "",
-      "description": ""
+      "action": "fake_eq"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_filter",
-      "alias": "",
-      "description": ""
+      "action": "fake_filter"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_gain",
-      "alias": "",
-      "description": ""
+      "action": "fake_gain"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_hp",
-      "alias": "",
-      "description": ""
+      "action": "fake_hp"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_hpmix",
-      "alias": "",
-      "description": ""
+      "action": "fake_hpmix"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_master",
-      "alias": "",
-      "description": ""
+      "action": "fake_master"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_mixer",
-      "alias": "",
-      "description": ""
+      "action": "fake_mixer"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_pfl",
-      "alias": "",
-      "description": ""
+      "action": "fake_pfl"
     },
     {
       "category": "audio_volumes",
       "action": "gain",
-      "alias": "gain_slider|power_gain",
-      "description": ""
+      "alias": "gain_slider|power_gain"
     },
     {
       "category": "audio_volumes",
-      "action": "gain_label",
-      "alias": "",
-      "description": ""
+      "action": "gain_label"
     },
     {
       "category": "audio_volumes",
-      "action": "gain_relative",
-      "alias": "",
-      "description": ""
+      "action": "gain_relative"
     },
     {
       "category": "audio_volumes",
-      "action": "get_crossfader_result",
-      "alias": "",
-      "description": ""
+      "action": "get_crossfader_result"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level",
-      "alias": "",
-      "description": ""
+      "action": "get_level"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_left",
-      "alias": "",
-      "description": ""
+      "action": "get_level_left"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_left_peak",
-      "alias": "",
-      "description": ""
+      "action": "get_level_left_peak"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_log",
-      "alias": "",
-      "description": ""
+      "action": "get_level_log"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_peak",
-      "alias": "",
-      "description": ""
+      "action": "get_level_peak"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_right",
-      "alias": "",
-      "description": ""
+      "action": "get_level_right"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_right_peak",
-      "alias": "",
-      "description": ""
+      "action": "get_level_right_peak"
     },
     {
       "category": "audio_volumes",
-      "action": "get_limiter",
-      "alias": "",
-      "description": ""
+      "action": "get_limiter"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter",
-      "alias": "",
-      "description": ""
+      "action": "get_vu_meter"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_left",
-      "alias": "",
-      "description": ""
+      "action": "get_vu_meter_left"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_left_peak",
-      "alias": "",
-      "description": ""
+      "action": "get_vu_meter_left_peak"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_peak",
-      "alias": "",
-      "description": ""
+      "action": "get_vu_meter_peak"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_right",
-      "alias": "",
-      "description": ""
+      "action": "get_vu_meter_right"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_right_peak",
-      "alias": "",
-      "description": ""
+      "action": "get_vu_meter_right_peak"
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_crossfader",
-      "alias": "",
-      "description": ""
+      "action": "headphone_crossfader"
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_gain",
-      "alias": "",
-      "description": ""
+      "action": "headphone_gain"
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_mix",
-      "alias": "",
-      "description": ""
+      "action": "headphone_mix"
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_volume",
-      "alias": "",
-      "description": ""
+      "action": "headphone_volume"
     },
     {
       "category": "audio_volumes",
-      "action": "is_audible",
-      "alias": "",
-      "description": ""
+      "action": "is_audible"
     },
     {
       "category": "audio_volumes",
       "action": "level",
-      "alias": "level_slider|volume|volume_slider",
-      "description": ""
+      "alias": "level_slider|volume|volume_slider"
     },
     {
       "category": "audio_volumes",
       "action": "levelfader_curve",
-      "alias": "fader_curve",
-      "description": ""
+      "alias": "fader_curve"
     },
     {
       "category": "audio_volumes",
-      "action": "master_balance",
-      "alias": "",
-      "description": ""
+      "action": "master_balance"
     },
     {
       "category": "audio_volumes",
-      "action": "master_volume",
-      "alias": "",
-      "description": ""
+      "action": "master_volume"
     },
     {
       "category": "audio_volumes",
-      "action": "mic2_volume",
-      "alias": "",
-      "description": ""
+      "action": "mic2_volume"
     },
     {
       "category": "audio_volumes",
-      "action": "mic_volume",
-      "alias": "",
-      "description": ""
+      "action": "mic_volume"
     },
     {
       "category": "audio_volumes",
-      "action": "mono_mix",
-      "alias": "",
-      "description": ""
+      "action": "mono_mix"
     },
     {
       "category": "audio_volumes",
-      "action": "mute",
-      "alias": "",
-      "description": ""
+      "action": "mute"
     },
     {
       "category": "audio_volumes",
-      "action": "set_gain",
-      "alias": "",
-      "description": ""
+      "action": "set_gain"
     },
     {
       "category": "automix",
-      "action": "automix",
-      "alias": "",
-      "description": ""
+      "action": "automix"
     },
     {
       "category": "automix",
-      "action": "automix_add_next",
-      "alias": "",
-      "description": ""
+      "action": "automix_add_next"
     },
     {
       "category": "automix",
-      "action": "automix_dualdeck",
-      "alias": "",
-      "description": ""
+      "action": "automix_dualdeck"
     },
     {
       "category": "automix",
-      "action": "automix_editor",
-      "alias": "",
-      "description": ""
+      "action": "automix_editor"
     },
     {
       "category": "automix",
-      "action": "automix_editor_movetrack",
-      "alias": "",
-      "description": ""
+      "action": "automix_editor_movetrack"
     },
     {
       "category": "automix",
-      "action": "automix_skip",
-      "alias": "",
-      "description": ""
+      "action": "automix_skip"
     },
     {
       "category": "automix",
       "action": "create_list_from_playlist",
-      "alias": "create_virtualfolder_from_playlist",
-      "description": ""
+      "alias": "create_virtualfolder_from_playlist"
     },
     {
       "category": "automix",
-      "action": "get_automix_position",
-      "alias": "",
-      "description": ""
+      "action": "get_automix_position"
     },
     {
       "category": "automix",
-      "action": "get_automix_song",
-      "alias": "",
-      "description": ""
+      "action": "get_automix_song"
     },
     {
       "category": "automix",
-      "action": "get_playlist_time",
-      "alias": "",
-      "description": ""
+      "action": "get_playlist_time"
     },
     {
       "category": "automix",
-      "action": "mix_and_load_next",
-      "alias": "",
-      "description": ""
+      "action": "mix_and_load_next"
     },
     {
       "category": "automix",
-      "action": "mix_next",
-      "alias": "",
-      "description": ""
+      "action": "mix_next"
     },
     {
       "category": "automix",
-      "action": "mix_next_sidelist",
-      "alias": "",
-      "description": ""
+      "action": "mix_next_sidelist"
     },
     {
       "category": "automix",
-      "action": "mix_now",
-      "alias": "",
-      "description": ""
+      "action": "mix_now"
     },
     {
       "category": "automix",
-      "action": "mix_now_nosync",
-      "alias": "",
-      "description": ""
+      "action": "mix_now_nosync"
     },
     {
       "category": "automix",
-      "action": "mix_selected",
-      "alias": "",
-      "description": ""
+      "action": "mix_selected"
     },
     {
       "category": "automix",
-      "action": "playlist_add",
-      "alias": "",
-      "description": ""
+      "action": "playlist_add"
     },
     {
       "category": "automix",
-      "action": "playlist_clear",
-      "alias": "",
-      "description": ""
+      "action": "playlist_clear"
     },
     {
       "category": "automix",
-      "action": "playlist_load_and_keep",
-      "alias": "",
-      "description": ""
+      "action": "playlist_load_and_keep"
     },
     {
       "category": "automix",
-      "action": "playlist_load_and_remove",
-      "alias": "",
-      "description": ""
+      "action": "playlist_load_and_remove"
     },
     {
       "category": "automix",
-      "action": "playlist_options",
-      "alias": "",
-      "description": ""
+      "action": "playlist_options"
     },
     {
       "category": "automix",
-      "action": "playlist_randomize",
-      "alias": "",
-      "description": ""
+      "action": "playlist_randomize"
     },
     {
       "category": "automix",
-      "action": "playlist_randomize_once",
-      "alias": "",
-      "description": ""
+      "action": "playlist_randomize_once"
     },
     {
       "category": "automix",
-      "action": "playlist_remove_duplicates",
-      "alias": "",
-      "description": ""
+      "action": "playlist_remove_duplicates"
     },
     {
       "category": "automix",
-      "action": "playlist_remove_played",
-      "alias": "",
-      "description": ""
+      "action": "playlist_remove_played"
     },
     {
       "category": "automix",
-      "action": "playlist_repeat",
-      "alias": "",
-      "description": ""
+      "action": "playlist_repeat"
     },
     {
       "category": "automix",
-      "action": "playlist_save",
-      "alias": "",
-      "description": ""
+      "action": "playlist_save"
     },
     {
       "category": "automix",
-      "action": "relay_play",
-      "alias": "",
-      "description": ""
+      "action": "relay_play"
     },
     {
       "category": "automix",
-      "action": "sidelist_options",
-      "alias": "",
-      "description": ""
+      "action": "sidelist_options"
     },
     {
       "category": "automix",
-      "action": "switch_sidelist_playlist",
-      "alias": "",
-      "description": ""
+      "action": "switch_sidelist_playlist"
     },
     {
       "category": "browser",
-      "action": "add_favoritefolder",
-      "alias": "",
-      "description": ""
+      "action": "add_favoritefolder"
     },
     {
       "category": "browser",
-      "action": "add_filterfolder",
-      "alias": "",
-      "description": ""
+      "action": "add_filterfolder"
     },
     {
       "category": "browser",
       "action": "add_list",
-      "alias": "add_virtualfolder",
-      "description": ""
+      "alias": "add_virtualfolder"
     },
     {
       "category": "browser",
       "action": "add_to_list",
-      "alias": "virtualfolder_add",
-      "description": ""
+      "alias": "virtualfolder_add"
     },
     {
       "category": "browser",
-      "action": "browsed_file_analyze",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_analyze"
     },
     {
       "category": "browser",
-      "action": "browsed_file_color",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_color"
     },
     {
       "category": "browser",
-      "action": "browsed_file_info",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_info"
     },
     {
       "category": "browser",
-      "action": "browsed_file_prepare_stems",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_prepare_stems"
     },
     {
       "category": "browser",
-      "action": "browsed_file_reload_tag",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_reload_tag"
     },
     {
       "category": "browser",
-      "action": "browsed_file_rename",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_rename"
     },
     {
       "category": "browser",
-      "action": "browsed_file_reveal",
-      "alias": "",
-      "description": ""
+      "action": "browsed_file_reveal"
     },
     {
       "category": "browser",
-      "action": "browser_enter",
-      "alias": "",
-      "description": ""
+      "action": "browser_enter"
     },
     {
       "category": "browser",
-      "action": "browser_export",
-      "alias": "",
-      "description": ""
+      "action": "browser_export"
     },
     {
       "category": "browser",
-      "action": "browser_folder",
-      "alias": "",
-      "description": ""
+      "action": "browser_folder"
     },
     {
       "category": "browser",
-      "action": "browser_geniusdj",
-      "alias": "",
-      "description": ""
+      "action": "browser_geniusdj"
     },
     {
       "category": "browser",
-      "action": "browser_gotofolder",
-      "alias": "",
-      "description": ""
+      "action": "browser_gotofolder"
     },
     {
       "category": "browser",
-      "action": "browser_isactive",
-      "alias": "",
-      "description": ""
+      "action": "browser_isactive"
     },
     {
       "category": "browser",
-      "action": "browser_move",
-      "alias": "",
-      "description": ""
+      "action": "browser_move"
     },
     {
       "category": "browser",
-      "action": "browser_open_folder",
-      "alias": "",
-      "description": ""
+      "action": "browser_open_folder"
     },
     {
       "category": "browser",
-      "action": "browser_options",
-      "alias": "",
-      "description": ""
+      "action": "browser_options"
     },
     {
       "category": "browser",
-      "action": "browser_padding",
-      "alias": "",
-      "description": ""
+      "action": "browser_padding"
     },
     {
       "category": "browser",
-      "action": "browser_remove",
-      "alias": "",
-      "description": ""
+      "action": "browser_remove"
     },
     {
       "category": "browser",
-      "action": "browser_scroll",
-      "alias": "",
-      "description": ""
+      "action": "browser_scroll"
     },
     {
       "category": "browser",
-      "action": "browser_shortcut",
-      "alias": "",
-      "description": ""
+      "action": "browser_shortcut"
     },
     {
       "category": "browser",
-      "action": "browser_sort",
-      "alias": "",
-      "description": ""
+      "action": "browser_sort"
     },
     {
       "category": "browser",
-      "action": "browser_window",
-      "alias": "",
-      "description": ""
+      "action": "browser_window"
     },
     {
       "category": "browser",
       "action": "browser_zoom",
-      "alias": "browser",
-      "description": ""
+      "alias": "browser"
     },
     {
       "category": "browser",
-      "action": "clear_search",
-      "alias": "",
-      "description": ""
+      "action": "clear_search"
     },
     {
       "category": "browser",
-      "action": "edit_comment",
-      "alias": "",
-      "description": ""
+      "action": "edit_comment"
     },
     {
       "category": "browser",
-      "action": "edit_search",
-      "alias": "",
-      "description": ""
+      "action": "edit_search"
     },
     {
       "category": "browser",
-      "action": "edit_singer",
-      "alias": "",
-      "description": ""
+      "action": "edit_singer"
     },
     {
       "category": "browser",
-      "action": "file_count",
-      "alias": "",
-      "description": ""
+      "action": "file_count"
     },
     {
       "category": "browser",
-      "action": "file_info",
-      "alias": "",
-      "description": ""
+      "action": "file_info"
     },
     {
       "category": "browser",
-      "action": "font_size",
-      "alias": "",
-      "description": ""
+      "action": "font_size"
     },
     {
       "category": "browser",
-      "action": "goto_last_folder",
-      "alias": "",
-      "description": ""
+      "action": "goto_last_folder"
     },
     {
       "category": "browser",
-      "action": "grid_view",
-      "alias": "",
-      "description": ""
+      "action": "grid_view"
     },
     {
       "category": "browser",
-      "action": "has_linked_tracks",
-      "alias": "",
-      "description": ""
+      "action": "has_linked_tracks"
     },
     {
       "category": "browser",
-      "action": "has_quick_filter",
-      "alias": "",
-      "description": ""
+      "action": "has_quick_filter"
     },
     {
       "category": "browser",
       "action": "info_options",
-      "alias": "infos_options",
-      "description": ""
+      "alias": "infos_options"
     },
     {
       "category": "browser",
-      "action": "karaoke_add",
-      "alias": "",
-      "description": ""
+      "action": "karaoke_add"
     },
     {
       "category": "browser",
-      "action": "karaoke_load",
-      "alias": "",
-      "description": ""
+      "action": "karaoke_load"
     },
     {
       "category": "browser",
-      "action": "load",
-      "alias": "",
-      "description": ""
+      "action": "load"
     },
     {
       "category": "browser",
-      "action": "load_deck_set",
-      "alias": "",
-      "description": ""
+      "action": "load_deck_set"
     },
     {
       "category": "browser",
-      "action": "load_next",
-      "alias": "",
-      "description": ""
+      "action": "load_next"
     },
     {
       "category": "browser",
-      "action": "load_previous",
-      "alias": "",
-      "description": ""
+      "action": "load_previous"
     },
     {
       "category": "browser",
-      "action": "load_pulse",
-      "alias": "",
-      "description": ""
+      "action": "load_pulse"
     },
     {
       "category": "browser",
-      "action": "load_pulse_active",
-      "alias": "",
-      "description": ""
+      "action": "load_pulse_active"
     },
     {
       "category": "browser",
-      "action": "loaded",
-      "alias": "",
-      "description": ""
+      "action": "loaded"
     },
     {
       "category": "browser",
-      "action": "log_search",
-      "alias": "",
-      "description": ""
+      "action": "log_search"
     },
     {
       "category": "browser",
       "action": "mark_linked_tracks",
-      "alias": "mark_related_tracks",
-      "description": ""
+      "alias": "mark_related_tracks"
     },
     {
       "category": "browser",
-      "action": "not_played",
-      "alias": "",
-      "description": ""
+      "action": "not_played"
     },
     {
       "category": "browser",
-      "action": "page",
-      "alias": "",
-      "description": ""
+      "action": "page"
     },
     {
       "category": "browser",
-      "action": "playlist_load",
-      "alias": "",
-      "description": ""
+      "action": "playlist_load"
     },
     {
       "category": "browser",
-      "action": "quick_filter",
-      "alias": "",
-      "description": ""
+      "action": "quick_filter"
     },
     {
       "category": "browser",
-      "action": "rating",
-      "alias": "",
-      "description": ""
+      "action": "rating"
     },
     {
       "category": "browser",
-      "action": "recurse_folder",
-      "alias": "",
-      "description": ""
+      "action": "recurse_folder"
     },
     {
       "category": "browser",
-      "action": "save_deck_set",
-      "alias": "",
-      "description": ""
+      "action": "save_deck_set"
     },
     {
       "category": "browser",
-      "action": "search",
-      "alias": "",
-      "description": ""
+      "action": "search"
     },
     {
       "category": "browser",
-      "action": "search_add",
-      "alias": "",
-      "description": ""
+      "action": "search_add"
     },
     {
       "category": "browser",
-      "action": "search_delete",
-      "alias": "",
-      "description": ""
+      "action": "search_delete"
     },
     {
       "category": "browser",
-      "action": "search_folder",
-      "alias": "",
-      "description": ""
+      "action": "search_folder"
     },
     {
       "category": "browser",
-      "action": "search_options",
-      "alias": "",
-      "description": ""
+      "action": "search_options"
     },
     {
       "category": "browser",
-      "action": "search_playlists",
-      "alias": "",
-      "description": ""
+      "action": "search_playlists"
     },
     {
       "category": "browser",
-      "action": "set_browsed_file_bpm",
-      "alias": "",
-      "description": ""
+      "action": "set_browsed_file_bpm"
     },
     {
       "category": "browser",
-      "action": "sidelist_add",
-      "alias": "",
-      "description": ""
+      "action": "sidelist_add"
     },
     {
       "category": "browser",
-      "action": "sidelist_clear",
-      "alias": "",
-      "description": ""
+      "action": "sidelist_clear"
     },
     {
       "category": "browser",
-      "action": "sidelist_load",
-      "alias": "",
-      "description": ""
+      "action": "sidelist_load"
     },
     {
       "category": "browser",
-      "action": "sidelist_load_and_keep",
-      "alias": "",
-      "description": ""
+      "action": "sidelist_load_and_keep"
     },
     {
       "category": "browser",
-      "action": "sidelist_load_and_remove",
-      "alias": "",
-      "description": ""
+      "action": "sidelist_load_and_remove"
     },
     {
       "category": "browser",
-      "action": "sidereco_options",
-      "alias": "",
-      "description": ""
+      "action": "sidereco_options"
     },
     {
       "category": "browser",
-      "action": "sidereco_song",
-      "alias": "",
-      "description": ""
+      "action": "sidereco_song"
     },
     {
       "category": "browser",
-      "action": "sidereco_source",
-      "alias": "",
-      "description": ""
+      "action": "sidereco_source"
     },
     {
       "category": "browser",
-      "action": "sideview",
-      "alias": "",
-      "description": ""
+      "action": "sideview"
     },
     {
       "category": "browser",
-      "action": "sideview_options",
-      "alias": "",
-      "description": ""
+      "action": "sideview_options"
     },
     {
       "category": "browser",
-      "action": "sideview_sort",
-      "alias": "",
-      "description": ""
+      "action": "sideview_sort"
     },
     {
       "category": "browser",
-      "action": "sideview_title",
-      "alias": "",
-      "description": ""
+      "action": "sideview_title"
     },
     {
       "category": "browser",
-      "action": "sideview_triggerpad",
-      "alias": "",
-      "description": ""
+      "action": "sideview_triggerpad"
     },
     {
       "category": "browser",
-      "action": "undo_load",
-      "alias": "",
-      "description": ""
+      "action": "undo_load"
     },
     {
       "category": "browser",
-      "action": "unload",
-      "alias": "",
-      "description": ""
+      "action": "unload"
     },
     {
       "category": "browser",
-      "action": "view_options",
-      "alias": "",
-      "description": ""
+      "action": "view_options"
     },
     {
       "category": "config",
-      "action": "apply_audio_config",
-      "alias": "",
-      "description": ""
+      "action": "apply_audio_config"
     },
     {
       "category": "config",
-      "action": "auto_cue",
-      "alias": "",
-      "description": ""
+      "action": "auto_cue"
     },
     {
       "category": "config",
-      "action": "auto_match_bpm",
-      "alias": "",
-      "description": ""
+      "action": "auto_match_bpm"
     },
     {
       "category": "config",
-      "action": "auto_match_key",
-      "alias": "",
-      "description": ""
+      "action": "auto_match_key"
     },
     {
       "category": "config",
-      "action": "auto_pitch_lock",
-      "alias": "",
-      "description": ""
+      "action": "auto_pitch_lock"
     },
     {
       "category": "config",
-      "action": "connect",
-      "alias": "",
-      "description": ""
+      "action": "connect"
     },
     {
       "category": "config",
-      "action": "eventscheduler",
-      "alias": "",
-      "description": ""
+      "action": "eventscheduler"
     },
     {
       "category": "config",
-      "action": "eventscheduler_start",
-      "alias": "",
-      "description": ""
+      "action": "eventscheduler_start"
     },
     {
       "category": "config",
-      "action": "fader_start",
-      "alias": "",
-      "description": ""
+      "action": "fader_start"
     },
     {
       "category": "config",
-      "action": "get_lemode",
-      "alias": "",
-      "description": ""
+      "action": "get_lemode"
     },
     {
       "category": "config",
-      "action": "play_mode",
-      "alias": "",
-      "description": ""
+      "action": "play_mode"
     },
     {
       "category": "config",
-      "action": "quantize_loop",
-      "alias": "",
-      "description": ""
+      "action": "quantize_loop"
     },
     {
       "category": "config",
-      "action": "quantize_setcue",
-      "alias": "",
-      "description": ""
+      "action": "quantize_setcue"
     },
     {
       "category": "config",
       "action": "save_config",
-      "alias": "saveregistryconfig",
-      "description": ""
+      "alias": "saveregistryconfig"
     },
     {
       "category": "config",
-      "action": "setting",
-      "alias": "",
-      "description": ""
+      "action": "setting"
     },
     {
       "category": "config",
-      "action": "setting_ismodified",
-      "alias": "",
-      "description": ""
+      "action": "setting_ismodified"
     },
     {
       "category": "config",
-      "action": "setting_reset",
-      "alias": "",
-      "description": ""
+      "action": "setting_reset"
     },
     {
       "category": "config",
-      "action": "setting_setdefault",
-      "alias": "",
-      "description": ""
+      "action": "setting_setdefault"
     },
     {
       "category": "config",
-      "action": "setting_setsession",
-      "alias": "",
-      "description": ""
+      "action": "setting_setsession"
     },
     {
       "category": "config",
-      "action": "setting_setsession_deck",
-      "alias": "",
-      "description": ""
+      "action": "setting_setsession_deck"
     },
     {
       "category": "config",
       "action": "settings",
-      "alias": "config",
-      "description": ""
+      "alias": "config"
     },
     {
       "category": "config",
-      "action": "smart_cue",
-      "alias": "",
-      "description": ""
+      "action": "smart_cue"
     },
     {
       "category": "config",
-      "action": "smart_loop",
-      "alias": "",
-      "description": ""
+      "action": "smart_loop"
     },
     {
       "category": "config",
       "action": "smart_play",
-      "alias": "auto_sync",
-      "description": ""
+      "alias": "auto_sync"
     },
     {
       "category": "config",
-      "action": "smart_scratch",
-      "alias": "",
-      "description": ""
+      "action": "smart_scratch"
     },
     {
       "category": "controllers",
-      "action": "action_deck",
-      "alias": "",
-      "description": ""
+      "action": "action_deck"
     },
     {
       "category": "controllers",
-      "action": "assign_controller",
-      "alias": "",
-      "description": ""
+      "action": "assign_controller"
     },
     {
       "category": "controllers",
-      "action": "controller_battery",
-      "alias": "",
-      "description": ""
+      "action": "controller_battery"
     },
     {
       "category": "controllers",
-      "action": "controller_mapping",
-      "alias": "",
-      "description": ""
+      "action": "controller_mapping"
     },
     {
       "category": "controllers",
-      "action": "controllerscreen_deck",
-      "alias": "",
-      "description": ""
+      "action": "controllerscreen_deck"
     },
     {
       "category": "controllers",
-      "action": "denon_platter",
-      "alias": "",
-      "description": ""
+      "action": "denon_platter"
     },
     {
       "category": "controllers",
-      "action": "device_side",
-      "alias": "",
-      "description": ""
+      "action": "device_side"
     },
     {
       "category": "controllers",
-      "action": "display_time",
-      "alias": "",
-      "description": ""
+      "action": "display_time"
     },
     {
       "category": "controllers",
-      "action": "djc_button",
-      "alias": "",
-      "description": ""
+      "action": "djc_button"
     },
     {
       "category": "controllers",
-      "action": "djc_button_popup",
-      "alias": "",
-      "description": ""
+      "action": "djc_button_popup"
     },
     {
       "category": "controllers",
-      "action": "djc_button_select",
-      "alias": "",
-      "description": ""
+      "action": "djc_button_select"
     },
     {
       "category": "controllers",
-      "action": "djc_button_slider",
-      "alias": "",
-      "description": ""
+      "action": "djc_button_slider"
     },
     {
       "category": "controllers",
-      "action": "djc_panel",
-      "alias": "",
-      "description": ""
+      "action": "djc_panel"
     },
     {
       "category": "controllers",
-      "action": "djc_shift",
-      "alias": "",
-      "description": ""
+      "action": "djc_shift"
     },
     {
       "category": "controllers",
-      "action": "effect_fxsendreturndeck",
-      "alias": "",
-      "description": ""
+      "action": "effect_fxsendreturndeck"
     },
     {
       "category": "controllers",
-      "action": "effect_fxsendreturndeck_multi",
-      "alias": "",
-      "description": ""
+      "action": "effect_fxsendreturndeck_multi"
     },
     {
       "category": "controllers",
-      "action": "effect_fxsendreturnenable",
-      "alias": "",
-      "description": ""
+      "action": "effect_fxsendreturnenable"
     },
     {
       "category": "controllers",
-      "action": "gemini_waveform_zoomlevel",
-      "alias": "",
-      "description": ""
+      "action": "gemini_waveform_zoomlevel"
     },
     {
       "category": "controllers",
-      "action": "get_controller_image",
-      "alias": "",
-      "description": ""
+      "action": "get_controller_image"
     },
     {
       "category": "controllers",
-      "action": "get_controller_name",
-      "alias": "",
-      "description": ""
+      "action": "get_controller_name"
     },
     {
       "category": "controllers",
-      "action": "get_controller_screen",
-      "alias": "",
-      "description": ""
+      "action": "get_controller_screen"
     },
     {
       "category": "controllers",
-      "action": "get_denon_cuepoints",
-      "alias": "",
-      "description": ""
+      "action": "get_denon_cuepoints"
     },
     {
       "category": "controllers",
-      "action": "get_denon_platter",
-      "alias": "",
-      "description": ""
+      "action": "get_denon_platter"
     },
     {
       "category": "controllers",
-      "action": "get_display",
-      "alias": "",
-      "description": ""
+      "action": "get_display"
     },
     {
       "category": "controllers",
-      "action": "get_gemini_display",
-      "alias": "",
-      "description": ""
+      "action": "get_gemini_display"
     },
     {
       "category": "controllers",
-      "action": "get_gemini_waveform",
-      "alias": "",
-      "description": ""
+      "action": "get_gemini_waveform"
     },
     {
       "category": "controllers",
-      "action": "get_ns7_platter",
-      "alias": "",
-      "description": ""
+      "action": "get_ns7_platter"
     },
     {
       "category": "controllers",
-      "action": "get_numark_beatgrid",
-      "alias": "",
-      "description": ""
+      "action": "get_numark_beatgrid"
     },
     {
       "category": "controllers",
-      "action": "get_numark_songpos",
-      "alias": "",
-      "description": ""
+      "action": "get_numark_songpos"
     },
     {
       "category": "controllers",
-      "action": "get_numark_waveform",
-      "alias": "",
-      "description": ""
+      "action": "get_numark_waveform"
     },
     {
       "category": "controllers",
-      "action": "get_pioneer_display",
-      "alias": "",
-      "description": ""
+      "action": "get_pioneer_display"
     },
     {
       "category": "controllers",
-      "action": "get_pioneer_loop_display",
-      "alias": "",
-      "description": ""
+      "action": "get_pioneer_loop_display"
     },
     {
       "category": "controllers",
-      "action": "get_rotation_cue",
-      "alias": "",
-      "description": ""
+      "action": "get_rotation_cue"
     },
     {
       "category": "controllers",
-      "action": "get_rotation_slip",
-      "alias": "",
-      "description": ""
+      "action": "get_rotation_slip"
     },
     {
       "category": "controllers",
-      "action": "invert_controllers",
-      "alias": "",
-      "description": ""
+      "action": "invert_controllers"
     },
     {
       "category": "controllers",
-      "action": "keyboard_shortcuts",
-      "alias": "",
-      "description": ""
+      "action": "keyboard_shortcuts"
     },
     {
       "category": "controllers",
-      "action": "menu",
-      "alias": "",
-      "description": ""
+      "action": "menu"
     },
     {
       "category": "controllers",
-      "action": "menu_button",
-      "alias": "",
-      "description": ""
+      "action": "menu_button"
     },
     {
       "category": "controllers",
-      "action": "menu_cycledisplay",
-      "alias": "",
-      "description": ""
+      "action": "menu_cycledisplay"
     },
     {
       "category": "controllers",
-      "action": "midiclock_active",
-      "alias": "",
-      "description": ""
+      "action": "midiclock_active"
     },
     {
       "category": "controllers",
-      "action": "miditovst_active",
-      "alias": "",
-      "description": ""
+      "action": "miditovst_active"
     },
     {
       "category": "controllers",
-      "action": "mixer_order",
-      "alias": "",
-      "description": ""
+      "action": "mixer_order"
     },
     {
       "category": "controllers",
-      "action": "motor_switch",
-      "alias": "",
-      "description": ""
+      "action": "motor_switch"
     },
     {
       "category": "controllers",
-      "action": "motorwheel_instant_play",
-      "alias": "",
-      "description": ""
+      "action": "motorwheel_instant_play"
     },
     {
       "category": "controllers",
-      "action": "ns7_platter",
-      "alias": "",
-      "description": ""
+      "action": "ns7_platter"
     },
     {
       "category": "controllers",
-      "action": "numark_waveform_zoom",
-      "alias": "",
-      "description": ""
+      "action": "numark_waveform_zoom"
     },
     {
       "category": "controllers",
-      "action": "os2l_button",
-      "alias": "",
-      "description": ""
+      "action": "os2l_button"
     },
     {
       "category": "controllers",
-      "action": "os2l_cmd",
-      "alias": "",
-      "description": ""
+      "action": "os2l_cmd"
     },
     {
       "category": "controllers",
-      "action": "os2l_info",
-      "alias": "",
-      "description": ""
+      "action": "os2l_info"
     },
     {
       "category": "controllers",
-      "action": "os2l_scene",
-      "alias": "",
-      "description": ""
+      "action": "os2l_scene"
     },
     {
       "category": "controllers",
-      "action": "phase_movement",
-      "alias": "",
-      "description": ""
+      "action": "phase_movement"
     },
     {
       "category": "controllers",
-      "action": "phase_position",
-      "alias": "",
-      "description": ""
+      "action": "phase_position"
     },
     {
       "category": "controllers",
-      "action": "pioneer_cue",
-      "alias": "",
-      "description": ""
+      "action": "pioneer_cue"
     },
     {
       "category": "controllers",
-      "action": "pioneer_play",
-      "alias": "",
-      "description": ""
+      "action": "pioneer_play"
     },
     {
       "category": "controllers",
-      "action": "refresh_controller",
-      "alias": "",
-      "description": ""
+      "action": "refresh_controller"
     },
     {
       "category": "controllers",
-      "action": "reinit_controller",
-      "alias": "",
-      "description": ""
+      "action": "reinit_controller"
     },
     {
       "category": "controllers",
-      "action": "rescan_controllers",
-      "alias": "",
-      "description": ""
+      "action": "rescan_controllers"
     },
     {
       "category": "controllers",
-      "action": "rzx_touch",
-      "alias": "",
-      "description": ""
+      "action": "rzx_touch"
     },
     {
       "category": "controllers",
-      "action": "rzx_touch_x",
-      "alias": "",
-      "description": ""
+      "action": "rzx_touch_x"
     },
     {
       "category": "controllers",
-      "action": "rzx_touch_y",
-      "alias": "",
-      "description": ""
+      "action": "rzx_touch_y"
     },
     {
       "category": "controllers",
-      "action": "select_master_output",
-      "alias": "",
-      "description": ""
+      "action": "select_master_output"
     },
     {
       "category": "controllers",
-      "action": "set_deck",
-      "alias": "",
-      "description": ""
+      "action": "set_deck"
     },
     {
       "category": "controllers",
-      "action": "shift",
-      "alias": "",
-      "description": ""
+      "action": "shift"
     },
     {
       "category": "controllers",
-      "action": "show_text",
-      "alias": "",
-      "description": ""
+      "action": "show_text"
     },
     {
       "category": "controllers",
-      "action": "v7_status",
-      "alias": "",
-      "description": ""
+      "action": "v7_status"
     },
     {
       "category": "cues",
-      "action": "cue",
-      "alias": "",
-      "description": ""
+      "action": "cue"
     },
     {
       "category": "cues",
-      "action": "cue_action",
-      "alias": "",
-      "description": ""
+      "action": "cue_action"
     },
     {
       "category": "cues",
       "action": "cue_button",
-      "alias": "cue_3button",
-      "description": ""
+      "alias": "cue_3button"
     },
     {
       "category": "cues",
-      "action": "cue_color",
-      "alias": "",
-      "description": ""
+      "action": "cue_color"
     },
     {
       "category": "cues",
-      "action": "cue_countdown",
-      "alias": "",
-      "description": ""
+      "action": "cue_countdown"
     },
     {
       "category": "cues",
-      "action": "cue_counter",
-      "alias": "",
-      "description": ""
+      "action": "cue_counter"
     },
     {
       "category": "cues",
-      "action": "cue_countup",
-      "alias": "",
-      "description": ""
+      "action": "cue_countup"
     },
     {
       "category": "cues",
-      "action": "cue_cup",
-      "alias": "",
-      "description": ""
+      "action": "cue_cup"
     },
     {
       "category": "cues",
-      "action": "cue_display",
-      "alias": "",
-      "description": ""
+      "action": "cue_display"
     },
     {
       "category": "cues",
-      "action": "cue_loop",
-      "alias": "",
-      "description": ""
+      "action": "cue_loop"
     },
     {
       "category": "cues",
-      "action": "cue_loop_autosync",
-      "alias": "",
-      "description": ""
+      "action": "cue_loop_autosync"
     },
     {
       "category": "cues",
-      "action": "cue_loop_hold",
-      "alias": "",
-      "description": ""
+      "action": "cue_loop_hold"
     },
     {
       "category": "cues",
-      "action": "cue_name",
-      "alias": "",
-      "description": ""
+      "action": "cue_name"
     },
     {
       "category": "cues",
-      "action": "cue_play",
-      "alias": "",
-      "description": ""
+      "action": "cue_play"
     },
     {
       "category": "cues",
-      "action": "cue_pos",
-      "alias": "",
-      "description": ""
+      "action": "cue_pos"
     },
     {
       "category": "cues",
-      "action": "cue_select",
-      "alias": "",
-      "description": ""
+      "action": "cue_select"
     },
     {
       "category": "cues",
-      "action": "cue_stop",
-      "alias": "",
-      "description": ""
+      "action": "cue_stop"
     },
     {
       "category": "cues",
-      "action": "cues_options",
-      "alias": "",
-      "description": ""
+      "action": "cues_options"
     },
     {
       "category": "cues",
-      "action": "delete_cue",
-      "alias": "",
-      "description": ""
+      "action": "delete_cue"
     },
     {
       "category": "cues",
-      "action": "get_cue",
-      "alias": "",
-      "description": ""
+      "action": "get_cue"
     },
     {
       "category": "cues",
-      "action": "goto_cue",
-      "alias": "",
-      "description": ""
+      "action": "goto_cue"
     },
     {
       "category": "cues",
-      "action": "has_cue",
-      "alias": "",
-      "description": ""
+      "action": "has_cue"
     },
     {
       "category": "cues",
       "action": "hot_cue",
-      "alias": "hotcue",
-      "description": ""
+      "alias": "hotcue"
     },
     {
       "category": "cues",
-      "action": "lock_cues",
-      "alias": "",
-      "description": ""
+      "action": "lock_cues"
     },
     {
       "category": "cues",
-      "action": "set_cue",
-      "alias": "",
-      "description": ""
+      "action": "set_cue"
     },
     {
       "category": "cues",
-      "action": "shift_all_cues",
-      "alias": "",
-      "description": ""
+      "action": "shift_all_cues"
     },
     {
       "category": "cues",
-      "action": "silent_cue",
-      "alias": "",
-      "description": ""
+      "action": "silent_cue"
     },
     {
       "category": "cues",
-      "action": "sort_cues",
-      "alias": "",
-      "description": ""
+      "action": "sort_cues"
     },
     {
       "category": "deck_select",
-      "action": "cross_assign",
-      "alias": "",
-      "description": ""
+      "action": "cross_assign"
     },
     {
       "category": "deck_select",
-      "action": "get_deck_color",
-      "alias": "",
-      "description": ""
+      "action": "get_deck_color"
     },
     {
       "category": "deck_select",
-      "action": "invert_deck",
-      "alias": "",
-      "description": ""
+      "action": "invert_deck"
     },
     {
       "category": "deck_select",
-      "action": "leftcross",
-      "alias": "",
-      "description": ""
+      "action": "leftcross"
     },
     {
       "category": "deck_select",
-      "action": "leftdeck",
-      "alias": "",
-      "description": ""
+      "action": "leftdeck"
     },
     {
       "category": "deck_select",
-      "action": "masterdeck",
-      "alias": "",
-      "description": ""
+      "action": "masterdeck"
     },
     {
       "category": "deck_select",
-      "action": "masterdeck_auto",
-      "alias": "",
-      "description": ""
+      "action": "masterdeck_auto"
     },
     {
       "category": "deck_select",
-      "action": "pfl",
-      "alias": "",
-      "description": ""
+      "action": "pfl"
     },
     {
       "category": "deck_select",
-      "action": "rightcross",
-      "alias": "",
-      "description": ""
+      "action": "rightcross"
     },
     {
       "category": "deck_select",
-      "action": "rightdeck",
-      "alias": "",
-      "description": ""
+      "action": "rightdeck"
     },
     {
       "category": "deck_select",
-      "action": "select",
-      "alias": "",
-      "description": ""
+      "action": "select"
     },
     {
       "category": "equalizer",
-      "action": "eq_crossfader_high",
-      "alias": "",
-      "description": ""
+      "action": "eq_crossfader_high"
     },
     {
       "category": "equalizer",
-      "action": "eq_crossfader_low",
-      "alias": "",
-      "description": ""
+      "action": "eq_crossfader_low"
     },
     {
       "category": "equalizer",
       "action": "eq_crossfader_mid",
-      "alias": "eq_crossfader_med",
-      "description": ""
+      "alias": "eq_crossfader_med"
     },
     {
       "category": "equalizer",
       "action": "eq_high",
-      "alias": "eq_high_slider",
-      "description": ""
+      "alias": "eq_high_slider"
     },
     {
       "category": "equalizer",
-      "action": "eq_high_freq",
-      "alias": "",
-      "description": ""
+      "action": "eq_high_freq"
     },
     {
       "category": "equalizer",
-      "action": "eq_kill_high",
-      "alias": "",
-      "description": ""
+      "action": "eq_kill_high"
     },
     {
       "category": "equalizer",
-      "action": "eq_kill_low",
-      "alias": "",
-      "description": ""
+      "action": "eq_kill_low"
     },
     {
       "category": "equalizer",
       "action": "eq_kill_mid",
-      "alias": "eq_kill_med",
-      "description": ""
+      "alias": "eq_kill_med"
     },
     {
       "category": "equalizer",
       "action": "eq_low",
-      "alias": "eq_low_slider",
-      "description": ""
+      "alias": "eq_low_slider"
     },
     {
       "category": "equalizer",
-      "action": "eq_low_freq",
-      "alias": "",
-      "description": ""
+      "action": "eq_low_freq"
     },
     {
       "category": "equalizer",
       "action": "eq_mid",
-      "alias": "eq_med|eq_mid_slider",
-      "description": ""
+      "alias": "eq_med\neq_mid_slider"
     },
     {
       "category": "equalizer",
-      "action": "eq_mid_freq",
-      "alias": "",
-      "description": ""
+      "action": "eq_mid_freq"
     },
     {
       "category": "equalizer",
-      "action": "eq_mode",
-      "alias": "",
-      "description": ""
+      "action": "eq_mode"
     },
     {
       "category": "equalizer",
-      "action": "eq_reset",
-      "alias": "",
-      "description": ""
+      "action": "eq_reset"
     },
     {
       "category": "equalizer",
       "action": "filter",
-      "alias": "filter_slider",
-      "description": ""
+      "alias": "filter_slider"
     },
     {
       "category": "equalizer",
-      "action": "filter_activate",
-      "alias": "",
-      "description": ""
+      "action": "filter_activate"
     },
     {
       "category": "equalizer",
-      "action": "filter_label",
-      "alias": "",
-      "description": ""
+      "action": "filter_label"
     },
     {
       "category": "equalizer",
-      "action": "filter_resonance",
-      "alias": "",
-      "description": ""
+      "action": "filter_resonance"
     },
     {
       "category": "equalizer",
-      "action": "filter_selectcolorfx",
-      "alias": "",
-      "description": ""
+      "action": "filter_selectcolorfx"
     },
     {
       "category": "equalizer",
-      "action": "has_stems",
-      "alias": "",
-      "description": ""
+      "action": "has_stems"
     },
     {
       "category": "equalizer",
-      "action": "high_label",
-      "alias": "",
-      "description": ""
+      "action": "high_label"
     },
     {
       "category": "equalizer",
-      "action": "low_label",
-      "alias": "",
-      "description": ""
+      "action": "low_label"
     },
     {
       "category": "equalizer",
-      "action": "mid_label",
-      "alias": "",
-      "description": ""
+      "action": "mid_label"
     },
     {
       "category": "equalizer",
-      "action": "mute_stem",
-      "alias": "",
-      "description": ""
+      "action": "mute_stem"
     },
     {
       "category": "equalizer",
-      "action": "only_stem",
-      "alias": "",
-      "description": ""
+      "action": "only_stem"
     },
     {
       "category": "equalizer",
-      "action": "stem",
-      "alias": "",
-      "description": ""
+      "action": "stem"
     },
     {
       "category": "equalizer",
-      "action": "stem_color",
-      "alias": "",
-      "description": ""
+      "action": "stem_color"
     },
     {
       "category": "equalizer",
-      "action": "stem_pad",
-      "alias": "",
-      "description": ""
+      "action": "stem_pad"
     },
     {
       "category": "equalizer",
-      "action": "stems_bleed",
-      "alias": "",
-      "description": ""
+      "action": "stems_bleed"
     },
     {
       "category": "get",
-      "action": "browsed_song",
-      "alias": "",
-      "description": ""
+      "action": "browsed_song"
     },
     {
       "category": "get",
-      "action": "browsed_song_hashtag",
-      "alias": "",
-      "description": ""
+      "action": "browsed_song_hashtag"
     },
     {
       "category": "get",
-      "action": "get_activedeck",
-      "alias": "",
-      "description": ""
+      "action": "get_activedeck"
     },
     {
       "category": "get",
-      "action": "get_album",
-      "alias": "",
-      "description": ""
+      "action": "get_album"
     },
     {
       "category": "get",
-      "action": "get_arm",
-      "alias": "",
-      "description": ""
+      "action": "get_arm"
     },
     {
       "category": "get",
-      "action": "get_artist",
-      "alias": "",
-      "description": ""
+      "action": "get_artist"
     },
     {
       "category": "get",
-      "action": "get_artist_before_feat",
-      "alias": "",
-      "description": ""
+      "action": "get_artist_before_feat"
     },
     {
       "category": "get",
-      "action": "get_artist_title",
-      "alias": "",
-      "description": ""
+      "action": "get_artist_title"
     },
     {
       "category": "get",
-      "action": "get_artist_title_separator",
-      "alias": "",
-      "description": ""
+      "action": "get_artist_title_separator"
     },
     {
       "category": "get",
-      "action": "get_askthedj",
-      "alias": "",
-      "description": ""
+      "action": "get_askthedj"
     },
     {
       "category": "get",
-      "action": "get_askthedj_unread",
-      "alias": "",
-      "description": ""
+      "action": "get_askthedj_unread"
     },
     {
       "category": "get",
-      "action": "get_automix",
-      "alias": "",
-      "description": ""
+      "action": "get_automix"
     },
     {
       "category": "get",
-      "action": "get_bar",
-      "alias": "",
-      "description": ""
+      "action": "get_bar"
     },
     {
       "category": "get",
-      "action": "get_beat",
-      "alias": "",
-      "description": ""
+      "action": "get_beat"
     },
     {
       "category": "get",
-      "action": "get_beat2",
-      "alias": "",
-      "description": ""
+      "action": "get_beat2"
     },
     {
       "category": "get",
-      "action": "get_beat_bar",
-      "alias": "",
-      "description": ""
+      "action": "get_beat_bar"
     },
     {
       "category": "get",
-      "action": "get_beat_counter",
-      "alias": "",
-      "description": ""
+      "action": "get_beat_counter"
     },
     {
       "category": "get",
-      "action": "get_beat_num",
-      "alias": "",
-      "description": ""
+      "action": "get_beat_num"
     },
     {
       "category": "get",
-      "action": "get_beatdiff",
-      "alias": "",
-      "description": ""
+      "action": "get_beatdiff"
     },
     {
       "category": "get",
-      "action": "get_beatgrid",
-      "alias": "",
-      "description": ""
+      "action": "get_beatgrid"
     },
     {
       "category": "get",
-      "action": "get_beatpos",
-      "alias": "",
-      "description": ""
+      "action": "get_beatpos"
     },
     {
       "category": "get",
-      "action": "get_bpm",
-      "alias": "",
-      "description": ""
+      "action": "get_bpm"
     },
     {
       "category": "get",
-      "action": "get_browsed_album",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_album"
     },
     {
       "category": "get",
-      "action": "get_browsed_artist",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_artist"
     },
     {
       "category": "get",
-      "action": "get_browsed_artist_title",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_artist_title"
     },
     {
       "category": "get",
-      "action": "get_browsed_bpm",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_bpm"
     },
     {
       "category": "get",
-      "action": "get_browsed_color",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_color"
     },
     {
       "category": "get",
-      "action": "get_browsed_comment",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_comment"
     },
     {
       "category": "get",
-      "action": "get_browsed_composer",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_composer"
     },
     {
       "category": "get",
-      "action": "get_browsed_filepath",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_filepath"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder_icon",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder_icon"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder_path",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder_path"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder_scrollpos",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder_scrollpos"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder_scrollsize",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder_scrollsize"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder_selection_index",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder_selection_index"
     },
     {
       "category": "get",
-      "action": "get_browsed_folder_tab",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_folder_tab"
     },
     {
       "category": "get",
-      "action": "get_browsed_genre",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_genre"
     },
     {
       "category": "get",
-      "action": "get_browsed_header",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_header"
     },
     {
       "category": "get",
-      "action": "get_browsed_key",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_key"
     },
     {
       "category": "get",
-      "action": "get_browsed_scrollpos",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_scrollpos"
     },
     {
       "category": "get",
-      "action": "get_browsed_scrollsize",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_scrollsize"
     },
     {
       "category": "get",
-      "action": "get_browsed_selection_index",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_selection_index"
     },
     {
       "category": "get",
-      "action": "get_browsed_song",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_song"
     },
     {
       "category": "get",
-      "action": "get_browsed_title",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_title"
     },
     {
       "category": "get",
-      "action": "get_browsed_title_artist",
-      "alias": "",
-      "description": ""
+      "action": "get_browsed_title_artist"
     },
     {
       "category": "get",
-      "action": "get_build",
-      "alias": "",
-      "description": ""
+      "action": "get_build"
     },
     {
       "category": "get",
-      "action": "get_comment",
-      "alias": "",
-      "description": ""
+      "action": "get_comment"
     },
     {
       "category": "get",
-      "action": "get_composer",
-      "alias": "",
-      "description": ""
+      "action": "get_composer"
     },
     {
       "category": "get",
-      "action": "get_custom_text",
-      "alias": "",
-      "description": ""
+      "action": "get_custom_text"
     },
     {
       "category": "get",
-      "action": "get_deck",
-      "alias": "",
-      "description": ""
+      "action": "get_deck"
     },
     {
       "category": "get",
-      "action": "get_deck_analysis",
-      "alias": "",
-      "description": ""
+      "action": "get_deck_analysis"
     },
     {
       "category": "get",
-      "action": "get_deck_letter",
-      "alias": "",
-      "description": ""
+      "action": "get_deck_letter"
     },
     {
       "category": "get",
-      "action": "get_decks",
-      "alias": "",
-      "description": ""
+      "action": "get_decks"
     },
     {
       "category": "get",
-      "action": "get_defaultdeck",
-      "alias": "",
-      "description": ""
+      "action": "get_defaultdeck"
     },
     {
       "category": "get",
-      "action": "get_featuring_after_artist",
-      "alias": "",
-      "description": ""
+      "action": "get_featuring_after_artist"
     },
     {
       "category": "get",
-      "action": "get_filename",
-      "alias": "",
-      "description": ""
+      "action": "get_filename"
     },
     {
       "category": "get",
-      "action": "get_filepath",
-      "alias": "",
-      "description": ""
+      "action": "get_filepath"
     },
     {
       "category": "get",
-      "action": "get_filesize",
-      "alias": "",
-      "description": ""
+      "action": "get_filesize"
     },
     {
       "category": "get",
-      "action": "get_firstbeat",
-      "alias": "",
-      "description": ""
+      "action": "get_firstbeat"
     },
     {
       "category": "get",
-      "action": "get_firstbeat_local",
-      "alias": "",
-      "description": ""
+      "action": "get_firstbeat_local"
     },
     {
       "category": "get",
-      "action": "get_genre",
-      "alias": "",
-      "description": ""
+      "action": "get_genre"
     },
     {
       "category": "get",
       "action": "get_hasheadphones",
-      "alias": "get_hasheadphone",
-      "description": ""
+      "alias": "get_hasheadphone"
     },
     {
       "category": "get",
-      "action": "get_hasinput",
-      "alias": "",
-      "description": ""
+      "action": "get_hasinput"
     },
     {
       "category": "get",
-      "action": "get_haslinein",
-      "alias": "",
-      "description": ""
+      "action": "get_haslinein"
     },
     {
       "category": "get",
-      "action": "get_hasmaster",
-      "alias": "",
-      "description": ""
+      "action": "get_hasmaster"
     },
     {
       "category": "get",
-      "action": "get_hasmic",
-      "alias": "",
-      "description": ""
+      "action": "get_hasmic"
     },
     {
       "category": "get",
-      "action": "get_hwnd",
-      "alias": "",
-      "description": ""
+      "action": "get_hwnd"
     },
     {
       "category": "get",
-      "action": "get_leftdeck",
-      "alias": "",
-      "description": ""
+      "action": "get_leftdeck"
     },
     {
       "category": "get",
-      "action": "get_license",
-      "alias": "",
-      "description": ""
+      "action": "get_license"
     },
     {
       "category": "get",
-      "action": "get_loaded_song",
-      "alias": "",
-      "description": ""
+      "action": "get_loaded_song"
     },
     {
       "category": "get",
-      "action": "get_loaded_song_color",
-      "alias": "",
-      "description": ""
+      "action": "get_loaded_song_color"
     },
     {
       "category": "get",
-      "action": "get_membership",
-      "alias": "",
-      "description": ""
+      "action": "get_membership"
     },
     {
       "category": "get",
-      "action": "get_phrase_num",
-      "alias": "",
-      "description": ""
+      "action": "get_phrase_num"
     },
     {
       "category": "get",
-      "action": "get_plugindeck",
-      "alias": "",
-      "description": ""
+      "action": "get_plugindeck"
     },
     {
       "category": "get",
-      "action": "get_position",
-      "alias": "",
-      "description": ""
+      "action": "get_position"
     },
     {
       "category": "get",
-      "action": "get_record_message",
-      "alias": "",
-      "description": ""
+      "action": "get_record_message"
     },
     {
       "category": "get",
-      "action": "get_record_min",
-      "alias": "",
-      "description": ""
+      "action": "get_record_min"
     },
     {
       "category": "get",
-      "action": "get_record_ms",
-      "alias": "",
-      "description": ""
+      "action": "get_record_ms"
     },
     {
       "category": "get",
-      "action": "get_record_msf",
-      "alias": "",
-      "description": ""
+      "action": "get_record_msf"
     },
     {
       "category": "get",
-      "action": "get_record_sec",
-      "alias": "",
-      "description": ""
+      "action": "get_record_sec"
     },
     {
       "category": "get",
-      "action": "get_record_size",
-      "alias": "",
-      "description": ""
+      "action": "get_record_size"
     },
     {
       "category": "get",
-      "action": "get_record_time",
-      "alias": "",
-      "description": ""
+      "action": "get_record_time"
     },
     {
       "category": "get",
-      "action": "get_remix_after_title",
-      "alias": "",
-      "description": ""
+      "action": "get_remix_after_title"
     },
     {
       "category": "get",
-      "action": "get_rightdeck",
-      "alias": "",
-      "description": ""
+      "action": "get_rightdeck"
     },
     {
       "category": "get",
-      "action": "get_rotation",
-      "alias": "",
-      "description": ""
+      "action": "get_rotation"
     },
     {
       "category": "get",
-      "action": "get_song_event",
-      "alias": "",
-      "description": ""
+      "action": "get_song_event"
     },
     {
       "category": "get",
-      "action": "get_songlength",
-      "alias": "",
-      "description": ""
+      "action": "get_songlength"
     },
     {
       "category": "get",
-      "action": "get_spectrum_band",
-      "alias": "",
-      "description": ""
+      "action": "get_spectrum_band"
     },
     {
       "category": "get",
-      "action": "get_time",
-      "alias": "",
-      "description": ""
+      "action": "get_time"
     },
     {
       "category": "get",
-      "action": "get_time_hour",
-      "alias": "",
-      "description": ""
+      "action": "get_time_hour"
     },
     {
       "category": "get",
-      "action": "get_time_min",
-      "alias": "",
-      "description": ""
+      "action": "get_time_min"
     },
     {
       "category": "get",
-      "action": "get_time_ms",
-      "alias": "",
-      "description": ""
+      "action": "get_time_ms"
     },
     {
       "category": "get",
-      "action": "get_time_msf",
-      "alias": "",
-      "description": ""
+      "action": "get_time_msf"
     },
     {
       "category": "get",
-      "action": "get_time_sec",
-      "alias": "",
-      "description": ""
+      "action": "get_time_sec"
     },
     {
       "category": "get",
-      "action": "get_time_sign",
-      "alias": "",
-      "description": ""
+      "action": "get_time_sign"
     },
     {
       "category": "get",
-      "action": "get_title",
-      "alias": "",
-      "description": ""
+      "action": "get_title"
     },
     {
       "category": "get",
-      "action": "get_title_artist",
-      "alias": "",
-      "description": ""
+      "action": "get_title_artist"
     },
     {
       "category": "get",
-      "action": "get_title_before_remix",
-      "alias": "",
-      "description": ""
+      "action": "get_title_before_remix"
     },
     {
       "category": "get",
-      "action": "get_title_remix",
-      "alias": "",
-      "description": ""
+      "action": "get_title_remix"
     },
     {
       "category": "get",
-      "action": "get_totaltime_min",
-      "alias": "",
-      "description": ""
+      "action": "get_totaltime_min"
     },
     {
       "category": "get",
-      "action": "get_totaltime_ms",
-      "alias": "",
-      "description": ""
+      "action": "get_totaltime_ms"
     },
     {
       "category": "get",
-      "action": "get_totaltime_msf",
-      "alias": "",
-      "description": ""
+      "action": "get_totaltime_msf"
     },
     {
       "category": "get",
-      "action": "get_totaltime_sec",
-      "alias": "",
-      "description": ""
+      "action": "get_totaltime_sec"
     },
     {
       "category": "get",
-      "action": "get_username",
-      "alias": "",
-      "description": ""
+      "action": "get_username"
     },
     {
       "category": "get",
-      "action": "get_vdj_folder",
-      "alias": "",
-      "description": ""
+      "action": "get_vdj_folder"
     },
     {
       "category": "get",
-      "action": "get_version",
-      "alias": "",
-      "description": ""
+      "action": "get_version"
     },
     {
       "category": "get",
-      "action": "get_volume",
-      "alias": "",
-      "description": ""
+      "action": "get_volume"
     },
     {
       "category": "get",
-      "action": "get_year",
-      "alias": "",
-      "description": ""
+      "action": "get_year"
     },
     {
       "category": "get",
-      "action": "has_aux",
-      "alias": "",
-      "description": ""
+      "action": "has_aux"
     },
     {
       "category": "get",
-      "action": "loaded_song",
-      "alias": "",
-      "description": ""
+      "action": "loaded_song"
     },
     {
       "category": "get",
-      "action": "loaded_song_hashtag",
-      "alias": "",
-      "description": ""
+      "action": "loaded_song_hashtag"
     },
     {
       "category": "get",
-      "action": "prelisten_info",
-      "alias": "",
-      "description": ""
+      "action": "prelisten_info"
     },
     {
       "category": "karaoke",
-      "action": "get_karaoke_background_song",
-      "alias": "",
-      "description": ""
+      "action": "get_karaoke_background_song"
     },
     {
       "category": "karaoke",
-      "action": "get_next_karaoke_song",
-      "alias": "",
-      "description": ""
+      "action": "get_next_karaoke_song"
     },
     {
       "category": "karaoke",
-      "action": "has_karaoke_next",
-      "alias": "",
-      "description": ""
+      "action": "has_karaoke_next"
     },
     {
       "category": "karaoke",
-      "action": "is_karaoke_idle",
-      "alias": "",
-      "description": ""
+      "action": "is_karaoke_idle"
     },
     {
       "category": "karaoke",
-      "action": "is_karaoke_playing",
-      "alias": "",
-      "description": ""
+      "action": "is_karaoke_playing"
     },
     {
       "category": "karaoke",
-      "action": "karaoke",
-      "alias": "",
-      "description": ""
+      "action": "karaoke"
     },
     {
       "category": "karaoke",
-      "action": "karaoke_options",
-      "alias": "",
-      "description": ""
+      "action": "karaoke_options"
     },
     {
       "category": "karaoke",
-      "action": "karaoke_show",
-      "alias": "",
-      "description": ""
+      "action": "karaoke_show"
     },
     {
       "category": "karaoke",
-      "action": "karaoke_venue_name",
-      "alias": "",
-      "description": ""
+      "action": "karaoke_venue_name"
     },
     {
       "category": "key",
-      "action": "get_harmonic",
-      "alias": "",
-      "description": ""
+      "action": "get_harmonic"
     },
     {
       "category": "key",
-      "action": "get_key",
-      "alias": "",
-      "description": ""
+      "action": "get_key"
     },
     {
       "category": "key",
-      "action": "get_key_color",
-      "alias": "",
-      "description": ""
+      "action": "get_key_color"
     },
     {
       "category": "key",
-      "action": "get_key_modifier",
-      "alias": "",
-      "description": ""
+      "action": "get_key_modifier"
     },
     {
       "category": "key",
-      "action": "get_key_modifier_text",
-      "alias": "",
-      "description": ""
+      "action": "get_key_modifier_text"
     },
     {
       "category": "key",
-      "action": "key",
-      "alias": "",
-      "description": ""
+      "action": "key"
     },
     {
       "category": "key",
       "action": "key_lock",
-      "alias": "keylock",
-      "description": ""
+      "alias": "keylock"
     },
     {
       "category": "key",
-      "action": "key_match_button",
-      "alias": "",
-      "description": ""
+      "action": "key_match_button"
     },
     {
       "category": "key",
-      "action": "key_match_menu",
-      "alias": "",
-      "description": ""
+      "action": "key_match_menu"
     },
     {
       "category": "key",
-      "action": "key_move",
-      "alias": "",
-      "description": ""
+      "action": "key_move"
     },
     {
       "category": "key",
-      "action": "key_smooth",
-      "alias": "",
-      "description": ""
+      "action": "key_smooth"
     },
     {
       "category": "key",
-      "action": "keycue_pad",
-      "alias": "",
-      "description": ""
+      "action": "keycue_pad"
     },
     {
       "category": "key",
-      "action": "keycue_pad_color",
-      "alias": "",
-      "description": ""
+      "action": "keycue_pad_color"
     },
     {
       "category": "key",
-      "action": "keycue_pad_jump",
-      "alias": "",
-      "description": ""
+      "action": "keycue_pad_jump"
     },
     {
       "category": "key",
-      "action": "keycue_pad_page",
-      "alias": "",
-      "description": ""
+      "action": "keycue_pad_page"
     },
     {
       "category": "key",
-      "action": "match_key",
-      "alias": "",
-      "description": ""
+      "action": "match_key"
     },
     {
       "category": "key",
-      "action": "set_key",
-      "alias": "",
-      "description": ""
+      "action": "set_key"
     },
     {
       "category": "loop",
-      "action": "get_active_loop",
-      "alias": "",
-      "description": ""
+      "action": "get_active_loop"
     },
     {
       "category": "loop",
-      "action": "get_loop",
-      "alias": "",
-      "description": ""
+      "action": "get_loop"
     },
     {
       "category": "loop",
-      "action": "get_loop_in_time",
-      "alias": "",
-      "description": ""
+      "action": "get_loop_in_time"
     },
     {
       "category": "loop",
-      "action": "get_loop_out_time",
-      "alias": "",
-      "description": ""
+      "action": "get_loop_out_time"
     },
     {
       "category": "loop",
-      "action": "get_saved_loop",
-      "alias": "",
-      "description": ""
+      "action": "get_saved_loop"
     },
     {
       "category": "loop",
-      "action": "loop",
-      "alias": "",
-      "description": ""
+      "action": "loop"
     },
     {
       "category": "loop",
-      "action": "loop_adjust",
-      "alias": "",
-      "description": ""
+      "action": "loop_adjust"
     },
     {
       "category": "loop",
-      "action": "loop_back",
-      "alias": "",
-      "description": ""
+      "action": "loop_back"
     },
     {
       "category": "loop",
-      "action": "loop_button",
-      "alias": "",
-      "description": ""
+      "action": "loop_button"
     },
     {
       "category": "loop",
-      "action": "loop_color",
-      "alias": "",
-      "description": ""
+      "action": "loop_color"
     },
     {
       "category": "loop",
-      "action": "loop_delete",
-      "alias": "",
-      "description": ""
+      "action": "loop_delete"
     },
     {
       "category": "loop",
-      "action": "loop_double",
-      "alias": "",
-      "description": ""
+      "action": "loop_double"
     },
     {
       "category": "loop",
-      "action": "loop_exit",
-      "alias": "",
-      "description": ""
+      "action": "loop_exit"
     },
     {
       "category": "loop",
-      "action": "loop_half",
-      "alias": "",
-      "description": ""
+      "action": "loop_half"
     },
     {
       "category": "loop",
-      "action": "loop_in",
-      "alias": "",
-      "description": ""
+      "action": "loop_in"
     },
     {
       "category": "loop",
-      "action": "loop_length",
-      "alias": "",
-      "description": ""
+      "action": "loop_length"
     },
     {
       "category": "loop",
-      "action": "loop_load",
-      "alias": "",
-      "description": ""
+      "action": "loop_load"
     },
     {
       "category": "loop",
-      "action": "loop_load_prepare",
-      "alias": "",
-      "description": ""
+      "action": "loop_load_prepare"
     },
     {
       "category": "loop",
-      "action": "loop_move",
-      "alias": "",
-      "description": ""
+      "action": "loop_move"
     },
     {
       "category": "loop",
-      "action": "loop_options",
-      "alias": "",
-      "description": ""
+      "action": "loop_options"
     },
     {
       "category": "loop",
-      "action": "loop_out",
-      "alias": "",
-      "description": ""
+      "action": "loop_out"
     },
     {
       "category": "loop",
-      "action": "loop_pad",
-      "alias": "",
-      "description": ""
+      "action": "loop_pad"
     },
     {
       "category": "loop",
-      "action": "loop_pad_mode",
-      "alias": "",
-      "description": ""
+      "action": "loop_pad_mode"
     },
     {
       "category": "loop",
-      "action": "loop_pad_page",
-      "alias": "",
-      "description": ""
+      "action": "loop_pad_page"
     },
     {
       "category": "loop",
-      "action": "loop_position",
-      "alias": "",
-      "description": ""
+      "action": "loop_position"
     },
     {
       "category": "loop",
-      "action": "loop_roll",
-      "alias": "",
-      "description": ""
+      "action": "loop_roll"
     },
     {
       "category": "loop",
-      "action": "loop_roll_mode",
-      "alias": "",
-      "description": ""
+      "action": "loop_roll_mode"
     },
     {
       "category": "loop",
-      "action": "loop_save",
-      "alias": "",
-      "description": ""
+      "action": "loop_save"
     },
     {
       "category": "loop",
-      "action": "loop_select",
-      "alias": "",
-      "description": ""
+      "action": "loop_select"
     },
     {
       "category": "loop",
-      "action": "pioneer_loop",
-      "alias": "",
-      "description": ""
+      "action": "pioneer_loop"
     },
     {
       "category": "loop",
-      "action": "pioneer_loop_in",
-      "alias": "",
-      "description": ""
+      "action": "pioneer_loop_in"
     },
     {
       "category": "loop",
-      "action": "pioneer_loop_out",
-      "alias": "",
-      "description": ""
+      "action": "pioneer_loop_out"
     },
     {
       "category": "loop",
-      "action": "reloop",
-      "alias": "",
-      "description": ""
+      "action": "reloop"
     },
     {
       "category": "loop",
-      "action": "reloop_exit",
-      "alias": "",
-      "description": ""
+      "action": "reloop_exit"
     },
     {
       "category": "loop",
-      "action": "repeat_song",
-      "alias": "",
-      "description": ""
+      "action": "repeat_song"
     },
     {
       "category": "loop",
-      "action": "saved_loop",
-      "alias": "",
-      "description": ""
+      "action": "saved_loop"
     },
     {
       "category": "loop",
-      "action": "saved_loop_autotrigger",
-      "alias": "",
-      "description": ""
+      "action": "saved_loop_autotrigger"
     },
     {
       "category": "loop",
-      "action": "saved_loop_display",
-      "alias": "",
-      "description": ""
+      "action": "saved_loop_display"
     },
     {
       "category": "loop",
-      "action": "saved_loop_prepare",
-      "alias": "",
-      "description": ""
+      "action": "saved_loop_prepare"
     },
     {
       "category": "loop",
-      "action": "slicer",
-      "alias": "",
-      "description": ""
+      "action": "slicer"
     },
     {
       "category": "macro",
-      "action": "macro_play",
-      "alias": "",
-      "description": ""
+      "action": "macro_play"
     },
     {
       "category": "macro",
-      "action": "macro_record",
-      "alias": "",
-      "description": ""
+      "action": "macro_record"
     },
     {
       "category": "pads",
-      "action": "pad",
-      "alias": "",
-      "description": ""
+      "action": "pad"
     },
     {
       "category": "pads",
-      "action": "pad_bank2",
-      "alias": "",
-      "description": ""
+      "action": "pad_bank2"
     },
     {
       "category": "pads",
-      "action": "pad_button_color",
-      "alias": "",
-      "description": ""
+      "action": "pad_button_color"
     },
     {
       "category": "pads",
-      "action": "pad_color",
-      "alias": "",
-      "description": ""
+      "action": "pad_color"
     },
     {
       "category": "pads",
-      "action": "pad_edit",
-      "alias": "",
-      "description": ""
+      "action": "pad_edit"
     },
     {
       "category": "pads",
-      "action": "pad_has_16pads",
-      "alias": "",
-      "description": ""
+      "action": "pad_has_16pads"
     },
     {
       "category": "pads",
-      "action": "pad_has_action",
-      "alias": "",
-      "description": ""
+      "action": "pad_has_action"
     },
     {
       "category": "pads",
-      "action": "pad_has_color",
-      "alias": "",
-      "description": ""
+      "action": "pad_has_color"
     },
     {
       "category": "pads",
-      "action": "pad_has_menu",
-      "alias": "",
-      "description": ""
+      "action": "pad_has_menu"
     },
     {
       "category": "pads",
-      "action": "pad_has_param",
-      "alias": "",
-      "description": ""
+      "action": "pad_has_param"
     },
     {
       "category": "pads",
-      "action": "pad_has_pressure",
-      "alias": "",
-      "description": ""
+      "action": "pad_has_pressure"
     },
     {
       "category": "pads",
-      "action": "pad_menu",
-      "alias": "",
-      "description": ""
+      "action": "pad_menu"
     },
     {
       "category": "pads",
       "action": "pad_page",
-      "alias": "pad_pages",
-      "description": ""
+      "alias": "pad_pages"
     },
     {
       "category": "pads",
       "action": "pad_page_select",
-      "alias": "pad_page_favorite_select",
-      "description": ""
+      "alias": "pad_page_favorite_select"
     },
     {
       "category": "pads",
-      "action": "pad_param",
-      "alias": "",
-      "description": ""
+      "action": "pad_param"
     },
     {
       "category": "pads",
-      "action": "pad_param2",
-      "alias": "",
-      "description": ""
+      "action": "pad_param2"
     },
     {
       "category": "pads",
-      "action": "pad_param_visible",
-      "alias": "",
-      "description": ""
+      "action": "pad_param_visible"
     },
     {
       "category": "pads",
-      "action": "pad_pressure",
-      "alias": "",
-      "description": ""
+      "action": "pad_pressure"
     },
     {
       "category": "pads",
-      "action": "pad_pushed",
-      "alias": "",
-      "description": ""
+      "action": "pad_pushed"
     },
     {
       "category": "pads",
-      "action": "padfx",
-      "alias": "",
-      "description": ""
+      "action": "padfx"
     },
     {
       "category": "pads",
-      "action": "padfx_single",
-      "alias": "",
-      "description": ""
+      "action": "padfx_single"
     },
     {
       "category": "pads",
-      "action": "padshift",
-      "alias": "",
-      "description": ""
+      "action": "padshift"
     },
     {
       "category": "pads",
-      "action": "padshift_button_color",
-      "alias": "",
-      "description": ""
+      "action": "padshift_button_color"
     },
     {
       "category": "pads",
-      "action": "padshift_pressure",
-      "alias": "",
-      "description": ""
+      "action": "padshift_pressure"
     },
     {
       "category": "pitch",
-      "action": "backspin",
-      "alias": "",
-      "description": ""
+      "action": "backspin"
     },
     {
       "category": "pitch",
-      "action": "brakespeed",
-      "alias": "",
-      "description": ""
+      "action": "brakespeed"
     },
     {
       "category": "pitch",
-      "action": "get_pitch",
-      "alias": "",
-      "description": ""
+      "action": "get_pitch"
     },
     {
       "category": "pitch",
-      "action": "get_pitch_value",
-      "alias": "",
-      "description": ""
+      "action": "get_pitch_value"
     },
     {
       "category": "pitch",
-      "action": "get_pitch_zero",
-      "alias": "",
-      "description": ""
+      "action": "get_pitch_zero"
     },
     {
       "category": "pitch",
-      "action": "master_tempo",
-      "alias": "",
-      "description": ""
+      "action": "master_tempo"
     },
     {
       "category": "pitch",
       "action": "pitch",
-      "alias": "pitch2|pitch2_slider|pitch_slider",
-      "description": ""
+      "alias": "pitch2|pitch2_slider|pitch_slider"
     },
     {
       "category": "pitch",
-      "action": "pitch_bend",
-      "alias": "",
-      "description": ""
+      "action": "pitch_bend"
     },
     {
       "category": "pitch",
       "action": "pitch_lock",
-      "alias": "pitchlock",
-      "description": ""
+      "alias": "pitchlock"
     },
     {
       "category": "pitch",
-      "action": "pitch_motorized",
-      "alias": "",
-      "description": ""
+      "action": "pitch_motorized"
     },
     {
       "category": "pitch",
-      "action": "pitch_range",
-      "alias": "",
-      "description": ""
+      "action": "pitch_range"
     },
     {
       "category": "pitch",
-      "action": "pitch_relative",
-      "alias": "",
-      "description": ""
+      "action": "pitch_relative"
     },
     {
       "category": "pitch",
-      "action": "pitch_reset",
-      "alias": "",
-      "description": ""
+      "action": "pitch_reset"
     },
     {
       "category": "pitch",
-      "action": "pitch_zero",
-      "alias": "",
-      "description": ""
+      "action": "pitch_zero"
     },
     {
       "category": "pitch",
-      "action": "startupspeed",
-      "alias": "",
-      "description": ""
+      "action": "startupspeed"
     },
     {
       "category": "plugins",
-      "action": "effect_3slots_layout",
-      "alias": "",
-      "description": ""
+      "action": "effect_3slots_layout"
     },
     {
       "category": "plugins",
       "action": "effect_active",
-      "alias": "effect_activate",
-      "description": ""
+      "alias": "effect_activate"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_active",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_active"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_beats",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_beats"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_bpm",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_bpm"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_deck",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_deck"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_select",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_select"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_slider",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_slider"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_slider_label",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_slider_label"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_slider_name",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_slider_name"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_slider_text",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_slider_text"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_slot",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_slot"
     },
     {
       "category": "plugins",
-      "action": "effect_arm_stem",
-      "alias": "",
-      "description": ""
+      "action": "effect_arm_stem"
     },
     {
       "category": "plugins",
-      "action": "effect_bank_load",
-      "alias": "",
-      "description": ""
+      "action": "effect_bank_load"
     },
     {
       "category": "plugins",
-      "action": "effect_bank_save",
-      "alias": "",
-      "description": ""
+      "action": "effect_bank_save"
     },
     {
       "category": "plugins",
-      "action": "effect_beats",
-      "alias": "",
-      "description": ""
+      "action": "effect_beats"
     },
     {
       "category": "plugins",
-      "action": "effect_beats_all",
-      "alias": "",
-      "description": ""
+      "action": "effect_beats_all"
     },
     {
       "category": "plugins",
-      "action": "effect_bpm_deck",
-      "alias": "",
-      "description": ""
+      "action": "effect_bpm_deck"
     },
     {
       "category": "plugins",
-      "action": "effect_bpm_deck_tap",
-      "alias": "",
-      "description": ""
+      "action": "effect_bpm_deck_tap"
     },
     {
       "category": "plugins",
-      "action": "effect_button",
-      "alias": "",
-      "description": ""
+      "action": "effect_button"
     },
     {
       "category": "plugins",
-      "action": "effect_clone",
-      "alias": "",
-      "description": ""
+      "action": "effect_clone"
     },
     {
       "category": "plugins",
-      "action": "effect_colorfx",
-      "alias": "",
-      "description": ""
+      "action": "effect_colorfx"
     },
     {
       "category": "plugins",
-      "action": "effect_colorslider",
-      "alias": "",
-      "description": ""
+      "action": "effect_colorslider"
     },
     {
       "category": "plugins",
-      "action": "effect_command",
-      "alias": "",
-      "description": ""
+      "action": "effect_command"
     },
     {
       "category": "plugins",
-      "action": "effect_disable_all",
-      "alias": "",
-      "description": ""
+      "action": "effect_disable_all"
     },
     {
       "category": "plugins",
-      "action": "effect_dock_gui",
-      "alias": "",
-      "description": ""
+      "action": "effect_dock_gui"
     },
     {
       "category": "plugins",
-      "action": "effect_has_beats",
-      "alias": "",
-      "description": ""
+      "action": "effect_has_beats"
     },
     {
       "category": "plugins",
-      "action": "effect_has_button",
-      "alias": "",
-      "description": ""
+      "action": "effect_has_button"
     },
     {
       "category": "plugins",
-      "action": "effect_has_length",
-      "alias": "",
-      "description": ""
+      "action": "effect_has_length"
     },
     {
       "category": "plugins",
-      "action": "effect_has_slider",
-      "alias": "",
-      "description": ""
+      "action": "effect_has_slider"
     },
     {
       "category": "plugins",
-      "action": "effect_mixfx",
-      "alias": "",
-      "description": ""
+      "action": "effect_mixfx"
     },
     {
       "category": "plugins",
-      "action": "effect_mixfx_activate",
-      "alias": "",
-      "description": ""
+      "action": "effect_mixfx_activate"
     },
     {
       "category": "plugins",
-      "action": "effect_mixfx_select",
-      "alias": "",
-      "description": ""
+      "action": "effect_mixfx_select"
     },
     {
       "category": "plugins",
-      "action": "effect_releaseslider",
-      "alias": "",
-      "description": ""
+      "action": "effect_releaseslider"
     },
     {
       "category": "plugins",
-      "action": "effect_releaseslider_active",
-      "alias": "",
-      "description": ""
+      "action": "effect_releaseslider_active"
     },
     {
       "category": "plugins",
-      "action": "effect_select",
-      "alias": "",
-      "description": ""
+      "action": "effect_select"
     },
     {
       "category": "plugins",
-      "action": "effect_select_multi",
-      "alias": "",
-      "description": ""
+      "action": "effect_select_multi"
     },
     {
       "category": "plugins",
-      "action": "effect_select_popup",
-      "alias": "",
-      "description": ""
+      "action": "effect_select_popup"
     },
     {
       "category": "plugins",
-      "action": "effect_select_toggle",
-      "alias": "",
-      "description": ""
+      "action": "effect_select_toggle"
     },
     {
       "category": "plugins",
-      "action": "effect_show_gui",
-      "alias": "",
-      "description": ""
+      "action": "effect_show_gui"
     },
     {
       "category": "plugins",
       "action": "effect_slider",
-      "alias": "effect_slider_slider",
-      "description": ""
+      "alias": "effect_slider_slider"
     },
     {
       "category": "plugins",
       "action": "effect_slider_active",
-      "alias": "effect_slider_activate",
-      "description": ""
+      "alias": "effect_slider_activate"
     },
     {
       "category": "plugins",
-      "action": "effect_slider_reset",
-      "alias": "",
-      "description": ""
+      "action": "effect_slider_reset"
     },
     {
       "category": "plugins",
-      "action": "effect_slider_skip_length",
-      "alias": "",
-      "description": ""
+      "action": "effect_slider_skip_length"
     },
     {
       "category": "plugins",
-      "action": "effect_stems",
-      "alias": "",
-      "description": ""
+      "action": "effect_stems"
     },
     {
       "category": "plugins",
-      "action": "effect_stems_color",
-      "alias": "",
-      "description": ""
+      "action": "effect_stems_color"
     },
     {
       "category": "plugins",
-      "action": "effects_used",
-      "alias": "",
-      "description": ""
+      "action": "effects_used"
     },
     {
       "category": "plugins",
-      "action": "get_effect_button_count",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_button_count"
     },
     {
       "category": "plugins",
-      "action": "get_effect_button_name",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_button_name"
     },
     {
       "category": "plugins",
-      "action": "get_effect_button_shortname",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_button_shortname"
     },
     {
       "category": "plugins",
-      "action": "get_effect_name",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_name"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_count",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_count"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_default",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_default"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_label",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_label"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_label_full",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_label_full"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_name",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_name"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_shortname",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_shortname"
     },
     {
       "category": "plugins",
-      "action": "get_effect_slider_text",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_slider_text"
     },
     {
       "category": "plugins",
       "action": "get_effect_string",
-      "alias": "effect_string",
-      "description": ""
+      "alias": "effect_string"
     },
     {
       "category": "plugins",
-      "action": "get_effect_string_name",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_string_name"
     },
     {
       "category": "plugins",
-      "action": "get_effect_title",
-      "alias": "",
-      "description": ""
+      "action": "get_effect_title"
     },
     {
       "category": "plugins",
-      "action": "get_effects_used",
-      "alias": "",
-      "description": ""
+      "action": "get_effects_used"
     },
     {
       "category": "plugins",
-      "action": "get_nb_multicam",
-      "alias": "",
-      "description": ""
+      "action": "get_nb_multicam"
     },
     {
       "category": "plugins",
-      "action": "get_video_fx_slider_label",
-      "alias": "",
-      "description": ""
+      "action": "get_video_fx_slider_label"
     },
     {
       "category": "plugins",
-      "action": "get_videofx_name",
-      "alias": "",
-      "description": ""
+      "action": "get_videofx_name"
     },
     {
       "category": "plugins",
-      "action": "get_videotrans_name",
-      "alias": "",
-      "description": ""
+      "action": "get_videotrans_name"
     },
     {
       "category": "plugins",
-      "action": "is_releasefx",
-      "alias": "",
-      "description": ""
+      "action": "is_releasefx"
     },
     {
       "category": "plugins",
-      "action": "pluginsongpos",
-      "alias": "",
-      "description": ""
+      "action": "pluginsongpos"
     },
     {
       "category": "plugins",
-      "action": "show_pluginpage",
-      "alias": "",
-      "description": ""
+      "action": "show_pluginpage"
     },
     {
       "category": "plugins",
-      "action": "video_fx",
-      "alias": "",
-      "description": ""
+      "action": "video_fx"
     },
     {
       "category": "plugins",
-      "action": "video_fx_button",
-      "alias": "",
-      "description": ""
+      "action": "video_fx_button"
     },
     {
       "category": "plugins",
-      "action": "video_fx_clear",
-      "alias": "",
-      "description": ""
+      "action": "video_fx_clear"
     },
     {
       "category": "plugins",
-      "action": "video_fx_select",
-      "alias": "",
-      "description": ""
+      "action": "video_fx_select"
     },
     {
       "category": "plugins",
       "action": "video_fx_slider",
-      "alias": "video_fx_slider_slider",
-      "description": ""
+      "alias": "video_fx_slider_slider"
     },
     {
       "category": "plugins",
-      "action": "video_source",
-      "alias": "",
-      "description": ""
+      "action": "video_source"
     },
     {
       "category": "plugins",
-      "action": "video_source_select",
-      "alias": "",
-      "description": ""
+      "action": "video_source_select"
     },
     {
       "category": "plugins",
-      "action": "video_transition_button",
-      "alias": "",
-      "description": ""
+      "action": "video_transition_button"
     },
     {
       "category": "plugins",
-      "action": "video_transition_select",
-      "alias": "",
-      "description": ""
+      "action": "video_transition_select"
     },
     {
       "category": "plugins",
       "action": "video_transition_slider",
-      "alias": "video_transition_slider_slider",
-      "description": ""
+      "alias": "video_transition_slider_slider"
     },
     {
       "category": "poi",
-      "action": "adjust_cbg",
-      "alias": "",
-      "description": ""
+      "action": "adjust_cbg"
     },
     {
       "category": "poi",
-      "action": "beat_tap",
-      "alias": "",
-      "description": ""
+      "action": "beat_tap"
     },
     {
       "category": "poi",
-      "action": "edit_bpm",
-      "alias": "",
-      "description": ""
+      "action": "edit_bpm"
     },
     {
       "category": "poi",
-      "action": "edit_poi",
-      "alias": "",
-      "description": ""
+      "action": "edit_poi"
     },
     {
       "category": "poi",
-      "action": "goto_mixpoint",
-      "alias": "",
-      "description": ""
+      "action": "goto_mixpoint"
     },
     {
       "category": "poi",
-      "action": "reanalyze",
-      "alias": "",
-      "description": ""
+      "action": "reanalyze"
     },
     {
       "category": "poi",
-      "action": "set_bpm",
-      "alias": "",
-      "description": ""
+      "action": "set_bpm"
     },
     {
       "category": "poi",
-      "action": "set_firstbeat",
-      "alias": "",
-      "description": ""
+      "action": "set_firstbeat"
     },
     {
       "category": "poi",
-      "action": "set_loadpoint",
-      "alias": "",
-      "description": ""
+      "action": "set_loadpoint"
     },
     {
       "category": "poi",
-      "action": "set_mixpoint",
-      "alias": "",
-      "description": ""
+      "action": "set_mixpoint"
     },
     {
       "category": "prelisten",
       "action": "prelisten",
-      "alias": "preview",
-      "description": ""
+      "alias": "preview"
     },
     {
       "category": "prelisten",
-      "action": "prelisten_options",
-      "alias": "",
-      "description": ""
+      "action": "prelisten_options"
     },
     {
       "category": "prelisten",
-      "action": "prelisten_output",
-      "alias": "",
-      "description": ""
+      "action": "prelisten_output"
     },
     {
       "category": "prelisten",
-      "action": "prelisten_pos",
-      "alias": "",
-      "description": ""
+      "action": "prelisten_pos"
     },
     {
       "category": "prelisten",
-      "action": "prelisten_stop",
-      "alias": "",
-      "description": ""
+      "action": "prelisten_stop"
     },
     {
       "category": "record",
-      "action": "broadcast",
-      "alias": "",
-      "description": ""
+      "action": "broadcast"
     },
     {
       "category": "record",
-      "action": "broadcast_message",
-      "alias": "",
-      "description": ""
+      "action": "broadcast_message"
     },
     {
       "category": "record",
-      "action": "record",
-      "alias": "",
-      "description": ""
+      "action": "record"
     },
     {
       "category": "record",
-      "action": "record_config",
-      "alias": "",
-      "description": ""
+      "action": "record_config"
     },
     {
       "category": "record",
-      "action": "record_cut",
-      "alias": "",
-      "description": ""
+      "action": "record_cut"
     },
     {
       "category": "record",
-      "action": "record_vu",
-      "alias": "",
-      "description": ""
+      "action": "record_vu"
     },
     {
       "category": "sampler",
-      "action": "get_sample_color",
-      "alias": "",
-      "description": ""
+      "action": "get_sample_color"
     },
     {
       "category": "sampler",
-      "action": "get_sample_info",
-      "alias": "",
-      "description": ""
+      "action": "get_sample_info"
     },
     {
       "category": "sampler",
       "action": "get_sample_name",
-      "alias": "get_sample_slot_name",
-      "description": ""
+      "alias": "get_sample_slot_name"
     },
     {
       "category": "sampler",
-      "action": "get_sampler_bank",
-      "alias": "",
-      "description": ""
+      "action": "get_sampler_bank"
     },
     {
       "category": "sampler",
-      "action": "get_sampler_bank_count",
-      "alias": "",
-      "description": ""
+      "action": "get_sampler_bank_count"
     },
     {
       "category": "sampler",
-      "action": "get_sampler_bank_id",
-      "alias": "",
-      "description": ""
+      "action": "get_sampler_bank_id"
     },
     {
       "category": "sampler",
-      "action": "get_sampler_count",
-      "alias": "",
-      "description": ""
+      "action": "get_sampler_count"
     },
     {
       "category": "sampler",
-      "action": "get_sampler_slot",
-      "alias": "",
-      "description": ""
+      "action": "get_sampler_slot"
     },
     {
       "category": "sampler",
-      "action": "sampler_abort_rec",
-      "alias": "",
-      "description": ""
+      "action": "sampler_abort_rec"
     },
     {
       "category": "sampler",
-      "action": "sampler_assign",
-      "alias": "",
-      "description": ""
+      "action": "sampler_assign"
     },
     {
       "category": "sampler",
-      "action": "sampler_bank",
-      "alias": "",
-      "description": ""
+      "action": "sampler_bank"
     },
     {
       "category": "sampler",
-      "action": "sampler_color",
-      "alias": "",
-      "description": ""
+      "action": "sampler_color"
     },
     {
       "category": "sampler",
-      "action": "sampler_edit",
-      "alias": "",
-      "description": ""
+      "action": "sampler_edit"
     },
     {
       "category": "sampler",
-      "action": "sampler_group_color",
-      "alias": "",
-      "description": ""
+      "action": "sampler_group_color"
     },
     {
       "category": "sampler",
-      "action": "sampler_group_mute",
-      "alias": "",
-      "description": ""
+      "action": "sampler_group_mute"
     },
     {
       "category": "sampler",
-      "action": "sampler_group_name",
-      "alias": "",
-      "description": ""
+      "action": "sampler_group_name"
     },
     {
       "category": "sampler",
-      "action": "sampler_group_volume",
-      "alias": "",
-      "description": ""
+      "action": "sampler_group_volume"
     },
     {
       "category": "sampler",
-      "action": "sampler_has_group",
-      "alias": "",
-      "description": ""
+      "action": "sampler_has_group"
     },
     {
       "category": "sampler",
-      "action": "sampler_load_to_deck",
-      "alias": "",
-      "description": ""
+      "action": "sampler_load_to_deck"
     },
     {
       "category": "sampler",
-      "action": "sampler_loaded",
-      "alias": "",
-      "description": ""
+      "action": "sampler_loaded"
     },
     {
       "category": "sampler",
-      "action": "sampler_loop",
-      "alias": "",
-      "description": ""
+      "action": "sampler_loop"
     },
     {
       "category": "sampler",
       "action": "sampler_mode",
-      "alias": "sampler_rapidfire",
-      "description": ""
+      "alias": "sampler_rapidfire"
     },
     {
       "category": "sampler",
-      "action": "sampler_mute",
-      "alias": "",
-      "description": ""
+      "action": "sampler_mute"
     },
     {
       "category": "sampler",
-      "action": "sampler_options",
-      "alias": "",
-      "description": ""
+      "action": "sampler_options"
     },
     {
       "category": "sampler",
-      "action": "sampler_output",
-      "alias": "",
-      "description": ""
+      "action": "sampler_output"
     },
     {
       "category": "sampler",
-      "action": "sampler_pad",
-      "alias": "",
-      "description": ""
+      "action": "sampler_pad"
     },
     {
       "category": "sampler",
-      "action": "sampler_pad_page",
-      "alias": "",
-      "description": ""
+      "action": "sampler_pad_page"
     },
     {
       "category": "sampler",
-      "action": "sampler_pad_shift",
-      "alias": "",
-      "description": ""
+      "action": "sampler_pad_shift"
     },
     {
       "category": "sampler",
-      "action": "sampler_pad_volume",
-      "alias": "",
-      "description": ""
+      "action": "sampler_pad_volume"
     },
     {
       "category": "sampler",
-      "action": "sampler_pfl",
-      "alias": "",
-      "description": ""
+      "action": "sampler_pfl"
     },
     {
       "category": "sampler",
-      "action": "sampler_play",
-      "alias": "",
-      "description": ""
+      "action": "sampler_play"
     },
     {
       "category": "sampler",
-      "action": "sampler_play_stop",
-      "alias": "",
-      "description": ""
+      "action": "sampler_play_stop"
     },
     {
       "category": "sampler",
-      "action": "sampler_play_stutter",
-      "alias": "",
-      "description": ""
+      "action": "sampler_play_stutter"
     },
     {
       "category": "sampler",
-      "action": "sampler_position",
-      "alias": "",
-      "description": ""
+      "action": "sampler_position"
     },
     {
       "category": "sampler",
-      "action": "sampler_rec",
-      "alias": "",
-      "description": ""
+      "action": "sampler_rec"
     },
     {
       "category": "sampler",
-      "action": "sampler_rec_delete",
-      "alias": "",
-      "description": ""
+      "action": "sampler_rec_delete"
     },
     {
       "category": "sampler",
       "action": "sampler_select",
-      "alias": "sampler_default",
-      "description": ""
+      "alias": "sampler_default"
     },
     {
       "category": "sampler",
-      "action": "sampler_start_rec",
-      "alias": "",
-      "description": ""
+      "action": "sampler_start_rec"
     },
     {
       "category": "sampler",
-      "action": "sampler_stop",
-      "alias": "",
-      "description": ""
+      "action": "sampler_stop"
     },
     {
       "category": "sampler",
-      "action": "sampler_stop_rec",
-      "alias": "",
-      "description": ""
+      "action": "sampler_stop_rec"
     },
     {
       "category": "sampler",
       "action": "sampler_used",
-      "alias": "get_sampler_used",
-      "description": ""
+      "alias": "get_sampler_used"
     },
     {
       "category": "sampler",
-      "action": "sampler_velocity",
-      "alias": "",
-      "description": ""
+      "action": "sampler_velocity"
     },
     {
       "category": "sampler",
-      "action": "sampler_volume",
-      "alias": "",
-      "description": ""
+      "action": "sampler_volume"
     },
     {
       "category": "sampler",
-      "action": "sampler_volume_master",
-      "alias": "",
-      "description": ""
+      "action": "sampler_volume_master"
     },
     {
       "category": "sampler",
-      "action": "sampler_volume_nogroup",
-      "alias": "",
-      "description": ""
+      "action": "sampler_volume_nogroup"
     },
     {
       "category": "sampler",
-      "action": "scratchbank_assign",
-      "alias": "",
-      "description": ""
+      "action": "scratchbank_assign"
     },
     {
       "category": "sampler",
-      "action": "scratchbank_edit",
-      "alias": "",
-      "description": ""
+      "action": "scratchbank_edit"
     },
     {
       "category": "sampler",
-      "action": "scratchbank_load",
-      "alias": "",
-      "description": ""
+      "action": "scratchbank_load"
     },
     {
       "category": "sampler",
-      "action": "scratchbank_load_to_deck",
-      "alias": "",
-      "description": ""
+      "action": "scratchbank_load_to_deck"
     },
     {
       "category": "sampler",
       "action": "scratchbank_unload",
-      "alias": "sampler_unload_from_deck",
-      "description": ""
+      "alias": "sampler_unload_from_deck"
     },
     {
       "category": "sandbox",
-      "action": "can_sandbox",
-      "alias": "",
-      "description": ""
+      "action": "can_sandbox"
     },
     {
       "category": "sandbox",
-      "action": "sandbox",
-      "alias": "",
-      "description": ""
+      "action": "sandbox"
     },
     {
       "category": "sync",
-      "action": "auto_bpm_transition",
-      "alias": "",
-      "description": ""
+      "action": "auto_bpm_transition"
     },
     {
       "category": "sync",
-      "action": "auto_bpm_transition_options",
-      "alias": "",
-      "description": ""
+      "action": "auto_bpm_transition_options"
     },
     {
       "category": "sync",
-      "action": "auto_sync_settings",
-      "alias": "",
-      "description": ""
+      "action": "auto_sync_settings"
     },
     {
       "category": "sync",
-      "action": "beatlock",
-      "alias": "",
-      "description": ""
+      "action": "beatlock"
     },
     {
       "category": "sync",
-      "action": "get_bpm_match",
-      "alias": "",
-      "description": ""
+      "action": "get_bpm_match"
     },
     {
       "category": "sync",
-      "action": "is_sync",
-      "alias": "",
-      "description": ""
+      "action": "is_sync"
     },
     {
       "category": "sync",
-      "action": "match_bpm",
-      "alias": "",
-      "description": ""
+      "action": "match_bpm"
     },
     {
       "category": "sync",
-      "action": "match_gain",
-      "alias": "",
-      "description": ""
+      "action": "match_gain"
     },
     {
       "category": "sync",
-      "action": "phrase_sync",
-      "alias": "",
-      "description": ""
+      "action": "phrase_sync"
     },
     {
       "category": "sync",
-      "action": "play_onbeat",
-      "alias": "",
-      "description": ""
+      "action": "play_onbeat"
     },
     {
       "category": "sync",
-      "action": "play_sync",
-      "alias": "",
-      "description": ""
+      "action": "play_sync"
     },
     {
       "category": "sync",
       "action": "play_sync_onbeat",
-      "alias": "sync_nocbg",
-      "description": ""
+      "alias": "sync_nocbg"
     },
     {
       "category": "sync",
-      "action": "quantize_all",
-      "alias": "",
-      "description": ""
+      "action": "quantize_all"
     },
     {
       "category": "sync",
-      "action": "smart_fader",
-      "alias": "",
-      "description": ""
+      "action": "smart_fader"
     },
     {
       "category": "sync",
-      "action": "sync",
-      "alias": "",
-      "description": ""
+      "action": "sync"
     },
     {
       "category": "sync",
-      "action": "sync_hint",
-      "alias": "",
-      "description": ""
+      "action": "sync_hint"
     },
     {
       "category": "text",
-      "action": "countdown",
-      "alias": "",
-      "description": ""
+      "action": "countdown"
     },
     {
       "category": "text",
-      "action": "get_status",
-      "alias": "",
-      "description": ""
+      "action": "get_status"
     },
     {
       "category": "text",
-      "action": "get_text",
-      "alias": "",
-      "description": ""
+      "action": "get_text"
     },
     {
       "category": "text",
-      "action": "stopwatch",
-      "alias": "",
-      "description": ""
+      "action": "stopwatch"
     },
     {
       "category": "text",
-      "action": "stopwatch_reset",
-      "alias": "",
-      "description": ""
+      "action": "stopwatch_reset"
     },
     {
       "category": "timecode",
-      "action": "get_hastimecode",
-      "alias": "",
-      "description": ""
+      "action": "get_hastimecode"
     },
     {
       "category": "timecode",
-      "action": "get_timecode_quality",
-      "alias": "",
-      "description": ""
+      "action": "get_timecode_quality"
     },
     {
       "category": "timecode",
-      "action": "invert_timecode",
-      "alias": "",
-      "description": ""
+      "action": "invert_timecode"
     },
     {
       "category": "timecode",
-      "action": "timecode_active",
-      "alias": "",
-      "description": ""
+      "action": "timecode_active"
     },
     {
       "category": "timecode",
-      "action": "timecode_bypass",
-      "alias": "",
-      "description": ""
+      "action": "timecode_bypass"
     },
     {
       "category": "timecode",
-      "action": "timecode_cd_mode",
-      "alias": "",
-      "description": ""
+      "action": "timecode_cd_mode"
     },
     {
       "category": "timecode",
-      "action": "timecode_config",
-      "alias": "",
-      "description": ""
+      "action": "timecode_config"
     },
     {
       "category": "timecode",
-      "action": "timecode_mode",
-      "alias": "",
-      "description": ""
+      "action": "timecode_mode"
     },
     {
       "category": "timecode",
-      "action": "timecode_motor_enable",
-      "alias": "",
-      "description": ""
+      "action": "timecode_motor_enable"
     },
     {
       "category": "timecode",
-      "action": "timecode_options",
-      "alias": "",
-      "description": ""
+      "action": "timecode_options"
     },
     {
       "category": "timecode",
-      "action": "timecode_pitch",
-      "alias": "",
-      "description": ""
+      "action": "timecode_pitch"
     },
     {
       "category": "timecode",
-      "action": "timecode_reset_pitch",
-      "alias": "",
-      "description": ""
+      "action": "timecode_reset_pitch"
     },
     {
       "category": "video",
-      "action": "has_video_mix",
-      "alias": "",
-      "description": ""
+      "action": "has_video_mix"
     },
     {
       "category": "video",
-      "action": "is_audioonlyvisualisation",
-      "alias": "",
-      "description": ""
+      "action": "is_audioonlyvisualisation"
     },
     {
       "category": "video",
-      "action": "is_video",
-      "alias": "",
-      "description": ""
+      "action": "is_video"
     },
     {
       "category": "video",
-      "action": "leftvideo",
-      "alias": "",
-      "description": ""
+      "action": "leftvideo"
     },
     {
       "category": "video",
-      "action": "leftvideo_button",
-      "alias": "",
-      "description": ""
+      "action": "leftvideo_button"
     },
     {
       "category": "video",
       "action": "over_video",
-      "alias": "overvideo",
-      "description": ""
+      "alias": "overvideo"
     },
     {
       "category": "video",
-      "action": "rightvideo",
-      "alias": "",
-      "description": ""
+      "action": "rightvideo"
     },
     {
       "category": "video",
-      "action": "rightvideo_button",
-      "alias": "",
-      "description": ""
+      "action": "rightvideo_button"
     },
     {
       "category": "video",
-      "action": "video",
-      "alias": "",
-      "description": ""
+      "action": "video"
     },
     {
       "category": "video",
-      "action": "video_crossfader",
-      "alias": "",
-      "description": ""
+      "action": "video_crossfader"
     },
     {
       "category": "video",
-      "action": "video_crossfader_auto",
-      "alias": "",
-      "description": ""
+      "action": "video_crossfader_auto"
     },
     {
       "category": "video",
-      "action": "video_crossfader_link",
-      "alias": "",
-      "description": ""
+      "action": "video_crossfader_link"
     },
     {
       "category": "video",
-      "action": "video_delay",
-      "alias": "",
-      "description": ""
+      "action": "video_delay"
     },
     {
       "category": "video",
-      "action": "video_fadetoblack",
-      "alias": "",
-      "description": ""
+      "action": "video_fadetoblack"
     },
     {
       "category": "video",
-      "action": "video_level",
-      "alias": "",
-      "description": ""
+      "action": "video_level"
     },
     {
       "category": "video",
-      "action": "video_output",
-      "alias": "",
-      "description": ""
+      "action": "video_output"
     },
     {
       "category": "video",
-      "action": "video_transition",
-      "alias": "",
-      "description": ""
+      "action": "video_transition"
     }
   ]
 }
