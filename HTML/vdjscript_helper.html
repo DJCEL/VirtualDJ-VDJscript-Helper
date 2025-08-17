@@ -107,11 +107,12 @@
                 Object.keys(vdjdata[category]).forEach(action => {
                     let description_full = vdjdata[category][action]
                     let parts = description_full.split("\n\n-----Alias-----\n");
-                    let description_tmp = parts[0] ? parts[0].trim() : "";
+                    let description_tmp1 = parts[0] ? parts[0].trim() : "";
                     let alias_tmp1 = parts[1] ? parts[1].trim() : "";
+                    let description_tmp2 = description_tmp1.replace("TODO", "");
                     let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
-                    let description = description_tmp.replace(/"/g, '""'); // escape quotes for CSV
-                    let alias = alias_tmp2.replace(/"/g, '""'); // escape quotes for CSV
+                    let description = description_tmp2.replace(/"/g, '""');
+                    let alias = alias_tmp2.replace(/"/g, '""');
                     let row_data = [category, action, alias, description]
                     rows.push(row_data);
                 });
@@ -134,9 +135,10 @@
                 Object.keys(vdjdata[category]).forEach(action => {
                     let description_full = vdjdata[category][action];
                     let parts = description_full.split("\n\n-----Alias-----\n");
-                    let description = parts[0] ? parts[0].trim() : "";
-                    let alias_tmp1 = parts[1] ? parts[1].trim() : "";
-                    let alias = alias_tmp1.replaceAll("\n", "|");
+                    let description_tmp = parts[0] ? parts[0].trim() : "";
+                    let alias_tmp = parts[1] ? parts[1].trim() : "";
+                    let description = description_tmp.replace("TODO", "");
+                    let alias = alias_tmp.replaceAll("\n", "|");
                     let row_data = [category, action, alias, description];
                     rows.push(row_data);
                 });
@@ -155,8 +157,9 @@
                 Object.keys(vdjdata[category]).forEach(action => {
                     let description_full = vdjdata[category][action];
                     let parts = description_full.split("\n\n-----Alias-----\n");
-                    let description = parts[0] ? parts[0].trim() : "";
+                    let description_tmp = parts[0] ? parts[0].trim() : "";
                     let alias_tmp = parts[1] ? parts[1].trim() : "";
+                    let description = description_tmp.replace("TODO", "");
                     let alias = alias_tmp.replaceAll("\n", "|");
 
                     // Escape XML special characters
@@ -195,8 +198,9 @@
                     let description_full = vdjdata[category][action];
 
                     let parts = description_full.split("\n\n-----Alias-----\n");
-                    let description = parts[0] ? parts[0].trim() : "";
+                    let description_tmp = parts[0] ? parts[0].trim() : "";
                     let alias_tmp = parts[1] ? parts[1].trim() : "";
+                    let description = description_tmp.replace("TODO", "");
                     let alias = alias_tmp.replaceAll("\n", "|");
 
                     items.push({
