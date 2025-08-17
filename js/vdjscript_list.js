@@ -711,316 +711,319 @@ const vdjscript_list =
         {
             "auto_crossfade":
             {
-                "description": "TODO",
+                "description": "Automatically crossfade to the other deck. You can specify the duration of the crossfade in ms: 'auto_crossfade 2000ms' Assigned to a slider, or specifying a specific position, it will move the crossfader slowly to that position: 'auto_crossfade 50%' or 'auto_crossfade 1000ms 50%'",
                 "alias": "auto_crossfader"
             },
             "booth_volume":
             {
-                "description": "TODO"
+                "description": "set booth volume"
             },
             "colorfx_prefader":
             {
-                "description": "TODO"
+                "description": "color fx are prefader (required for some controllers)"
             },
             "crossfader":
             {
-                "description": "TODO",
+                "description": "move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
                 "alias": "crossfader_slider"
             },
             "crossfader_curve":
             {
-                "description": "TODO"
+                "description": "select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (\"smooth\", \"full\", \"scratch\", \"cut\"). or you can draw your own curve, using a syntax like 'crossfader_curve \"0 = [1, 0] / 0.5=[1, 1]/1=[0,1]\"'."
             },
             "crossfader_disable":
             {
-                "description": "TODO"
+                "description": "disable the crossfader"
             },
             "crossfader_hamster":
             {
-                "description": "TODO"
+                "description": "invert the crossfader."
             },
             "fake_eq":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply the equalizer to the sound output"
             },
             "fake_filter":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply filter to sound output"
             },
             "fake_gain":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply gain to the sound output"
             },
             "fake_hp":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply headphone volume to headphone sound output"
             },
             "fake_hpmix":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply headphone mix to headphone sound output"
             },
             "fake_master":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply master volume to master sound output"
             },
             "fake_mixer":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ not to apply the volumes to the sound output"
             },
             "fake_pfl":
             {
                 "description": "TODO"
             },
             "gain": {
-                "description": "TODO",
+                "description": "set the gain of a deck",
                 "alias": "gain_slider | power_gain"
             },
             "gain_label":
             {
-                "description": "TODO"
+                "description": "get the text to display under the gain knob"
             },
             "gain_relative":
             {
-                "description": "TODO"
+                "description": "change the gain, relative to the software gain position"
             },
             "get_crossfader_result":
             {
-                "description": "TODO"
+                "description": "get the actual volume balance between deck 1 and 2, based on crossfader, levels, and play (use get_crossfader_result \"full\" to show levels even for paused decks)"
             },
             "get_level":
             {
-                "description": "TODO"
+                "description": "Get level of signal before master volume. If no deck is specified will get master level Use \"get_level 'mic'\" for microphone level, or \"get_level 'sampler'\" for sampler level Use \"get_level 'vocal'\" for vocal vu meter, other stem names also supported"
             },
             "get_level_left":
             {
-                "description": "TODO"
+                "description": "Get level of left channel before master volume. If no deck is specified will get master level."
             },
             "get_level_left_peak":
             {
-                "description": "TODO"
+                "description": "Get peak level of left channel before master volume. If no deck is specified will get master peak level."
             },
             "get_level_log":
             {
-                "description": "TODO"
+                "description": "Similar to get_level, but returns level on logarithmic scale where -127dB=0.0 and 0dB=1.0"
             },
             "get_level_peak":
             {
-                "description": "TODO"
+                "description": "Get peak level of signal before master volume. If no deck is specified will get master peak level."
             },
             "get_level_right":
             {
-                "description": "TODO"
+                "description": "Get level of right channel before master volume. If no deck is specified will get master level."
             },
             "get_level_right_peak":
             {
-                "description": "TODO"
+                "description": "Get peak level of left channel before master volume. If no deck is specified will get master peak level."
             },
             "get_limiter":
             {
-                "description": "TODO"
+                "description": "return true if the limiter is compressing because the signal was saturated. Use 'deck 1 get limiter' to get the limiter on a deck in external mixer mode, or 'get_limiter' (or 'get_limiter \"master\") to get the limiter on the master for internal mixing mode (also can use 'get_limiter \"headphones\"' and 'get_limiter \"booth\"')"
             },
             "get_vu_meter":
             {
-                "description": "TODO"
+                "description": "Get level of signal after master volume. If no deck is specified will get master level. Use \"get_vu_meter 'mic'\" for microphone level or \"get_vu_meter 'sampler'\" for sampler level Use \"get_level 'vocal'\" for vocal vu meter, other stem names also supported"
             },
             "get_vu_meter_left":
             {
-                "description": "TODO"
+                "description": "Get level of left channel after master volume. If no deck is specified will get master level."
             },
             "get_vu_meter_left_peak":
             {
-                "description": "TODO"
+                "description": "Get peak level of left channel after master volume. If no deck is specified will get master peak level."
             },
-            "get_vu_meter_peak": {
-                "description": "TODO"
+            "get_vu_meter_peak":
+            {
+                "description": "Get peak level of signal after master volume. If no deck is specified will get master peak level."
             },
-            "get_vu_meter_right": {
-                "description": "TODO"
+            "get_vu_meter_right":
+            {
+                "description": "Get level of right channel after master volume. If no deck is specified will get master level."
             },
             "get_vu_meter_right_peak":
             {
-                "description": "TODO"
+                "description": "Get peak level of right channel after master volume. If no deck is specified will get master peak level."
             },
             "headphone_crossfader":
             {
-                "description": "TODO"
+                "description": "change the PFL fader (0% is only the left deck, 100% is only the right deck)."
             },
             "headphone_gain":
             {
-                "description": "TODO"
+                "description": "change the gain of the PFL output (from -30dB to +30dB)"
             },
             "headphone_mix":
             {
-                "description": "TODO"
+                "description": "change the mix of the PFL (0% is only the cued deck, 100% is the master output)."
             },
             "headphone_volume":
             {
-                "description": "TODO"
+                "description": "set cue volume"
             },
             "is_audible":
             {
-                "description": "TODO"
+                "description": "active if the deck is playing and volume is up (on-air)"
             },
             "level":
             {
-                "description": "TODO",
+                "description": "set the volume of the deck",
                 "alias": "level_slider | volume | volume_slider"
             },
             "levelfader_curve":
             {
-                "description": "TODO",
+                "description": "select the curve of the level faders. 0% is a linear curve, 50% (default) is a quadratic curve, 100% is a cubic curve",
                 "alias": "fader_curve"
             },
             "master_balance":
             {
-                "description": "TODO"
+                "description": "change the left/right balance on the master output."
             },
             "master_volume":
             {
-                "description": "TODO"
+                "description": "set master volume"
             },
             "mic2_volume":
             {
-                "description": "TODO"
+                "description": "Set the volume of the second microphone"
             },
             "mic_volume":
             {
-                "description": "TODO"
+                "description": "Set the volume of the microphone"
             },
             "mono_mix":
             {
-                "description": "TODO"
+                "description": "Mix left and right channels together for all outputs"
             },
             "mute":
             {
-                "description": "TODO"
+                "description": "Mute a specific deck"
             },
             "set_gain":
             {
-                "description": "TODO"
+                "description": "set the gain in order to bring the song to the specified dBA (with 0dBA being the maximum level outputable by the soundcard without compression): 'set_gain 0'"
             }
         },
         "automix":
         {
             "automix":
             {
-                "description": "TODO"
+                "description": "Start or stop automatic playlist mixing"
             },
             "automix_add_next":
             {
-                "description": "TODO"
+                "description": "Add the songs selected in the browser to the automix playlist right after the song currently playing If a song in the automix list is selected and automix is active, move it after the currently playing song"
             },
             "automix_dualdeck":
             {
-                "description": "TODO"
+                "description": "Enable or disable automix using both decks"
             },
             "automix_editor":
             {
-                "description": "TODO"
+                "description": "Open the automix editor, and fine-tune the automix transitions for every songs in your playlist"
             },
             "automix_editor_movetrack":
             {
-                "description": "TODO"
+                "description": "When the automix editor is opened, move the selected track's position automix_editor_movetrack 'current' +10 Also accepts 'next' or 'previous' to move the next or previous track. When the number is not given it can be mapped to rotary knobs or jog wheels"
             },
             "automix_skip":
             {
-                "description": "TODO"
+                "description": "When automix is active, skip the current song and mix to the next one"
             },
             "create_list_from_playlist":
             {
-                "description": "TODO",
+                "description": "Save the automix list in MyLists",
                 "alias": "create_virtualfolder_from_playlist"
             },
             "get_automix_position":
             {
-                "description": "TODO"
+                "description": "Return position of currently playing song in automix list"
             },
             "get_automix_song":
             {
-                "description": "TODO"
+                "description": "get a property from the next song in automix: \"get_automix_song 'title'\" you can also get properties from songs further down: \"get_automix_song 'title' 2\""
             },
             "get_playlist_time":
             {
-                "description": "TODO"
+                "description": "Gets how much time is left before the end of the automix playlist"
             },
             "mix_and_load_next":
             {
-                "description": "TODO"
+                "description": "automatically mix to the next deck, then stop the current track and load a new song if something is available in the playlist or sidelist by default this will to a tempo mix and sync bpm if the bpm is in range. You can add 'nosync' to mix without tempo synchronization. 'mix_and_load_next nosync'"
             },
-            "mix_next": {
-                "description": "TODO"
+            "mix_next":
+            {
+                "description": "If the non-playing deck has a song loaded that has already been played, load a new one from the playlist. Then smoothly crossfade from the playing deck to the other, using beatsync if appropriate"
             },
             "mix_next_sidelist":
             {
-                "description": "TODO"
+                "description": "If the non-playing deck has a song loaded that has already been played, load a new one from the sidelist. Then smoothly crossfade from the playing deck to the other, using beatsync if appropriate"
             },
             "mix_now":
             {
-                "description": "TODO"
+                "description": "Smoothly crossfade from one side to the other, matching beats when the tempo of both songs is close together When automix is off, fade speed can be adjusted: \"mix_now 4000ms\" or \"mix_now 4bt\""
             },
             "mix_now_nosync":
             {
-                "description": "TODO"
+                "description": "Smoothly crossfade from one side to the other When automix is off, fade speed can be adjusted: \"mix_now_nosync 4000ms\" or \"mix_now_nosync 4bt\""
             },
             "mix_selected":
             {
-                "description": "TODO"
+                "description": "When automix is active, mix to the song currently selected"
             },
             "playlist_add":
             {
-                "description": "TODO"
+                "description": "Add the songs selected in the browser to the automix list"
             },
             "playlist_clear":
             {
-                "description": "TODO"
+                "description": "empty the playlist."
             },
             "playlist_load_and_keep":
             {
-                "description": "TODO"
+                "description": "Load the first song in the automix list on the deck, without removing it from the list"
             },
             "playlist_load_and_remove":
             {
-                "description": "TODO"
+                "description": "Load the first song in the automix list on the deck, and remove it from list"
             },
             "playlist_options":
             {
-                "description": "TODO"
+                "description": "display a drop-down with the list of options for the playlist."
             },
             "playlist_randomize":
             {
-                "description": "TODO"
+                "description": "shuffle the order of the songs in the playlist."
             },
             "playlist_randomize_once":
             {
-                "description": "TODO"
+                "description": "shuffle the order of the songs in the playlist once."
             },
             "playlist_remove_duplicates":
             {
-                "description": "TODO"
+                "description": "remove duplicate songs from the playlist."
             },
             "playlist_remove_played":
             {
-                "description": "TODO"
+                "description": "remove from the playlist all the songs that have already been played since the software was launched."
             },
             "playlist_repeat":
             {
-                "description": "TODO"
+                "description": "repeat (or stop to repeat) the playlist while automixing."
             },
             "playlist_save":
             {
-                "description": "TODO"
+                "description": "save the playlist in a file."
             },
             "relay_play":
             {
-                "description": "TODO"
+                "description": "Enable or disable the decks to automatically start playing when the opposite deck reached its end"
             },
             "sidelist_options":
             {
-                "description": "TODO"
+                "description": "display a drop-down with the list of options for the sidelist."
             },
             "switch_sidelist_playlist":
             {
-                "description": "TODO"
+                "description": "Exchange the content of the automix list and the sidelist"
             }
         },
         "browser":
