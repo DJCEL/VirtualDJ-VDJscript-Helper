@@ -245,13 +245,13 @@
       "category": "skin",
       "action": "get_skin_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
       "action": "has_cover",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
@@ -263,7 +263,7 @@
       "category": "skin",
       "action": "has_logo",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
@@ -323,13 +323,13 @@
       "category": "skin",
       "action": "skin_empty_buttons",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
       "action": "skin_height",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
@@ -353,19 +353,19 @@
       "category": "skin",
       "action": "skin_starter_tip",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
       "action": "skin_width",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
       "action": "switch_skin_variation",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "skin",
@@ -413,7 +413,7 @@
       "category": "system",
       "action": "get_peak_audio",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "system",
@@ -479,7 +479,7 @@
       "category": "system",
       "action": "system",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "system",
@@ -587,7 +587,7 @@
       "category": "window",
       "action": "open_stem_creator",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "window",
@@ -599,4813 +599,4813 @@
       "category": "audio",
       "action": "beat_juggle",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "beatjump",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "beatjump_pad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "beatjump_page",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "beatjump_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "clone_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "clone_from_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "dualdeckmode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "dualdeckmode_decks",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "dump",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "goto",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "goto_bar",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "goto_first_beat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "goto_start",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "mixermode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "move_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "reverse",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "seek",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "song_pos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "songpos_remain",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "songpos_warning",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "stems_split",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "stems_split_unlink",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio",
       "action": "swap_decks",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "auto_sync_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "blink_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "deck_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "emergency_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "pause",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "pause_stop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "play_button",
       "alias": "play_3button",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "play_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "play_pause",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "play_stutter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "stop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_controls",
       "action": "stop_button",
       "alias": "stop_3button",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "aux_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "djc_mic",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "linein",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "linein_rec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "mic",
       "alias": "microphone",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "mic_eq_high",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "mic_eq_low",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "mic_eq_mid",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "mic_rec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_inputs",
       "action": "mic_talkover",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "get_scratch_direction",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "get_slip_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "get_slip_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "hold",
       "alias": "scratch_hold",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "jogwheel",
       "alias": "jog|jog_wheel",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "motorwheel",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "nudge",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "scratch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "scratch_dna",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "scratch_dna_editor",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "scratch_dna_option",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "slip",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "slip_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "speedwheel",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel",
       "alias": "scratch_wheel| scratchwheel",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel_touch",
       "alias": "scratch_wheel_touch|scratchwheel_touch|speedwheel_touch",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "vinyl_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_scratch",
       "action": "wheel_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "auto_crossfade",
       "alias": "auto_crossfader",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "booth_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "colorfx_prefader",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "crossfader",
       "alias": "crossfader_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "crossfader_curve",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "crossfader_disable",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "crossfader_hamster",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_eq",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_filter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_gain",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_hp",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_hpmix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_master",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_mixer",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "fake_pfl",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "gain",
       "alias": "gain_slider|power_gain",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "gain_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "gain_relative",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_crossfader_result",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level_left",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level_left_peak",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level_log",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level_peak",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level_right",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_level_right_peak",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_limiter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_vu_meter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_vu_meter_left",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_vu_meter_left_peak",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_vu_meter_peak",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_vu_meter_right",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "get_vu_meter_right_peak",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "headphone_crossfader",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "headphone_gain",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "headphone_mix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "headphone_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "is_audible",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "level",
       "alias": "level_slider|volume|volume_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "levelfader_curve",
       "alias": "fader_curve",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "master_balance",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "master_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "mic2_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "mic_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "mono_mix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "mute",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "audio_volumes",
       "action": "set_gain",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "automix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "automix_add_next",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "automix_dualdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "automix_editor",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "automix_editor_movetrack",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "automix_skip",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "create_list_from_playlist",
       "alias": "create_virtualfolder_from_playlist",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "get_automix_position",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "get_automix_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "get_playlist_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "mix_and_load_next",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "mix_next",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "mix_next_sidelist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "mix_now",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "mix_now_nosync",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "mix_selected",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_add",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_clear",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_load_and_keep",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_load_and_remove",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_randomize",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_randomize_once",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_remove_duplicates",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_remove_played",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_repeat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "playlist_save",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "relay_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "sidelist_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "automix",
       "action": "switch_sidelist_playlist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "add_favoritefolder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "add_filterfolder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "add_list",
       "alias": "add_virtualfolder",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "add_to_list",
       "alias": "virtualfolder_add",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_analyze",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_info",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_prepare_stems",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_reload_tag",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_rename",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browsed_file_reveal",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_enter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_export",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_geniusdj",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_gotofolder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_isactive",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_move",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_open_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_padding",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_remove",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_scroll",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_shortcut",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_sort",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_window",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "browser_zoom",
       "alias": "browser",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "clear_search",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "edit_comment",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "edit_search",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "edit_singer",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "file_count",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "file_info",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "font_size",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "goto_last_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "grid_view",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "has_linked_tracks",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "has_quick_filter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "info_options",
       "alias": "infos_options",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "karaoke_add",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "karaoke_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "load_deck_set",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "load_next",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "load_previous",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "load_pulse",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "load_pulse_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "loaded",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "log_search",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "mark_linked_tracks",
       "alias": "mark_related_tracks",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "not_played",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "page",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "playlist_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "quick_filter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "rating",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "recurse_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "save_deck_set",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "search",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "search_add",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "search_delete",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "search_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "search_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "search_playlists",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "set_browsed_file_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidelist_add",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidelist_clear",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidelist_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidelist_load_and_keep",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidelist_load_and_remove",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidereco_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidereco_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sidereco_source",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sideview",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sideview_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sideview_sort",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sideview_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "sideview_triggerpad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "undo_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "unload",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "browser",
       "action": "view_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "apply_audio_config",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "auto_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "auto_match_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "auto_match_key",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "auto_pitch_lock",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "connect",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "eventscheduler",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "eventscheduler_start",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "fader_start",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "get_lemode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "play_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "quantize_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "quantize_setcue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "save_config",
       "alias": "saveregistryconfig",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "setting",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "setting_ismodified",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "setting_reset",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "setting_setdefault",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "setting_setsession",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "setting_setsession_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "settings",
       "alias": "config",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "smart_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "smart_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "smart_play",
       "alias": "auto_sync",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "config",
       "action": "smart_scratch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "action_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "assign_controller",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "controller_battery",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "controller_mapping",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "controllerscreen_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "denon_platter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "device_side",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "display_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "djc_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "djc_button_popup",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "djc_button_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "djc_button_slider",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "djc_panel",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "djc_shift",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "effect_fxsendreturndeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "effect_fxsendreturndeck_multi",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "effect_fxsendreturnenable",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "gemini_waveform_zoomlevel",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_controller_image",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_controller_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_controller_screen",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_denon_cuepoints",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_denon_platter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_display",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_gemini_display",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_gemini_waveform",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_ns7_platter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_numark_beatgrid",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_numark_songpos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_numark_waveform",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_pioneer_display",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_pioneer_loop_display",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_rotation_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "get_rotation_slip",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "invert_controllers",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "keyboard_shortcuts",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "menu",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "menu_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "menu_cycledisplay",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "midiclock_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "miditovst_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "mixer_order",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "motor_switch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "motorwheel_instant_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "ns7_platter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "numark_waveform_zoom",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "os2l_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "os2l_cmd",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "os2l_info",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "os2l_scene",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "phase_movement",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "phase_position",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "pioneer_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "pioneer_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "refresh_controller",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "reinit_controller",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "rescan_controllers",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "rzx_touch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "rzx_touch_x",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "rzx_touch_y",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "select_master_output",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "set_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "shift",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "show_text",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "controllers",
       "action": "v7_status",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_action",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_button",
       "alias": "cue_3button",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_countdown",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_counter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_countup",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_cup",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_display",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_loop_autosync",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_loop_hold",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_pos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cue_stop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "cues_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "delete_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "get_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "goto_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "has_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "hot_cue",
       "alias": "hotcue",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "lock_cues",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "set_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "shift_all_cues",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "silent_cue",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "cues",
       "action": "sort_cues",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "cross_assign",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "get_deck_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "invert_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "leftcross",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "leftdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "masterdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "masterdeck_auto",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "pfl",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "rightcross",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "rightdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "deck_select",
       "action": "select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_crossfader_high",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_crossfader_low",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_crossfader_mid",
       "alias": "eq_crossfader_med",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_high",
       "alias": "eq_high_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_high_freq",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_kill_high",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_kill_low",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_kill_mid",
       "alias": "eq_kill_med",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_low",
       "alias": "eq_low_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_low_freq",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_mid",
       "alias": "eq_med|eq_mid_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_mid_freq",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "eq_reset",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "filter",
       "alias": "filter_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "filter_activate",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "filter_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "filter_resonance",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "filter_selectcolorfx",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "has_stems",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "high_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "low_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "mid_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "mute_stem",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "only_stem",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "stem",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "stem_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "stem_pad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "equalizer",
       "action": "stems_bleed",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "browsed_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "browsed_song_hashtag",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_activedeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_album",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_arm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_artist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_artist_before_feat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_artist_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_artist_title_separator",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_askthedj",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_askthedj_unread",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_automix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_bar",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beat2",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beat_bar",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beat_counter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beat_num",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beatdiff",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beatgrid",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_beatpos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_album",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_artist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_artist_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_comment",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_composer",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_filepath",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder_icon",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder_path",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder_scrollpos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder_scrollsize",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder_selection_index",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_folder_tab",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_genre",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_header",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_key",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_scrollpos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_scrollsize",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_selection_index",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_browsed_title_artist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_build",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_comment",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_composer",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_custom_text",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_deck_analysis",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_deck_letter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_decks",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_defaultdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_featuring_after_artist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_filename",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_filepath",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_filesize",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_firstbeat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_firstbeat_local",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_genre",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_hasheadphones",
       "alias": "get_hasheadphone",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_hasinput",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_haslinein",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_hasmaster",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_hasmic",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_hwnd",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_leftdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_license",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_loaded_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_loaded_song_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_membership",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_phrase_num",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_plugindeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_position",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_message",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_min",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_ms",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_msf",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_sec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_size",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_record_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_remix_after_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_rightdeck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_rotation",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_song_event",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_songlength",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_spectrum_band",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time_hour",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time_min",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time_ms",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time_msf",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time_sec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_time_sign",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_title_artist",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_title_before_remix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_title_remix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_totaltime_min",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_totaltime_ms",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_totaltime_msf",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_totaltime_sec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_username",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_vdj_folder",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_version",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "get_year",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "has_aux",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "loaded_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "loaded_song_hashtag",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "get",
       "action": "prelisten_info",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "get_karaoke_background_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "get_next_karaoke_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "has_karaoke_next",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "is_karaoke_idle",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "is_karaoke_playing",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "karaoke",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "karaoke_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "karaoke_show",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "karaoke",
       "action": "karaoke_venue_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "get_harmonic",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "get_key",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "get_key_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "get_key_modifier",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "get_key_modifier_text",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "key",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "key_lock",
       "alias": "keylock",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "key_match_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "key_match_menu",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "key_move",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "key_smooth",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "keycue_pad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "keycue_pad_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "keycue_pad_jump",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "keycue_pad_page",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "match_key",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "key",
       "action": "set_key",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "get_active_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "get_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "get_loop_in_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "get_loop_out_time",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "get_saved_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_adjust",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_back",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_delete",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_double",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_exit",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_half",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_in",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_length",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_load_prepare",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_move",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_out",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_pad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_pad_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_pad_page",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_position",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_roll",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_roll_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_save",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "loop_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "pioneer_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "pioneer_loop_in",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "pioneer_loop_out",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "reloop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "reloop_exit",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "repeat_song",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "saved_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "saved_loop_autotrigger",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "saved_loop_display",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "saved_loop_prepare",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "loop",
       "action": "slicer",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "macro",
       "action": "macro_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "macro",
       "action": "macro_record",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_bank2",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_button_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_edit",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_has_16pads",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_has_action",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_has_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_has_menu",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_has_param",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_has_pressure",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_menu",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_page",
       "alias": "pad_pages",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_page_select",
       "alias": "pad_page_favorite_select",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_param",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_param2",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_param_visible",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_pressure",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "pad_pushed",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "padfx",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "padfx_single",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "padshift",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "padshift_button_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pads",
       "action": "padshift_pressure",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "backspin",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "brakespeed",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "get_pitch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "get_pitch_value",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "get_pitch_zero",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "master_tempo",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch",
       "alias": "pitch2|pitch2_slider|pitch_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_bend",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_lock",
       "alias": "pitchlock",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_motorized",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_range",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_relative",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_reset",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "pitch_zero",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "pitch",
       "action": "startupspeed",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_3slots_layout",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_active",
       "alias": "effect_activate",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_beats",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_slider",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_slider_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_slider_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_slider_text",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_slot",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_arm_stem",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_bank_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_bank_save",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_beats",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_beats_all",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_bpm_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_bpm_deck_tap",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_clone",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_colorfx",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_colorslider",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_command",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_disable_all",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_dock_gui",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_has_beats",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_has_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_has_length",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_has_slider",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_mixfx",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_mixfx_activate",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_mixfx_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_releaseslider",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_releaseslider_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_select_multi",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_select_popup",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_select_toggle",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_show_gui",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_slider",
       "alias": "effect_slider_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_slider_active",
       "alias": "effect_slider_activate",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_slider_reset",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_slider_skip_length",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_stems",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effect_stems_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "effects_used",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_button_count",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_button_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_button_shortname",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_count",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_default",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_label_full",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_shortname",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_slider_text",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_string",
       "alias": "effect_string",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_string_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effect_title",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_effects_used",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_nb_multicam",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_video_fx_slider_label",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_videofx_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "get_videotrans_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "is_releasefx",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "pluginsongpos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "show_pluginpage",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_fx",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_fx_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_fx_clear",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_fx_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_fx_slider",
       "alias": "video_fx_slider_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_source",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_source_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_transition_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_transition_select",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "plugins",
       "action": "video_transition_slider",
       "alias": "video_transition_slider_slider",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "adjust_cbg",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "beat_tap",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "edit_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "edit_poi",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "goto_mixpoint",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "reanalyze",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "set_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "set_firstbeat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "set_loadpoint",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "poi",
       "action": "set_mixpoint",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "prelisten",
       "action": "prelisten",
       "alias": "preview",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "prelisten",
       "action": "prelisten_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "prelisten",
       "action": "prelisten_output",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "prelisten",
       "action": "prelisten_pos",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "prelisten",
       "action": "prelisten_stop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "record",
       "action": "broadcast",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "record",
       "action": "broadcast_message",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "record",
       "action": "record",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "record",
       "action": "record_config",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "record",
       "action": "record_cut",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "record",
       "action": "record_vu",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sample_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sample_info",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sample_name",
       "alias": "get_sample_slot_name",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sampler_bank",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sampler_bank_count",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sampler_bank_id",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sampler_count",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "get_sampler_slot",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_abort_rec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_assign",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_bank",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_edit",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_group_color",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_group_mute",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_group_name",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_group_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_has_group",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_load_to_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_loaded",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_loop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_mode",
       "alias": "sampler_rapidfire",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_mute",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_output",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_pad",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_pad_page",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_pad_shift",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_pad_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_pfl",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_play",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_play_stop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_play_stutter",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_position",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_rec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_rec_delete",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_select",
       "alias": "sampler_default",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_start_rec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_stop",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_stop_rec",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_used",
       "alias": "get_sampler_used",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_velocity",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_volume",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_volume_master",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "sampler_volume_nogroup",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "scratchbank_assign",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "scratchbank_edit",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "scratchbank_load",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "scratchbank_load_to_deck",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sampler",
       "action": "scratchbank_unload",
       "alias": "sampler_unload_from_deck",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sandbox",
       "action": "can_sandbox",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sandbox",
       "action": "sandbox",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "auto_bpm_transition",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "auto_bpm_transition_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "auto_sync_settings",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "beatlock",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "get_bpm_match",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "is_sync",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "match_bpm",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "match_gain",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "phrase_sync",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "play_onbeat",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "play_sync",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "play_sync_onbeat",
       "alias": "sync_nocbg",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "quantize_all",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "smart_fader",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "sync",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "sync",
       "action": "sync_hint",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "text",
       "action": "countdown",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "text",
       "action": "get_status",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "text",
       "action": "get_text",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "text",
       "action": "stopwatch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "text",
       "action": "stopwatch_reset",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "get_hastimecode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "get_timecode_quality",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "invert_timecode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_active",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_bypass",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_cd_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_config",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_mode",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_motor_enable",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_options",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_pitch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "timecode",
       "action": "timecode_reset_pitch",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "has_video_mix",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "is_audioonlyvisualisation",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "is_video",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "leftvideo",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "leftvideo_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "over_video",
       "alias": "overvideo",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "rightvideo",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "rightvideo_button",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_crossfader",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_crossfader_auto",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_crossfader_link",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_delay",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_fadetoblack",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_level",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_output",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     },
     {
       "category": "video",
       "action": "video_transition",
       "alias": "",
-      "description": "TODO"
+      "description": ""
     }
   ]
 }
