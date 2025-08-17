@@ -497,34 +497,42 @@
   <Item>
     <Category>audio</Category>
     <Action>beat_juggle</Action>
+    <Description>Alternatively jumps one beat forward and backward &apos;beat_juggle 0.5&apos; will jump 1/2 beat forward or backward</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>beatjump</Action>
+    <Description>Jump a certain number of beats as set by beatjump_select &apos;beatjump +1&apos; to jump forward, or &apos;beatjump -1&apos; to jump backwards</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>beatjump_pad</Action>
+    <Description>execute &apos;goto +x&apos; where x depends on the pad number and the beatjump_page</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>beatjump_page</Action>
+    <Description>change the offset of the jumps in beatjump_pad actions</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>beatjump_select</Action>
+    <Description>Select the number of beats the beatjump action will jump &apos;beatjump_select 4&apos; to set beatjump to 4 beats &apos;beatjump_select +1&apos; to set the next higher beat size &apos;beatjump_select 50%&apos; to halve the current beat size &apos;beatjump_select 200%&apos; to double the current beat size</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>clone_deck</Action>
+    <Description>clone the deck (load the same song on the other deck, and play it from the same position, ready for beat-juggling).</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>clone_from_deck</Action>
+    <Description>clone from the other deck (load the song from the other deck, and play it from the same position, ready for beat-juggling).</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>dualdeckmode</Action>
+    <Description>toggle dual deck mode. when enabled dualdeckmode_decks will apply to both decks 1/3 or 2/4</Description>
   </Item>
   <Item>
     <Category>audio</Category>
@@ -533,116 +541,144 @@
   <Item>
     <Category>audio</Category>
     <Action>dump</Action>
+    <Description>reverse the playback direction while dump is active, then when deactivated, start again forward from where the song should have been if it had been playing forward during the dump. when quantize_all is active, dump will be quantized to match the beats. This can also be forced by using &apos;dump quantized&apos; or &apos;dump notquantized&apos; to dump only while the key is pressed, use &apos;dump while_pressed&apos;</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>goto</Action>
+    <Description>change the position in the song. &apos;goto +10ms&apos; jumps 10ms forward. &apos;goto -4&apos; jumps 4 beats backward. &apos;goto 20%&apos; jumps to 20% of the song&apos;s length.</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>goto_bar</Action>
+    <Description>put the song on its nth beat after the downbeat without loosing sync: &apos;goto_bar 4&apos;</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>goto_first_beat</Action>
+    <Description>automatically goes to the first beat in the song.</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>goto_start</Action>
+    <Description>go to the start of the song.</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>mixermode</Action>
+    <Description>Return true if internal mixer used (master output available), false if external mixer used. Parameter can also be explicit: mixermode &quot;internal&quot; or mixermode &quot;external&quot;</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>move_deck</Action>
+    <Description>load the song from the called deck into the deck specified by the parameter and unloads the song from the calling deck</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>reverse</Action>
+    <Description>play the song backward</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>seek</Action>
+    <Description>move into the song while the button is pressed. &apos;seek +2&apos; moves beat by beat, skipping 2 beats every 10ms. &apos;seek +420ms&apos; moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside.</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>song_pos</Action>
+    <Description>position in the song. (the difference between song_pos and goto is that song_pos can be used as a slider).</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>songpos_remain</Action>
+    <Description>get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value: &apos;songpos_remain 500ms ? blink&apos;.</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>songpos_warning</Action>
+    <Description>returns true if the song is in its last 30s (actual time can be adjusted in options)</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>stems_split</Action>
+    <Description>&apos;stems_split&apos; will duplicate deck 1 to deck 3 or deck 2 to 4, with the vocals playing on the first deck and the instruments on the other deck &apos;stems_split vocal target&apos; will duplicate the opposite deck to the deck stems_split was called from</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>stems_split_unlink</Action>
+    <Description>After using stems_split, you can use stems_split_unlink to have the decks behave independently, allowing to scratch the vocals without affecting the instrumental for example</Description>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>swap_decks</Action>
+    <Description>swap deck 1 and deck 2</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>auto_sync_options</Action>
+    <Description>show a context menu to control the various auto-sync options</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>blink_play</Action>
+    <Description>blinking fast when less than 10 seconds remaining, blinking slow when less than 30 seconds remaining, off otherwise &apos;blink_play on&apos; is similar, but is on when the song is paused, and only off if no song is loaded or the loaded song has an error</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>deck_options</Action>
+    <Description>show a context menu to select the behavior of the play and cue buttons, the various smart modes, and pitch options</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>emergency_play</Action>
+    <Description>play something</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>pause</Action>
+    <Description>pause the deck.</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>pause_stop</Action>
+    <Description>if playing, pause the deck. if stopped, rewind to beginning of the song, then cycle through all cue points each time pressed.</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>play</Action>
+    <Description>start the deck.</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>play_button</Action>
     <Alias>play_3button</Alias>
+    <Description>depending on the play_mode, act like play_stutter (Numark way) or play_pause (Pioneer way).</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>play_options</Action>
+    <Description>show a context menu to select the behavior of the play and cue buttons, and the various smart modes</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>play_pause</Action>
+    <Description>if paused, start the deck. if playing, pause the deck.</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>play_stutter</Action>
+    <Description>if paused, start the deck. if playing, restart from last stutter point.</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>stop</Action>
+    <Description>stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points.</Description>
   </Item>
   <Item>
     <Category>audio_controls</Category>
     <Action>stop_button</Action>
     <Alias>stop_3button</Alias>
+    <Description>depending on the play_mode, act like pause_stop (Numark way) or stop (Pioneer way).</Description>
   </Item>
   <Item>
     <Category>audio_inputs</Category>
@@ -655,15 +691,18 @@
   <Item>
     <Category>audio_inputs</Category>
     <Action>linein</Action>
+    <Description>Activate or deactivate the linein on this deck. You can also specify a linein number to assign another linein: &quot;deck 1 linein 2 on&quot; Or you can assign the microphone or aux input: &quot;deck 3 linein &apos;mic&apos; on&quot; or &quot;deck 3 linein &apos;aux&apos; on&quot; If you don&apos;t want the line in to become the master deck automatically, you can use &quot;deck 3 linein &apos;trs&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>audio_inputs</Category>
     <Action>linein_rec</Action>
+    <Description>record the linein input on this deck.</Description>
   </Item>
   <Item>
     <Category>audio_inputs</Category>
     <Action>mic</Action>
     <Alias>microphone</Alias>
+    <Description>activate or deactivate the microphone input</Description>
   </Item>
   <Item>
     <Category>audio_inputs</Category>
@@ -680,10 +719,12 @@
   <Item>
     <Category>audio_inputs</Category>
     <Action>mic_rec</Action>
+    <Description>record the microphone input on this deck</Description>
   </Item>
   <Item>
     <Category>audio_inputs</Category>
     <Action>mic_talkover</Action>
+    <Description>Lower the volume of all decks while active and activates microphone Use &apos;mic_talkover while_pressed&apos; to only activate mic as long as button is held Use &apos;mic_talkover 20% 1000ms&apos; to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -696,128 +737,158 @@
   <Item>
     <Category>audio_scratch</Category>
     <Action>get_slip_time</Action>
+    <Description>Get the time where the song will be when slip mode is de-activated in milliseconds Alternatively, use get_slip_time &quot;min&quot;, get_slip_time &quot;sec&quot; and get_slip_time &quot;msec&quot;</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>hold</Action>
     <Alias>scratch_hold</Alias>
+    <Description>&apos;hold on&apos; or &apos;hold off&apos;(or &apos;hold toggle&apos;) to stop the disc for scratching, or release it.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>jogwheel</Action>
     <Alias>jog | jog_wheel</Alias>
+    <Description>used for a jogwheel without touch sensitivity. &apos;jogwheel +1.0&apos; means a full rotation of the wheel.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>motorwheel</Action>
+    <Description>used for a motorized jogwheel. Each time the jogwheel moves, send &apos;motorwheel &quot;move&quot; +1.0&apos; followed by &apos;motorwheel &quot;timestamp&quot; 1000.0&apos;. &apos;move +1.0&apos; means a full platter rotation. &apos;timestamp 1.0&apos; means 1ms since last message. You should query &apos;motorwheel&apos; and turn the motor on when it returns true and off when false.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>nudge</Action>
+    <Description>&apos;nudge +120ms&apos; to nudge the song 120ms forward (using mastertempo if it&apos;s activated).</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>scratch</Action>
+    <Description>&apos;scratch +120ms&apos; to scratch 120ms forward.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>scratch_dna</Action>
+    <Description>execute a scratch defined by its DNA signature (see scratch_dna_editor for information about DNA signatures)</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>scratch_dna_editor</Action>
+    <Description>open a visual editor to compose scratch DNA signatures</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>scratch_dna_option</Action>
+    <Description>set some options about the Scratch DNA behavior. options are &quot;drymix&quot; and &quot;quantized&quot;</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>slip</Action>
+    <Description>activate or deactivate a global slip mode, that will save the position on &quot;slip on&quot; and resume where it should have been if untouched on &quot;slip off&quot;, letting you do any scratch/loop/effect/etc in between</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>slip_mode</Action>
+    <Description>While in slip mode, during loops hotcues or scratch, the play cursor will keep moving unaffected, and will resume from there after release</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>speedwheel</Action>
+    <Description>used for a precision touchwheel that reports both position and speed. &apos;speedwheel +1.0 1.5&apos; means a full rotation of the wheel, at 150% speed.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>touchwheel</Action>
     <Alias>scratch_wheel | scratchwheel</Alias>
+    <Description>used for a jogwheel with touch sensitivity. &apos;touchwheel +1.0&apos; means a full rotation of the wheel.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>touchwheel_touch</Action>
     <Alias>scratch_wheel_touch | scratchwheel_touch | speedwheel_touch</Alias>
+    <Description>use when the touchwheel is touched, to hold the song and start to scratch.</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>vinyl_mode</Action>
+    <Description>Set the jogwheel to Vinyl mode (with scratch), or to CD mode (with pitchbend)</Description>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>wheel_mode</Action>
+    <Description>change the mode of the jogwheel between: &quot;jog&quot;, &quot;search&quot;, &quot;loop_move&quot;, &quot;loop_out&quot;, &quot;loop_in&quot;, &quot;browser&quot;, or use +1 and -1 to cycle through all modes. You can select from a subset using a syntax like &apos;wheel_mode &quot;loop_move, loop_in, loop_out&quot; +1&apos;.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>auto_crossfade</Action>
     <Alias>auto_crossfader</Alias>
+    <Description>Automatically crossfade to the other deck. You can specify the duration of the crossfade in ms: &apos;auto_crossfade 2000ms&apos; Assigned to a slider, or specifying a specific position, it will move the crossfader slowly to that position: &apos;auto_crossfade 50%&apos; or &apos;auto_crossfade 1000ms 50%&apos;</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>booth_volume</Action>
+    <Description>set booth volume</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>colorfx_prefader</Action>
+    <Description>color fx are prefader (required for some controllers)</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>crossfader</Action>
     <Alias>crossfader_slider</Alias>
+    <Description>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>crossfader_curve</Action>
+    <Description>select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (&quot;smooth&quot;, &quot;full&quot;, &quot;scratch&quot;, &quot;cut&quot;). or you can draw your own curve, using a syntax like &apos;crossfader_curve &quot;0 = [1, 0] / 0.5=[1, 1]/1=[0,1]&quot;&apos;.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>crossfader_disable</Action>
+    <Description>disable the crossfader</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>crossfader_hamster</Action>
+    <Description>invert the crossfader.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_eq</Action>
+    <Description>tell VirtualDJ not to apply the equalizer to the sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_filter</Action>
+    <Description>tell VirtualDJ not to apply filter to sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_gain</Action>
+    <Description>tell VirtualDJ not to apply gain to the sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_hp</Action>
+    <Description>tell VirtualDJ not to apply headphone volume to headphone sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_hpmix</Action>
+    <Description>tell VirtualDJ not to apply headphone mix to headphone sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_master</Action>
+    <Description>tell VirtualDJ not to apply master volume to master sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_mixer</Action>
+    <Description>tell VirtualDJ not to apply the volumes to the sound output</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
@@ -827,253 +898,315 @@
     <Category>audio_volumes</Category>
     <Action>gain</Action>
     <Alias>gain_slider | power_gain</Alias>
+    <Description>set the gain of a deck</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>gain_label</Action>
+    <Description>get the text to display under the gain knob</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>gain_relative</Action>
+    <Description>change the gain, relative to the software gain position</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_crossfader_result</Action>
+    <Description>get the actual volume balance between deck 1 and 2, based on crossfader, levels, and play (use get_crossfader_result &quot;full&quot; to show levels even for paused decks)</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level</Action>
+    <Description>Get level of signal before master volume. If no deck is specified will get master level Use &quot;get_level &apos;mic&apos;&quot; for microphone level, or &quot;get_level &apos;sampler&apos;&quot; for sampler level Use &quot;get_level &apos;vocal&apos;&quot; for vocal vu meter, other stem names also supported</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level_left</Action>
+    <Description>Get level of left channel before master volume. If no deck is specified will get master level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level_left_peak</Action>
+    <Description>Get peak level of left channel before master volume. If no deck is specified will get master peak level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level_log</Action>
+    <Description>Similar to get_level, but returns level on logarithmic scale where -127dB=0.0 and 0dB=1.0</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level_peak</Action>
+    <Description>Get peak level of signal before master volume. If no deck is specified will get master peak level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level_right</Action>
+    <Description>Get level of right channel before master volume. If no deck is specified will get master level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_level_right_peak</Action>
+    <Description>Get peak level of left channel before master volume. If no deck is specified will get master peak level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_limiter</Action>
+    <Description>return true if the limiter is compressing because the signal was saturated. Use &apos;deck 1 get limiter&apos; to get the limiter on a deck in external mixer mode, or &apos;get_limiter&apos; (or &apos;get_limiter &quot;master&quot;) to get the limiter on the master for internal mixing mode (also can use &apos;get_limiter &quot;headphones&quot;&apos; and &apos;get_limiter &quot;booth&quot;&apos;)</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_vu_meter</Action>
+    <Description>Get level of signal after master volume. If no deck is specified will get master level. Use &quot;get_vu_meter &apos;mic&apos;&quot; for microphone level or &quot;get_vu_meter &apos;sampler&apos;&quot; for sampler level Use &quot;get_level &apos;vocal&apos;&quot; for vocal vu meter, other stem names also supported</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_vu_meter_left</Action>
+    <Description>Get level of left channel after master volume. If no deck is specified will get master level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_vu_meter_left_peak</Action>
+    <Description>Get peak level of left channel after master volume. If no deck is specified will get master peak level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_vu_meter_peak</Action>
+    <Description>Get peak level of signal after master volume. If no deck is specified will get master peak level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_vu_meter_right</Action>
+    <Description>Get level of right channel after master volume. If no deck is specified will get master level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>get_vu_meter_right_peak</Action>
+    <Description>Get peak level of right channel after master volume. If no deck is specified will get master peak level.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>headphone_crossfader</Action>
+    <Description>change the PFL fader (0% is only the left deck, 100% is only the right deck).</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>headphone_gain</Action>
+    <Description>change the gain of the PFL output (from -30dB to +30dB)</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>headphone_mix</Action>
+    <Description>change the mix of the PFL (0% is only the cued deck, 100% is the master output).</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>headphone_volume</Action>
+    <Description>set cue volume</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>is_audible</Action>
+    <Description>active if the deck is playing and volume is up (on-air)</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>level</Action>
     <Alias>level_slider | volume | volume_slider</Alias>
+    <Description>set the volume of the deck</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>levelfader_curve</Action>
     <Alias>fader_curve</Alias>
+    <Description>select the curve of the level faders. 0% is a linear curve, 50% (default) is a quadratic curve, 100% is a cubic curve</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>master_balance</Action>
+    <Description>change the left/right balance on the master output.</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>master_volume</Action>
+    <Description>set master volume</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>mic2_volume</Action>
+    <Description>Set the volume of the second microphone</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>mic_volume</Action>
+    <Description>Set the volume of the microphone</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>mono_mix</Action>
+    <Description>Mix left and right channels together for all outputs</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>mute</Action>
+    <Description>Mute a specific deck</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>set_gain</Action>
+    <Description>set the gain in order to bring the song to the specified dBA (with 0dBA being the maximum level outputable by the soundcard without compression): &apos;set_gain 0&apos;</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>automix</Action>
+    <Description>Start or stop automatic playlist mixing</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>automix_add_next</Action>
+    <Description>Add the songs selected in the browser to the automix playlist right after the song currently playing If a song in the automix list is selected and automix is active, move it after the currently playing song</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>automix_dualdeck</Action>
+    <Description>Enable or disable automix using both decks</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>automix_editor</Action>
+    <Description>Open the automix editor, and fine-tune the automix transitions for every songs in your playlist</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>automix_editor_movetrack</Action>
+    <Description>When the automix editor is opened, move the selected track&apos;s position automix_editor_movetrack &apos;current&apos; +10 Also accepts &apos;next&apos; or &apos;previous&apos; to move the next or previous track. When the number is not given it can be mapped to rotary knobs or jog wheels</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>automix_skip</Action>
+    <Description>When automix is active, skip the current song and mix to the next one</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>create_list_from_playlist</Action>
     <Alias>create_virtualfolder_from_playlist</Alias>
+    <Description>Save the automix list in MyLists</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>get_automix_position</Action>
+    <Description>Return position of currently playing song in automix list</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>get_automix_song</Action>
+    <Description>get a property from the next song in automix: &quot;get_automix_song &apos;title&apos;&quot; you can also get properties from songs further down: &quot;get_automix_song &apos;title&apos; 2&quot;</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>get_playlist_time</Action>
+    <Description>Gets how much time is left before the end of the automix playlist</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>mix_and_load_next</Action>
+    <Description>automatically mix to the next deck, then stop the current track and load a new song if something is available in the playlist or sidelist by default this will to a tempo mix and sync bpm if the bpm is in range. You can add &apos;nosync&apos; to mix without tempo synchronization. &apos;mix_and_load_next nosync&apos;</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>mix_next</Action>
+    <Description>If the non-playing deck has a song loaded that has already been played, load a new one from the playlist. Then smoothly crossfade from the playing deck to the other, using beatsync if appropriate</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>mix_next_sidelist</Action>
+    <Description>If the non-playing deck has a song loaded that has already been played, load a new one from the sidelist. Then smoothly crossfade from the playing deck to the other, using beatsync if appropriate</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>mix_now</Action>
+    <Description>Smoothly crossfade from one side to the other, matching beats when the tempo of both songs is close together When automix is off, fade speed can be adjusted: &quot;mix_now 4000ms&quot; or &quot;mix_now 4bt&quot;</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>mix_now_nosync</Action>
+    <Description>Smoothly crossfade from one side to the other When automix is off, fade speed can be adjusted: &quot;mix_now_nosync 4000ms&quot; or &quot;mix_now_nosync 4bt&quot;</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>mix_selected</Action>
+    <Description>When automix is active, mix to the song currently selected</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_add</Action>
+    <Description>Add the songs selected in the browser to the automix list</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_clear</Action>
+    <Description>empty the playlist.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_load_and_keep</Action>
+    <Description>Load the first song in the automix list on the deck, without removing it from the list</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_load_and_remove</Action>
+    <Description>Load the first song in the automix list on the deck, and remove it from list</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_options</Action>
+    <Description>display a drop-down with the list of options for the playlist.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_randomize</Action>
+    <Description>shuffle the order of the songs in the playlist.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_randomize_once</Action>
+    <Description>shuffle the order of the songs in the playlist once.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_remove_duplicates</Action>
+    <Description>remove duplicate songs from the playlist.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_remove_played</Action>
+    <Description>remove from the playlist all the songs that have already been played since the software was launched.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_repeat</Action>
+    <Description>repeat (or stop to repeat) the playlist while automixing.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>playlist_save</Action>
+    <Description>save the playlist in a file.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>relay_play</Action>
+    <Description>Enable or disable the decks to automatically start playing when the opposite deck reached its end</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>sidelist_options</Action>
+    <Description>display a drop-down with the list of options for the sidelist.</Description>
   </Item>
   <Item>
     <Category>automix</Category>
     <Action>switch_sidelist_playlist</Action>
+    <Description>Exchange the content of the automix list and the sidelist</Description>
   </Item>
   <Item>
     <Category>browser</Category>

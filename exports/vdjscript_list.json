@@ -497,35 +497,43 @@
     },
     {
       "category": "audio",
-      "action": "beat_juggle"
+      "action": "beat_juggle",
+      "description": "Alternatively jumps one beat forward and backward 'beat_juggle 0.5' will jump 1/2 beat forward or backward"
     },
     {
       "category": "audio",
-      "action": "beatjump"
+      "action": "beatjump",
+      "description": "Jump a certain number of beats as set by beatjump_select 'beatjump +1' to jump forward, or 'beatjump -1' to jump backwards"
     },
     {
       "category": "audio",
-      "action": "beatjump_pad"
+      "action": "beatjump_pad",
+      "description": "execute 'goto +x' where x depends on the pad number and the beatjump_page"
     },
     {
       "category": "audio",
-      "action": "beatjump_page"
+      "action": "beatjump_page",
+      "description": "change the offset of the jumps in beatjump_pad actions"
     },
     {
       "category": "audio",
-      "action": "beatjump_select"
+      "action": "beatjump_select",
+      "description": "Select the number of beats the beatjump action will jump 'beatjump_select 4' to set beatjump to 4 beats 'beatjump_select +1' to set the next higher beat size 'beatjump_select 50%' to halve the current beat size 'beatjump_select 200%' to double the current beat size"
     },
     {
       "category": "audio",
-      "action": "clone_deck"
+      "action": "clone_deck",
+      "description": "clone the deck (load the same song on the other deck, and play it from the same position, ready for beat-juggling)."
     },
     {
       "category": "audio",
-      "action": "clone_from_deck"
+      "action": "clone_from_deck",
+      "description": "clone from the other deck (load the song from the other deck, and play it from the same position, ready for beat-juggling)."
     },
     {
       "category": "audio",
-      "action": "dualdeckmode"
+      "action": "dualdeckmode",
+      "description": "toggle dual deck mode. when enabled dualdeckmode_decks will apply to both decks 1/3 or 2/4"
     },
     {
       "category": "audio",
@@ -533,116 +541,144 @@
     },
     {
       "category": "audio",
-      "action": "dump"
+      "action": "dump",
+      "description": "reverse the playback direction while dump is active, then when deactivated, start again forward from where the song should have been if it had been playing forward during the dump. when quantize_all is active, dump will be quantized to match the beats. This can also be forced by using 'dump quantized' or 'dump notquantized' to dump only while the key is pressed, use 'dump while_pressed'"
     },
     {
       "category": "audio",
-      "action": "goto"
+      "action": "goto",
+      "description": "change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' jumps to 20% of the song's length."
     },
     {
       "category": "audio",
-      "action": "goto_bar"
+      "action": "goto_bar",
+      "description": "put the song on its nth beat after the downbeat without loosing sync: 'goto_bar 4'"
     },
     {
       "category": "audio",
-      "action": "goto_first_beat"
+      "action": "goto_first_beat",
+      "description": "automatically goes to the first beat in the song."
     },
     {
       "category": "audio",
-      "action": "goto_start"
+      "action": "goto_start",
+      "description": "go to the start of the song."
     },
     {
       "category": "audio",
-      "action": "mixermode"
+      "action": "mixermode",
+      "description": "Return true if internal mixer used (master output available), false if external mixer used. Parameter can also be explicit: mixermode \"internal\" or mixermode \"external\""
     },
     {
       "category": "audio",
-      "action": "move_deck"
+      "action": "move_deck",
+      "description": "load the song from the called deck into the deck specified by the parameter and unloads the song from the calling deck"
     },
     {
       "category": "audio",
-      "action": "reverse"
+      "action": "reverse",
+      "description": "play the song backward"
     },
     {
       "category": "audio",
-      "action": "seek"
+      "action": "seek",
+      "description": "move into the song while the button is pressed. 'seek +2' moves beat by beat, skipping 2 beats every 10ms. 'seek +420ms' moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside."
     },
     {
       "category": "audio",
-      "action": "song_pos"
+      "action": "song_pos",
+      "description": "position in the song. (the difference between song_pos and goto is that song_pos can be used as a slider)."
     },
     {
       "category": "audio",
-      "action": "songpos_remain"
+      "action": "songpos_remain",
+      "description": "get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value: 'songpos_remain 500ms ? blink'."
     },
     {
       "category": "audio",
-      "action": "songpos_warning"
+      "action": "songpos_warning",
+      "description": "returns true if the song is in its last 30s (actual time can be adjusted in options)"
     },
     {
       "category": "audio",
-      "action": "stems_split"
+      "action": "stems_split",
+      "description": "'stems_split' will duplicate deck 1 to deck 3 or deck 2 to 4, with the vocals playing on the first deck and the instruments on the other deck 'stems_split vocal target' will duplicate the opposite deck to the deck stems_split was called from"
     },
     {
       "category": "audio",
-      "action": "stems_split_unlink"
+      "action": "stems_split_unlink",
+      "description": "After using stems_split, you can use stems_split_unlink to have the decks behave independently, allowing to scratch the vocals without affecting the instrumental for example"
     },
     {
       "category": "audio",
-      "action": "swap_decks"
+      "action": "swap_decks",
+      "description": "swap deck 1 and deck 2"
     },
     {
       "category": "audio_controls",
-      "action": "auto_sync_options"
+      "action": "auto_sync_options",
+      "description": "show a context menu to control the various auto-sync options"
     },
     {
       "category": "audio_controls",
-      "action": "blink_play"
+      "action": "blink_play",
+      "description": "blinking fast when less than 10 seconds remaining, blinking slow when less than 30 seconds remaining, off otherwise 'blink_play on' is similar, but is on when the song is paused, and only off if no song is loaded or the loaded song has an error"
     },
     {
       "category": "audio_controls",
-      "action": "deck_options"
+      "action": "deck_options",
+      "description": "show a context menu to select the behavior of the play and cue buttons, the various smart modes, and pitch options"
     },
     {
       "category": "audio_controls",
-      "action": "emergency_play"
+      "action": "emergency_play",
+      "description": "play something"
     },
     {
       "category": "audio_controls",
-      "action": "pause"
+      "action": "pause",
+      "description": "pause the deck."
     },
     {
       "category": "audio_controls",
-      "action": "pause_stop"
+      "action": "pause_stop",
+      "description": "if playing, pause the deck. if stopped, rewind to beginning of the song, then cycle through all cue points each time pressed."
     },
     {
       "category": "audio_controls",
-      "action": "play"
+      "action": "play",
+      "description": "start the deck."
     },
     {
       "category": "audio_controls",
       "action": "play_button",
+      "description": "depending on the play_mode, act like play_stutter (Numark way) or play_pause (Pioneer way).",
       "alias": "play_3button"
     },
     {
       "category": "audio_controls",
-      "action": "play_options"
+      "action": "play_options",
+      "description": "show a context menu to select the behavior of the play and cue buttons, and the various smart modes"
     },
     {
       "category": "audio_controls",
-      "action": "play_pause"
+      "action": "play_pause",
+      "description": "if paused, start the deck. if playing, pause the deck."
     },
     {
       "category": "audio_controls",
-      "action": "play_stutter"
+      "action": "play_stutter",
+      "description": "if paused, start the deck. if playing, restart from last stutter point."
     },
     {
       "category": "audio_controls",
-      "action": "stop"
+      "action": "stop",
+      "description": "stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points."
     },
     {
       "category": "audio_controls",
       "action": "stop_button",
+      "description": "depending on the play_mode, act like pause_stop (Numark way) or stop (Pioneer way).",
       "alias": "stop_3button"
     },
     {
@@ -655,15 +691,18 @@
     },
     {
       "category": "audio_inputs",
-      "action": "linein"
+      "action": "linein",
+      "description": "Activate or deactivate the linein on this deck. You can also specify a linein number to assign another linein: \"deck 1 linein 2 on\" Or you can assign the microphone or aux input: \"deck 3 linein 'mic' on\" or \"deck 3 linein 'aux' on\" If you don't want the line in to become the master deck automatically, you can use \"deck 3 linein 'trs'\""
     },
     {
       "category": "audio_inputs",
-      "action": "linein_rec"
+      "action": "linein_rec",
+      "description": "record the linein input on this deck."
     },
     {
       "category": "audio_inputs",
       "action": "mic",
+      "description": "activate or deactivate the microphone input",
       "alias": "microphone"
     },
     {
@@ -680,11 +719,13 @@
     },
     {
       "category": "audio_inputs",
-      "action": "mic_rec"
+      "action": "mic_rec",
+      "description": "record the microphone input on this deck"
     },
     {
       "category": "audio_inputs",
-      "action": "mic_talkover"
+      "action": "mic_talkover",
+      "description": "Lower the volume of all decks while active and activates microphone Use 'mic_talkover while_pressed' to only activate mic as long as button is held Use 'mic_talkover 20% 1000ms' to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)"
     },
     {
       "category": "audio_scratch",
@@ -696,129 +737,159 @@
     },
     {
       "category": "audio_scratch",
-      "action": "get_slip_time"
+      "action": "get_slip_time",
+      "description": "Get the time where the song will be when slip mode is de-activated in milliseconds Alternatively, use get_slip_time \"min\", get_slip_time \"sec\" and get_slip_time \"msec\""
     },
     {
       "category": "audio_scratch",
       "action": "hold",
+      "description": "'hold on' or 'hold off'(or 'hold toggle') to stop the disc for scratching, or release it.",
       "alias": "scratch_hold"
     },
     {
       "category": "audio_scratch",
       "action": "jogwheel",
+      "description": "used for a jogwheel without touch sensitivity. 'jogwheel +1.0' means a full rotation of the wheel.",
       "alias": "jog | jog_wheel"
     },
     {
       "category": "audio_scratch",
-      "action": "motorwheel"
+      "action": "motorwheel",
+      "description": "used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel \"move\" +1.0' followed by 'motorwheel \"timestamp\" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false."
     },
     {
       "category": "audio_scratch",
-      "action": "nudge"
+      "action": "nudge",
+      "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated)."
     },
     {
       "category": "audio_scratch",
-      "action": "scratch"
+      "action": "scratch",
+      "description": "'scratch +120ms' to scratch 120ms forward."
     },
     {
       "category": "audio_scratch",
-      "action": "scratch_dna"
+      "action": "scratch_dna",
+      "description": "execute a scratch defined by its DNA signature (see scratch_dna_editor for information about DNA signatures)"
     },
     {
       "category": "audio_scratch",
-      "action": "scratch_dna_editor"
+      "action": "scratch_dna_editor",
+      "description": "open a visual editor to compose scratch DNA signatures"
     },
     {
       "category": "audio_scratch",
-      "action": "scratch_dna_option"
+      "action": "scratch_dna_option",
+      "description": "set some options about the Scratch DNA behavior. options are \"drymix\" and \"quantized\""
     },
     {
       "category": "audio_scratch",
-      "action": "slip"
+      "action": "slip",
+      "description": "activate or deactivate a global slip mode, that will save the position on \"slip on\" and resume where it should have been if untouched on \"slip off\", letting you do any scratch/loop/effect/etc in between"
     },
     {
       "category": "audio_scratch",
-      "action": "slip_mode"
+      "action": "slip_mode",
+      "description": "While in slip mode, during loops hotcues or scratch, the play cursor will keep moving unaffected, and will resume from there after release"
     },
     {
       "category": "audio_scratch",
-      "action": "speedwheel"
+      "action": "speedwheel",
+      "description": "used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed."
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel",
+      "description": "used for a jogwheel with touch sensitivity. 'touchwheel +1.0' means a full rotation of the wheel.",
       "alias": "scratch_wheel | scratchwheel"
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel_touch",
+      "description": "use when the touchwheel is touched, to hold the song and start to scratch.",
       "alias": "scratch_wheel_touch | scratchwheel_touch | speedwheel_touch"
     },
     {
       "category": "audio_scratch",
-      "action": "vinyl_mode"
+      "action": "vinyl_mode",
+      "description": "Set the jogwheel to Vinyl mode (with scratch), or to CD mode (with pitchbend)"
     },
     {
       "category": "audio_scratch",
-      "action": "wheel_mode"
+      "action": "wheel_mode",
+      "description": "change the mode of the jogwheel between: \"jog\", \"search\", \"loop_move\", \"loop_out\", \"loop_in\", \"browser\", or use +1 and -1 to cycle through all modes. You can select from a subset using a syntax like 'wheel_mode \"loop_move, loop_in, loop_out\" +1'."
     },
     {
       "category": "audio_volumes",
       "action": "auto_crossfade",
+      "description": "Automatically crossfade to the other deck. You can specify the duration of the crossfade in ms: 'auto_crossfade 2000ms' Assigned to a slider, or specifying a specific position, it will move the crossfader slowly to that position: 'auto_crossfade 50%' or 'auto_crossfade 1000ms 50%'",
       "alias": "auto_crossfader"
     },
     {
       "category": "audio_volumes",
-      "action": "booth_volume"
+      "action": "booth_volume",
+      "description": "set booth volume"
     },
     {
       "category": "audio_volumes",
-      "action": "colorfx_prefader"
+      "action": "colorfx_prefader",
+      "description": "color fx are prefader (required for some controllers)"
     },
     {
       "category": "audio_volumes",
       "action": "crossfader",
+      "description": "move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
       "alias": "crossfader_slider"
     },
     {
       "category": "audio_volumes",
-      "action": "crossfader_curve"
+      "action": "crossfader_curve",
+      "description": "select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (\"smooth\", \"full\", \"scratch\", \"cut\"). or you can draw your own curve, using a syntax like 'crossfader_curve \"0 = [1, 0] / 0.5=[1, 1]/1=[0,1]\"'."
     },
     {
       "category": "audio_volumes",
-      "action": "crossfader_disable"
+      "action": "crossfader_disable",
+      "description": "disable the crossfader"
     },
     {
       "category": "audio_volumes",
-      "action": "crossfader_hamster"
+      "action": "crossfader_hamster",
+      "description": "invert the crossfader."
     },
     {
       "category": "audio_volumes",
-      "action": "fake_eq"
+      "action": "fake_eq",
+      "description": "tell VirtualDJ not to apply the equalizer to the sound output"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_filter"
+      "action": "fake_filter",
+      "description": "tell VirtualDJ not to apply filter to sound output"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_gain"
+      "action": "fake_gain",
+      "description": "tell VirtualDJ not to apply gain to the sound output"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_hp"
+      "action": "fake_hp",
+      "description": "tell VirtualDJ not to apply headphone volume to headphone sound output"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_hpmix"
+      "action": "fake_hpmix",
+      "description": "tell VirtualDJ not to apply headphone mix to headphone sound output"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_master"
+      "action": "fake_master",
+      "description": "tell VirtualDJ not to apply master volume to master sound output"
     },
     {
       "category": "audio_volumes",
-      "action": "fake_mixer"
+      "action": "fake_mixer",
+      "description": "tell VirtualDJ not to apply the volumes to the sound output"
     },
     {
       "category": "audio_volumes",
@@ -827,254 +898,316 @@
     {
       "category": "audio_volumes",
       "action": "gain",
+      "description": "set the gain of a deck",
       "alias": "gain_slider | power_gain"
     },
     {
       "category": "audio_volumes",
-      "action": "gain_label"
+      "action": "gain_label",
+      "description": "get the text to display under the gain knob"
     },
     {
       "category": "audio_volumes",
-      "action": "gain_relative"
+      "action": "gain_relative",
+      "description": "change the gain, relative to the software gain position"
     },
     {
       "category": "audio_volumes",
-      "action": "get_crossfader_result"
+      "action": "get_crossfader_result",
+      "description": "get the actual volume balance between deck 1 and 2, based on crossfader, levels, and play (use get_crossfader_result \"full\" to show levels even for paused decks)"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level"
+      "action": "get_level",
+      "description": "Get level of signal before master volume. If no deck is specified will get master level Use \"get_level 'mic'\" for microphone level, or \"get_level 'sampler'\" for sampler level Use \"get_level 'vocal'\" for vocal vu meter, other stem names also supported"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_left"
+      "action": "get_level_left",
+      "description": "Get level of left channel before master volume. If no deck is specified will get master level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_left_peak"
+      "action": "get_level_left_peak",
+      "description": "Get peak level of left channel before master volume. If no deck is specified will get master peak level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_log"
+      "action": "get_level_log",
+      "description": "Similar to get_level, but returns level on logarithmic scale where -127dB=0.0 and 0dB=1.0"
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_peak"
+      "action": "get_level_peak",
+      "description": "Get peak level of signal before master volume. If no deck is specified will get master peak level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_right"
+      "action": "get_level_right",
+      "description": "Get level of right channel before master volume. If no deck is specified will get master level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_level_right_peak"
+      "action": "get_level_right_peak",
+      "description": "Get peak level of left channel before master volume. If no deck is specified will get master peak level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_limiter"
+      "action": "get_limiter",
+      "description": "return true if the limiter is compressing because the signal was saturated. Use 'deck 1 get limiter' to get the limiter on a deck in external mixer mode, or 'get_limiter' (or 'get_limiter \"master\") to get the limiter on the master for internal mixing mode (also can use 'get_limiter \"headphones\"' and 'get_limiter \"booth\"')"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter"
+      "action": "get_vu_meter",
+      "description": "Get level of signal after master volume. If no deck is specified will get master level. Use \"get_vu_meter 'mic'\" for microphone level or \"get_vu_meter 'sampler'\" for sampler level Use \"get_level 'vocal'\" for vocal vu meter, other stem names also supported"
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_left"
+      "action": "get_vu_meter_left",
+      "description": "Get level of left channel after master volume. If no deck is specified will get master level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_left_peak"
+      "action": "get_vu_meter_left_peak",
+      "description": "Get peak level of left channel after master volume. If no deck is specified will get master peak level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_peak"
+      "action": "get_vu_meter_peak",
+      "description": "Get peak level of signal after master volume. If no deck is specified will get master peak level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_right"
+      "action": "get_vu_meter_right",
+      "description": "Get level of right channel after master volume. If no deck is specified will get master level."
     },
     {
       "category": "audio_volumes",
-      "action": "get_vu_meter_right_peak"
+      "action": "get_vu_meter_right_peak",
+      "description": "Get peak level of right channel after master volume. If no deck is specified will get master peak level."
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_crossfader"
+      "action": "headphone_crossfader",
+      "description": "change the PFL fader (0% is only the left deck, 100% is only the right deck)."
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_gain"
+      "action": "headphone_gain",
+      "description": "change the gain of the PFL output (from -30dB to +30dB)"
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_mix"
+      "action": "headphone_mix",
+      "description": "change the mix of the PFL (0% is only the cued deck, 100% is the master output)."
     },
     {
       "category": "audio_volumes",
-      "action": "headphone_volume"
+      "action": "headphone_volume",
+      "description": "set cue volume"
     },
     {
       "category": "audio_volumes",
-      "action": "is_audible"
+      "action": "is_audible",
+      "description": "active if the deck is playing and volume is up (on-air)"
     },
     {
       "category": "audio_volumes",
       "action": "level",
+      "description": "set the volume of the deck",
       "alias": "level_slider | volume | volume_slider"
     },
     {
       "category": "audio_volumes",
       "action": "levelfader_curve",
+      "description": "select the curve of the level faders. 0% is a linear curve, 50% (default) is a quadratic curve, 100% is a cubic curve",
       "alias": "fader_curve"
     },
     {
       "category": "audio_volumes",
-      "action": "master_balance"
+      "action": "master_balance",
+      "description": "change the left/right balance on the master output."
     },
     {
       "category": "audio_volumes",
-      "action": "master_volume"
+      "action": "master_volume",
+      "description": "set master volume"
     },
     {
       "category": "audio_volumes",
-      "action": "mic2_volume"
+      "action": "mic2_volume",
+      "description": "Set the volume of the second microphone"
     },
     {
       "category": "audio_volumes",
-      "action": "mic_volume"
+      "action": "mic_volume",
+      "description": "Set the volume of the microphone"
     },
     {
       "category": "audio_volumes",
-      "action": "mono_mix"
+      "action": "mono_mix",
+      "description": "Mix left and right channels together for all outputs"
     },
     {
       "category": "audio_volumes",
-      "action": "mute"
+      "action": "mute",
+      "description": "Mute a specific deck"
     },
     {
       "category": "audio_volumes",
-      "action": "set_gain"
+      "action": "set_gain",
+      "description": "set the gain in order to bring the song to the specified dBA (with 0dBA being the maximum level outputable by the soundcard without compression): 'set_gain 0'"
     },
     {
       "category": "automix",
-      "action": "automix"
+      "action": "automix",
+      "description": "Start or stop automatic playlist mixing"
     },
     {
       "category": "automix",
-      "action": "automix_add_next"
+      "action": "automix_add_next",
+      "description": "Add the songs selected in the browser to the automix playlist right after the song currently playing If a song in the automix list is selected and automix is active, move it after the currently playing song"
     },
     {
       "category": "automix",
-      "action": "automix_dualdeck"
+      "action": "automix_dualdeck",
+      "description": "Enable or disable automix using both decks"
     },
     {
       "category": "automix",
-      "action": "automix_editor"
+      "action": "automix_editor",
+      "description": "Open the automix editor, and fine-tune the automix transitions for every songs in your playlist"
     },
     {
       "category": "automix",
-      "action": "automix_editor_movetrack"
+      "action": "automix_editor_movetrack",
+      "description": "When the automix editor is opened, move the selected track's position automix_editor_movetrack 'current' +10 Also accepts 'next' or 'previous' to move the next or previous track. When the number is not given it can be mapped to rotary knobs or jog wheels"
     },
     {
       "category": "automix",
-      "action": "automix_skip"
+      "action": "automix_skip",
+      "description": "When automix is active, skip the current song and mix to the next one"
     },
     {
       "category": "automix",
       "action": "create_list_from_playlist",
+      "description": "Save the automix list in MyLists",
       "alias": "create_virtualfolder_from_playlist"
     },
     {
       "category": "automix",
-      "action": "get_automix_position"
+      "action": "get_automix_position",
+      "description": "Return position of currently playing song in automix list"
     },
     {
       "category": "automix",
-      "action": "get_automix_song"
+      "action": "get_automix_song",
+      "description": "get a property from the next song in automix: \"get_automix_song 'title'\" you can also get properties from songs further down: \"get_automix_song 'title' 2\""
     },
     {
       "category": "automix",
-      "action": "get_playlist_time"
+      "action": "get_playlist_time",
+      "description": "Gets how much time is left before the end of the automix playlist"
     },
     {
       "category": "automix",
-      "action": "mix_and_load_next"
+      "action": "mix_and_load_next",
+      "description": "automatically mix to the next deck, then stop the current track and load a new song if something is available in the playlist or sidelist by default this will to a tempo mix and sync bpm if the bpm is in range. You can add 'nosync' to mix without tempo synchronization. 'mix_and_load_next nosync'"
     },
     {
       "category": "automix",
-      "action": "mix_next"
+      "action": "mix_next",
+      "description": "If the non-playing deck has a song loaded that has already been played, load a new one from the playlist. Then smoothly crossfade from the playing deck to the other, using beatsync if appropriate"
     },
     {
       "category": "automix",
-      "action": "mix_next_sidelist"
+      "action": "mix_next_sidelist",
+      "description": "If the non-playing deck has a song loaded that has already been played, load a new one from the sidelist. Then smoothly crossfade from the playing deck to the other, using beatsync if appropriate"
     },
     {
       "category": "automix",
-      "action": "mix_now"
+      "action": "mix_now",
+      "description": "Smoothly crossfade from one side to the other, matching beats when the tempo of both songs is close together When automix is off, fade speed can be adjusted: \"mix_now 4000ms\" or \"mix_now 4bt\""
     },
     {
       "category": "automix",
-      "action": "mix_now_nosync"
+      "action": "mix_now_nosync",
+      "description": "Smoothly crossfade from one side to the other When automix is off, fade speed can be adjusted: \"mix_now_nosync 4000ms\" or \"mix_now_nosync 4bt\""
     },
     {
       "category": "automix",
-      "action": "mix_selected"
+      "action": "mix_selected",
+      "description": "When automix is active, mix to the song currently selected"
     },
     {
       "category": "automix",
-      "action": "playlist_add"
+      "action": "playlist_add",
+      "description": "Add the songs selected in the browser to the automix list"
     },
     {
       "category": "automix",
-      "action": "playlist_clear"
+      "action": "playlist_clear",
+      "description": "empty the playlist."
     },
     {
       "category": "automix",
-      "action": "playlist_load_and_keep"
+      "action": "playlist_load_and_keep",
+      "description": "Load the first song in the automix list on the deck, without removing it from the list"
     },
     {
       "category": "automix",
-      "action": "playlist_load_and_remove"
+      "action": "playlist_load_and_remove",
+      "description": "Load the first song in the automix list on the deck, and remove it from list"
     },
     {
       "category": "automix",
-      "action": "playlist_options"
+      "action": "playlist_options",
+      "description": "display a drop-down with the list of options for the playlist."
     },
     {
       "category": "automix",
-      "action": "playlist_randomize"
+      "action": "playlist_randomize",
+      "description": "shuffle the order of the songs in the playlist."
     },
     {
       "category": "automix",
-      "action": "playlist_randomize_once"
+      "action": "playlist_randomize_once",
+      "description": "shuffle the order of the songs in the playlist once."
     },
     {
       "category": "automix",
-      "action": "playlist_remove_duplicates"
+      "action": "playlist_remove_duplicates",
+      "description": "remove duplicate songs from the playlist."
     },
     {
       "category": "automix",
-      "action": "playlist_remove_played"
+      "action": "playlist_remove_played",
+      "description": "remove from the playlist all the songs that have already been played since the software was launched."
     },
     {
       "category": "automix",
-      "action": "playlist_repeat"
+      "action": "playlist_repeat",
+      "description": "repeat (or stop to repeat) the playlist while automixing."
     },
     {
       "category": "automix",
-      "action": "playlist_save"
+      "action": "playlist_save",
+      "description": "save the playlist in a file."
     },
     {
       "category": "automix",
-      "action": "relay_play"
+      "action": "relay_play",
+      "description": "Enable or disable the decks to automatically start playing when the opposite deck reached its end"
     },
     {
       "category": "automix",
-      "action": "sidelist_options"
+      "action": "sidelist_options",
+      "description": "display a drop-down with the list of options for the sidelist."
     },
     {
       "category": "automix",
-      "action": "switch_sidelist_playlist"
+      "action": "switch_sidelist_playlist",
+      "description": "Exchange the content of the automix list and the sidelist"
     },
     {
       "category": "browser",
