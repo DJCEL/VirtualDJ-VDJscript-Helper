@@ -100,6 +100,7 @@
         }
 
         function ExportCSV() {
+            let csvSeparator = ",";
             let rows = [["Category", "Action", "Alias", "Description"]];
 
             Object.keys(vdjdata).forEach(category => {
@@ -116,14 +117,9 @@
                 });
             });
 
-            // Convert array to CSV string
-            let csvContent = rows.map(e => e.map(v => `"${v}"`).join(";")).join("\n");
-
-            // Create downloadable blob
+            let csvContent = rows.map(e => e.map(v => `"${v}"`).join(csvSeparator)).join("\n");
             let blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
             let url = URL.createObjectURL(blob);
-
-            // Create temporary download link
             let link = document.createElement("a");
             link.setAttribute("href", url);
             link.setAttribute("download", "vdjscript_list.csv");
@@ -146,14 +142,9 @@
                 });
             });
 
-            // Create worksheet from array
             let worksheet = XLSX.utils.aoa_to_sheet(rows);
-
-            // Create new workbook and append worksheet
             let workbook = XLSX.utils.book_new();
             XLSX.utils.book_append_sheet(workbook, worksheet, "VDJScript");
-
-            // Export to Excel file
             XLSX.writeFile(workbook, "vdjscript_list.xlsx");
         }
 
@@ -186,12 +177,8 @@
             });
 
             xmlContent += `</VDJScriptList>`;
-
-            // Create downloadable blob
             let blob = new Blob([xmlContent], { type: "application/xml;charset=utf-8;" });
             let url = URL.createObjectURL(blob);
-
-            // Create temporary download link
             let link = document.createElement("a");
             link.setAttribute("href", url);
             link.setAttribute("download", "vdjscript_list.xml");
@@ -221,20 +208,14 @@
                 });
             });
 
-            // Add vdjbuild before Items
             let jsonData = {
                 VdjBuild: vdjbuildNo,
                 Items: items
             };
 
-            // Wrap in an object for clarity
             let jsonContent = JSON.stringify(jsonData, null, 2);
-
-            // Create downloadable blob
             let blob = new Blob([jsonContent], { type: "application/json;charset=utf-8;" });
             let url = URL.createObjectURL(blob);
-
-            // Create temporary download link
             let link = document.createElement("a");
             link.setAttribute("href", url);
             link.setAttribute("download", "vdjscript_list.json");
@@ -282,7 +263,6 @@
                         let description = description_tmp.replace("TODO", "");
                         let alias = alias_tmp.replaceAll("\n", " | ");
 
-                        // Escape HTML entities
                         let escapeHtml = (str) => str
                             .replace(/&/g, "&amp;")
                             .replace(/</g, "&lt;")
@@ -307,11 +287,8 @@
             </html>
             `;
 
-            // Create downloadable blob
             let blob = new Blob([htmlContent], { type: "text/html;charset=utf-8;" });
             let url = URL.createObjectURL(blob);
-
-            // Create temporary download link
             let link = document.createElement("a");
             link.setAttribute("href", url);
             link.setAttribute("download", "vdjscript_list.html");
