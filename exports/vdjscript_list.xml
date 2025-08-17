@@ -54,7 +54,7 @@
   <Item>
     <Category>param</Category>
     <Action>false</Action>
-    <Alias>no|off</Alias>
+    <Alias>no | off</Alias>
     <Description>returns false</Description>
   </Item>
   <Item>
@@ -151,7 +151,7 @@
   <Item>
     <Category>param</Category>
     <Action>true</Action>
-    <Alias>on|yes</Alias>
+    <Alias>on | yes</Alias>
     <Description>returns true</Description>
   </Item>
   <Item>
@@ -705,7 +705,7 @@
   <Item>
     <Category>audio_scratch</Category>
     <Action>jogwheel</Action>
-    <Alias>jog|jog_wheel</Alias>
+    <Alias>jog | jog_wheel</Alias>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -746,12 +746,12 @@
   <Item>
     <Category>audio_scratch</Category>
     <Action>touchwheel</Action>
-    <Alias>scratch_wheel|scratchwheel</Alias>
+    <Alias>scratch_wheel | scratchwheel</Alias>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>touchwheel_touch</Action>
-    <Alias>scratch_wheel_touch|scratchwheel_touch|speedwheel_touch</Alias>
+    <Alias>scratch_wheel_touch | scratchwheel_touch | speedwheel_touch</Alias>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -826,7 +826,7 @@
   <Item>
     <Category>audio_volumes</Category>
     <Action>gain</Action>
-    <Alias>gain_slider|power_gain</Alias>
+    <Alias>gain_slider | power_gain</Alias>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
@@ -919,7 +919,7 @@
   <Item>
     <Category>audio_volumes</Category>
     <Action>level</Action>
-    <Alias>level_slider|volume|volume_slider</Alias>
+    <Alias>level_slider | volume | volume_slider</Alias>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
@@ -2895,7 +2895,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>pitch</Category>
     <Action>pitch</Action>
-    <Alias>pitch2|pitch2_slider|pitch_slider</Alias>
+    <Alias>pitch2 | pitch2_slider | pitch_slider</Alias>
   </Item>
   <Item>
     <Category>pitch</Category>
