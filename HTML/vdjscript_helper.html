@@ -13,9 +13,9 @@
     <div class="introduction">
         <a href="https://www.virtualdj.com/wiki/VDJscript.html" target="_blank">VDJscript documentation</a>
         <br />
-        <a href="https://www.virtualdj.com/manuals/virtualdj/appendix/vdjscriptverbs.html"" target="_blank">VDJscript List of verbs</a>
+        <a href="https://www.virtualdj.com/manuals/virtualdj/appendix/vdjscriptverbs.html" target="_blank">VDJscript List of verbs</a>
         <br />
-        <a href="https://www.virtualdj.com/wiki/VDJScript%20Examples.html"" target="_blank">Examples</a>
+        <a href="https://www.virtualdj.com/wiki/VDJScript%20Examples.html" target="_blank">Examples</a>
     </div>
     <br />
 
@@ -40,6 +40,9 @@
         </div>
         <br />
         <label id="vdjbuildlabel">...</label>
+        <br />
+        <br />
+        <button onclick="ExportCSV()">Export data in CSV</button>
     </div>
         <script>
             const vdjbuildLabel = document.getElementById("vdjbuildlabel");
@@ -90,7 +93,40 @@
                 descriptionBox.textContent = vdj_data[category][action];
                 actionInput.value = action;
             }
+
+            function ExportCSV() {
+                let rows = [["Category", "Action", "Alias", "Description"]];
+
+                Object.keys(vdj_data).forEach(category => {
+                    Object.keys(vdj_data[category]).forEach(action => {
+                        let description_full = vdj_data[category][action]
+                        let parts = description_full.split("\n\n-----Alias-----\n");
+                        let description_tmp = parts[0] ? parts[0].trim() : "";
+                        let alias_tmp1 = parts[1] ? parts[1].trim() : "";
+                        let alias_tmp2 = alias_tmp1.replace("\n", "|");
+
+                        let description = description_tmp.replace(/"/g, '""'); // escape quotes for CSV
+                        let alias = alias_tmp2.replace(/"/g, '""'); // escape quotes for CSV
+                        rows.push([category, action, alias, description]);
+                    });
+                });
+
+                // Convert array to CSV string
+                let csvContent = rows.map(e => e.map(v => `"${v}"`).join(",")).join("\n");
+
+                // Create downloadable blob
+                let blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+                let url = URL.createObjectURL(blob);
+
+                // Create temporary download link
+                let link = document.createElement("a");
+                link.setAttribute("href", url);
+                link.setAttribute("download", "vdjscript_list.csv");
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+
         </script>
 </body>
 </html>
-
