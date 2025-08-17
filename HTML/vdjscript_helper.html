@@ -46,6 +46,7 @@
         <button onclick="ExportCSV()">Export list in CSV</button>
         <button onclick="ExportExcel()">Export list in Excel</button>
         <button onclick="ExportXML()">Export list in XML</button>
+        <button onclick="ExportJSON()">Export list in JSON</button>
     </div>
     <script>
         const vdjbuildLabel = document.getElementById("vdjbuildlabel");
@@ -136,11 +137,9 @@
                 Object.keys(vdjdata[category]).forEach(action => {
                     let description_full = vdjdata[category][action];
                     let parts = description_full.split("\n\n-----Alias-----\n");
-                    let description_tmp = parts[0] ? parts[0].trim() : "";
+                    let description = parts[0] ? parts[0].trim() : "";
                     let alias_tmp1 = parts[1] ? parts[1].trim() : "";
-                    let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
-                    let description = description_tmp;
-                    let alias = alias_tmp2;
+                    let alias = alias_tmp1.replaceAll("\n", "|");
                     let row_data = [category, action, alias, description];
                     rows.push(row_data);
                 });
@@ -165,8 +164,8 @@
                     let description_full = vdjdata[category][action];
                     let parts = description_full.split("\n\n-----Alias-----\n");
                     let description = parts[0] ? parts[0].trim() : "";
-                    let alias_tmp1 = parts[1] ? parts[1].trim() : "";
-                    let alias = alias_tmp1.replaceAll("\n", "|");
+                    let alias_tmp = parts[1] ? parts[1].trim() : "";
+                    let alias = alias_tmp.replaceAll("\n", "|");
 
                     // Escape XML special characters
                     let escapeXml = (str) => str
@@ -199,6 +198,44 @@
             link.click();
             document.body.removeChild(link);
         }
+
+        function ExportJSON() {
+            let items = [];
+
+            Object.keys(vdjdata).forEach(category => {
+                Object.keys(vdjdata[category]).forEach(action => {
+                    let description_full = vdjdata[category][action];
+
+                    let parts = description_full.split("\n\n-----Alias-----\n");
+                    let description = parts[0] ? parts[0].trim() : "";
+                    let alias_tmp = parts[1] ? parts[1].trim() : "";
+                    let alias = alias_tmp.replaceAll("\n", "|");
+
+                    items.push({
+                        category: category,
+                        action: action,
+                        alias: alias,
+                        description: description
+                    });
+                });
+            });
+
+            // Wrap in an object for clarity
+            let jsonContent = JSON.stringify({ Items: items }, null, 2);
+
+            // Create downloadable blob
+            let blob = new Blob([jsonContent], { type: "application/json;charset=utf-8;" });
+            let url = URL.createObjectURL(blob);
+
+            // Create temporary download link
+            let link = document.createElement("a");
+            link.setAttribute("href", url);
+            link.setAttribute("download", "vdjscript_list.json");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
     </script>
 </body>
 </html>
