@@ -57,11 +57,11 @@
         const vdjbuild = vdjscript_list["VdjBuild"];
         vdjbuildLabel.textContent = "List of verbs based on VirtualDJ build " + vdjbuild
 
-        // vdj_data structure: category → action → description
-        const vdj_data = vdjscript_list["Items"];
+        // vdjdata structure: category → action → description
+        const vdjdata = vdjscript_list["Items"];
 
         // Load categories
-        Object.keys(vdj_data).forEach(cat => {
+        Object.keys(vdjdata).forEach(cat => {
             const li = document.createElement("li");
             li.textContent = cat;
             li.addEventListener("click", () => selectCategory(cat, li));
@@ -79,7 +79,7 @@
             actionInput.value = "";
 
             // Load actions for this category
-            Object.keys(vdj_data[category]).forEach(act => {
+            Object.keys(vdjdata[category]).forEach(act => {
                 const li = document.createElement("li");
                 li.textContent = act;
                 li.addEventListener("click", () => selectAction(category, act, li));
@@ -93,16 +93,16 @@
             element.classList.add("active");
 
             // Update description + input
-            descriptionBox.textContent = vdj_data[category][action];
+            descriptionBox.textContent = vdjdata[category][action];
             actionInput.value = action;
         }
 
         function ExportCSV() {
             let rows = [["Category", "Action", "Alias", "Description"]];
 
-            Object.keys(vdj_data).forEach(category => {
-                Object.keys(vdj_data[category]).forEach(action => {
-                    let description_full = vdj_data[category][action]
+            Object.keys(vdjdata).forEach(category => {
+                Object.keys(vdjdata[category]).forEach(action => {
+                    let description_full = vdjdata[category][action]
                     let parts = description_full.split("\n\n-----Alias-----\n");
                     let description_tmp = parts[0] ? parts[0].trim() : "";
                     let alias_tmp1 = parts[1] ? parts[1].trim() : "";
@@ -132,19 +132,15 @@
 
         function ExportExcel() {
             let rows = [["Category", "Action", "Alias", "Description"]];
-
-            Object.keys(vdj_data).forEach(category => {
-                Object.keys(vdj_data[category]).forEach(action => {
-                    let description_full = vdj_data[category][action];
-
+            Object.keys(vdjdata).forEach(category => {
+                Object.keys(vdjdata[category]).forEach(action => {
+                    let description_full = vdjdata[category][action];
                     let parts = description_full.split("\n\n-----Alias-----\n");
                     let description_tmp = parts[0] ? parts[0].trim() : "";
                     let alias_tmp1 = parts[1] ? parts[1].trim() : "";
                     let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
-
                     let description = description_tmp;
                     let alias = alias_tmp2;
-
                     let row_data = [category, action, alias, description];
                     rows.push(row_data);
                 });
@@ -164,9 +160,9 @@
         function ExportXML() {
             let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<VDJScriptList vdjbuild="` + vdjbuild + `">\n`;
 
-            Object.keys(vdj_data).forEach(category => {
-                Object.keys(vdj_data[category]).forEach(action => {
-                    let description_full = vdj_data[category][action];
+            Object.keys(vdjdata).forEach(category => {
+                Object.keys(vdjdata[category]).forEach(action => {
+                    let description_full = vdjdata[category][action];
                     let parts = description_full.split("\n\n-----Alias-----\n");
                     let description = parts[0] ? parts[0].trim() : "";
                     let alias_tmp1 = parts[1] ? parts[1].trim() : "";
@@ -204,7 +200,5 @@
             document.body.removeChild(link);
         }
     </script>
-
-        </script>
 </body>
 </html>
