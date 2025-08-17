@@ -52,7 +52,7 @@ const vdjscript_list =
             "false":
             {
                 "description": "returns false",
-                "alias": "no|off"
+                "alias": "no | off"
             },
             "param_1_x":
             {
@@ -130,7 +130,7 @@ const vdjscript_list =
             "true":
             {
                 "description": "returns true",
-                "alias": "on|yes"
+                "alias": "on | yes"
             }
         },
         "repeat":
@@ -651,7 +651,7 @@ const vdjscript_list =
             "jogwheel":
             {
                 "description": "TODO",
-                "alias": "jog|jog_wheel"
+                "alias": "jog | jog_wheel"
             },
             "motorwheel":
             {
@@ -691,12 +691,12 @@ const vdjscript_list =
             "touchwheel":
             {
                 "description": "TODO",
-                "alias": "scratch_wheel|scratchwheel"
+                "alias": "scratch_wheel | scratchwheel"
             },
             "touchwheel_touch":
             {
                 "description": "TODO",
-                "alias": "scratch_wheel_touch|scratchwheel_touch|speedwheel_touch"
+                "alias": "scratch_wheel_touch | scratchwheel_touch | speedwheel_touch"
             },
             "vinyl_mode":
             {
@@ -773,7 +773,7 @@ const vdjscript_list =
             },
             "gain": {
                 "description": "TODO",
-                "alias": "gain_slider|power_gain"
+                "alias": "gain_slider | power_gain"
             },
             "gain_label":
             {
@@ -864,7 +864,7 @@ const vdjscript_list =
             "level":
             {
                 "description": "TODO",
-                "alias": "level_slider|volume|volume_slider"
+                "alias": "level_slider | volume | volume_slider"
             },
             "levelfader_curve":
             {
@@ -1817,7 +1817,7 @@ const vdjscript_list =
             },
             "pitch": {
                 "description": "TODO",
-                "alias": "pitch2|pitch2_slider|pitch_slider"
+                "alias": "pitch2 | pitch2_slider | pitch_slider"
             },
             "pitch_bend":
             {
