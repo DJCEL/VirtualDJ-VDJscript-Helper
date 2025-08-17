@@ -45,120 +45,165 @@
         <br />
         <button onclick="ExportCSV()">Export list in CSV</button>
         <button onclick="ExportExcel()">Export list in Excel</button>
+        <button onclick="ExportXML()">Export list in XML</button>
     </div>
-        <script>
-            const vdjbuildLabel = document.getElementById("vdjbuildlabel");
-            const categoryList = document.getElementById("vdjscriptlist_category");
-            const actionList = document.getElementById("vdjscriptlist_action");
-            const descriptionBox = document.getElementById("vdjscriptlist_description");
-            const actionInput = document.getElementById("action");
+    <script>
+        const vdjbuildLabel = document.getElementById("vdjbuildlabel");
+        const categoryList = document.getElementById("vdjscriptlist_category");
+        const actionList = document.getElementById("vdjscriptlist_action");
+        const descriptionBox = document.getElementById("vdjscriptlist_description");
+        const actionInput = document.getElementById("action");
 
-            const vdjbuild = vdjscript_list["VdjBuild"];
-            vdjbuildLabel.textContent = "List of verbs based on VirtualDJ build " + vdjbuild
+        const vdjbuild = vdjscript_list["VdjBuild"];
+        vdjbuildLabel.textContent = "List of verbs based on VirtualDJ build " + vdjbuild
 
-            // vdj_data structure: category → action → description
-            const vdj_data = vdjscript_list["Items"];
+        // vdj_data structure: category → action → description
+        const vdj_data = vdjscript_list["Items"];
 
-            // Load categories
-            Object.keys(vdj_data).forEach(cat => {
+        // Load categories
+        Object.keys(vdj_data).forEach(cat => {
+            const li = document.createElement("li");
+            li.textContent = cat;
+            li.addEventListener("click", () => selectCategory(cat, li));
+            categoryList.appendChild(li);
+        });
+
+        function selectCategory(category, element) {
+            // Highlight selected category
+            [...categoryList.children].forEach(li => li.classList.remove("active"));
+            element.classList.add("active");
+
+            // Clear action + description
+            actionList.innerHTML = "";
+            descriptionBox.textContent = "Select an action to see its description.";
+            actionInput.value = "";
+
+            // Load actions for this category
+            Object.keys(vdj_data[category]).forEach(act => {
                 const li = document.createElement("li");
-                li.textContent = cat;
-                li.addEventListener("click", () => selectCategory(cat, li));
-                categoryList.appendChild(li);
+                li.textContent = act;
+                li.addEventListener("click", () => selectAction(category, act, li));
+                actionList.appendChild(li);
+            });
+        }
+
+        function selectAction(category, action, element) {
+            // Highlight selected action
+            [...actionList.children].forEach(li => li.classList.remove("active"));
+            element.classList.add("active");
+
+            // Update description + input
+            descriptionBox.textContent = vdj_data[category][action];
+            actionInput.value = action;
+        }
+
+        function ExportCSV() {
+            let rows = [["Category", "Action", "Alias", "Description"]];
+
+            Object.keys(vdj_data).forEach(category => {
+                Object.keys(vdj_data[category]).forEach(action => {
+                    let description_full = vdj_data[category][action]
+                    let parts = description_full.split("\n\n-----Alias-----\n");
+                    let description_tmp = parts[0] ? parts[0].trim() : "";
+                    let alias_tmp1 = parts[1] ? parts[1].trim() : "";
+                    let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
+                    let description = description_tmp.replace(/"/g, '""'); // escape quotes for CSV
+                    let alias = alias_tmp2.replace(/"/g, '""'); // escape quotes for CSV
+                    let row_data = [category, action, alias, description]
+                    rows.push(row_data);
+                });
             });
 
-            function selectCategory(category, element) {
-                // Highlight selected category
-                [...categoryList.children].forEach(li => li.classList.remove("active"));
-                element.classList.add("active");
+            // Convert array to CSV string
+            let csvContent = rows.map(e => e.map(v => `"${v}"`).join(";")).join("\n");
 
-                // Clear action + description
-                actionList.innerHTML = "";
-                descriptionBox.textContent = "Select an action to see its description.";
-                actionInput.value = "";
+            // Create downloadable blob
+            let blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+            let url = URL.createObjectURL(blob);
 
-                // Load actions for this category
-                Object.keys(vdj_data[category]).forEach(act => {
-                    const li = document.createElement("li");
-                    li.textContent = act;
-                    li.addEventListener("click", () => selectAction(category, act, li));
-                    actionList.appendChild(li);
+            // Create temporary download link
+            let link = document.createElement("a");
+            link.setAttribute("href", url);
+            link.setAttribute("download", "vdjscript_list.csv");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function ExportExcel() {
+            let rows = [["Category", "Action", "Alias", "Description"]];
+
+            Object.keys(vdj_data).forEach(category => {
+                Object.keys(vdj_data[category]).forEach(action => {
+                    let description_full = vdj_data[category][action];
+
+                    let parts = description_full.split("\n\n-----Alias-----\n");
+                    let description_tmp = parts[0] ? parts[0].trim() : "";
+                    let alias_tmp1 = parts[1] ? parts[1].trim() : "";
+                    let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
+
+                    let description = description_tmp;
+                    let alias = alias_tmp2;
+
+                    let row_data = [category, action, alias, description];
+                    rows.push(row_data);
                 });
-            }
+            });
 
-            function selectAction(category, action, element) {
-                // Highlight selected action
-                [...actionList.children].forEach(li => li.classList.remove("active"));
-                element.classList.add("active");
+            // Create worksheet from array
+            let worksheet = XLSX.utils.aoa_to_sheet(rows);
 
-                // Update description + input
-                descriptionBox.textContent = vdj_data[category][action];
-                actionInput.value = action;
-            }
+            // Create new workbook and append worksheet
+            let workbook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(workbook, worksheet, "VDJScript");
 
-            function ExportCSV() {
-                let rows = [["Category", "Action", "Alias", "Description"]];
+            // Export to Excel file
+            XLSX.writeFile(workbook, "vdjscript_list.xlsx");
+        }
 
-                Object.keys(vdj_data).forEach(category => {
-                    Object.keys(vdj_data[category]).forEach(action => {
-                        let description_full = vdj_data[category][action]
-                        let parts = description_full.split("\n\n-----Alias-----\n");
-                        let description_tmp = parts[0] ? parts[0].trim() : "";
-                        let alias_tmp1 = parts[1] ? parts[1].trim() : "";
-                        let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
-                        let description = description_tmp.replace(/"/g, '""'); // escape quotes for CSV
-                        let alias = alias_tmp2.replace(/"/g, '""'); // escape quotes for CSV
-                        let row_data = [category, action, alias, description]
-                        rows.push(row_data);
-                    });
+        function ExportXML() {
+            let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<VDJScriptList vdjbuild="` + vdjbuild + `">\n`;
+
+            Object.keys(vdj_data).forEach(category => {
+                Object.keys(vdj_data[category]).forEach(action => {
+                    let description_full = vdj_data[category][action];
+                    let parts = description_full.split("\n\n-----Alias-----\n");
+                    let description = parts[0] ? parts[0].trim() : "";
+                    let alias_tmp1 = parts[1] ? parts[1].trim() : "";
+                    let alias = alias_tmp1.replaceAll("\n", "|");
+
+                    // Escape XML special characters
+                    let escapeXml = (str) => str
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;")
+                        .replace(/"/g, "&quot;")
+                        .replace(/'/g, "&apos;");
+
+                    xmlContent += `  <Verb>\n`;
+                    xmlContent += `    <Category>${escapeXml(category)}</Category>\n`;
+                    xmlContent += `    <Action>${escapeXml(action)}</Action>\n`;
+                    xmlContent += `    <Alias>${escapeXml(alias)}</Alias>\n`;
+                    xmlContent += `    <Description>${escapeXml(description)}</Description>\n`;
+                    xmlContent += `  </Verb>\n`;
                 });
+            });
 
-                // Convert array to CSV string
-                let csvContent = rows.map(e => e.map(v => `"${v}"`).join(";")).join("\n");
+            xmlContent += `</VDJScriptList>`;
 
-                // Create downloadable blob
-                let blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-                let url = URL.createObjectURL(blob);
+            // Create downloadable blob
+            let blob = new Blob([xmlContent], { type: "application/xml;charset=utf-8;" });
+            let url = URL.createObjectURL(blob);
 
-                // Create temporary download link
-                let link = document.createElement("a");
-                link.setAttribute("href", url);
-                link.setAttribute("download", "vdjscript_list.csv");
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-
-            function ExportExcel() {
-                let rows = [["Category", "Action", "Alias", "Description"]];
-
-                Object.keys(vdj_data).forEach(category => {
-                    Object.keys(vdj_data[category]).forEach(action => {
-                        let description_full = vdj_data[category][action];
-
-                        let parts = description_full.split("\n\n-----Alias-----\n");
-                        let description_tmp = parts[0] ? parts[0].trim() : "";
-                        let alias_tmp1 = parts[1] ? parts[1].trim() : "";
-                        let alias_tmp2 = alias_tmp1.replaceAll("\n", "|");
-
-                        let description = description_tmp;
-                        let alias = alias_tmp2;
-
-                        let row_data = [category, action, alias, description];
-                        rows.push(row_data);
-                    });
-                });
-
-                // Create worksheet from array
-                let worksheet = XLSX.utils.aoa_to_sheet(rows);
-
-                // Create new workbook and append worksheet
-                let workbook = XLSX.utils.book_new();
-                XLSX.utils.book_append_sheet(workbook, worksheet, "VDJScript");
-
-                // Export to Excel file
-                XLSX.writeFile(workbook, "vdjscript_list.xlsx");
-            }
+            // Create temporary download link
+            let link = document.createElement("a");
+            link.setAttribute("href", url);
+            link.setAttribute("download", "vdjscript_list.xml");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 
         </script>
 </body>
