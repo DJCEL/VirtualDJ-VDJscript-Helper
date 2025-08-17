@@ -277,8 +277,9 @@
                     Object.keys(vdjdata[category]).forEach(action => {
                         let description_full = vdjdata[category][action];
                         let parts = description_full.split("\n\n-----Alias-----\n");
-                        let description = parts[0] ? parts[0].trim() : "";
+                        let description_tmp = parts[0] ? parts[0].trim() : "";
                         let alias_tmp = parts[1] ? parts[1].trim() : "";
+                        let description = description_tmp.replace("TODO", "");
                         let alias = alias_tmp.replaceAll("\n", " | ");
 
                         // Escape HTML entities
