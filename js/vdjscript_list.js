@@ -433,35 +433,35 @@ const vdjscript_list =
         {
             "beat_juggle":
             {
-                "description": "TODO"
+                "description": "Alternatively jumps one beat forward and backward 'beat_juggle 0.5' will jump 1/2 beat forward or backward"
             },
             "beatjump":
             {
-                "description": "TODO"
+                "description": "Jump a certain number of beats as set by beatjump_select 'beatjump +1' to jump forward, or 'beatjump -1' to jump backwards"
             },
             "beatjump_pad":
             {
-                "description": "TODO"
+                "description": "execute 'goto +x' where x depends on the pad number and the beatjump_page"
             },
             "beatjump_page":
             {
-                "description": "TODO"
+                "description": "change the offset of the jumps in beatjump_pad actions"
             },
             "beatjump_select":
             {
-                "description": "TODO"
+                "description": "Select the number of beats the beatjump action will jump 'beatjump_select 4' to set beatjump to 4 beats 'beatjump_select +1' to set the next higher beat size 'beatjump_select 50%' to halve the current beat size 'beatjump_select 200%' to double the current beat size"
             },
             "clone_deck":
             {
-                "description": "TODO"
+                "description": "clone the deck (load the same song on the other deck, and play it from the same position, ready for beat-juggling)."
             },
             "clone_from_deck":
             {
-                "description": "TODO"
+                "description": "clone from the other deck (load the song from the other deck, and play it from the same position, ready for beat-juggling)."
             },
             "dualdeckmode":
             {
-                "description": "TODO"
+                "description": "toggle dual deck mode. when enabled dualdeckmode_decks will apply to both decks 1/3 or 2/4"
             },
             "dualdeckmode_decks":
             {
@@ -469,119 +469,119 @@ const vdjscript_list =
             },
             "dump":
             {
-                "description": "TODO"
+                "description": "reverse the playback direction while dump is active, then when deactivated, start again forward from where the song should have been if it had been playing forward during the dump. when quantize_all is active, dump will be quantized to match the beats. This can also be forced by using 'dump quantized' or 'dump notquantized' to dump only while the key is pressed, use 'dump while_pressed'"
             },
             "goto":
             {
-                "description": "TODO"
+                "description": "change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' jumps to 20% of the song's length."
             },
             "goto_bar":
             {
-                "description": "TODO"
+                "description": "put the song on its nth beat after the downbeat without loosing sync: 'goto_bar 4'"
             },
             "goto_first_beat":
             {
-                "description": "TODO"
+                "description": "automatically goes to the first beat in the song."
             },
             "goto_start":
             {
-                "description": "TODO"
+                "description": "go to the start of the song."
             },
             "mixermode":
             {
-                "description": "TODO"
+                "description": "Return true if internal mixer used (master output available), false if external mixer used. Parameter can also be explicit: mixermode \"internal\" or mixermode \"external\""
             },
             "move_deck":
             {
-                "description": "TODO"
+                "description": "load the song from the called deck into the deck specified by the parameter and unloads the song from the calling deck"
             },
             "reverse":
             {
-                "description": "TODO"
+                "description": "play the song backward"
             },
             "seek":
             {
-                "description": "TODO"
+                "description": "move into the song while the button is pressed. 'seek +2' moves beat by beat, skipping 2 beats every 10ms. 'seek +420ms' moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside."
             },
             "song_pos":
             {
-                "description": "TODO"
+                "description": "position in the song. (the difference between song_pos and goto is that song_pos can be used as a slider)."
             },
             "songpos_remain":
             {
-                "description": "TODO"
+                "description": "get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value: 'songpos_remain 500ms ? blink'."
             },
             "songpos_warning":
             {
-                "description": "TODO"
+                "description": "returns true if the song is in its last 30s (actual time can be adjusted in options)"
             },
             "stems_split":
             {
-                "description": "TODO"
+                "description": "'stems_split' will duplicate deck 1 to deck 3 or deck 2 to 4, with the vocals playing on the first deck and the instruments on the other deck 'stems_split vocal target' will duplicate the opposite deck to the deck stems_split was called from"
             },
             "stems_split_unlink":
             {
-                "description": "TODO"
+                "description": "After using stems_split, you can use stems_split_unlink to have the decks behave independently, allowing to scratch the vocals without affecting the instrumental for example"
             },
             "swap_decks":
             {
-                "description": "TODO"
+                "description": "swap deck 1 and deck 2"
             }
         },
         "audio_controls":
         {
             "auto_sync_options":
             {
-                "description": "TODO",
+                "description": "show a context menu to control the various auto-sync options",
             },
             "blink_play":
             {
-                "description": "TODO"
+                "description": "blinking fast when less than 10 seconds remaining, blinking slow when less than 30 seconds remaining, off otherwise 'blink_play on' is similar, but is on when the song is paused, and only off if no song is loaded or the loaded song has an error"
             },
             "deck_options":
             {
-                "description": "TODO"
+                "description": "show a context menu to select the behavior of the play and cue buttons, the various smart modes, and pitch options"
             },
             "emergency_play":
             {
-                "description": "TODO"
+                "description": "play something"
             },
             "pause":
             {
-                "description": "TODO"
+                "description": "pause the deck."
             },
             "pause_stop":
             {
-                "description": "TODO"
+                "description": "if playing, pause the deck. if stopped, rewind to beginning of the song, then cycle through all cue points each time pressed."
             },
             "play":
             {
-                "description": "TODO"
+                "description": "start the deck."
             },
             "play_button":
             {
-                "description": "TODO",
+                "description": "depending on the play_mode, act like play_stutter (Numark way) or play_pause (Pioneer way).",
                 "alias": "play_3button"
             },
             "play_options":
             {
-                "description": "TODO"
+                "description": "show a context menu to select the behavior of the play and cue buttons, and the various smart modes"
             },
             "play_pause":
             {
-                "description": "TODO"
+                "description": "if paused, start the deck. if playing, pause the deck."
             },
             "play_stutter":
             {
-                "description": "TODO"
+                "description": "if paused, start the deck. if playing, restart from last stutter point."
             },
             "stop":
             {
-                "description": "TODO"
+                "description": "stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points."
             },
             "stop_button":
             {
-                "description": "TODO",
+                "description": "depending on the play_mode, act like pause_stop (Numark way) or stop (Pioneer way).",
                 "alias": "stop_3button"
             }
         },
@@ -597,15 +597,15 @@ const vdjscript_list =
             },
             "linein":
             {
-                "description": "TODO"
+                "description": "Activate or deactivate the linein on this deck. You can also specify a linein number to assign another linein: \"deck 1 linein 2 on\" Or you can assign the microphone or aux input: \"deck 3 linein 'mic' on\" or \"deck 3 linein 'aux' on\" If you don't want the line in to become the master deck automatically, you can use \"deck 3 linein 'trs'\""
             },
             "linein_rec":
             {
-                "description": "TODO"
+                "description": "record the linein input on this deck."
             },
             "mic":
             {
-                "description": "TODO",
+                "description": "activate or deactivate the microphone input",
                 "alias": "microphone"
             },
             "mic_eq_high":
@@ -622,11 +622,11 @@ const vdjscript_list =
             },
             "mic_rec":
             {
-                "description": "TODO"
+                "description": "record the microphone input on this deck"
             },
             "mic_talkover":
             {
-                "description": "TODO"
+                "description": "Lower the volume of all decks while active and activates microphone Use 'mic_talkover while_pressed' to only activate mic as long as button is held Use 'mic_talkover 20% 1000ms' to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)"
             }
         },
         "audio_scratch":
@@ -641,70 +641,70 @@ const vdjscript_list =
             },
             "get_slip_time":
             {
-                "description": "TODO"
+                "description": "Get the time where the song will be when slip mode is de-activated in milliseconds Alternatively, use get_slip_time \"min\", get_slip_time \"sec\" and get_slip_time \"msec\""
             },
             "hold":
             {
-                "description": "TODO",
+                "description": "'hold on' or 'hold off'(or 'hold toggle') to stop the disc for scratching, or release it.",
                 "alias": "scratch_hold"
             },
             "jogwheel":
             {
-                "description": "TODO",
+                "description": "used for a jogwheel without touch sensitivity. 'jogwheel +1.0' means a full rotation of the wheel.",
                 "alias": "jog | jog_wheel"
             },
             "motorwheel":
             {
-                "description": "TODO"
+                "description": "used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel \"move\" +1.0' followed by 'motorwheel \"timestamp\" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false."
             },
             "nudge":
             {
-                "description": "TODO"
+                "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated)."
             },
             "scratch": {
-                "description": "TODO"
+                "description": "'scratch +120ms' to scratch 120ms forward."
             },
             "scratch_dna":
             {
-                "description": "TODO"
+                "description": "execute a scratch defined by its DNA signature (see scratch_dna_editor for information about DNA signatures)"
             },
             "scratch_dna_editor":
             {
-                "description": "TODO"
+                "description": "open a visual editor to compose scratch DNA signatures"
             },
             "scratch_dna_option":
             {
-                "description": "TODO"
+                "description": "set some options about the Scratch DNA behavior. options are \"drymix\" and \"quantized\""
             },
             "slip":
             {
-                "description": "TODO"
+                "description": "activate or deactivate a global slip mode, that will save the position on \"slip on\" and resume where it should have been if untouched on \"slip off\", letting you do any scratch/loop/effect/etc in between"
             },
             "slip_mode":
             {
-                "description": "TODO"
+                "description": "While in slip mode, during loops hotcues or scratch, the play cursor will keep moving unaffected, and will resume from there after release"
             },
             "speedwheel":
             {
-                "description": "TODO"
+                "description": "used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed."
             },
             "touchwheel":
             {
-                "description": "TODO",
+                "description": "used for a jogwheel with touch sensitivity. 'touchwheel +1.0' means a full rotation of the wheel.",
                 "alias": "scratch_wheel | scratchwheel"
             },
             "touchwheel_touch":
             {
-                "description": "TODO",
+                "description": "use when the touchwheel is touched, to hold the song and start to scratch.",
                 "alias": "scratch_wheel_touch | scratchwheel_touch | speedwheel_touch"
             },
             "vinyl_mode":
             {
-                "description": "TODO"
+                "description": "Set the jogwheel to Vinyl mode (with scratch), or to CD mode (with pitchbend)"
             },
             "wheel_mode":
             {
-                "description": "TODO"
+                "description": "change the mode of the jogwheel between: \"jog\", \"search\", \"loop_move\", \"loop_out\", \"loop_in\", \"browser\", or use +1 and -1 to cycle through all modes. You can select from a subset using a syntax like 'wheel_mode \"loop_move, loop_in, loop_out\" +1'."
             }
         },
         "audio_volumes":
