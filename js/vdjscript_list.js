@@ -13,7 +13,7 @@ const vdjscript_list =
         "param":
         {
             "blink": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'",
-            "color": "color 'red' color \"#C08040\n color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
+            "color": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
             "color_mix": "Mix two colors based on an action in the third parameter color_mix white red `get_limiter`",
             "constant": "Return the specified value Example: 'get constant 75%' always returns 75%\n\n-----Alias-----\nget_constant",
             "dim": "equivalent of \"constant 0.1\"",
