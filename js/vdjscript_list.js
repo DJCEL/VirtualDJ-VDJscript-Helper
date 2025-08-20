@@ -1920,7 +1920,8 @@ const vdjscript_list =
             { "description": "TODO" },
             "get_title_artist": 
             { "description": "TODO" },
-            "get_title_before_remix": { "description": "TODO" },
+            "get_title_before_remix": 
+            { "description": "TODO" },
             "get_title_remix": 
             { "description": "TODO" },
             "get_totaltime_min": 
@@ -2013,46 +2014,86 @@ const vdjscript_list =
         },
         "loop":
         {
-            "get_active_loop": { "description": "TODO" },
-            "get_loop": { "description": "TODO" },
-            "get_loop_in_time": { "description": "TODO" },
-            "get_loop_out_time": { "description": "TODO" },
-            "get_saved_loop": { "description": "TODO" },
-            "loop": { "description": "TODO" },
-            "loop_adjust": { "description": "TODO" },
-            "loop_back": { "description": "TODO" },
-            "loop_button": { "description": "TODO" },
-            "loop_color": { "description": "TODO" },
-            "loop_delete": { "description": "TODO" },
-            "loop_double": { "description": "TODO" },
-            "loop_exit": { "description": "TODO" },
-            "loop_half": { "description": "TODO" },
-            "loop_in": { "description": "TODO" },
-            "loop_length": { "description": "TODO" },
-            "loop_load": { "description": "TODO" },
-            "loop_load_prepare": { "description": "TODO" },
-            "loop_move": { "description": "TODO" },
-            "loop_options": { "description": "TODO" },
-            "loop_out": { "description": "TODO" },
-            "loop_pad": { "description": "TODO" },
-            "loop_pad_mode": { "description": "TODO" },
-            "loop_pad_page": { "description": "TODO" },
-            "loop_position": { "description": "TODO" },
-            "loop_roll": { "description": "TODO" },
-            "loop_roll_mode": { "description": "TODO" },
-            "loop_save": { "description": "TODO" },
-            "loop_select": { "description": "TODO" },
-            "pioneer_loop": { "description": "TODO" },
-            "pioneer_loop_in": { "description": "TODO" },
-            "pioneer_loop_out": { "description": "TODO" },
-            "reloop": { "description": "TODO" },
-            "reloop_exit": { "description": "TODO" },
-            "repeat_song": { "description": "TODO" },
-            "saved_loop": { "description": "TODO" },
-            "saved_loop_autotrigger": { "description": "TODO" },
-            "saved_loop_display": { "description": "TODO" },
-            "saved_loop_prepare": { "description": "TODO" },
-            "slicer": { "description": "TODO" }
+            "get_active_loop": 
+            { "description": "TODO" },
+            "get_loop": 
+            { "description": "TODO" },
+            "get_loop_in_time": 
+            { "description": "TODO" },
+            "get_loop_out_time": 
+            { "description": "TODO" },
+            "get_saved_loop": 
+            { "description": "TODO" },
+            "loop": 
+            { "description": "TODO" },
+            "loop_adjust": 
+            { "description": "TODO" },
+            "loop_back": 
+            { "description": "TODO" },
+            "loop_button": 
+            { "description": "TODO" },
+            "loop_color": 
+            { "description": "TODO" },
+            "loop_delete": 
+            { "description": "TODO" },
+            "loop_double": 
+            { "description": "TODO" },
+            "loop_exit": 
+            { "description": "TODO" },
+            "loop_half": 
+            { "description": "TODO" },
+            "loop_in": 
+            { "description": "TODO" },
+            "loop_length": 
+            { "description": "TODO" },
+            "loop_load": 
+            { "description": "TODO" },
+            "loop_load_prepare": 
+            { "description": "TODO" },
+            "loop_move": 
+            { "description": "TODO" },
+            "loop_options": 
+            { "description": "TODO" },
+            "loop_out": 
+            { "description": "TODO" },
+            "loop_pad": 
+            { "description": "TODO" },
+            "loop_pad_mode": 
+            { "description": "TODO" },
+            "loop_pad_page": 
+            { "description": "TODO" },
+            "loop_position": 
+            { "description": "TODO" },
+            "loop_roll": 
+            { "description": "TODO" },
+            "loop_roll_mode": 
+            { "description": "TODO" },
+            "loop_save": 
+            { "description": "TODO" },
+            "loop_select": 
+            { "description": "TODO" },
+            "pioneer_loop": 
+            { "description": "TODO" },
+            "pioneer_loop_in": 
+            { "description": "TODO" },
+            "pioneer_loop_out": 
+            { "description": "TODO" },
+            "reloop": 
+            { "description": "TODO" },
+            "reloop_exit": 
+            { "description": "TODO" },
+            "repeat_song": 
+            { "description": "TODO" },
+            "saved_loop": 
+            { "description": "TODO" },
+            "saved_loop_autotrigger": 
+            { "description": "TODO" },
+            "saved_loop_display": 
+            { "description": "TODO" },
+            "saved_loop_prepare": 
+            { "description": "TODO" },
+            "slicer": 
+            { "description": "TODO" }
         },
         "macro":
         {
@@ -2245,43 +2286,80 @@ const vdjscript_list =
             {
                 "description": "TODO"
             },
-            "effect_arm_beats": { "description": "TODO" },
-            "effect_arm_bpm": { "description": "TODO" },
-            "effect_arm_deck": { "description": "TODO" },
-            "effect_arm_select": { "description": "TODO" },
-            "effect_arm_slider": { "description": "TODO" },
-            "effect_arm_slider_label": { "description": "TODO" },
-            "effect_arm_slider_name": { "description": "TODO" },
-            "effect_arm_slider_text": { "description": "TODO" },
-            "effect_arm_slot": { "description": "TODO" },
-            "effect_arm_stem": { "description": "TODO" },
-            "effect_bank_load": { "description": "TODO" },
-            "effect_bank_save": { "description": "TODO" },
-            "effect_beats": { "description": "TODO" },
-            "effect_beats_all": { "description": "TODO" },
-            "effect_bpm_deck": { "description": "TODO" },
-            "effect_bpm_deck_tap": { "description": "TODO" },
-            "effect_button": { "description": "TODO" },
-            "effect_clone": { "description": "TODO" },
-            "effect_colorfx": { "description": "TODO" },
-            "effect_colorslider": { "description": "TODO" },
-            "effect_command": { "description": "TODO" },
-            "effect_disable_all": { "description": "TODO" },
-            "effect_dock_gui": { "description": "TODO" },
-            "effect_has_beats": { "description": "TODO" },
-            "effect_has_button": { "description": "TODO" },
-            "effect_has_length": { "description": "TODO" },
-            "effect_has_slider": { "description": "TODO" },
-            "effect_mixfx": { "description": "TODO" },
-            "effect_mixfx_activate": { "description": "TODO" },
-            "effect_mixfx_select": { "description": "TODO" },
-            "effect_releaseslider": { "description": "TODO" },
-            "effect_releaseslider_active": { "description": "TODO" },
-            "effect_select": { "description": "TODO" },
-            "effect_select_multi": { "description": "TODO" },
-            "effect_select_popup": { "description": "TODO" },
-            "effect_select_toggle": { "description": "TODO" },
-            "effect_show_gui": { "description": "TODO" },
+            "effect_arm_beats": 
+            { "description": "TODO" },
+            "effect_arm_bpm": 
+            { "description": "TODO" },
+            "effect_arm_deck": 
+            { "description": "TODO" },
+            "effect_arm_select": 
+            { "description": "TODO" },
+            "effect_arm_slider": 
+            { "description": "TODO" },
+            "effect_arm_slider_label": 
+            { "description": "TODO" },
+            "effect_arm_slider_name": 
+            { "description": "TODO" },
+            "effect_arm_slider_text": 
+            { "description": "TODO" },
+            "effect_arm_slot": 
+            { "description": "TODO" },
+            "effect_arm_stem": 
+            { "description": "TODO" },
+            "effect_bank_load": 
+            { "description": "TODO" },
+            "effect_bank_save": 
+            { "description": "TODO" },
+            "effect_beats": 
+            { "description": "TODO" },
+            "effect_beats_all": 
+            { "description": "TODO" },
+            "effect_bpm_deck": 
+            { "description": "TODO" },
+            "effect_bpm_deck_tap": 
+            { "description": "TODO" },
+            "effect_button": 
+            { "description": "TODO" },
+            "effect_clone": 
+            { "description": "TODO" },
+            "effect_colorfx": 
+            { "description": "TODO" },
+            "effect_colorslider": 
+            { "description": "TODO" },
+            "effect_command": 
+            { "description": "TODO" },
+            "effect_disable_all": 
+            { "description": "TODO" },
+            "effect_dock_gui": 
+            { "description": "TODO" },
+            "effect_has_beats": 
+            { "description": "TODO" },
+            "effect_has_button": 
+            { "description": "TODO" },
+            "effect_has_length": 
+            { "description": "TODO" },
+            "effect_has_slider": 
+            { "description": "TODO" },
+            "effect_mixfx": 
+            { "description": "TODO" },
+            "effect_mixfx_activate": 
+            { "description": "TODO" },
+            "effect_mixfx_select": 
+            { "description": "TODO" },
+            "effect_releaseslider": 
+            { "description": "TODO" },
+            "effect_releaseslider_active": 
+            { "description": "TODO" },
+            "effect_select": 
+            { "description": "TODO" },
+            "effect_select_multi": 
+            { "description": "TODO" },
+            "effect_select_popup": 
+            { "description": "TODO" },
+            "effect_select_toggle": 
+            { "description": "TODO" },
+            "effect_show_gui": 
+            { "description": "TODO" },
             "effect_slider":
             {
                 "description": "TODO",
@@ -2292,50 +2370,84 @@ const vdjscript_list =
                 "description": "TODO",
                 "alias": "effect_slider_activate"
             },
-            "effect_slider_reset": { "description": "TODO" },
-            "effect_slider_skip_length": { "description": "TODO" },
-            "effect_stems": { "description": "TODO" },
-            "effect_stems_color": { "description": "TODO" },
-            "effects_used": { "description": "TODO" },
-            "get_effect_button_count": { "description": "TODO" },
-            "get_effect_button_name": { "description": "TODO" },
-            "get_effect_button_shortname": { "description": "TODO" },
-            "get_effect_name": { "description": "TODO" },
-            "get_effect_slider_count": { "description": "TODO" },
-            "get_effect_slider_default": { "description": "TODO" },
-            "get_effect_slider_label": { "description": "TODO" },
-            "get_effect_slider_label_full": { "description": "TODO" },
-            "get_effect_slider_name": { "description": "TODO" },
-            "get_effect_slider_shortname": { "description": "TODO" },
-            "get_effect_slider_text": { "description": "TODO" },
+            "effect_slider_reset": 
+            { "description": "TODO" },
+            "effect_slider_skip_length": 
+            { "description": "TODO" },
+            "effect_stems": 
+            { "description": "TODO" },
+            "effect_stems_color": 
+            { "description": "TODO" },
+            "effects_used": 
+            { "description": "TODO" },
+            "get_effect_button_count": 
+            { "description": "TODO" },
+            "get_effect_button_name": 
+            { "description": "TODO" },
+            "get_effect_button_shortname": 
+            { "description": "TODO" },
+            "get_effect_name": 
+            { "description": "TODO" },
+            "get_effect_slider_count": 
+            { "description": "TODO" },
+            "get_effect_slider_default": 
+            { "description": "TODO" },
+            "get_effect_slider_label": 
+            { "description": "TODO" },
+            "get_effect_slider_label_full": 
+            { "description": "TODO" },
+            "get_effect_slider_name": 
+            { "description": "TODO" },
+            "get_effect_slider_shortname": 
+            { "description": "TODO" },
+            "get_effect_slider_text": 
+            { "description": "TODO" },
             "get_effect_string":
             {
                 "description": "TODO",
                 "alias": "effect_string"
             },
-            "get_effect_string_name": { "description": "TODO" },
-            "get_effect_title": { "description": "TODO" },
-            "get_effects_used": { "description": "TODO" },
-            "get_nb_multicam": { "description": "TODO" },
-            "get_video_fx_slider_label": { "description": "TODO" },
-            "get_videofx_name": { "description": "TODO" },
-            "get_videotrans_name": { "description": "TODO" },
-            "is_releasefx": { "description": "TODO" },
-            "pluginsongpos": { "description": "TODO" },
-            "show_pluginpage": { "description": "TODO" },
-            "video_fx": { "description": "TODO" },
-            "video_fx_button": { "description": "TODO" },
-            "video_fx_clear": { "description": "TODO" },
-            "video_fx_select": { "description": "TODO" },
+            "get_effect_string_name": 
+            { "description": "TODO" },
+            "get_effect_title": 
+            { "description": "TODO" },
+            "get_effects_used": 
+            { "description": "TODO" },
+            "get_nb_multicam": 
+            { "description": "TODO" },
+            "get_video_fx_slider_label": 
+            { "description": "TODO" },
+            "get_videofx_name": 
+            { "description": "TODO" },
+            "get_videotrans_name": 
+            { "description": "TODO" },
+            "is_releasefx": 
+            { "description": "TODO" },
+            "pluginsongpos": 
+            { "description": "TODO" },
+            "show_pluginpage": 
+            { "description": "TODO" },
+            "video_fx": 
+            { "description": "TODO" },
+            "video_fx_button": 
+            { "description": "TODO" },
+            "video_fx_clear": 
+            { "description": "TODO" },
+            "video_fx_select": 
+            { "description": "TODO" },
             "video_fx_slider":
             {
                 "description": "TODO",
                 "alias": "video_fx_slider_slider"
             },
-            "video_source": { "description": "TODO" },
-            "video_source_select": { "description": "TODO" },
-            "video_transition_button": { "description": "TODO" },
-            "video_transition_select": { "description": "TODO" },
+            "video_source": 
+            { "description": "TODO" },
+            "video_source_select": 
+            { "description": "TODO" },
+            "video_transition_button": 
+            { "description": "TODO" },
+            "video_transition_select": 
+            { "description": "TODO" },
             "video_transition_slider":
             {
                 "description": "TODO",
@@ -2344,16 +2456,26 @@ const vdjscript_list =
         },
         "poi":
         {
-            "adjust_cbg": { "description": "TODO" },
-            "beat_tap": { "description": "TODO" },
-            "edit_bpm": { "description": "TODO" },
-            "edit_poi": { "description": "TODO" },
-            "goto_mixpoint": { "description": "TODO" },
-            "reanalyze": { "description": "TODO" },
-            "set_bpm": { "description": "TODO" },
-            "set_firstbeat": { "description": "TODO" },
-            "set_loadpoint": { "description": "TODO" },
-            "set_mixpoint": { "description": "TODO" }
+            "adjust_cbg": 
+            { "description": "TODO" },
+            "beat_tap": 
+            { "description": "TODO" },
+            "edit_bpm": 
+            { "description": "TODO" },
+            "edit_poi": 
+            { "description": "TODO" },
+            "goto_mixpoint": 
+            { "description": "TODO" },
+            "reanalyze": 
+            { "description": "TODO" },
+            "set_bpm": 
+            { "description": "TODO" },
+            "set_firstbeat": 
+            { "description": "TODO" },
+            "set_loadpoint": 
+            { "description": "TODO" },
+            "set_mixpoint": 
+            { "description": "TODO" }
         },
         "prelisten":
         {
@@ -2362,87 +2484,142 @@ const vdjscript_list =
                 "description": "TODO",
                 "alias": "preview"
             },
-            "prelisten_options": { "description": "TODO" },
-            "prelisten_output": { "description": "TODO" },
-            "prelisten_pos": { "description": "TODO" },
-            "prelisten_stop": { "description": "TODO" }
+            "prelisten_options": 
+            { "description": "TODO" },
+            "prelisten_output": 
+            { "description": "TODO" },
+            "prelisten_pos": 
+            { "description": "TODO" },
+            "prelisten_stop": 
+            { "description": "TODO" }
         },
         "record":
         {
-            "broadcast": { "description": "TODO" },
-            "broadcast_message": { "description": "TODO" },
-            "record": { "description": "TODO" },
-            "record_config": { "description": "TODO" },
-            "record_cut": { "description": "TODO" },
-            "record_vu": { "description": "TODO" }
+            "broadcast": 
+            { "description": "TODO" },
+            "broadcast_message": 
+            { "description": "TODO" },
+            "record": 
+            { "description": "TODO" },
+            "record_config": 
+            { "description": "TODO" },
+            "record_cut": 
+            { "description": "TODO" },
+            "record_vu": 
+            { "description": "TODO" }
         },
         "sampler":
         {
-            "get_sample_color": { "description": "TODO" },
-            "get_sample_info": { "description": "TODO" },
+            "get_sample_color": 
+            { "description": "TODO" },
+            "get_sample_info": 
+            { "description": "TODO" },
             "get_sample_name":
             {
                 "description": "TODO",
                 "alias": "get_sample_slot_name"
             },
-            "get_sampler_bank": { "description": "TODO" },
-            "get_sampler_bank_count": { "description": "TODO" },
-            "get_sampler_bank_id": { "description": "TODO" },
-            "get_sampler_count": { "description": "TODO" },
-            "get_sampler_slot": { "description": "TODO" },
-            "sampler_abort_rec": { "description": "TODO" },
-            "sampler_assign": { "description": "TODO" },
-            "sampler_bank": { "description": "TODO" },
-            "sampler_color": { "description": "TODO" },
-            "sampler_edit": { "description": "TODO" },
-            "sampler_group_color": { "description": "TODO" },
-            "sampler_group_mute": { "description": "TODO" },
-            "sampler_group_name": { "description": "TODO" },
-            "sampler_group_volume": { "description": "TODO" },
-            "sampler_has_group": { "description": "TODO" },
-            "sampler_load_to_deck": { "description": "TODO" },
-            "sampler_loaded": { "description": "TODO" },
-            "sampler_loop": { "description": "TODO" },
+            "get_sampler_bank": 
+            { "description": "TODO" },
+            "get_sampler_bank_count": 
+            { "description": "TODO" },
+            "get_sampler_bank_id": 
+            { "description": "TODO" },
+            "get_sampler_count": 
+            { "description": "TODO" },
+            "get_sampler_slot": 
+            { "description": "TODO" },
+            "sampler_abort_rec": 
+            { "description": "TODO" },
+            "sampler_assign": 
+            { "description": "TODO" },
+            "sampler_bank": 
+            { "description": "TODO" },
+            "sampler_color": 
+            { "description": "TODO" },
+            "sampler_edit": 
+            { "description": "TODO" },
+            "sampler_group_color": 
+            { "description": "TODO" },
+            "sampler_group_mute": 
+            { "description": "TODO" },
+            "sampler_group_name": 
+            { "description": "TODO" },
+            "sampler_group_volume": 
+            { "description": "TODO" },
+            "sampler_has_group": 
+            { "description": "TODO" },
+            "sampler_load_to_deck": 
+            { "description": "TODO" },
+            "sampler_loaded": 
+            { "description": "TODO" },
+            "sampler_loop": 
+            { "description": "TODO" },
             "sampler_mode":
             {
                 "description": "TODO",
                 "alias": "sampler_rapidfire"
             },
-            "sampler_mute": { "description": "TODO" },
-            "sampler_options": { "description": "TODO" },
-            "sampler_output": { "description": "TODO" },
-            "sampler_pad": { "description": "TODO" },
-            "sampler_pad_page": { "description": "TODO" },
-            "sampler_pad_shift": { "description": "TODO" },
-            "sampler_pad_volume": { "description": "TODO" },
-            "sampler_pfl": { "description": "TODO" },
-            "sampler_play": { "description": "TODO" },
-            "sampler_play_stop": { "description": "TODO" },
-            "sampler_play_stutter": { "description": "TODO" },
-            "sampler_position": { "description": "TODO" },
-            "sampler_rec": { "description": "TODO" },
-            "sampler_rec_delete": { "description": "TODO" },
+            "sampler_mute": 
+            { "description": "TODO" },
+            "sampler_options": 
+            { "description": "TODO" },
+            "sampler_output": 
+            { "description": "TODO" },
+            "sampler_pad": 
+            { "description": "TODO" },
+            "sampler_pad_page": 
+            { "description": "TODO" },
+            "sampler_pad_shift": 
+            { "description": "TODO" },
+            "sampler_pad_volume": 
+            { "description": "TODO" },
+            "sampler_pfl": 
+            { "description": "TODO" },
+            "sampler_play": 
+            { "description": "TODO" },
+            "sampler_play_stop": 
+            { "description": "TODO" },
+            "sampler_play_stutter": 
+            { "description": "TODO" },
+            "sampler_position": 
+            { "description": "TODO" },
+            "sampler_rec": 
+            { "description": "TODO" },
+            "sampler_rec_delete": 
+            { "description": "TODO" },
             "sampler_select":
             {
                 "description": "TODO",
                 "alias": "sampler_default"
             },
-            "sampler_start_rec": { "description": "TODO" },
-            "sampler_stop": { "description": "TODO" },
-            "sampler_stop_rec": { "description": "TODO" },
+            "sampler_start_rec": 
+            { "description": "TODO" },
+            "sampler_stop": 
+            { "description": "TODO" },
+            "sampler_stop_rec": 
+            { "description": "TODO" },
             "sampler_used":
             {
                 "description": "TODO",
                 "alias": "get_sampler_used"
             },
-            "sampler_velocity": { "description": "TODO" },
-            "sampler_volume": { "description": "TODO" },
-            "sampler_volume_master": { "description": "TODO" },
-            "sampler_volume_nogroup": { "description": "TODO" },
-            "scratchbank_assign": { "description": "TODO" },
-            "scratchbank_edit": { "description": "TODO" },
-            "scratchbank_load": { "description": "TODO" },
-            "scratchbank_load_to_deck": { "description": "TODO" },
+            "sampler_velocity": 
+            { "description": "TODO" },
+            "sampler_volume": 
+            { "description": "TODO" },
+            "sampler_volume_master": 
+            { "description": "TODO" },
+            "sampler_volume_nogroup": 
+            { "description": "TODO" },
+            "scratchbank_assign": 
+            { "description": "TODO" },
+            "scratchbank_edit": 
+            { "description": "TODO" },
+            "scratchbank_load": 
+            { "description": "TODO" },
+            "scratchbank_load_to_deck": 
+            { "description": "TODO" },
             "scratchbank_unload":
             {
                 "description": "TODO",
@@ -2451,79 +2628,127 @@ const vdjscript_list =
         },
         "sandbox":
         {
-            "can_sandbox": { "description": "TODO" },
-            "sandbox": { "description": "TODO" }
+            "can_sandbox": 
+            { "description": "TODO" },
+            "sandbox": 
+            { "description": "TODO" }
         },
         "sync":
         {
-            "auto_bpm_transition": { "description": "TODO" },
-            "auto_bpm_transition_options": { "description": "TODO" },
-            "auto_sync_settings": { "description": "TODO" },
-            "beatlock": { "description": "TODO" },
-            "get_bpm_match": { "description": "TODO" },
-            "is_sync": { "description": "TODO" },
-            "match_bpm": { "description": "TODO" },
-            "match_gain": { "description": "TODO" },
-            "phrase_sync": { "description": "TODO" },
-            "play_onbeat": { "description": "TODO" },
-            "play_sync": { "description": "TODO" },
-            "play_sync_onbeat": {
+            "auto_bpm_transition": 
+            { "description": "TODO" },
+            "auto_bpm_transition_options": 
+            { "description": "TODO" },
+            "auto_sync_settings": 
+            { "description": "TODO" },
+            "beatlock": 
+            { "description": "TODO" },
+            "get_bpm_match": 
+            { "description": "TODO" },
+            "is_sync": 
+            { "description": "TODO" },
+            "match_bpm": 
+            { "description": "TODO" },
+            "match_gain": 
+            { "description": "TODO" },
+            "phrase_sync": 
+            { "description": "TODO" },
+            "play_onbeat": 
+            { "description": "TODO" },
+            "play_sync": 
+            { "description": "TODO" },
+            "play_sync_onbeat": 
+            {
                 "description": "TODO",
                 "alias": "sync_nocbg"
             },
-            "quantize_all": { "description": "TODO" },
-            "smart_fader": { "description": "TODO" },
-            "sync": { "description": "TODO" },
-            "sync_hint": { "description": "TODO" }
+            "quantize_all": 
+            { "description": "TODO" },
+            "smart_fader": 
+            { "description": "TODO" },
+            "sync": 
+            { "description": "TODO" },
+            "sync_hint": 
+            { "description": "TODO" }
         },
         "text":
         {
-            "countdown": { "description": "TODO" },
-            "get_status": { "description": "TODO" },
-            "get_text": { "description": "TODO" },
-            "stopwatch": { "description": "TODO" },
-            "stopwatch_reset": { "description": "TODO" }
+            "countdown": 
+            { "description": "TODO" },
+            "get_status": 
+            { "description": "TODO" },
+            "get_text": 
+            { "description": "TODO" },
+            "stopwatch": 
+            { "description": "TODO" },
+            "stopwatch_reset": 
+            { "description": "TODO" }
         },
         "timecode":
         {
-            "get_hastimecode": { "description": "TODO" },
-            "get_timecode_quality": { "description": "TODO" },
-            "invert_timecode": { "description": "TODO" },
-            "timecode_active": { "description": "TODO" },
-            "timecode_bypass": { "description": "TODO" },
-            "timecode_cd_mode": { "description": "TODO" },
-            "timecode_config": { "description": "TODO" },
-            "timecode_mode": { "description": "TODO" },
-            "timecode_motor_enable": { "description": "TODO" },
-            "timecode_options": { "description": "TODO" },
-            "timecode_pitch": { "description": "TODO" },
-            "timecode_reset_pitch": { "description": "TODO" }
+            "get_hastimecode": 
+            { "description": "TODO" },
+            "get_timecode_quality": 
+            { "description": "TODO" },
+            "invert_timecode": 
+            { "description": "TODO" },
+            "timecode_active": 
+            { "description": "TODO" },
+            "timecode_bypass": 
+            { "description": "TODO" },
+            "timecode_cd_mode": 
+            { "description": "TODO" },
+            "timecode_config": 
+            { "description": "TODO" },
+            "timecode_mode": 
+            { "description": "TODO" },
+            "timecode_motor_enable": 
+            { "description": "TODO" },
+            "timecode_options": 
+            { "description": "TODO" },
+            "timecode_pitch": 
+            { "description": "TODO" },
+            "timecode_reset_pitch": 
+            { "description": "TODO" }
         },
         "video":
         {
-            "has_video_mix": { "description": "TODO" },
-            "is_audioonlyvisualisation": { "description": "TODO" },
-            "is_video": { "description": "TODO" },
-            "leftvideo": { "description": "TODO" },
-            "leftvideo_button": { "description": "TODO" },
+            "has_video_mix": 
+            { "description": "TODO" },
+            "is_audioonlyvisualisation": 
+            { "description": "TODO" },
+            "is_video": 
+            { "description": "TODO" },
+            "leftvideo": 
+            { "description": "TODO" },
+            "leftvideo_button": 
+            { "description": "TODO" },
             "over_video": {
                 "description": "TODO",
                 "alias": "overvideo"
             },
-            "rightvideo": { "description": "TODO" },
-            "rightvideo_button": { "description": "TODO" },
-            "video": { "description": "TODO" },
-            "video_crossfader": { "description": "TODO" },
-            "video_crossfader_auto": { "description": "TODO" },
-            "video_crossfader_link": { "description": "TODO" },
-            "video_delay": { "description": "TODO" },
-            "video_fadetoblack": { "description": "TODO" },
-            "video_level": { "description": "TODO" },
-            "video_output": { "description": "TODO" },
-            "video_transition": { "description": "TODO" }
+            "rightvideo": 
+            { "description": "TODO" },
+            "rightvideo_button": 
+            { "description": "TODO" },
+            "video": 
+            { "description": "TODO" },
+            "video_crossfader": 
+            { "description": "TODO" },
+            "video_crossfader_auto": 
+            { "description": "TODO" },
+            "video_crossfader_link": 
+            { "description": "TODO" },
+            "video_delay": 
+            { "description": "TODO" },
+            "video_fadetoblack": 
+            { "description": "TODO" },
+            "video_level": 
+            { "description": "TODO" },
+            "video_output": 
+            { "description": "TODO" },
+            "video_transition": 
+            { "description": "TODO" }
         }
     }
-
 }
-
-
