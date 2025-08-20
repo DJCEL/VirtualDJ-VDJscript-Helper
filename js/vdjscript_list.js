@@ -1356,38 +1356,60 @@ const vdjscript_list =
         },
         "config":
         {
-            "apply_audio_config": { "description": "TODO" },
-            "auto_cue": { "description": "TODO" },
-            "auto_match_bpm": { "description": "TODO" },
-            "auto_match_key": { "description": "TODO" },
-            "auto_pitch_lock": { "description": "TODO" },
-            "connect": { "description": "TODO" },
-            "eventscheduler": { "description": "TODO" },
-            "eventscheduler_start": { "description": "TODO" },
-            "fader_start": { "description": "TODO" },
-            "get_lemode": { "description": "TODO" },
-            "play_mode": { "description": "TODO" },
-            "quantize_loop": { "description": "TODO" },
-            "quantize_setcue": { "description": "TODO" },
+            "apply_audio_config": 
+            { "description": "TODO" },
+            "auto_cue": 
+            { "description": "TODO" },
+            "auto_match_bpm": 
+            { "description": "TODO" },
+            "auto_match_key": 
+            { "description": "TODO" },
+            "auto_pitch_lock": 
+            { "description": "TODO" },
+            "connect": 
+            { "description": "TODO" },
+            "eventscheduler": 
+            { "description": "TODO" },
+            "eventscheduler_start": 
+            { "description": "TODO" },
+            "fader_start": 
+            { "description": "TODO" },
+            "get_lemode": 
+            { "description": "TODO" },
+            "play_mode": 
+            { "description": "TODO" },
+            "quantize_loop": 
+            { "description": "TODO" },
+            "quantize_setcue": 
+            { "description": "TODO" },
             "save_config":
             {
                 "description": "TODO",
                 "alias": "saveregistryconfig"
             },
-            "setting": { "description": "TODO" },
-            "setting_ismodified": { "description": "TODO" },
-            "setting_reset": { "description": "TODO" },
-            "setting_setdefault": { "description": "TODO" },
-            "setting_setsession": { "description": "TODO" },
-            "setting_setsession_deck": { "description": "TODO" },
+            "setting": 
+            { "description": "TODO" },
+            "setting_ismodified": 
+            { "description": "TODO" },
+            "setting_reset": 
+            { "description": "TODO" },
+            "setting_setdefault": 
+            { "description": "TODO" },
+            "setting_setsession": 
+            { "description": "TODO" },
+            "setting_setsession_deck": 
+            { "description": "TODO" },
             "settings":
             {
                 "description": "TODO",
                 "alias": "config"
             },
-            "smart_cue": { "description": "TODO" },
-            "smart_loop": { "description": "TODO" },
-            "smart_play": {
+            "smart_cue": 
+            { "description": "TODO" },
+            "smart_loop": 
+            { "description": "TODO" },
+            "smart_play": 
+            {
                 "description": "TODO",
                 "alias": "auto_sync"
             },
@@ -1398,124 +1420,225 @@ const vdjscript_list =
         },
         "controllers":
         {
-            "action_deck": { "description": "TODO" },
-            "assign_controller": { "description": "TODO" },
-            "controller_battery": { "description": "TODO" },
-            "controller_mapping": { "description": "TODO" },
-            "controllerscreen_deck": { "description": "TODO" },
-            "denon_platter": { "description": "TODO" },
-            "device_side": { "description": "TODO" },
-            "display_time": { "description": "TODO" },
-            "djc_button": { "description": "TODO" },
-            "djc_button_popup": { "description": "TODO" },
-            "djc_button_select": { "description": "TODO" },
-            "djc_button_slider": { "description": "TODO" },
-            "djc_panel": { "description": "TODO" },
-            "djc_shift": { "description": "TODO" },
-            "effect_fxsendreturndeck": { "description": "TODO" },
-            "effect_fxsendreturndeck_multi": { "description": "TODO" },
-            "effect_fxsendreturnenable": { "description": "TODO" },
-            "gemini_waveform_zoomlevel": { "description": "TODO" },
-            "get_controller_image": { "description": "TODO" },
-            "get_controller_name": { "description": "TODO" },
-            "get_controller_screen": { "description": "TODO" },
-            "get_denon_cuepoints": { "description": "TODO" },
-            "get_denon_platter": { "description": "TODO" },
-            "get_display": { "description": "TODO" },
-            "get_gemini_display": { "description": "TODO" },
-            "get_gemini_waveform": { "description": "TODO" },
-            "get_ns7_platter": { "description": "TODO" },
-            "get_numark_beatgrid": { "description": "TODO" },
-            "get_numark_songpos": { "description": "TODO" },
-            "get_numark_waveform": { "description": "TODO" },
-            "get_pioneer_display": { "description": "TODO" },
-            "get_pioneer_loop_display": { "description": "TODO" },
-            "get_rotation_cue": { "description": "TODO" },
-            "get_rotation_slip": { "description": "TODO" },
-            "invert_controllers": { "description": "TODO" },
-            "keyboard_shortcuts": { "description": "TODO" },
-            "menu": { "description": "TODO" },
-            "menu_button": { "description": "TODO" },
-            "menu_cycledisplay": { "description": "TODO" },
-            "midiclock_active": { "description": "TODO" },
-            "miditovst_active": { "description": "TODO" },
-            "mixer_order": { "description": "TODO" },
-            "motor_switch": { "description": "TODO" },
-            "motorwheel_instant_play": { "description": "TODO" },
-            "ns7_platter": { "description": "TODO" },
-            "numark_waveform_zoom": { "description": "TODO" },
-            "os2l_button": { "description": "TODO" },
-            "os2l_cmd": { "description": "TODO" },
-            "os2l_info": { "description": "TODO" },
-            "os2l_scene": { "description": "TODO" },
-            "phase_movement": { "description": "TODO" },
-            "phase_position": { "description": "TODO" },
-            "pioneer_cue": { "description": "TODO" },
-            "pioneer_play": { "description": "TODO" },
-            "refresh_controller": { "description": "TODO" },
-            "reinit_controller": { "description": "TODO" },
-            "rescan_controllers": { "description": "TODO" },
-            "rzx_touch": { "description": "TODO" },
-            "rzx_touch_x": { "description": "TODO" },
-            "rzx_touch_y": { "description": "TODO" },
-            "select_master_output": { "description": "TODO" },
-            "set_deck": { "description": "TODO" },
-            "shift": { "description": "TODO" },
-            "show_text": { "description": "TODO" },
-            "v7_status": { "description": "TODO" }
+            "action_deck": 
+            { "description": "TODO" },
+            "assign_controller": 
+            { "description": "TODO" },
+            "controller_battery": 
+            { "description": "TODO" },
+            "controller_mapping": 
+            { "description": "TODO" },
+            "controllerscreen_deck": 
+            { "description": "TODO" },
+            "denon_platter": 
+            { "description": "TODO" },
+            "device_side": 
+            { "description": "TODO" },
+            "display_time": 
+            { "description": "TODO" },
+            "djc_button": 
+            { "description": "TODO" },
+            "djc_button_popup": 
+            { "description": "TODO" },
+            "djc_button_select": 
+            { "description": "TODO" },
+            "djc_button_slider": 
+            { "description": "TODO" },
+            "djc_panel": 
+            { "description": "TODO" },
+            "djc_shift": 
+            { "description": "TODO" },
+            "effect_fxsendreturndeck": 
+            { "description": "TODO" },
+            "effect_fxsendreturndeck_multi": 
+            { "description": "TODO" },
+            "effect_fxsendreturnenable": 
+            { "description": "TODO" },
+            "gemini_waveform_zoomlevel": 
+            { "description": "TODO" },
+            "get_controller_image": 
+            { "description": "TODO" },
+            "get_controller_name": 
+            { "description": "TODO" },
+            "get_controller_screen": 
+            { "description": "TODO" },
+            "get_denon_cuepoints": 
+            { "description": "TODO" },
+            "get_denon_platter": 
+            { "description": "TODO" },
+            "get_display": 
+            { "description": "TODO" },
+            "get_gemini_display": 
+            { "description": "TODO" },
+            "get_gemini_waveform": 
+            { "description": "TODO" },
+            "get_ns7_platter": 
+            { "description": "TODO" },
+            "get_numark_beatgrid": 
+            { "description": "TODO" },
+            "get_numark_songpos": 
+            { "description": "TODO" },
+            "get_numark_waveform": 
+            { "description": "TODO" },
+            "get_pioneer_display": 
+            { "description": "TODO" },
+            "get_pioneer_loop_display": 
+            { "description": "TODO" },
+            "get_rotation_cue": 
+            { "description": "TODO" },
+            "get_rotation_slip": 
+            { "description": "TODO" },
+            "invert_controllers": 
+            { "description": "TODO" },
+            "keyboard_shortcuts": 
+            { "description": "TODO" },
+            "menu": 
+            { "description": "TODO" },
+            "menu_button": 
+            { "description": "TODO" },
+            "menu_cycledisplay": 
+            { "description": "TODO" },
+            "midiclock_active": 
+            { "description": "TODO" },
+            "miditovst_active": 
+            { "description": "TODO" },
+            "mixer_order": 
+            { "description": "TODO" },
+            "motor_switch": 
+            { "description": "TODO" },
+            "motorwheel_instant_play": 
+            { "description": "TODO" },
+            "ns7_platter": 
+            { "description": "TODO" },
+            "numark_waveform_zoom": 
+            { "description": "TODO" },
+            "os2l_button": 
+            { "description": "TODO" },
+            "os2l_cmd": 
+            { "description": "TODO" },
+            "os2l_info": 
+            { "description": "TODO" },
+            "os2l_scene": 
+            { "description": "TODO" },
+            "phase_movement": 
+            { "description": "TODO" },
+            "phase_position": 
+            { "description": "TODO" },
+            "pioneer_cue": 
+            { "description": "TODO" },
+            "pioneer_play": 
+            { "description": "TODO" },
+            "refresh_controller": 
+            { "description": "TODO" },
+            "reinit_controller": 
+            { "description": "TODO" },
+            "rescan_controllers": 
+            { "description": "TODO" },
+            "rzx_touch": 
+            { "description": "TODO" },
+            "rzx_touch_x": 
+            { "description": "TODO" },
+            "rzx_touch_y": 
+            { "description": "TODO" },
+            "select_master_output": 
+            { "description": "TODO" },
+            "set_deck": 
+            { "description": "TODO" },
+            "shift": 
+            { "description": "TODO" },
+            "show_text": 
+            { "description": "TODO" },
+            "v7_status": 
+            { "description": "TODO" }
         },
         "cues":
         {
-            "cue": { "description": "TODO" },
-            "cue_action": { "description": "TODO" },
+            "cue": 
+            { "description": "TODO" },
+            "cue_action": 
+            { "description": "TODO" },
             "cue_button":
             {
                 "description": "TODO",
                 "alias": "cue_3button"
             },
-            "cue_color": { "description": "TODO" },
-            "cue_countdown": { "description": "TODO" },
-            "cue_counter": { "description": "TODO" },
-            "cue_countup": { "description": "TODO" },
-            "cue_cup": { "description": "TODO" },
-            "cue_display": { "description": "TODO" },
-            "cue_loop": { "description": "TODO" },
+            "cue_color": 
+            { "description": "TODO" },
+            "cue_countdown": 
+            { "description": "TODO" },
+            "cue_counter": 
+            { "description": "TODO" },
+            "cue_countup": 
+            { "description": "TODO" },
+            "cue_cup": 
+            { "description": "TODO" },
+            "cue_display": 
+            { "description": "TODO" },
+            "cue_loop": 
+            { "description": "TODO" },
             "cue_loop_autosync": { "description": "TODO" },
-            "cue_loop_hold": { "description": "TODO" },
-            "cue_name": { "description": "TODO" },
-            "cue_play": { "description": "TODO" },
-            "cue_pos": { "description": "TODO" },
-            "cue_select": { "description": "TODO" },
-            "cue_stop": { "description": "TODO" },
-            "cues_options": { "description": "TODO" },
-            "delete_cue": { "description": "TODO" },
-            "get_cue": { "description": "TODO" },
-            "goto_cue": { "description": "TODO" },
-            "has_cue": { "description": "TODO" },
+            "cue_loop_hold": 
+            { "description": "TODO" },
+            "cue_name": 
+            { "description": "TODO" },
+            "cue_play": 
+            { "description": "TODO" },
+            "cue_pos": 
+            { "description": "TODO" },
+            "cue_select": 
+            { "description": "TODO" },
+            "cue_stop": 
+            { "description": "TODO" },
+            "cues_options": 
+            { "description": "TODO" },
+            "delete_cue": 
+            { "description": "TODO" },
+            "get_cue": 
+            { "description": "TODO" },
+            "goto_cue": 
+            { "description": "TODO" },
+            "has_cue": 
+            { "description": "TODO" },
             "hot_cue":
             {
                 "description": "TODO",
                 "alias": "hotcue"
             },
-            "lock_cues": { "description": "TODO" },
-            "set_cue": { "description": "TODO" },
-            "shift_all_cues": { "description": "TODO" },
-            "silent_cue": { "description": "TODO" },
-            "sort_cues": { "description": "TODO" }
+            "lock_cues": 
+            { "description": "TODO" },
+            "set_cue": 
+            { "description": "TODO" },
+            "shift_all_cues": 
+            { "description": "TODO" },
+            "silent_cue": 
+            { "description": "TODO" },
+            "sort_cues": 
+            { "description": "TODO" }
         },
         "deck_select":
         {
-            "cross_assign": { "description": "TODO" },
-            "get_deck_color": { "description": "TODO" },
-            "invert_deck": { "description": "TODO" },
-            "leftcross": { "description": "TODO" },
-            "leftdeck": { "description": "TODO" },
-            "masterdeck": { "description": "TODO" },
-            "masterdeck_auto": { "description": "TODO" },
-            "pfl": { "description": "TODO" },
-            "rightcross": { "description": "TODO" },
-            "rightdeck": { "description": "TODO" },
-            "select": { "description": "TODO" }
+            "cross_assign": 
+            { "description": "TODO" },
+            "get_deck_color": 
+            { "description": "TODO" },
+            "invert_deck": 
+            { "description": "TODO" },
+            "leftcross": 
+            { "description": "TODO" },
+            "leftdeck": 
+            { "description": "TODO" },
+            "masterdeck": 
+            { "description": "TODO" },
+            "masterdeck_auto": 
+            { "description": "TODO" },
+            "pfl": 
+            { "description": "TODO" },
+            "rightcross": 
+            { "description": "TODO" },
+            "rightdeck": 
+            { "description": "TODO" },
+            "select": 
+            { "description": "TODO" }
         },
         "equalizer":
         {
@@ -2242,3 +2365,4 @@ const vdjscript_list =
     }
 
 }
+
