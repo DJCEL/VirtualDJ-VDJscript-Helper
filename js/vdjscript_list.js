@@ -1619,34 +1619,60 @@ const vdjscript_list =
         "deck_select":
         {
             "cross_assign": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "get_deck_color": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "invert_deck": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "leftcross": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "leftdeck": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "masterdeck": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "masterdeck_auto": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "pfl": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "rightcross": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "rightdeck": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "select": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO" 
+            }
         },
         "equalizer":
         {
             "eq_crossfader_high": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_crossfader_low": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_crossfader_mid":
             {
                 "description": "TODO",
@@ -1658,12 +1684,19 @@ const vdjscript_list =
                 "alias": "eq_high_slider"
             },
             "eq_high_freq": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_kill_high": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_kill_low": 
-            { "description": "TODO" },
-            "eq_kill_mid": {
+            { 
+                "description": "TODO" 
+            },
+            "eq_kill_mid": 
+            {
                 "description": "TODO",
                 "alias": "eq_kill_med"
             },
@@ -1673,51 +1706,87 @@ const vdjscript_list =
                 "alias": "eq_low_slider"
             },
             "eq_low_freq": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_mid":
             {
                 "description": "TODO",
                 "alias": "eq_med\neq_mid_slider"
             },
             "eq_mid_freq": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_mode": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "eq_reset": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "filter":
             {
                 "description": "TODO",
                 "alias": "filter_slider"
             },
             "filter_activate": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "filter_label": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "filter_resonance": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "filter_selectcolorfx": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "has_stems": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "high_label": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "low_label": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "mid_label": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "mute_stem": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "only_stem": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "stem": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "stem_color": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "stem_pad": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "stems_bleed": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO" 
+            }
         },
         "get":
         {
@@ -2752,3 +2821,4 @@ const vdjscript_list =
         }
     }
 }
+
