@@ -1726,67 +1726,119 @@ const vdjscript_list =
         "cues":
         {
             "cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_action":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_button":
             {
                 "description": "TODO",
                 "alias": "cue_3button"
             },
             "cue_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_countdown":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_counter":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_countup":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_cup":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_display":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_loop_autosync":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_loop_hold":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_play":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_pos":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cue_stop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "cues_options":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "delete_cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "goto_cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "has_cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "hot_cue":
             {
                 "description": "TODO",
                 "alias": "hotcue"
             },
             "lock_cues":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "set_cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "shift_all_cues":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "silent_cue":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sort_cues":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "deck_select":
         {
@@ -1963,378 +2015,732 @@ const vdjscript_list =
         "get":
         {
             "browsed_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "browsed_song_hashtag":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_activedeck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_album":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_arm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_artist":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_artist_before_feat":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_artist_title":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_artist_title_separator":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_askthedj":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_askthedj_unread":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_automix":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_bar":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beat":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beat2":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beat_bar":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beat_counter":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beat_num":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beatdiff":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beatgrid":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_beatpos":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_bpm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_album":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_artist":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_artist_title":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_bpm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_comment":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_composer":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_filepath":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder_icon":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder_path":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder_scrollpos":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder_scrollsize":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder_selection_index":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_folder_tab":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_genre":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_header":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_key":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_scrollpos":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_scrollsize":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_selection_index":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_title":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_browsed_title_artist":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_build":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_comment":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_composer":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_custom_text":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_deck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_deck_analysis":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_deck_letter":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_decks":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_defaultdeck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_featuring_after_artist":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_filename":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_filepath":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_filesize":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_firstbeat":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_firstbeat_local":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_genre":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_hasheadphones":
             {
                 "description": "TODO",
                 "alias": "get_hasheadphone"
             },
             "get_hasinput":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_haslinein":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_hasmaster":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_hasmic":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_hwnd":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_leftdeck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_license":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_loaded_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_loaded_song_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_membership":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_phrase_num":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_plugindeck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_position":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_message":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_min":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_ms":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_msf":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_sec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_size":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_record_time":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_remix_after_title":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_rightdeck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_rotation":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_song_event":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_songlength":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_spectrum_band":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time_hour":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time_min":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time_ms":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time_msf":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time_sec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_time_sign":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_title":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_title_artist":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_title_before_remix":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_title_remix":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_totaltime_min":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_totaltime_ms":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_totaltime_msf":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_totaltime_sec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_username":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_vdj_folder":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_version":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_volume":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_year":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "has_aux":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loaded_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loaded_song_hashtag":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "prelisten_info":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "karaoke":
         {
             "get_karaoke_background_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_next_karaoke_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "has_karaoke_next":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "is_karaoke_idle":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "is_karaoke_playing":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "karaoke":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "karaoke_options":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "karaoke_show":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "karaoke_venue_name":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "key":
         {
             "get_harmonic":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_key":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_key_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_key_modifier":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_key_modifier_text":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "key":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "key_lock":
             {
                 "description": "TODO",
                 "alias": "keylock"
             },
             "key_match_button":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "key_match_menu":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "key_move":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "key_smooth":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "keycue_pad":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "keycue_pad_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "keycue_pad_jump":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "keycue_pad_page":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "match_key":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "set_key":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "loop":
         {
             "get_active_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_loop_in_time":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_loop_out_time":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_saved_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_adjust":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_back":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_button":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_delete":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_double":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_exit":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_half":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_in":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_length":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_load":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_load_prepare":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_move":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_options":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_out":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_pad":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_pad_mode":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_pad_page":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_position":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_roll":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_roll_mode":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_save":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "loop_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "pioneer_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "pioneer_loop_in":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "pioneer_loop_out":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "reloop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "reloop_exit":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "repeat_song":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "saved_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "saved_loop_autotrigger":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "saved_loop_display":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "saved_loop_prepare":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "slicer":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "macro":
         {
@@ -2528,79 +2934,153 @@ const vdjscript_list =
                 "description": "TODO"
             },
             "effect_arm_beats":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_bpm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_deck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_slider":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_slider_label":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_slider_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_slider_text":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_slot":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_arm_stem":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_bank_load":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_bank_save":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_beats":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_beats_all":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_bpm_deck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_bpm_deck_tap":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_button":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_clone":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_colorfx":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_colorslider":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_command":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_disable_all":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_dock_gui":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_has_beats":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_has_button":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_has_length":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_has_slider":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_mixfx":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_mixfx_activate":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_mixfx_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_releaseslider":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_releaseslider_active":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_select_multi":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_select_popup":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_select_toggle":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_show_gui":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_slider":
             {
                 "description": "TODO",
@@ -2612,83 +3092,151 @@ const vdjscript_list =
                 "alias": "effect_slider_activate"
             },
             "effect_slider_reset":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_slider_skip_length":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_stems":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effect_stems_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "effects_used":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_button_count":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_button_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_button_shortname":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_count":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_default":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_label":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_label_full":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_shortname":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_slider_text":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_string":
             {
                 "description": "TODO",
                 "alias": "effect_string"
             },
             "get_effect_string_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effect_title":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_effects_used":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_nb_multicam":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_video_fx_slider_label":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_videofx_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_videotrans_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "is_releasefx":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "pluginsongpos":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "show_pluginpage":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_fx":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_fx_button":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_fx_clear":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_fx_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_fx_slider":
             {
                 "description": "TODO",
                 "alias": "video_fx_slider_slider"
             },
             "video_source":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_source_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_transition_button":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_transition_select":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video_transition_slider":
             {
                 "description": "TODO",
@@ -2698,25 +3246,45 @@ const vdjscript_list =
         "poi":
         {
             "adjust_cbg":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "beat_tap":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "edit_bpm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "edit_poi":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "goto_mixpoint":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "reanalyze":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "set_bpm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "set_firstbeat":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "set_loadpoint":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "set_mixpoint":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "prelisten":
         {
@@ -2772,115 +3340,205 @@ const vdjscript_list =
         "sampler":
         {
             "get_sample_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_sample_info":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_sample_name":
             {
                 "description": "TODO",
                 "alias": "get_sample_slot_name"
             },
             "get_sampler_bank":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_sampler_bank_count":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_sampler_bank_id":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_sampler_count":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_sampler_slot":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_abort_rec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_assign":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_bank":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_edit":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_group_color":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_group_mute":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_group_name":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_group_volume":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_has_group":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_load_to_deck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_loaded":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_loop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_mode":
             {
                 "description": "TODO",
                 "alias": "sampler_rapidfire"
             },
             "sampler_mute":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_options":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_output":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_pad":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_pad_page":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_pad_shift":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_pad_volume":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_pfl":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_play":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_play_stop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_play_stutter":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_position":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_rec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_rec_delete":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_select":
             {
                 "description": "TODO",
                 "alias": "sampler_default"
             },
             "sampler_start_rec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_stop":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_stop_rec":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_used":
             {
                 "description": "TODO",
                 "alias": "get_sampler_used"
             },
             "sampler_velocity":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_volume":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_volume_master":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sampler_volume_nogroup":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "scratchbank_assign":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "scratchbank_edit":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "scratchbank_load":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "scratchbank_load_to_deck":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "scratchbank_unload":
             {
                 "description": "TODO",
