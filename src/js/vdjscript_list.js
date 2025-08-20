@@ -3559,40 +3559,70 @@ const vdjscript_list =
         "sync":
         {
             "auto_bpm_transition":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "auto_bpm_transition_options":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "auto_sync_settings":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "beatlock":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "get_bpm_match":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "is_sync":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "match_bpm":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "match_gain":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "phrase_sync":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "play_onbeat":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "play_sync":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "play_sync_onbeat":
             {
                 "description": "TODO",
                 "alias": "sync_nocbg"
             },
             "quantize_all":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "smart_fader":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sync":
-                { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "sync_hint":
-                { "description": "TODO" }
+            {
+                "description": "TODO"
+            }
         },
         "text":
         {
