@@ -1357,9 +1357,13 @@ const vdjscript_list =
         "config":
         {
             "apply_audio_config": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "auto_cue": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "auto_match_bpm": 
             { "description": "TODO" },
             "auto_match_key": 
@@ -2554,28 +2558,48 @@ const vdjscript_list =
                 "alias": "preview"
             },
             "prelisten_options": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "prelisten_output": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "prelisten_pos": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "prelisten_stop": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO" 
+            }
         },
         "record":
         {
             "broadcast": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "broadcast_message": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "record": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "record_config": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "record_cut": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "record_vu": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO" 
+            }
         },
         "sampler":
         {
@@ -2698,9 +2722,13 @@ const vdjscript_list =
         "sandbox":
         {
             "can_sandbox": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "sandbox": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO"
+            }
         },
         "sync":
         {
@@ -2743,82 +2771,150 @@ const vdjscript_list =
         "text":
         {
             "countdown": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "get_status": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "get_text": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "stopwatch": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "stopwatch_reset": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO" 
+            }
         },
         "timecode":
         {
             "get_hastimecode": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "get_timecode_quality": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "invert_timecode": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "timecode_active": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "timecode_bypass": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "timecode_cd_mode": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "timecode_config": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "timecode_mode": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "timecode_motor_enable": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "timecode_options": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "timecode_pitch": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "timecode_reset_pitch": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO"
+            }
         },
         "video":
         {
             "has_video_mix": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "is_audioonlyvisualisation": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "is_video": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "leftvideo": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "leftvideo_button": 
-            { "description": "TODO" },
-            "over_video": {
+            { 
+                "description": "TODO" 
+            },
+            "over_video": 
+            {
                 "description": "TODO",
                 "alias": "overvideo"
             },
             "rightvideo": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "rightvideo_button": 
-            { "description": "TODO" },
+            {
+                "description": "TODO"
+            },
             "video": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "video_crossfader": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "video_crossfader_auto": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "video_crossfader_link": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "video_delay": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "video_fadetoblack": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "video_level": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO"
+            },
             "video_output": 
-            { "description": "TODO" },
+            { 
+                "description": "TODO" 
+            },
             "video_transition": 
-            { "description": "TODO" }
+            { 
+                "description": "TODO"
+            }
         }
     }
 }
+
 
