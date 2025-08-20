@@ -1228,40 +1228,131 @@ const vdjscript_list =
             {
                 "description": "TODO"
             },
-            "mark_linked_tracks": {
+            "mark_linked_tracks": 
+            {
                 "description": "TODO",
                 "alias": "mark_related_tracks"
             },
-            "not_played": { "description": "TODO" },
-            "page": { "description": "TODO" },
-            "playlist_load": { "description": "TODO" },
-            "quick_filter": { "description": "TODO" },
-            "rating": { "description": "TODO" },
-            "recurse_folder": { "description": "TODO" },
-            "save_deck_set": { "description": "TODO" },
-            "search": { "description": "TODO" },
-            "search_add": { "description": "TODO" },
-            "search_delete": { "description": "TODO" },
-            "search_folder": { "description": "TODO" },
-            "search_options": { "description": "TODO" },
-            "search_playlists": { "description": "TODO" },
-            "set_browsed_file_bpm": { "description": "TODO" },
-            "sidelist_add": { "description": "TODO" },
-            "sidelist_clear": { "description": "TODO" },
-            "sidelist_load": { "description": "TODO" },
-            "sidelist_load_and_keep": { "description": "TODO" },
-            "sidelist_load_and_remove": { "description": "TODO" },
-            "sidereco_options": { "description": "TODO" },
-            "sidereco_song": { "description": "TODO" },
-            "sidereco_source": { "description": "TODO" },
-            "sideview": { "description": "TODO" },
-            "sideview_options": { "description": "TODO" },
-            "sideview_sort": { "description": "TODO" },
-            "sideview_title": { "description": "TODO" },
-            "sideview_triggerpad": { "description": "TODO" },
-            "undo_load": { "description": "TODO" },
-            "unload": { "description": "TODO" },
-            "view_options": { "description": "TODO" }
+            "not_played": 
+            { 
+                "description": "TODO" 
+            },
+            "page": 
+            { 
+                "description": "TODO" 
+            },
+            "playlist_load": 
+            { 
+                "description": "TODO" 
+            },
+            "quick_filter": 
+            { 
+                "description": "TODO" 
+            },
+            "rating": 
+            { 
+                "description": "TODO" 
+            },
+            "recurse_folder": 
+            { 
+                "description": "TODO" 
+            },
+            "save_deck_set": 
+            { 
+                "description": "TODO" 
+            },
+            "search": 
+            { 
+                "description": "TODO" 
+            },
+            "search_add": 
+            { 
+                "description": "TODO" 
+            },
+            "search_delete": 
+            { 
+                "description": "TODO" 
+            },
+            "search_folder": 
+            { 
+                "description": "TODO" 
+            },
+            "search_options": 
+            { 
+                "description": "TODO" 
+            },
+            "search_playlists": 
+            { 
+                "description": "TODO" 
+            },
+            "set_browsed_file_bpm": 
+            { 
+                "description": "TODO"
+            },
+            "sidelist_add": 
+            { 
+                "description": "TODO"
+            },
+            "sidelist_clear": 
+            { 
+                "description": "TODO" 
+            },
+            "sidelist_load": 
+            { 
+                "description": "TODO" 
+            },
+            "sidelist_load_and_keep": 
+            { 
+                "description": "TODO" 
+            },
+            "sidelist_load_and_remove": 
+            {
+                "description": "TODO"
+            },
+            "sidereco_options": 
+            {
+                "description": "TODO"
+            },
+            "sidereco_song": 
+            { 
+                "description": "TODO" 
+            },
+            "sidereco_source": 
+            { 
+                "description": "TODO" 
+            },
+            "sideview":
+            { 
+                "description": "TODO" 
+            },
+            "sideview_options": 
+            { 
+                "description": "TODO" 
+            },
+            "sideview_sort": 
+            { 
+                "description": "TODO" 
+            },
+            "sideview_title": 
+            { 
+                "description": "TODO" 
+            },
+            "sideview_triggerpad": 
+            { 
+                "description": "TODO"
+            },
+            "undo_load": 
+            { 
+                "description": "TODO"
+            },
+            "unload": 
+            { 
+                "description": "TODO"
+            },
+            "view_options": 
+            { 
+                "description": "TODO" 
+            }
         },
         "config":
         {
@@ -2149,4 +2240,5 @@ const vdjscript_list =
             "video_transition": { "description": "TODO" }
         }
     }
+
 }
