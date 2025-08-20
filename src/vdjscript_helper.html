@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <!-- include the javascript files (.js) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="./js/vdjscript_list.js" onerror="alert('Script failed to load!')"></script>
+    <script src="./js/vdjscript_list.js" onerror="alert('vdjscript_list.js failed to load!')"></script>
 </head>
 <body>
     <h1>VirtualDJ - VDJscript helper</h1>
@@ -50,7 +50,8 @@
         <button onclick="ExportJSON()">Export list in JSON</button>
         <button onclick="ExportHTML()">Export list in HTML</button>
     </div>
-    <script>
+
+    <script type="text/javascript">
         const vdjbuildLabel = document.getElementById("vdjbuildlabel");
         const categoryList = document.getElementById("vdjscriptlist_category");
         const actionList = document.getElementById("vdjscriptlist_action");
@@ -169,12 +170,10 @@
                     xmlContent += `  <Item>\n`;
                     xmlContent += `    <Category>${escapeXml(category)}</Category>\n`;
                     xmlContent += `    <Action>${escapeXml(action)}</Action>\n`;
-                    if (alias != "")
-                    {
+                    if (alias != "") {
                         xmlContent += `    <Alias>${escapeXml(alias)}</Alias>\n`;
                     }
-                    if (description != "")
-                    {
+                    if (description != "") {
                         xmlContent += `    <Description>${escapeXml(description)}</Description>\n`;
                     }
                     xmlContent += `  </Item>\n`;
@@ -231,63 +230,63 @@
 
         function ExportHTML() {
             let htmlContent = `
-                <!DOCTYPE html>
-                <html>
-                <head>
-                  <meta charset="UTF-8">
-                  <title>VDJScript List</title>
-                  <style>
-                    body { font-family: Arial, sans-serif; margin: 20px; }
-                    h1 { color: #333; }
-                    table { border-collapse: collapse; width: 100%; }
-                    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-                    th { background-color: #f2f2f2; }
-                    tr:nth-child(even) { background-color: #fafafa; }
-                  </style>
-                </head>
-                <body>
-                  <h1>VDJScript List (VdjBuild ${vdjbuildNo})</h1>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Category</th>
-                        <th>Action</th>
-                        <th>Alias</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>VDJScript List</title>
+                        <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        h1 { color: #333; }
+                        table { border-collapse: collapse; width: 100%; }
+                        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+                        th { background-color: #f2f2f2; }
+                        tr:nth-child(even) { background-color: #fafafa; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>VDJScript List (VdjBuild ${vdjbuildNo})</h1>
+                        <table>
+                        <thead>
+                            <tr>
+                            <th>Category</th>
+                            <th>Action</th>
+                            <th>Alias</th>
+                            <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                    `;
+
+            Object.keys(vdjdata).forEach(category => {
+                Object.keys(vdjdata[category]).forEach(action => {
+                    let action_data = vdjdata[category][action]
+                    let description = action_data.description.replace("TODO", "");
+                    let alias = (action_data.alias) ? action_data.alias : "";
+
+                    let escapeHtml = (str) => str
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;")
+                        .replace(/"/g, "&quot;")
+                        .replace(/'/g, "&#039;");
+
+                    htmlContent += `
+                        <tr>
+                        <td>${escapeHtml(category)}</td>
+                        <td>${escapeHtml(action)}</td>
+                        <td>${escapeHtml(alias)}</td>
+                        <td>${escapeHtml(description)}</td>
+                        </tr>`;
+                });
+            });
+
+            htmlContent += `
+                    </tbody>
+                    </table>
+                </body>
+                </html>
                 `;
-
-                Object.keys(vdjdata).forEach(category => {
-                    Object.keys(vdjdata[category]).forEach(action => {
-                        let action_data = vdjdata[category][action]
-                        let description = action_data.description.replace("TODO", "");
-                        let alias = (action_data.alias) ? action_data.alias : "";
-
-                        let escapeHtml = (str) => str
-                            .replace(/&/g, "&amp;")
-                            .replace(/</g, "&lt;")
-                            .replace(/>/g, "&gt;")
-                            .replace(/"/g, "&quot;")
-                            .replace(/'/g, "&#039;");
-
-                        htmlContent += `
-                  <tr>
-                    <td>${escapeHtml(category)}</td>
-                    <td>${escapeHtml(action)}</td>
-                    <td>${escapeHtml(alias)}</td>
-                    <td>${escapeHtml(description)}</td>
-                  </tr>`;
-                            });
-                        });
-
-                        htmlContent += `
-                </tbody>
-              </table>
-            </body>
-            </html>
-            `;
 
             let blob = new Blob([htmlContent], { type: "text/html;charset=utf-8;" });
             let url = URL.createObjectURL(blob);
@@ -298,10 +297,8 @@
             link.click();
             document.body.removeChild(link);
         }
-
     </script>
 </body>
-
 </html>
 
 
