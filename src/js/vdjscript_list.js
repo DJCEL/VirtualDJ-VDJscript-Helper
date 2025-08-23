@@ -1,7 +1,6 @@
 const vdjscript_list =
 {
     "VdjBuild": "8709",
-    "VersionFile" : "2"
     "Items":
     {
         "flow":
@@ -3773,6 +3772,7 @@ const vdjscript_list =
         }
     }
 }
+
 
 
 
