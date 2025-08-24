@@ -1,7 +1,6 @@
 const vdjscript_list =
 {
-    "VdjBuild": "8709",
-    "Version": "2",
+    "VdjBuild": "8673",
     "Items":
     {
         "flow":
@@ -203,7 +202,8 @@ const vdjscript_list =
             {
                 "description": "load a new skin. Use syntax \" load_skin ':newvariation' \" to load a different variation inside the same skin file."
             },
-            "lock_panel": {
+            "lock_panel":
+            {
                 "description": "NOTE: despite the name, this action acts on <split> elements, not <panel>",
                 "alias": "lock_pannel"
             },
@@ -533,7 +533,7 @@ const vdjscript_list =
         {
             "auto_sync_options":
             {
-                "description": "show a context menu to control the various auto-sync options",
+                "description": "show a context menu to control the various auto-sync options"
             },
             "blink_play":
             {
@@ -662,7 +662,8 @@ const vdjscript_list =
             {
                 "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated)."
             },
-            "scratch": {
+            "scratch":
+            {
                 "description": "'scratch +120ms' to scratch 120ms forward."
             },
             "scratch_dna":
@@ -770,9 +771,10 @@ const vdjscript_list =
             },
             "fake_pfl":
             {
-                "description": "TODO"
+                "description": "tell VirtualDJ to disable pfl switch from skin, when pfl can only be controlled from controller or mixer"
             },
-            "gain": {
+            "gain":
+            {
                 "description": "set the gain of a deck",
                 "alias": "gain_slider | power_gain"
             },
@@ -1093,7 +1095,7 @@ const vdjscript_list =
             },
             "browser_gotofolder":
             {
-                    "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder."
+                "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder."
             },
             "browser_isactive":
             {
@@ -1133,7 +1135,7 @@ const vdjscript_list =
             },
             "browser_window":
             {
-                    "description": "Change the active browser zone. \"browser_window 'folders'\", \"browser_window 'songs'\", \"browser_window 'sideview'\", or \"browser_window 'automix'\", \"browser_window 'sidelist'\", \"browser_window 'sampler'\" Cycle through available browser zones. \"browser_window + 1\", \"browser_window - 1\" Cycle through specified zones. Example \"browser_window 'folders,songs'\""
+                "description": "Change the active browser zone. \"browser_window 'folders'\", \"browser_window 'songs'\", \"browser_window 'sideview'\", or \"browser_window 'automix'\", \"browser_window 'sidelist'\", \"browser_window 'sampler'\" Cycle through available browser zones. \"browser_window + 1\", \"browser_window - 1\" Cycle through specified zones. Example \"browser_window 'folders,songs'\""
             },
             "browser_zoom":
             {
@@ -1363,19 +1365,19 @@ const vdjscript_list =
             },
             "auto_cue":
             {
-                "description": "TODO"
+                "description": "set the auto_cue mode: \"off\", \"on\", \"always\"."
             },
             "auto_match_bpm":
             {
-                "description": "TODO"
+                "description": "when Auto Match BPM is on, songs are automatically set to the same BPM when loaded"
             },
             "auto_match_key":
             {
-                "description": "TODO"
+                "description": "when Auto Match KEY is on, songs are automatically set to a compatible KEY when loaded, if possible"
             },
             "auto_pitch_lock":
             {
-                "description": "TODO"
+                "description": "when Auto Pitch Lock is on, pitch_lock engages whenever BPMs are matched, so that moving manually one pitch slider will move the other in order to keep the match"
             },
             "connect":
             {
@@ -1383,40 +1385,40 @@ const vdjscript_list =
             },
             "eventscheduler":
             {
-                "description": "TODO"
+                "description": "Open the Event Scheduler"
             },
             "eventscheduler_start":
             {
-                "description": "TODO"
+                "description": "Start the Event Scheduler (can specify one specific saved schedule: eventscheduler_start 'summer_wedding')"
             },
             "fader_start":
             {
-                "description": "TODO"
+                "description": "enable or disable fader start"
             },
             "get_lemode":
             {
-                "description": "TODO"
+                "description": "return true if we are running a LimitedEdition"
             },
             "play_mode":
             {
-                "description": "TODO"
+                "description": "set the mode for play/stop/cue buttons: 'play_mode \"numark\"', or 'play_mode \"pioneer\"'."
             },
             "quantize_loop":
             {
-                "description": "TODO"
+                "description": "when quantize_loop is on, loops automatically align according to the globalQuantize setting"
             },
             "quantize_setcue":
             {
-                "description": "TODO"
+                "description": "when quantize_setcue is on, setting cues automatically align according to the globalQuantize setting"
             },
             "save_config":
             {
-                "description": "TODO",
+                "description": "save your config changes now (usually changes are saved automatically when you close virtualdj)",
                 "alias": "saveregistryconfig"
             },
             "setting":
             {
-                "description": "TODO"
+                "description": "read or write a specific setting (see config window for the list of all settings names)\nExample: setting \"jogSensitivityScratch\" 80% \nExample: setting \"videoRandomTransition\" on"
             },
             "setting_ismodified":
             {
@@ -1424,52 +1426,52 @@ const vdjscript_list =
             },
             "setting_reset":
             {
-                "description": "TODO"
+                "description": "reset a setting to its default value"
             },
             "setting_setdefault":
             {
-                "description": "TODO"
+                "description": "change the default value for a setting during this session"
             },
             "setting_setsession":
             {
-                "description": "TODO"
+                "description": "force a specific value for a setting during this session"
             },
             "setting_setsession_deck":
             {
-                "description": "TODO"
+                "description": "force a specific value for a setting during this session for a specific deck"
             },
             "settings":
             {
-                "description": "TODO",
+                "description": "open the configuration window.",
                 "alias": "config"
             },
             "smart_cue":
             {
-                "description": "TODO"
+                "description": "when smart_cue is on, songs are automatically re-synchronized when jumped to a new position or cue"
             },
             "smart_loop":
             {
-                "description": "TODO"
+                "description": "when smart_loop is on, loop are automatically adjusted to sound perfect"
             },
             "smart_play":
             {
-                "description": "TODO",
+                "description": "when smart_play is on, songs are automatically synchronized when started",
                 "alias": "auto_sync"
             },
             "smart_scratch":
             {
-                "description": "TODO"
+                "description": "when smart_scratch is on, backward scratching is automatically muted, only forward scratching will be heard"
             }
         },
         "controllers":
         {
             "action_deck":
             {
-                "description": "TODO"
+                "description": "return true if the button calling this action is on the specified deck: 'action_deck 1 ? actionA : actionB'"
             },
             "assign_controller":
             {
-                "description": "TODO"
+                "description": "Assign a specific controller to this deck. \n'deck 1 assign_controller \"CDJ400\" 2' assigns the second CDJ400 to deck 1\nOr in a controller mapping 'deck 1 assign_controller' will assign the controller the action was executed from to deck 1."
             },
             "controller_battery":
             {
@@ -1477,7 +1479,7 @@ const vdjscript_list =
             },
             "controller_mapping":
             {
-                "description": "TODO"
+                "description": "Assign a mapping to a controller\n'controller_mapping \"My Mapping\"' assigns the mapping 'My Mapping' to the controller the command was executed on\n'controller_mapping \"CDJ400\" \"My Mapping\"' assigns the mapping 'My Mapping' to all CDJ400s\n'controller_mapping \"CDJ400\" \"My Mapping\" 2' assigns the mapping 'My Mapping' to the second CDJ400"
             },
             "controllerscreen_deck":
             {
@@ -1489,11 +1491,11 @@ const vdjscript_list =
             },
             "device_side":
             {
-                "description": "TODO"
+                "description": "Assign a different action for a button or slider of a device depending on which side of the device it is on: \"device_side 'left' ? action_for_left : action_for_right\"\nFor more than 2-deck controllers, you can use \"device_side 1 ? action1 : device_side 2 ? action2 ? device_side 3 ? action3 : etc...\""
             },
             "display_time":
             {
-                "description": "TODO"
+                "description": "set the mode to display time: \"total\", \"remain\", \"elapsed\", +1 or -1."
             },
             "djc_button":
             {
@@ -1525,7 +1527,7 @@ const vdjscript_list =
             },
             "effect_fxsendreturndeck_multi":
             {
-                "description": "TODO"
+                "description": "Select which source to apply fx to for a specific send/return channel in case there are more than one\n'deck 1 effect_fxsendreturndeck_multi master' : Apply master fx on the first fx send/return pair\n'deck 2 effect_fxsendreturndeck_multi mic' : Apply mic fx on the second fx send/return pair\n'deck 2 effect_fxsendreturndeck_multi 4' : Apply deck 4 fx on the second fx send/return pair"
             },
             "effect_fxsendreturnenable":
             {
@@ -1537,11 +1539,11 @@ const vdjscript_list =
             },
             "get_controller_image":
             {
-                "description": "TODO"
+                "description": "Use in controller mappings to get the cover art from deck for use on controllers with screens"
             },
             "get_controller_name":
             {
-                "description": "TODO"
+                "description": "return the name(s) of the controller(s) assigned to this deck"
             },
             "get_controller_screen":
             {
@@ -1549,7 +1551,7 @@ const vdjscript_list =
             },
             "get_denon_cuepoints":
             {
-                "description": "TODO"
+                "description": "'get_denon_cuepoints 100' for a led bar with 100 leds. Number must match the number of leds in the led bar in the definition."
             },
             "get_denon_platter":
             {
@@ -1557,7 +1559,7 @@ const vdjscript_list =
             },
             "get_display":
             {
-                "description": "TODO"
+                "description": "get some text to display. depending on the latest action, it can be the name of an effect, the folder being browsed, the title of the current song, etc... for multiline displays, you can add the line number: \"get display 1\", \"get display 2\"."
             },
             "get_gemini_display":
             {
@@ -1593,51 +1595,51 @@ const vdjscript_list =
             },
             "get_rotation_cue":
             {
-                "description": "TODO"
+                "description": "get the angle of the cue point on the disc"
             },
             "get_rotation_slip":
             {
-                "description": "TODO"
+                "description": "get the angle of the slip point on the disc when slip is active, or regular get_rotation otherwise"
             },
             "invert_controllers":
             {
-                "description": "TODO"
+                "description": "Invert the deck of the controllers"
             },
             "keyboard_shortcuts":
             {
-                "description": "TODO"
+                "description": "Map to CTRL or ALT. While pressed will show keyboard overlay in browser. Double-press to activate sticky keys.\nAccepts time to delay showing overlay (keyboard_shortcuts 500ms). In scripts can also be used to turn on or off the overlay manually (keyboard_shortcuts on)"
             },
             "menu":
             {
-                "description": "TODO"
+                "description": "display a menu on the controller's screen, that allows to change the behaviour of the menu_buttons. you can navigate through the menu using the browser_scroll action'."
             },
             "menu_button":
             {
-                "description": "TODO"
+                "description": "defines a button whose behaviour can be changed by a menu. Syntax: 'menu_button 1 \"hotcue,sampler,effect,loop\"'."
             },
             "menu_cycledisplay":
             {
-                "description": "TODO"
+                "description": "on single-line controllers, cycle display when no menu is shown between artist - title, artist or title"
             },
             "midiclock_active":
             {
-                "description": "TODO"
+                "description": "Toggle sending midiclock to the specified controller"
             },
             "miditovst_active":
             {
-                "description": "TODO"
+                "description": "Toggle sending midi from a specific controller to the specified deck's VST instruments or effects"
             },
             "mixer_order":
             {
-                "description": "TODO"
+                "description": "For controllers with 4 decks, specify the order of the decks, from left to right. Default: \"mixer_order 3124\""
             },
             "motor_switch":
             {
-                "description": "TODO"
+                "description": "assign this deck to be controlled by the motorized wheel"
             },
             "motorwheel_instant_play":
             {
-                "description": "TODO"
+                "description": "when set to on, the song will start instantly, bypassing the ramp up time the motor takes to reach its full rotation speed (the drawback is that then you cannot hold the disc still when your start the motor)"
             },
             "ns7_platter":
             {
@@ -1645,15 +1647,15 @@ const vdjscript_list =
             },
             "numark_waveform_zoom":
             {
-                "description": "TODO"
+                "description": "Set numark waveform zoom (value from 0 to 3, or +1, -1 to step through zoom levels)"
             },
             "os2l_button":
             {
-                "description": "TODO"
+                "description": "Send a command to a DMX software over OS2L: 'os2l_button \"blackout\"', 'os2l_button \"fog machine\" while_pressed', etc.\nIf you want to specify a page, you can use 'os2l_button \"mypage\" \"mybutton\"'.\nIf the DMX software doesn't send feedback commands, os2l_button acts as a flash button (it sends 'on' when pressed, 'off' when released) - use 'os2l_button \"mybutton\" on' to not send commands on release.\nIf the DMX software sends feedback commands, os2l_button acts as a toggle button (it sends the opposite of the last feedback when pressed, nothing on release) - use 'os2l_button \"mybutton\" while_pressed' to send a command on release."
             },
             "os2l_cmd":
             {
-                "description": "TODO"
+                "description": "Send a numeric command to a DMX software over OS2L: 'os2l_cmd 42 on' or 'os2l_cmd 43 50%'"
             },
             "os2l_info":
             {
@@ -1661,7 +1663,7 @@ const vdjscript_list =
             },
             "os2l_scene":
             {
-                "description": "TODO"
+                "description": "similar to os2l_button, but sends 'on' to the DMX software only if the button was not active yet, and only if the deck is audible. (requires feedback from the DMX software)\nwhen the deck is not audible, the scene will be queued and started when the deck becomes audible\nos2l_scene \"scene1\"\nos2l_scene \"mypage\" \"myscene\""
             },
             "phase_movement":
             {
@@ -1673,23 +1675,23 @@ const vdjscript_list =
             },
             "pioneer_cue":
             {
-                "description": "TODO"
+                "description": "On when playing or paused on cue, blinking when paused and not on cue, off when no track loaded"
             },
             "pioneer_play":
             {
-                "description": "TODO"
+                "description": "On when playing, off when no track loaded, blinking when paused or playing with cue stutter"
             },
             "refresh_controller":
             {
-                "description": "TODO"
+                "description": "refresh the display of the specified controller (or all if none specified)."
             },
             "reinit_controller":
             {
-                "description": "TODO"
+                "description": "Reinit the specified controller (or all if none specified), going through the exit and init sequences (you can specify a delay between exit and init: \"reinit_controllers 'mycontroller' 200ms\"."
             },
             "rescan_controllers":
             {
-                "description": "TODO"
+                "description": "rescan for newly connected controllers."
             },
             "rzx_touch":
             {
@@ -1705,19 +1707,19 @@ const vdjscript_list =
             },
             "select_master_output":
             {
-                "description": "TODO"
+                "description": "Select if the audio should be played on the computer speakers or on the controller audio output"
             },
             "set_deck":
             {
-                "description": "TODO"
+                "description": "use script or implicit variable to affect which deck the action is applied to\nexample: 'set_deck `get_var varname` & play'"
             },
             "shift":
             {
-                "description": "TODO"
+                "description": "set or query the built-in shift variable, used for controllers"
             },
             "show_text":
             {
-                "description": "TODO"
+                "description": "Show text on controller display. (If your controller uses get_display for the displays)\n\"show_text 'Line 1|Line 2' 3000ms\" will show 2 lines of text for 3 seconds (time optional, | separates lines)\n\"show_text '$myvar$'\" shows the contents of the variable $myvar"
             },
             "v7_status":
             {
@@ -1728,7 +1730,7 @@ const vdjscript_list =
         {
             "cue":
             {
-                "description": "TODO"
+                "description": "if playing, go to the last cue point and continue playing. if paused, set the current position as cue point, and preview the cue as long as pressed. if in loop, change loop_in to the cue point but keep the loop's length. you can specify a number ('cue 1', 'cue 57') to work with several cues."
             },
             "cue_action":
             {
@@ -1736,36 +1738,36 @@ const vdjscript_list =
             },
             "cue_button":
             {
-                "description": "TODO",
+                "description": "act like cue_stop, cue_play or cue_cup depending on the cueMode setting",
                 "alias": "cue_3button"
             },
             "cue_color":
             {
-                "description": "TODO"
+                "description": "query or set the color of a cue point\nQuery example: cue_color 1\nSet example: cue_color 1 'yellow'"
             },
             "cue_countdown":
             {
-                "description": "TODO"
+                "description": "count down to the next cue (or end) in beats\nuse 'cue_countdown color' or 'cue_countdown name' to get the name or color of the next cue point"
             },
             "cue_counter":
             {
-                "description": "TODO"
+                "description": "count up or down to the nearest cue point in beats\nuse 'cue_counter color' or 'cue_counter name' to get the name or color of the nearest cue point"
             },
             "cue_countup":
             {
-                "description": "TODO"
+                "description": "count up from the last cue point (or start) in beats\nuse 'cue_countup color' or 'cue_countup name' to get the name or color of the last cue point"
             },
             "cue_cup":
             {
-                "description": "TODO"
+                "description": "if playing, rewind to the last cue point, and start again on release. if paused, set the current position as cue point."
             },
             "cue_display":
             {
-                "description": "TODO"
+                "description": "Show information about a cue point based on the cueDisplay config option.\nExample: 'cue_display 1'\nCan also be used to modify the cueDisplay option by using +1 or -1 as parameter: 'cue_display +1'\nThe cueDisplay option can also be set by name: 'cue_display name'"
             },
             "cue_loop":
             {
-                "description": "TODO"
+                "description": "Jump to a cue and stay in a loop. Use cue_loop_hold to select if loop is temporary, or stays until pressed again. When the cueLoopAutoSync option is enabled, jumping to the cue is beat synchronized"
             },
             "cue_loop_autosync":
             {
@@ -1773,208 +1775,208 @@ const vdjscript_list =
             },
             "cue_loop_hold":
             {
-                "description": "TODO"
+                "description": "Toggle cue_loop between looping while pressed and turn loop on/off"
             },
             "cue_name":
             {
-                "description": "TODO"
+                "description": "\"cue_name 1\" returns the name of cue point #1, or changes the cue point when pressed"
             },
             "cue_play":
             {
-                "description": "TODO"
+                "description": "if playing, pause and go to the last cue point. if paused, set the current position as cue point, and preview the cue as long as pressed. if you kept pressed more than 2s (or the time specified), it will continue playing once you release. syntax: 'cue_play 1 1000ms'"
             },
             "cue_pos":
             {
-                "description": "TODO"
+                "description": "\"cue_pos 1\" returns the position of cue point #1 as a percentage\n\"cue_pos 1 msec\", \"cue_pos 1 sec\", \"cue_pos 1 min\" returns the position of cue point #1, msec, sec and min parts\n\"cue_pos 1 mseconly\" returns the position of cue point #1 in milliseconds\n\"cue_pos 1 beats\" returns the position of the cue point in number of beats from first beat"
             },
             "cue_select":
             {
-                "description": "TODO"
+                "description": "Select the nth cue point as default cue point for cue, hotcue, etc.. actions. Does not change position to the selected cue point."
             },
             "cue_stop":
             {
-                "description": "TODO"
+                "description": "if playing, pause and go to the last cue point. if paused, set the current position as cue point, and preview the cue as long as pressed. you can specify a number ('cue_stop 1', 'cue_stop 57') to work with several cues."
             },
             "cues_options":
             {
-                "description": "TODO"
+                "description": "Show some options about cues"
             },
             "delete_cue":
             {
-                "description": "TODO"
+                "description": "Deletes a stored cue point. If no cue number is specified, it will delete the currently active cue point"
             },
             "get_cue":
             {
-                "description": "TODO"
+                "description": "returns the currently active cue, or 0 if no cue point is active"
             },
             "goto_cue":
             {
-                "description": "TODO"
+                "description": "Go to the specified cue. Example \"goto_cue 1\", \"goto_cue +1\", \"goto_cue -1\"\n\"goto_cue\" will jump to the currently selected/last used cue."
             },
             "has_cue":
             {
-                "description": "TODO"
+                "description": "returns true if the specified cue number is set"
             },
             "hot_cue":
             {
-                "description": "TODO",
+                "description": "if no cue point is set, or if 'cue', 'cue_stop' or 'cue_play' is pressed, set one at the current position. otherwise go to the cue point and start or continue playing. if in loop, set the cue point as new loop_in but keep loop_length. you can specify a number ('hot_cue 1', 'hot_cue 57') to work with several cues.",
                 "alias": "hotcue"
             },
             "lock_cues":
             {
-                "description": "TODO"
+                "description": "lock/unlock the cues for this particular song, so that cue actions cannot inadvertently modify them while you're playing"
             },
             "set_cue":
             {
-                "description": "TODO"
+                "description": "store the current position in the cue. if one parameter is given, it's the number of the cue to use. if two parameters are given, the second is the position to store, in ms, in beats, or in percentage of the song length."
             },
             "shift_all_cues":
             {
-                "description": "TODO"
+                "description": "shift all the cues of the song from the given amount (can be used to fix the cues from v7 imported files in case the automatic fix didn't work properly): 'shift_all_cues -10ms'"
             },
             "silent_cue":
             {
-                "description": "TODO"
+                "description": "Mute track when enabled until a hot cue is activated"
             },
             "sort_cues":
             {
-                "description": "TODO"
+                "description": "sort cue points chronologically"
             }
         },
         "deck_select":
         {
             "cross_assign":
             {
-                "description": "TODO"
+                "description": "assign this deck to a side of the crossfader: \"deck 3 cross_assign 'left'\" or \"deck 3 cross_assign 'thru'\""
             },
             "get_deck_color":
             {
-                "description": "TODO"
+                "description": "return blue or red if the deck is the left deck or right deck (and gray otherwise). Can be used with a darkness modifier: 'get_deck_color 50%'\nUse 'get_deck_color \"absolute\"' or 'get_deck_color \"absolute\" 50%' to get a color based on actual deck rather than left/right (red for deck 1, blue for deck 2, orange for deck 3, green for deck 4)"
             },
             "invert_deck":
             {
-                "description": "TODO"
+                "description": "switch leftdeck between deck 1 and deck 3 or rightdeck between deck 2 and deck 4\n\"invert_deck\" to swap the calling deck, or \"invert_deck 'left'\", \"invert_deck 'right'\" to specifically switch left or right deck"
             },
             "leftcross":
             {
-                "description": "TODO"
+                "description": "assign this deck to the left of the crossfader: \"deck 3 leftcross\"\n\"deck 3 leftcross 'only'\" to assign only deck 3 to left of the crossfader\n\"leftcross 'none'\" to disable the left crossfader"
             },
             "leftdeck":
             {
-                "description": "TODO"
+                "description": "select this deck to be the left deck: \"deck 3 leftdeck\" or \"leftdeck +1\""
             },
             "masterdeck":
             {
-                "description": "TODO"
+                "description": "select/unselect this deck as 'master deck'. When a master deck is set, all synchronization operations will take the master deck as reference. (for skins with more than 2 decks)"
             },
             "masterdeck_auto":
             {
-                "description": "TODO"
+                "description": "remove the masterdeck selection and put back automatic masterdeck behavior"
             },
             "pfl":
             {
-                "description": "TODO"
+                "description": "select if this deck is sent to the headphones. (can be used with a slider or a % to specify the volume: 'pfl 75%')"
             },
             "rightcross":
             {
-                "description": "TODO"
+                "description": "assign this deck to the right of the crossfader: \"deck 3 rightcross\""
             },
             "rightdeck":
             {
-                "description": "TODO"
+                "description": "select this deck to be the right deck: \"deck 3 rightdeck\" or \"rightdeck +1\""
             },
             "select":
             {
-                "description": "TODO"
+                "description": "select this deck as 'working deck'. the beat of the working deck will be shown in front in the display, and shortcuts and actions with no specified deck will affect this deck.\\nUnless PFL has been set manually, the PFL will also follow the working deck."
             }
         },
         "equalizer":
         {
             "eq_crossfader_high":
             {
-                "description": "TODO"
+                "description": "crossfade the treble between both decks"
             },
             "eq_crossfader_low":
             {
-                "description": "TODO"
+                "description": "crossfade the bass between both decks"
             },
             "eq_crossfader_mid":
             {
-                "description": "TODO",
+                "description": "crossfade the center frequencies between both decks.",
                 "alias": "eq_crossfader_med"
             },
             "eq_high":
             {
-                "description": "TODO",
+                "description": "change the amount of HiHat, Vocal or High (depending on EQ control mode).",
                 "alias": "eq_high_slider"
             },
             "eq_high_freq":
             {
-                "description": "TODO"
+                "description": "set the treble equalizer"
             },
             "eq_kill_high":
             {
-                "description": "TODO"
+                "description": "mute the treble"
             },
             "eq_kill_low":
             {
-                "description": "TODO"
+                "description": "mute the bass."
             },
             "eq_kill_mid":
             {
-                "description": "TODO",
+                "description": "mute the medium.",
                 "alias": "eq_kill_med"
             },
             "eq_low":
             {
-                "description": "TODO",
+                "description": "change the amount of Kick or Low in the mix (depending on EQ control mode).",
                 "alias": "eq_low_slider"
             },
             "eq_low_freq":
             {
-                "description": "TODO"
+                "description": "set the bass equalizer"
             },
             "eq_mid":
             {
-                "description": "TODO",
+                "description": "change the amount of Melody, Vocals or Medium (depending on EQ control mode).",
                 "alias": "eq_med | eq_mid_slider"
             },
             "eq_mid_freq":
             {
-                "description": "TODO"
+                "description": "set the medium equalizer"
             },
             "eq_mode":
             {
-                "description": "TODO"
+                "description": "Select the behavior of the EQs knobs (frequency, modernEQ or EZRemix)\nCan be used to switch between Frequency and your preferred stems mode using 'eq_mode +1'\nTo change the eq mode only for a single deck, use \"eq_mode +1 deck\" (or \"deck 1 eq_mode +1 deck\" to specify deck 1 in your script)\nTo select a specific behavior, you can use \"eq_mode frequency\", \"eq_mode modernEQ\", \"eq_mode ezRemix\" or \"eq_mode stems\""
             },
             "eq_reset":
             {
-                "description": "TODO"
+                "description": "reset the equalizer."
             },
             "filter":
             {
-                "description": "TODO",
+                "description": "apply the selected colorfx to the sound (nothing applied at 50%, and more applied the farther from the center)",
                 "alias": "filter_slider"
             },
             "filter_activate":
             {
-                "description": "TODO"
+                "description": "enable or disable the deck filter"
             },
             "filter_label":
             {
-                "description": "TODO"
+                "description": "get the text to display under the filter knob\n(use filter_label \"clean\" to always get the value, and filter_label \"name\" to always get the name)"
             },
             "filter_resonance":
             {
-                "description": "TODO"
+                "description": "change the resonance of the filter"
             },
             "filter_selectcolorfx":
             {
-                "description": "TODO"
+                "description": "Select the color effect controlled by the filter knob"
             },
             "has_stems":
             {
-                "description": "TODO"
+                "description": "Return true if the track has stems available. Can also be called with 'has_stems \"2.0\"' to check for new engine, or 'has_stems \"ready\"' to check if stems are ready at the current playing position"
             },
             "high_label":
             {
@@ -1990,42 +1992,42 @@ const vdjscript_list =
             },
             "mute_stem":
             {
-                "description": "TODO"
+                "description": "mute one stem. Stem names are: \"HiHat\", \"Vocal\", \"Instru\", \"Bass\", \"Kick\", or you can use aggregate stems: \"Melody\" (Instru+Bass), \"Rhythm\" (HiHat+Kick), \"MeloRhythm\" (Instru+Bass+HiHat+Kick)"
             },
             "only_stem":
             {
-                "description": "TODO"
+                "description": "keep only one stem. Stem names are: \"HiHat\", \"Vocal\", \"Instru\", \"Bass\", \"Kick\", or you can use aggregate stems: \"Melody\" (Instru+Bass), \"Rhythm\" (HiHat+Kick), \"MeloRhythm\" (Instru+Bass+HiHat+Kick)"
             },
             "stem":
             {
-                "description": "TODO"
+                "description": "Change the amount of a stem in the mix. Stem names are: \"HiHat\", \"Vocal\", \"Instru\", \"Bass\", \"Kick\", or you can use aggregate stems: \"Melody\" (Instru+Bass), \"Rhythm\" (HiHat+Kick), \"MeloVocal\" (Melody/Vocal), \"MeloRhythm\" (Melody/Rhythm).\nTo get kill on left side and isolate on right side of the slider, you can use \"FullVocal\", \"FullMelo\" and \"FullRhythm\"\nTo map a slider to always control the equalizer, regardless of EQ mode, you can use \"stem FreqHi\", \"stem FreqMid\", and \"stem FreqLo\""
             },
             "stem_color":
             {
-                "description": "TODO"
+                "description": "get the default color of a specific stem"
             },
             "stem_pad":
             {
-                "description": "TODO"
+                "description": "mute a stem (or isolate if pressed with Shift). Stem names are: \"HiHat\", \"Vocal\", \"Instru\", \"Bass\", \"Kick\", \"Rhythm\", \"MeloRhythm\", \"Acapella\", \"Instrumental\""
             },
             "stems_bleed":
             {
-                "description": "TODO"
+                "description": "Control how much the fast stems separation algorithm will allow bleeding. The action affects one of the four bleeding values (MuteVocal, MuteInstru, OnlyVocal, OnlyInstru) depending on what is currently muted or isolated on the deck. (NOTE: this does nothing on the regular HiQuality algorithm)"
             }
         },
         "get":
         {
             "browsed_song":
             {
-                "description": "TODO"
+                "description": "set a property of the currently browsed file: \"browsed_song 'rating' 5\", ..."
             },
             "browsed_song_hashtag":
             {
-                "description": "TODO"
+                "description": "add or remove a hash tag from user1, user2 or comment of the currently browsed file: \"browsed_song_hashtag 'user 1' '#high_energy'\""
             },
             "get_activedeck":
             {
-                "description": "TODO"
+                "description": "get the number of the sync master deck"
             },
             "get_album":
             {
@@ -2033,7 +2035,7 @@ const vdjscript_list =
             },
             "get_arm":
             {
-                "description": "TODO"
+                "description": "get the position of the turntable arm"
             },
             "get_artist":
             {
@@ -2041,7 +2043,7 @@ const vdjscript_list =
             },
             "get_artist_before_feat":
             {
-                "description": "TODO"
+                "description": "Return artist of the track, with 'featuring' stripped"
             },
             "get_artist_title":
             {
@@ -2049,59 +2051,59 @@ const vdjscript_list =
             },
             "get_artist_title_separator":
             {
-                "description": "TODO"
+                "description": "Return a dash ( - ) if there is both an artist and a title"
             },
             "get_askthedj":
             {
-                "description": "TODO"
+                "description": "Returns the latest request from ask the dj (requires askTheDJMonitoring setting to be on always)\nUse 'get_askthedj 2' to get the second latest request, etc."
             },
             "get_askthedj_unread":
             {
-                "description": "TODO"
+                "description": "Returns the number of unread Ask The DJ requests (requires askTheDJMonitoring setting to be on always)"
             },
             "get_automix":
             {
-                "description": "TODO"
+                "description": "get the position of the automix crossfader"
             },
             "get_bar":
             {
-                "description": "TODO"
+                "description": "returns the current bar number (1 bar = 4 beats)"
             },
             "get_beat":
             {
-                "description": "TODO"
+                "description": "get the intensity of the beat at the current position (0% to 100%)."
             },
             "get_beat2":
             {
-                "description": "TODO"
+                "description": "get the intensity of the beats from both decks at the same time."
             },
             "get_beat_bar":
             {
-                "description": "TODO"
+                "description": "get the position in % in the 4:4 bar (or in 4:16 if called with 'get beat_bar 16')"
             },
             "get_beat_counter":
             {
-                "description": "TODO"
+                "description": "get the position of the beat counter"
             },
             "get_beat_num":
             {
-                "description": "TODO"
+                "description": "\"get_beat_num\" returns a value between 1 and 4 indicating the beat in the measure\n\"get_beat_num 1 4\" returns true when the first beat of the measure is currently playing\n\"get_beat_num 1\" returns true when the first beat of a 4-beat measure is currently playing (works from 1 to 4)\n\"get_beat_num 16\" returns a percentage indicating the beat position in a 16-beat phrase (works with any phrase number larger than 4)"
             },
             "get_beatdiff":
             {
-                "description": "TODO"
+                "description": "Get the distance between the beat from this deck and the beat from the active deck\n50% means the deck are aligned, 0% means this deck is late half a beat, 100% means it is ahead half a beat\n'get_beatdiff 4' will return the distance percentage between bars instead of beats"
             },
             "get_beatgrid":
             {
-                "description": "TODO"
+                "description": "get the intensity of the beat based on the beatgrid (100% if on the beat, 0% if halfway between to beats)."
             },
             "get_beatpos":
             {
-                "description": "TODO"
+                "description": "get the current position in beatgrid coordinate (27.5 would mean halfway between the 27th and 28th beats in the song)."
             },
             "get_bpm":
             {
-                "description": "TODO"
+                "description": "Get the bpm of the song\nUse 'get_bpm absolute' to get the original bpm of the song (not changing when changing the pitch)"
             },
             "get_browsed_album":
             {
@@ -2121,7 +2123,7 @@ const vdjscript_list =
             },
             "get_browsed_color":
             {
-                "description": "TODO"
+                "description": "'get_browsed_color 0 red 255' (item, component, default)\n'get_browsed_color 0 white' (item, default) returns color for selected item. This includes color filters. (For manually selected color only, use 'get_browsed_song color' instead)"
             },
             "get_browsed_comment":
             {
@@ -2133,11 +2135,11 @@ const vdjscript_list =
             },
             "get_browsed_filepath":
             {
-                "description": "TODO"
+                "description": "get the filepath of the song currently selected in the browser"
             },
             "get_browsed_folder":
             {
-                "description": "TODO"
+                "description": "get the name of the folder selected in the browser"
             },
             "get_browsed_folder_icon":
             {
@@ -2145,7 +2147,7 @@ const vdjscript_list =
             },
             "get_browsed_folder_path":
             {
-                "description": "TODO"
+                "description": "get the full path of the folder selected in the browser"
             },
             "get_browsed_folder_scrollpos":
             {
@@ -2157,7 +2159,7 @@ const vdjscript_list =
             },
             "get_browsed_folder_selection_index":
             {
-                "description": "TODO"
+                "description": "'get_browsed_folder_selection 1 3' returns true if the first line is the selected line in a browser 3 lines high\n'get_browsed_folder_selection 3' returns the line number of the selected line in a browser 3 lines high (between 1 and 3)"
             },
             "get_browsed_folder_tab":
             {
@@ -2185,11 +2187,11 @@ const vdjscript_list =
             },
             "get_browsed_selection_index":
             {
-                "description": "TODO"
+                "description": "'get_browsed_selection 1 3' returns true if the first line is the selected line in a browser 3 lines high\n'get_browsed_selection 3' returns the line number of the selected line in a browser 3 lines high (between 1 and 3)"
             },
             "get_browsed_song":
             {
-                "description": "TODO"
+                "description": "get a property from the currently browsed file: \"get_browsed_song 'title'\", \"get browsed_song 'playcount'\", etc..."
             },
             "get_browsed_title":
             {
@@ -2201,7 +2203,7 @@ const vdjscript_list =
             },
             "get_build":
             {
-                "description": "TODO"
+                "description": "Returns build number"
             },
             "get_comment":
             {
@@ -2217,7 +2219,7 @@ const vdjscript_list =
             },
             "get_deck":
             {
-                "description": "TODO"
+                "description": "get the number of the deck"
             },
             "get_deck_analysis":
             {
@@ -2225,19 +2227,19 @@ const vdjscript_list =
             },
             "get_deck_letter":
             {
-                "description": "TODO"
+                "description": "get the letter of the deck"
             },
             "get_decks":
             {
-                "description": "TODO"
+                "description": "get the total number of decks of the current skin (can also be used with argument to compare: 'get_decks 4' returns true if 'get_decks' would return 4, false otherwise)"
             },
             "get_defaultdeck":
             {
-                "description": "TODO"
+                "description": "get the number of the default deck"
             },
             "get_featuring_after_artist":
             {
-                "description": "TODO"
+                "description": "Return featuring artist, stripped from artist or title field"
             },
             "get_filename":
             {
@@ -2245,7 +2247,7 @@ const vdjscript_list =
             },
             "get_filepath":
             {
-                "description": "TODO"
+                "description": "get the filepath of the song on the deck"
             },
             "get_filesize":
             {
@@ -2253,11 +2255,11 @@ const vdjscript_list =
             },
             "get_firstbeat":
             {
-                "description": "TODO"
+                "description": "get the position of the first beat (in milliseconds)"
             },
             "get_firstbeat_local":
             {
-                "description": "TODO"
+                "description": "get the position of the first beat in the current phrase 16 beats (in milliseconds)"
             },
             "get_genre":
             {
@@ -2265,32 +2267,32 @@ const vdjscript_list =
             },
             "get_hasheadphones":
             {
-                "description": "TODO",
+                "description": "True when a headphones output is configured in sound setup, or when the controller has a headphone volume control",
                 "alias": "get_hasheadphone"
             },
             "get_hasinput":
             {
-                "description": "TODO"
+                "description": "returns true if the current soundconfig includes any input (mic, linein or timecode)"
             },
             "get_haslinein":
             {
-                "description": "TODO"
+                "description": "returns true if the current soundconfig includes some linein inputs"
             },
             "get_hasmaster":
             {
-                "description": "TODO"
+                "description": "True when a master output is configured in sound setup, false for external mixer configurations"
             },
             "get_hasmic":
             {
-                "description": "TODO"
+                "description": "returns true if the current soundconfig includes a mic input"
             },
             "get_hwnd":
             {
-                "description": "TODO"
+                "description": "return the Windows handle to VirtualDJ's window"
             },
             "get_leftdeck":
             {
-                "description": "TODO"
+                "description": "get the number of the left deck"
             },
             "get_license":
             {
@@ -2298,11 +2300,11 @@ const vdjscript_list =
             },
             "get_loaded_song":
             {
-                "description": "TODO"
+                "description": "get a property from the song loaded on the deck: \"deck 2 get_loaded_song 'album'\""
             },
             "get_loaded_song_color":
             {
-                "description": "TODO"
+                "description": "'get_loaded_song_color red 255' (component, default color)\n'get_loaded_song_color white' (default color) returns color for the loaded track. This includes color filters. (For manually selected color only, use 'get_loaded_song color' instead)"
             },
             "get_membership":
             {
@@ -2310,95 +2312,95 @@ const vdjscript_list =
             },
             "get_phrase_num":
             {
-                "description": "TODO"
+                "description": "\"get_phrase_num\" returns a value between 1 and 4 indicating the measure number\n\"get_phrase_num 1\" returns true when the first measure of the phrase is currently playing"
             },
             "get_plugindeck":
             {
-                "description": "TODO"
+                "description": "For use in plugins. Returns 1,2,etc... when plugin is active on a deck, 0 for master, -1 for sampler, -2 for mic"
             },
             "get_position":
             {
-                "description": "TODO"
+                "description": "get the position in the song"
             },
             "get_record_message":
             {
-                "description": "TODO"
+                "description": "get the message displayed on the record page"
             },
             "get_record_min":
             {
-                "description": "TODO"
+                "description": "get the minutes of the recording time"
             },
             "get_record_ms":
             {
-                "description": "TODO"
+                "description": "get the milliseconds of the recording time"
             },
             "get_record_msf":
             {
-                "description": "TODO"
+                "description": "get the frames of the recording time"
             },
             "get_record_sec":
             {
-                "description": "TODO"
+                "description": "get the seconds of the recording time"
             },
             "get_record_size":
             {
-                "description": "TODO"
+                "description": "get the current size of the recording file"
             },
             "get_record_time":
             {
-                "description": "TODO"
+                "description": "get the time already spent recording"
             },
             "get_remix_after_title":
             {
-                "description": "TODO"
+                "description": "Return remix of the track loaded on the deck like \"(remix)\" Remix will automatically be extracted from title if remix field is empty"
             },
             "get_rightdeck":
             {
-                "description": "TODO"
+                "description": "get the number of the right deck"
             },
             "get_rotation":
             {
-                "description": "TODO"
+                "description": "get the angle of the disc"
             },
             "get_song_event":
             {
-                "description": "TODO"
+                "description": "Provide analysis about current and coming events in the song. Can be used when writing visualisation plugins.\nThe first parameter is \"current\" or \"next\" to get the current or the coming event.\nThe second parameter can be \"hasbeats\", \"volume\", \"volume_end\", \"remaining\""
             },
             "get_songlength":
             {
-                "description": "TODO"
+                "description": "get the length in seconds of the song on the deck"
             },
             "get_spectrum_band":
             {
-                "description": "TODO"
+                "description": "get the level of a single spectrum band. 'get_spectrum_band 1'\nUse 'deck master' in front to get spectrum of the master deck 'deck master get_spectrum_band 1'\nBy default there are 32 bands, to use a smaller number of bands, use 'get_spectrum_band 1 3' to get the first of 3 bands\nThe third parameter can be used to get a spectrum of stems 'get_spectrum_band 1 32 vocals'"
             },
             "get_time":
             {
-                "description": "TODO"
+                "description": "get the elapsed time (or remaining or total depending on \"display_time\"), in milliseconds.\nUse 'get time 1000' to get another unit than ms (1000=ms, 25=1/25th of seconds, 44100=frames, etc). \nUse \"elapsed\", \"remain\" or \"total\" to bypass the setting of display_time. Use \"absolute\" not to take the pitch into account.\nOn texts, use \"short\" to hide the decimals. Example: get_time \"remain\" \"short\""
             },
             "get_time_hour":
             {
-                "description": "TODO"
+                "description": "Get the hours of the elapsed time (or remaining or total, depending on \"display_time\")\nUse 'get_time_hour \"absolute\"' if you don't want to take the pitch variations into account\nYou can write 'get_time_hour \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
             },
             "get_time_min":
             {
-                "description": "TODO"
+                "description": "get the minutes of the elapsed time (or remaining or total, depending on \"display_time\"). use 'get time_min \"absolute\"' if you don't want to take the pitch variations in account. you can write 'get time_min \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
             },
             "get_time_ms":
             {
-                "description": "TODO"
+                "description": "get the 1/100th seconds of the elapsed time (or remaining or total, depending on \"display_time\")\nuse 'get_time_ms 1000' to get the actual milliseconds"
             },
             "get_time_msf":
             {
-                "description": "TODO"
+                "description": "get the MSF frame of the elapsed time (or remaining or total, depending on \"display_time\")."
             },
             "get_time_sec":
             {
-                "description": "TODO"
+                "description": "get the seconds of the elapsed time (or remaining or total, depending on \"display_time\")."
             },
             "get_time_sign":
             {
-                "description": "TODO"
+                "description": "Get the sign (-1 or +1) of the elapsed time (or remaining or total, depending on \"display_time\")\nYou can write 'get_time_sign \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
             },
             "get_title":
             {
@@ -2410,27 +2412,27 @@ const vdjscript_list =
             },
             "get_title_before_remix":
             {
-                "description": "TODO"
+                "description": "Return title of the track. If remix is empty, the part in brackets in the title is removed (and shown by get_remix_after_title)"
             },
             "get_title_remix":
             {
-                "description": "TODO"
+                "description": "Return combination of title and remix: \"Title (Remix)\"."
             },
             "get_totaltime_min":
             {
-                "description": "TODO"
+                "description": "get the minutes of the length of the song"
             },
             "get_totaltime_ms":
             {
-                "description": "TODO"
+                "description": "get the 1/100th seconds of the length of the song"
             },
             "get_totaltime_msf":
             {
-                "description": "TODO"
+                "description": "get the frames of the length of the song"
             },
             "get_totaltime_sec":
             {
-                "description": "TODO"
+                "description": "get the seconds of the length of the song"
             },
             "get_username":
             {
@@ -2438,15 +2440,15 @@ const vdjscript_list =
             },
             "get_vdj_folder":
             {
-                "description": "TODO"
+                "description": "return the home folder of VirtualDJ."
             },
             "get_version":
             {
-                "description": "TODO"
+                "description": "Returns version as text such as \"2025\""
             },
             "get_volume":
             {
-                "description": "TODO"
+                "description": "get the volume applied by both the volume sliders and the crossfader"
             },
             "get_year":
             {
@@ -2454,15 +2456,15 @@ const vdjscript_list =
             },
             "has_aux":
             {
-                "description": "TODO"
+                "description": "returns true if the current soundconfig includes a aux input"
             },
             "loaded_song":
             {
-                "description": "TODO"
+                "description": "set a property of the currently loaded file: \"loaded_song 'rating' 5\", ..."
             },
             "loaded_song_hashtag":
             {
-                "description": "TODO"
+                "description": "add or remove a hash tag from user1, user2 or comment of the currently loaded song: \"loaded_song_hashtag 'user 1' '#high_energy'\""
             },
             "prelisten_info":
             {
@@ -2473,35 +2475,35 @@ const vdjscript_list =
         {
             "get_karaoke_background_song":
             {
-                "description": "TODO"
+                "description": "Get info about the background song playing in karaoke mode"
             },
             "get_next_karaoke_song":
             {
-                "description": "TODO"
+                "description": "Get info about the upcoming karaoke tracks\nExample 'get_next_karaoke_song \"singer\" +1'"
             },
             "has_karaoke_next":
             {
-                "description": "TODO"
+                "description": "On when karaoke mode is active and there is still another singer queued"
             },
             "is_karaoke_idle":
             {
-                "description": "TODO"
+                "description": "On when karaoke mode is active but not playing. (Background music may be playing)"
             },
             "is_karaoke_playing":
             {
-                "description": "TODO"
+                "description": "On when karaoke track is playing and karaoke mode is active. Off when background music is playing"
             },
             "karaoke":
             {
-                "description": "TODO"
+                "description": "Start or stop automatic karaoke loading and background music"
             },
             "karaoke_options":
             {
-                "description": "TODO"
+                "description": "show the contextmenu with the karaoke options"
             },
             "karaoke_show":
             {
-                "description": "TODO"
+                "description": "show the singer list on the video output"
             },
             "karaoke_venue_name":
             {
@@ -2516,187 +2518,187 @@ const vdjscript_list =
             },
             "get_key":
             {
-                "description": "TODO"
+                "description": "get the key of the current song, based on keyDisplay option\nUse get_key \"musical\" or get_key \"harmonic\" to get a specific display independent of keyDisplay option"
             },
             "get_key_color":
             {
-                "description": "TODO"
+                "description": "Return color of the current key of the track in the specified deck"
             },
             "get_key_modifier":
             {
-                "description": "TODO"
+                "description": "get the number of semitone up or down currently applied to the song"
             },
             "get_key_modifier_text":
             {
-                "description": "TODO"
+                "description": "get the number of semitone up or down currently applied to the song"
             },
             "key":
             {
-                "description": "TODO"
+                "description": "change the key of the song, from -12 (one octave down) to +12 (one octave up), only in multiple of semitones."
             },
             "key_lock":
             {
-                "description": "TODO",
+                "description": "activate/deactivate the key lock (to make the pitch slider change the speed of the song, but keep the key of the song like it is now).",
                 "alias": "keylock"
             },
             "key_match_button":
             {
-                "description": "TODO"
+                "description": "Match key to the other deck's key on first press, or reset key to normal on second press"
             },
             "key_match_menu":
             {
-                "description": "TODO"
+                "description": "Open a menu to select a different key for the current song"
             },
             "key_move":
             {
-                "description": "TODO"
+                "description": "move the key up or down from the given amount of semitones."
             },
             "key_smooth":
             {
-                "description": "TODO"
+                "description": "change the key of the song, from -6 (half octave down) to +6 (half octave up), allowing not only multiple of semitones.\nuse key_smooth full for full octave up or down"
             },
             "keycue_pad":
             {
-                "description": "TODO"
+                "description": "change the key depending on the pad and play the current cue point"
             },
             "keycue_pad_color":
             {
-                "description": "TODO"
+                "description": "green for the selected key, magenta for lower keys, orange for higher keys and white for no key change"
             },
             "keycue_pad_jump":
             {
-                "description": "TODO"
+                "description": "when on, keycue_pad will jump to the cue point on each press, when off, keycue_pad will only modify the key without jumping to the cue point"
             },
             "keycue_pad_page":
             {
-                "description": "TODO"
+                "description": "change the offset of the key change by keycue_pad actions"
             },
             "match_key":
             {
-                "description": "TODO"
+                "description": "change the key of the song to match the given key. you can use standard notation ('match_key \"A#m\"') or numeric ('match_key \"03A\"'). if no given key, it will use the other deck. the change will be the smallest change to make it compatible with the given key."
             },
             "set_key":
             {
-                "description": "TODO"
+                "description": "change the key of the song to match the given key. you can use standard notation ('set_key \"A#m\"') or numeric ('set key \"03A\"'). if no given key, it will use the other deck. the change will match the exact key."
             }
         },
         "loop":
         {
             "get_active_loop":
             {
-                "description": "TODO"
+                "description": "get the number of beats in the current loop"
             },
             "get_loop":
             {
-                "description": "TODO"
+                "description": "get the number of beats in the current loop or the default loop size if no loop is active"
             },
             "get_loop_in_time":
             {
-                "description": "TODO"
+                "description": "Get time (in ms) of the start of the loop\nUse \"get_loop_in_time 1.0\" to return the time in seconds instead of milliseconds\nUse \"get_loop_in_time on\" to return the loop in time even when no loop is active"
             },
             "get_loop_out_time":
             {
-                "description": "TODO"
+                "description": "Get time (in ms) of the end of the loop\nUse \"get_loop_out_time 1.0\" to return the time in seconds instead of milliseconds\nUse \"get_loop_out_time on\" to return the loop out time even when no loop is active"
             },
             "get_saved_loop":
             {
-                "description": "TODO"
+                "description": "get information about a saved loop: get_saved_loop 'pos', get_saved_loop 'length', get_saved_loop 'name'"
             },
             "loop":
             {
-                "description": "TODO"
+                "description": "set or remove a loop. 'loop 4', 'loop 0.5' set a loop in beats. 'loop 10ms' set a loop in ms. 'loop 200%' multiply by 2 the size of the loop. 'loop 50%' divides by 2. 'loop' alone set a loop at the actual position with the same beat size as the last set loop."
             },
             "loop_adjust":
             {
-                "description": "TODO"
+                "description": "use the jogwheel to adjust the loop.\nloop_adjust 'move', loop_adjust 'out', loop_adjust 'in' activate a specific loop adjust mode\nloop_adjust -1, loop_adjust +1 emulate moving the jog when loop adjust is active"
             },
             "loop_back":
             {
-                "description": "TODO"
+                "description": "When loop back mode is enabled, starting a loop sets the end point of the loop, looping what you just heard. When disabled, starting a loop sets the start point of the loop."
             },
             "loop_button":
             {
-                "description": "TODO"
+                "description": "one-button smart loop: Set the loop in on the first press, set the loop out on second press, remove the loop on third press."
             },
             "loop_color":
             {
-                "description": "TODO"
+                "description": "query or set the color of a saved loop\nQuery example: loop_color 1\nSet example: loop_color 1 'yellow'"
             },
             "loop_delete":
             {
-                "description": "TODO"
+                "description": "'loop_delete 1' Delete the saved loop in slot 1"
             },
             "loop_double":
             {
-                "description": "TODO"
+                "description": "doubles the length of the loop."
             },
             "loop_exit":
             {
-                "description": "TODO"
+                "description": "remove the loop."
             },
             "loop_half":
             {
-                "description": "TODO"
+                "description": "halves the length of the loop."
             },
             "loop_in":
             {
-                "description": "TODO"
+                "description": "if not in loop, set the beginning of a loop. if in loop, jump back to the beginning of the loop."
             },
             "loop_length":
             {
-                "description": "TODO"
+                "description": "change the length of the loop. 'loop_length 15ms' set the length in ms, 'loop_length 0.5' set the length in beats, 'loop_length +100%' set the length in percentage of the actual length."
             },
             "loop_load":
             {
-                "description": "TODO"
+                "description": "'loop_load 1' Load the saved loop from slot 1\n'loop_load \"myloop\"' Load saved loop named \"myloop\""
             },
             "loop_load_prepare":
             {
-                "description": "TODO"
+                "description": "'loop_load_prepare 1' Activate/Deactivate the saved loop in slot 1 without jumping to the start point\n'loop_load_prepare \"myloop\"' Activate/Deactivate stored loop named \"myloop\" without jumping to the start point"
             },
             "loop_move":
             {
-                "description": "TODO"
+                "description": "move the loop without changing its length. 'loop_move +10ms' set the distance in ms, 'loop_move +2' set the distance in beats, 'loop_move +50%' set the distance in percentage of the actual length."
             },
             "loop_options":
             {
-                "description": "TODO"
+                "description": "Show some options about loops"
             },
             "loop_out":
             {
-                "description": "TODO"
+                "description": "if not in loop, set the deck in loop, starting from the last set loop_in point or stutter point. if in loop, exit the loop."
             },
             "loop_pad":
             {
-                "description": "TODO"
+                "description": "Use 'loop_pad 1' to 'loop_pad 8' to trigger a loop of predefined length, depending on loop_pad_page and loop_pad_mode"
             },
             "loop_pad_mode":
             {
-                "description": "TODO"
+                "description": "Cycle through the different loop modes for use with loop_pad. 1=On/Off 2=Hold 3=Roll"
             },
             "loop_pad_page":
             {
-                "description": "TODO"
+                "description": "Cycle through the different lengths of loops for use with loop_pad"
             },
             "loop_position":
             {
-                "description": "TODO"
+                "description": "Get relative position in loop (from 0% to 100%)"
             },
             "loop_roll":
             {
-                "description": "TODO"
+                "description": "\"loop_roll 0.25\" for 1/4th beat loop roll\n\"loop_roll video\" to toggle video loop roll on or off"
             },
             "loop_roll_mode":
             {
-                "description": "TODO"
+                "description": "If loop roll mode is active, when the loop exits, the song continues from the position it should have been if no looping had been done"
             },
             "loop_save":
             {
-                "description": "TODO"
+                "description": "'loop_save 1' Save current loop in saved loop slot 1\n'loop_save \"myloop\"' Save current loop and name it \"myloop\""
             },
             "loop_select":
             {
-                "description": "TODO"
+                "description": "set the loop size (or default loop size if no loop is active). If no parameter is provided, a popup list of loop values to choose from will be displayed."
             },
             "pioneer_loop":
             {
@@ -2712,73 +2714,73 @@ const vdjscript_list =
             },
             "reloop":
             {
-                "description": "TODO"
+                "description": "jump to the loop_in point."
             },
             "reloop_exit":
             {
-                "description": "TODO"
+                "description": "if in loop, remove the loop. otherwise, reactivate the last used loop. Highlights when a loop had been used"
             },
             "repeat_song":
             {
-                "description": "TODO"
+                "description": "When active, song will restart from beginning when finished"
             },
             "saved_loop":
             {
-                "description": "TODO"
+                "description": "'saved_loop 1' Load the saved loop in slot 1 or set if it doesn't exist\n'saved_loop \"myloop\"' Load saved loop named \"myloop\" or set if it doesn't exist"
             },
             "saved_loop_autotrigger":
             {
-                "description": "TODO"
+                "description": "'saved_loop_autotrigger 1' Activate/Deactivate auto-trigger of loop when the play position arrives at the saved loop"
             },
             "saved_loop_display":
             {
-                "description": "TODO"
+                "description": "Show information about a saved loop based on the savedLoopDisplay config option.\nExample: 'saved_loop_display 1'\nCan also be used to modify the savedLoopDisplay option by using +1 or -1 as parameter: 'saved_loop_display +1'"
             },
             "saved_loop_prepare":
             {
-                "description": "TODO"
+                "description": "'saved_loop_prepare 1' Activate/Deactivate the saved loop in slot 1 without jumping to the start point or set if it doesn't exist\n'saved_loop_prepare \"myloop\"' Activate/Deactivate stored loop named \"myloop\" without jumping to the start point or set if it doesn't exist"
             },
             "slicer":
             {
-                "description": "TODO"
+                "description": "\"slicer 1\" to \"slicer 8\" for 8 slicer buttons\n\"slicer 1 'hold'\" to hold the current position on first activate\n\"slicer 'length' +1\" to increase length\n\"slicer 'step' +1\" to increase step size\n\"slicer video\" to toggle video slicer on or off"
             }
         },
         "macro":
         {
             "macro_play":
             {
-                "description": "TODO"
+                "description": "playback a previously recorded macro"
             },
             "macro_record":
             {
-                "description": "TODO"
+                "description": "Start or stop recording a macro"
             }
         },
         "pads":
         {
             "pad":
             {
-                "description": "TODO"
+                "description": "activate the ith pad from the current pad page"
             },
             "pad_bank2":
             {
-                "description": "TODO"
+                "description": "Switch between showing pads 1-8 or 9-16 on skins that support it"
             },
             "pad_button_color":
             {
-                "description": "TODO"
+                "description": "returns the color of the ith pad as should be used on a controller button (changing the color for standby/active/pressed according to the controller's RGB capability).\nif the pad is active and has no color, white is returned.\nif the pad is inactive and has a color, and the controller support full RGB pads, a dimmed color is returned.\nif the pad is active and has a color, and the controller doesn't support full RGB pads, the color is blinking."
             },
             "pad_color":
             {
-                "description": "TODO"
+                "description": "return the color of the ith pad (without auto-dim)"
             },
             "pad_edit":
             {
-                "description": "TODO"
+                "description": "edit the current pads page"
             },
             "pad_has_16pads":
             {
-                "description": "TODO"
+                "description": "Returns true when a controller is connected with a 4x4 pad layout"
             },
             "pad_has_action":
             {
@@ -2802,25 +2804,25 @@ const vdjscript_list =
             },
             "pad_menu":
             {
-                "description": "TODO"
+                "description": "open the menu for this pad page"
             },
             "pad_page":
             {
-                "description": "TODO",
+                "description": "Syntax: 'pad_page 1' to activate a the first page, 'pad_page 1 hotcues' to override the default for a page, 'pad_page btn1' for first button (that could be page 1 or page 5 depending on shift), 'pad_page' to show the dropdown menu",
                 "alias": "pad_pages"
             },
             "pad_page_select":
             {
-                "description": "TODO",
+                "description": "Select the pad page for this slot",
                 "alias": "pad_page_favorite_select"
             },
             "pad_param":
             {
-                "description": "TODO"
+                "description": "change the param 1 of the pads"
             },
             "pad_param2":
             {
-                "description": "TODO"
+                "description": "change the param 2 of the pads"
             },
             "pad_param_visible":
             {
@@ -2828,70 +2830,71 @@ const vdjscript_list =
             },
             "pad_pressure":
             {
-                "description": "TODO"
+                "description": "change the pressure applied on the ith pad"
             },
             "pad_pushed":
             {
-                "description": "TODO"
+                "description": "returns true if the pad is pushed (useful for custom color actions not using auto-dim)"
             },
             "padfx":
             {
-                "description": "TODO"
+                "description": "Activate/deactivate named effect with a single key. Effect parameters can be specified as well.\n'padfx \"echo\" 40% 90%' to start/stop the echo effect with first parameter at 40% and second parameter at 90%. When the effect is stopped, the parameters return to their original values.\n'padfx \"echo\" 40% 90% smart_pressed' smart_pressed works as a toggle when pressing the button shortly, or as a temporary while holding the button pressed\n'padfx \"echo\" 40% 90% \"TRAIL:on\"' after the sliders, it is possible to add strings to disable or enable switch parameters by defining their name, a colon and \"on\" to enable or \"off\" to disable\n'padfx \"echo out\" 80% \"solostem:vocal\"' as the last parameter, you can add solostem:stemname to only let that stem be audible while applying the effect\n'padfx \"echo out\" \"mutestem:rhythm\"' as the last parameter, you can add mutestem:stemname to mute that stem while applying the effect\n'padfx \"reverb\" \"stemfx:vocal\"' as the last parameter, you can add stemfx:stemname to apply the effect only to that stem (other stems will continue playing normally)\n stem names can be Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal,MeloRhythm"
             },
             "padfx_single":
             {
-                "description": "TODO"
+                "description": "Same as padfx, but turns off the previous padfx before activating the current effect"
             },
             "padshift":
             {
-                "description": "TODO"
+                "description": "the 'pad' action automatically change action on shift, but if you want to manually force the use of the shift action, you can use padshift instead"
             },
             "padshift_button_color":
             {
-                "description": "TODO"
+                "description": "the 'pad_button_color' action automatically change action on shift, but if you want to manually force the use of the shift action, you can use padshift_button_color instead"
             },
             "padshift_pressure":
             {
-                "description": "TODO"
+                "description": "the 'pad_pressure' action automatically change action on shift, but if you want to manually force the use of the shift action, you can use padshift_pressure instead"
             }
         },
         "pitch":
         {
             "backspin":
             {
-                "description": "TODO"
+                "description": "Do a backspin. It is possible to specify the length: 'backspin 5000ms' or 'backspin 4bt'"
             },
             "brakespeed":
             {
-                "description": "TODO"
+                "description": "vinyl brake speed, the larger, the longer it takes for the record to get from playing to stopped"
             },
             "get_pitch":
             {
-                "description": "TODO"
+                "description": "Get the pitch from -100% to +100%, centered on 0%"
             },
             "get_pitch_value":
             {
-                "description": "TODO"
+                "description": "Get the pitch from 0% to 200%, centered on 100%"
             },
             "get_pitch_zero":
             {
-                "description": "TODO"
+                "description": "Is true if the pitch is zero, with an optional precision parameter: 'get pitch_zero 5%' (the % is relative to the pitch range. Use \"get pitch_zero 'absolute' 0.1%\" to use absolute precision)"
             },
             "master_tempo":
             {
-                "description": "TODO"
+                "description": "activate/deactivate the master tempo (to make the pitch slider change the speed of the song, but keep the original key of the song)."
             },
-            "pitch": {
-                "description": "TODO",
+            "pitch":
+            {
+                "description": "Set the pitch of the deck. Without parameters it can be assigned to sliders\nUsed with a number, it gives the position on the slider (and therefore account for pitch_range). ('pitch 0.25' set pitch at -10% if pitch range is 20%)\nUsed with a percent it gives an absolute position.  'pitch 112%' set pitch at +12%\nRelative values are possible too. 'pitch +0.1%', 'pitch +0.1 bpm'\nWhen used with 'bpm', the pitch is set to match the bpm. 'pitch 130 bpm' set pitch to match 130 bpm",
                 "alias": "pitch2 | pitch2_slider | pitch_slider"
             },
             "pitch_bend":
             {
-                "description": "TODO"
+                "description": "slow down or speed up the song: 'pitch_bend +3%'. you can make the bend to increase slowly by specifying a second time parameter: 'pitch_bend +1% 500ms' will start at +1% and will double every 500ms."
             },
             "pitch_lock":
             {
-                "description": "TODO",
+                "description": "when Pitch Lock is on, moving the pitch slider on one deck will move the slider on the other deck to keep the sync",
                 "alias": "pitchlock"
             },
             "pitch_motorized":
@@ -2900,131 +2903,131 @@ const vdjscript_list =
             },
             "pitch_range":
             {
-                "description": "TODO"
+                "description": "set the range for the pitch slider. 'pitch_range 12%' set the range from -12% to +12%. \n'pitch_range +1' scrolls through the default pitch ranges. 'pitch_range \"12,16,25\" +1' scrolls through the provided list of pitch ranges.\n'pitch_range +1 deck' changes the pitch range only for the specific deck"
             },
             "pitch_relative":
             {
-                "description": "TODO"
+                "description": "set the pitch of the deck, to be used by hardware controllers if you prefer the change to be relative to the software pitch position"
             },
             "pitch_reset":
             {
-                "description": "TODO"
+                "description": "Slowly brings the pitch back to 0%. You can specify the speed in % per second (default uses the pitchResetSpeed option): 'pitch_reset 5%'\nYou can also specify the speed in ms or beats: 'pitch_reset 500ms' or 'pitch_reset 4bt'"
             },
             "pitch_zero":
             {
-                "description": "TODO"
+                "description": "Set pitch to 0% (normal playing speed)\nUse 'pitch_zero \"center\"' on controllers that send a message when the pitch slider is at the center. This prevents unwanted behavior in gradual or relative mode."
             },
             "startupspeed":
             {
-                "description": "TODO"
+                "description": "vinyl startup speed, the larger, the longer it takes for the record to get from stopped to playing"
             }
         },
         "plugins":
         {
             "effect_3slots_layout":
             {
-                "description": "TODO"
+                "description": "Change between the 1-slot and 3-slots layout for effects"
             },
             "effect_active":
             {
-                "description": "TODO",
+                "description": "activate/deactivate the effect on a specific slot. example: effect_active 1 'flanger' on or effect_active 1",
                 "alias": "effect_activate"
             },
             "effect_arm_active":
             {
-                "description": "TODO"
+                "description": "Activate the effect selected using effect_arm_select on the deck selected using effect_arm_deck"
             },
             "effect_arm_beats":
             {
-                "description": "TODO"
+                "description": "Change the speed of the effect selected using effect_arm_select on the deck selected using effect_arm_deck"
             },
             "effect_arm_bpm":
             {
-                "description": "TODO"
+                "description": "Get the bpm of the deck selected using effect_arm_deck"
             },
             "effect_arm_deck":
             {
-                "description": "TODO"
+                "description": "For controllers with a deck selection switch for effects, select the deck effects will be activated on using effect_arm_active\nUse 'effect_arm_deck single' to allow only one deck at a time to be armed\nUse 'effect_arm_deck master' to select master instead of a deck. 'sampler', 'mic', and 'aux' also supported"
             },
             "effect_arm_select":
             {
-                "description": "TODO"
+                "description": "For controllers with a effect selection switch, select the effect that will be activated using effect_arm_active"
             },
             "effect_arm_slider":
             {
-                "description": "TODO"
+                "description": "Move the effect parameter of the effect selected using effect_arm_select on the deck selected using effect_arm_deck\nUse \"effect_arm_slider 1 2\" to move the second slider of the first slot"
             },
             "effect_arm_slider_label":
             {
-                "description": "TODO"
+                "description": "Get the effect parameter label of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.\nUse 'effect_arm_slider_label 1 short' to get the short label"
             },
             "effect_arm_slider_name":
             {
-                "description": "TODO"
+                "description": "Get the effect parameter name of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.\nUse 'effect_arm_slider_name 1 short' to get the short label"
             },
             "effect_arm_slider_text":
             {
-                "description": "TODO"
+                "description": "Get the effect parameter text of the effect selected using effect_arm_select on the deck selected using effect_arm_deck."
             },
             "effect_arm_slot":
             {
-                "description": "TODO"
+                "description": "Toggle if a slot will be activated by using effect_arm_active"
             },
             "effect_arm_stem":
             {
-                "description": "TODO"
+                "description": "Select/unselect a stem to be used with \"stems\" as slot for effect_ actions\nAccepted stem names are Vocal, HiHat, Bass, Instru, Kick. They can be combined using \"+\""
             },
             "effect_bank_load":
             {
-                "description": "TODO"
+                "description": "load the effects in deck fx slots 1 to 6 from the bank specified by the parameter"
             },
             "effect_bank_save":
             {
-                "description": "TODO"
+                "description": "save the effects in deck fx slots 1 to 6 to the bank specified by the parameter"
             },
             "effect_beats":
             {
-                "description": "TODO"
+                "description": "set the beat parameter for certain effects"
             },
             "effect_beats_all":
             {
-                "description": "TODO"
+                "description": "set the beat parameter for 1, 3 or 6 slots depending on skin6FxLayout and skin3FxLayout settings"
             },
             "effect_bpm_deck":
             {
-                "description": "TODO"
+                "description": "set/get a custom bpm for plugins activated on this deck. Use 'effect_bpm_deck off' to reset and use the bpm of the song or 'effect_bpm_deck 120' to set it to 120 bpm"
             },
             "effect_bpm_deck_tap":
             {
-                "description": "TODO"
+                "description": "tap a custom bpm for plugins activated on this deck. Use 'effect_bpm_deck off' to reset and use the bpm of the song"
             },
             "effect_button":
             {
-                "description": "TODO"
+                "description": "'effect_button 1 2' button 2 on slot 1\n'effect_button 2' button 2 on slot 1"
             },
             "effect_clone":
             {
-                "description": "TODO"
+                "description": "Load into this deck all 3 slots from the current left or right deck"
             },
             "effect_colorfx":
             {
-                "description": "TODO"
+                "description": "'effect_colorfx 1 \"echo\"' to use echo on custom color fx slot 1 (up to 4 custom slots available)"
             },
             "effect_colorslider":
             {
-                "description": "TODO"
+                "description": "Control the effect from center position off, to full on either left or right"
             },
             "effect_command":
             {
-                "description": "TODO"
+                "description": "send a command to this effect"
             },
             "effect_disable_all":
             {
-                "description": "TODO"
+                "description": "'deck 1 effect_disable_all' Disables all effects on deck 1\n'deck master effect_disable_all' Disables all master effects\n'effect_disable_all sampler' Disables all sampler effects. 'aux' or 'mic' can be used for mic or aux effects"
             },
             "effect_dock_gui":
             {
-                "description": "TODO"
+                "description": "dock/undock this effect's control window"
             },
             "effect_has_beats":
             {
@@ -3032,7 +3035,7 @@ const vdjscript_list =
             },
             "effect_has_button":
             {
-                "description": "TODO"
+                "description": "'effect_has_slider 1 2 on' -> returns true if there is a second button on slot 1"
             },
             "effect_has_length":
             {
@@ -3040,138 +3043,138 @@ const vdjscript_list =
             },
             "effect_has_slider":
             {
-                "description": "TODO"
+                "description": "effect_has_slider 1 2 on -> returns true if there is a second slider on slot 1\neffect_has_slider 1 -> returns true if there is a first slider on slot 0"
             },
             "effect_mixfx":
             {
-                "description": "TODO"
+                "description": "Associate an effect with the crossfader"
             },
             "effect_mixfx_activate":
             {
-                "description": "TODO"
+                "description": "Toggle mix fx on or off. Use effect_mixfx_select to select"
             },
             "effect_mixfx_select":
             {
-                "description": "TODO"
+                "description": "Select the mix fx when moving the crossfader"
             },
             "effect_releaseslider":
             {
-                "description": "TODO"
+                "description": "Control the effect release specific slider"
             },
             "effect_releaseslider_active":
             {
-                "description": "TODO"
+                "description": "Control the effect release specific slider and auto activate the effect"
             },
             "effect_select":
             {
-                "description": "TODO"
+                "description": "effect_select 2 \"echo\" -> select effect echo in slot 2\neffect_select 1 -1 -> select previous effect in slot 1\neffect_select +1 -> select next effect in slot 1\neffect_select -> show popup window for slot 1\neffect_select 1 -> show popup window for slot 1\neffect_select 1 0.2 -> select the 2/10th effect from the list in slot 1\neffect_select \"audioonlyvisualisation\" -> select visualisation used when song has no video\neffect_select deactivates the previous plugin in the specified slot"
             },
             "effect_select_multi":
             {
-                "description": "TODO"
+                "description": "effect_select_multi 2 \"echo\" -> select effect echo in slot 2\neffect_select_multi 1 -1 -> select previous effect in slot 1\neffect_select_multi +1 -> select next effect in slot 1\neffect_select_multi -> show popup window for slot 1\neffect_select_multi 1 -> show popup window for slot 1\neffect_select_multi 1 0.2 -> select the 2/10th effect from the list in slot 1\neffect_select_multi \"video\" -> select effect in the video effect slot\neffect_select_multi does not deactivate the previous plugin in the specified slot"
             },
             "effect_select_popup":
             {
-                "description": "TODO"
+                "description": "Same as effect_select, but shows the selection drop-down temporarily for easier selection"
             },
             "effect_select_toggle":
             {
-                "description": "TODO"
+                "description": "Same as effect_select, but will turn on the new effect if the previous effect was on"
             },
             "effect_show_gui":
             {
-                "description": "TODO"
+                "description": "show the control window for this effect"
             },
             "effect_slider":
             {
-                "description": "TODO",
+                "description": "Move the n-th slider on the given effect\n\"effect_slider 1 2 50%\" : Set slider id 2 on slot 1 to 50%\n\"effect_slider 1 0%\" : set slider id 1 on slot 1 to 0%",
                 "alias": "effect_slider_slider"
             },
             "effect_slider_active":
             {
-                "description": "TODO",
+                "description": "move a slider and activate the effect as long as the mouse is down",
                 "alias": "effect_slider_activate"
             },
             "effect_slider_reset":
             {
-                "description": "TODO"
+                "description": "return this plugin slider to its default value"
             },
             "effect_slider_skip_length":
             {
-                "description": "TODO"
+                "description": "Move the n-th slider on the given effect, excluding a length slider if present\n\"effect_slider_skip_length 1 2 50%\" : Set slider 2 (excluding length) on slot 1 to 50%\n\"effect_slider_skip_length 1 0%\" : set slider 1 (excluding length) on slot 1 to 0%"
             },
             "effect_stems":
             {
-                "description": "TODO"
+                "description": "Apply effects only to the selected stems. 'effect_stems vocal on'\nStems are Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal or MeloRhythm"
             },
             "effect_stems_color":
             {
-                "description": "TODO"
+                "description": "Get the color for the effect_stems button"
             },
             "effects_used":
             {
-                "description": "TODO"
+                "description": "Active when there are any effects activated. Use \"effects_used 'deck'\" to get the effects on the selected deck, or \"effects_used 'master'\" to get effects activated on master."
             },
             "get_effect_button_count":
             {
-                "description": "TODO"
+                "description": "get the number of buttons on this effect"
             },
             "get_effect_button_name":
             {
-                "description": "TODO"
+                "description": "get the name of the xth button of the currently selected effect"
             },
             "get_effect_button_shortname":
             {
-                "description": "TODO"
+                "description": "get the short name of the xth button of the currently selected effect"
             },
             "get_effect_name":
             {
-                "description": "TODO"
+                "description": "get the name of the currently selected effect"
             },
             "get_effect_slider_count":
             {
-                "description": "TODO"
+                "description": "get the number of slider on this effect"
             },
             "get_effect_slider_default":
             {
-                "description": "TODO"
+                "description": "returns the default value for this slider"
             },
             "get_effect_slider_label":
             {
-                "description": "TODO"
+                "description": "get the label to display under this slider control"
             },
             "get_effect_slider_label_full":
             {
-                "description": "TODO"
+                "description": "get the label to display under this slider control"
             },
             "get_effect_slider_name":
             {
-                "description": "TODO"
+                "description": "get the name of the xth slider of the currently selected effect"
             },
             "get_effect_slider_shortname":
             {
-                "description": "TODO"
+                "description": "get the shortname to display under this slider control"
             },
             "get_effect_slider_text":
             {
-                "description": "TODO"
+                "description": "get the full text associated with this slider control"
             },
             "get_effect_string":
             {
-                "description": "TODO",
+                "description": "get the text displayed by this effect. Some effects allow setting text as well",
                 "alias": "effect_string"
             },
             "get_effect_string_name":
             {
-                "description": "TODO"
+                "description": "get the label to display for this effect"
             },
             "get_effect_title":
             {
-                "description": "TODO"
+                "description": "get the title of the currently selected effect"
             },
             "get_effects_used":
             {
-                "description": "TODO"
+                "description": "Returns the number of effects currently active"
             },
             "get_nb_multicam":
             {
@@ -3179,19 +3182,19 @@ const vdjscript_list =
             },
             "get_video_fx_slider_label":
             {
-                "description": "TODO"
+                "description": "get the text to display under this slider control"
             },
             "get_videofx_name":
             {
-                "description": "TODO"
+                "description": "get the name of the currently selected video effect"
             },
             "get_videotrans_name":
             {
-                "description": "TODO"
+                "description": "get the name of the currently selected video transition"
             },
             "is_releasefx":
             {
-                "description": "TODO"
+                "description": "query if this effect is in the release effect slot"
             },
             "pluginsongpos":
             {
@@ -3199,48 +3202,48 @@ const vdjscript_list =
             },
             "show_pluginpage":
             {
-                "description": "TODO"
+                "description": "show or hide the plugin control windows in the browser area"
             },
             "video_fx":
             {
-                "description": "TODO"
+                "description": "activate/deactivate the selected video effect"
             },
             "video_fx_button":
             {
-                "description": "TODO"
+                "description": "push the n-th button of the video effect plugin"
             },
             "video_fx_clear":
             {
-                "description": "TODO"
+                "description": "deactivate all the active video effects"
             },
             "video_fx_select":
             {
-                "description": "TODO"
+                "description": "select a video effect plugin. you can specify by name ('video_fx_select \"my_plugin\"'), relative ('video_fx_select +1') or without parameters to open a popup window listing the available plugins"
             },
             "video_fx_slider":
             {
-                "description": "TODO",
+                "description": "move the n-th slider of the video effect plugin",
                 "alias": "video_fx_slider_slider"
             },
             "video_source":
             {
-                "description": "TODO"
+                "description": "activate video if not active yet, and open the shader selection dialog if shader is the source"
             },
             "video_source_select":
             {
-                "description": "TODO"
+                "description": "select the plugin used for video source. you can specify by name ('video_source_select \"webcam\"'), relative ('video_source_select +1') or without parameters to open a popup window listing the available plugins"
             },
             "video_transition_button":
             {
-                "description": "TODO"
+                "description": "push the n-th button of the video transition plugin"
             },
             "video_transition_select":
             {
-                "description": "TODO"
+                "description": "select the plugin used for video transitions. you can specify by name ('video_transition_select \"my_plugin\"'), relative ('video_transition_select +1') or without parameters to open a popup window listing the available plugins"
             },
             "video_transition_slider":
             {
-                "description": "TODO",
+                "description": "move the n-th slider of the video transition plugin",
                 "alias": "video_transition_slider_slider"
             }
         },
@@ -3248,264 +3251,264 @@ const vdjscript_list =
         {
             "adjust_cbg":
             {
-                "description": "TODO"
+                "description": "adjust the beat grid. 'adjust_cbg +2' moves the start bar from 4:4. 'adjust_cbg +10%' moves the actual bars."
             },
             "beat_tap":
             {
-                "description": "TODO"
+                "description": "tap on a few beats to set a new bpm for the song if the application didn't got it right on the first time."
             },
             "edit_bpm":
             {
-                "description": "TODO"
+                "description": "open the BPM Editor to edit the bpm and beat grid"
             },
             "edit_poi":
             {
-                "description": "TODO"
+                "description": "open the POI Editor to edit the cue points, and other points of interest"
             },
             "goto_mixpoint":
             {
-                "description": "TODO"
+                "description": "Jump to the specified mix point (\"StartTempo\", \"EndTempo\", \"StartCut\", \"EndCut\", \"StartFade\", \"EndFade\", \"StartSound\", \"EndSound\")\nExample: goto_mixpoint \"StartCut\""
             },
             "reanalyze":
             {
-                "description": "TODO"
+                "description": "reanalyze bpm etc... for the file loaded on the deck\n'reanalyze multi' can be used to scan for multiple bpm's"
             },
             "set_bpm":
             {
-                "description": "TODO"
+                "description": "set the bpm of the song to the set value: 'set_bpm 129.3', or relative to the actual value: 'set_bpm 50%'."
             },
             "set_firstbeat":
             {
-                "description": "TODO"
+                "description": "moves the first beat to the current position, adjusting the beat-grid"
             },
             "set_loadpoint":
             {
-                "description": "TODO"
+                "description": "Set the point where the track will start when loaded"
             },
             "set_mixpoint":
             {
-                "description": "TODO"
+                "description": "Move the specified mix point to the current position (\"StartTempo\", \"EndTempo\", \"StartCut\", \"EndCut\", \"StartFade\", \"EndFade\", \"StartSound\", \"EndSound\")\nExample: set_mixpoint \"StartTempo\""
             }
         },
         "prelisten":
         {
             "prelisten":
             {
-                "description": "TODO",
+                "description": "Pre-listen the selected track",
                 "alias": "preview"
             },
             "prelisten_options":
             {
-                "description": "TODO"
+                "description": "Show a context menu with the prelisten player options"
             },
             "prelisten_output":
             {
-                "description": "TODO"
+                "description": "Set this deck to be used for the prelisten player\nExample: \"deck 1 prelisten_output\", or to put it back to default: \"prelisten_output 'auto'\""
             },
             "prelisten_pos":
             {
-                "description": "TODO"
+                "description": "move the position of the prelisten player"
             },
             "prelisten_stop":
             {
-                "description": "TODO"
+                "description": "Stop the prelisten player"
             }
         },
         "record":
         {
             "broadcast":
             {
-                "description": "TODO"
+                "description": "start or stop to broadcast\nOptionally add parameter to specify \"video\", \"direct\", \"server\" or \"podcast\". Without parameters it will use the last used mode."
             },
             "broadcast_message":
             {
-                "description": "TODO"
+                "description": "set or get the broadcast message."
             },
             "record":
             {
-                "description": "TODO"
+                "description": "start recording the session."
             },
             "record_config":
             {
-                "description": "TODO"
+                "description": "open the record configuration panel"
             },
             "record_cut":
             {
-                "description": "TODO"
+                "description": "cut the current recording to a new file (or new track if recording to CD)"
             },
             "record_vu":
             {
-                "description": "TODO"
+                "description": "show the volume of what's being recorded"
             }
         },
         "sampler":
         {
             "get_sample_color":
             {
-                "description": "TODO"
+                "description": "get the color for the specified sample (with auto-dim)"
             },
             "get_sample_info":
             {
-                "description": "TODO"
+                "description": "get additional information about the sample, such as 'get_sample_info 1 fullpath'\nIn addition to the regular column names, 'group' is also supported, and 'length' returns beat values for loops"
             },
             "get_sample_name":
             {
-                "description": "TODO",
+                "description": "get the name of the specified sample",
                 "alias": "get_sample_slot_name"
             },
             "get_sampler_bank":
             {
-                "description": "TODO"
+                "description": "get the name of the currently loaded sampler bank"
             },
             "get_sampler_bank_count":
             {
-                "description": "TODO"
+                "description": "get the number of sample banks"
             },
             "get_sampler_bank_id":
             {
-                "description": "TODO"
+                "description": "get the number of the currently loaded sampler bank"
             },
             "get_sampler_count":
             {
-                "description": "TODO"
+                "description": "get the number of slots in the current sampler bank"
             },
             "get_sampler_slot":
             {
-                "description": "TODO"
+                "description": "get the number of the sampler slot that currently has the focus"
             },
             "sampler_abort_rec":
             {
-                "description": "TODO"
+                "description": "cancel the recording and delete the sample file"
             },
             "sampler_assign":
             {
-                "description": "TODO"
+                "description": "'sampler_assign 1 \"path to vdjsample\"' adds the sample to sample slot 1. (For use in drag&drop in pad page)"
             },
             "sampler_bank":
             {
-                "description": "TODO"
+                "description": "Select a new sampler bank. Can be called either by name (sampler_bank \"birthday\"), by number (sampler_bank 2) or can be assigned to a rotary knob (sampler_bank) or buttons (sampler_bank +1)"
             },
             "sampler_color":
             {
-                "description": "TODO"
+                "description": "get the color of the sample on this slot if it has one\nThe sample number takes the sampler_pad_page into account, so should be used in combination with sampler_pad"
             },
             "sampler_edit":
             {
-                "description": "TODO"
+                "description": "edit the given sample in the SampleEditor"
             },
             "sampler_group_color":
             {
-                "description": "TODO"
+                "description": "get the color of a sampler group"
             },
             "sampler_group_mute":
             {
-                "description": "TODO"
+                "description": "mute/unmute a sample group. You can specify the group by name, or by group index"
             },
             "sampler_group_name":
             {
-                "description": "TODO"
+                "description": "get the name of a sampler group"
             },
             "sampler_group_volume":
             {
-                "description": "TODO"
+                "description": "change the volume of all the samples in the give group. You can specify the group by name, or by group index"
             },
             "sampler_has_group":
             {
-                "description": "TODO"
+                "description": "returns true if the specified group (specified by name or by index) exists in the current samplebank"
             },
             "sampler_load_to_deck":
             {
-                "description": "TODO"
+                "description": "Load the sample from the selected slot to the deck"
             },
             "sampler_loaded":
             {
-                "description": "TODO"
+                "description": "'sampler_loaded 1' returns true when there is a sample loaded in slot 1, otherwise returns false"
             },
             "sampler_loop":
             {
-                "description": "TODO"
+                "description": "use 'sampler_loop -1' or 'sampler_loop +1' to change the length of a playing sample\nuse 'sampler_loop \"current\" 1' to set the sample to loop for 1 beat or 'sampler_loop 1 1' to set sample 1 to 1 beat loop\nuse 'sampler_loop \"current\" 0.5 \"play\" while_pressed' to loop the sample as long as long as the button is pressed for 0.5 beats"
             },
             "sampler_mode":
             {
-                "description": "TODO",
+                "description": "set the global trigger mode for the sampler: \"sampler_mode 'on/off'\", 'hold', 'stutter' or 'unmute'\nset trigger mode for a specific sample: \"sampler_mode 1 'on/off'\" to set sample 1 mode or \"sampler_mode 1 +1\" to cycle",
                 "alias": "sampler_rapidfire"
             },
             "sampler_mute":
             {
-                "description": "TODO"
+                "description": "mute/unmute this sample"
             },
             "sampler_options":
             {
-                "description": "TODO"
+                "description": "popup the sample menu.\ncan also be used with 'sampler_options \"locked\"' or 'sampler_options \"stemswap\"' to change the bank's settings."
             },
             "sampler_output":
             {
-                "description": "TODO"
+                "description": "Select sampler output channel. 'deck master sampler_output', 'sampler_output \"headphones\"', 'deck 1 sampler_output', 'sampler_output \"popup\"'"
             },
             "sampler_pad":
             {
-                "description": "TODO"
+                "description": "'sampler_pad 1' triggers the sample in slot 1, based on the play mode for that sample slot"
             },
             "sampler_pad_page":
             {
-                "description": "TODO"
+                "description": "show next page of samples if the bank has more than 8 samples"
             },
             "sampler_pad_shift":
             {
-                "description": "TODO"
+                "description": "'sampler_pad_shift 1' stop sample when playing, delete sample otherwise"
             },
             "sampler_pad_volume":
             {
-                "description": "TODO"
+                "description": "'sampler_pad_volume 1' sets the volume of the sample on the first pad\n'sampler_pad_volume \"siren\"' sets the volume of the sample 'siren.vdjsample'."
             },
             "sampler_pfl":
             {
-                "description": "TODO"
+                "description": "Select if the sampler is sent to the headphones. (can be used with a slider or a % to specify the volume: 'sampler_pfl 75%')"
             },
             "sampler_play":
             {
-                "description": "TODO"
+                "description": "play the selected sample. syntax 'sampler_play' plays the default sample. \n'sampler_play 4' plays the fourth sample."
             },
             "sampler_play_stop":
             {
-                "description": "TODO"
+                "description": "play the selected sample if it's not already playing, or stop it if it's already playing."
             },
             "sampler_play_stutter":
             {
-                "description": "TODO"
+                "description": "play the selected sample. if already playing, restart from begining."
             },
             "sampler_position":
             {
-                "description": "TODO"
+                "description": "get the current position of the sample"
             },
             "sampler_rec":
             {
-                "description": "TODO"
+                "description": "On first press, start to record a new sample. On second press, stop to record\nUse 'sampler_rec \"mic\"' to record a sample from microphone, or 'sampler_rec \"master\"' to record from master output\nIf the deck is on loop, a loop sample will immediately be created. If the deck is playing, it will record what's playing until the stop. If the deck is paused, it sets the 'entry point', and the second push will set the 'exit point' and use the deck's file between those two points.\n'sampler_rec 1' or 'sampler_rec 1 \"mic\"' will store the sample in the first slot of the \"Record\" sample bank, so that it can be used immediately after recording"
             },
             "sampler_rec_delete":
             {
-                "description": "TODO"
+                "description": "delete a recording from the \"Recordings\" bank\n\"sampler_rec_delete 3\" would delete the sample previously recorded using \"sampler_rec 3\""
             },
             "sampler_select":
             {
-                "description": "TODO",
+                "description": "select which sample is the default sampler slot for that deck. syntax 'sampler select 5' selects the fifth sampler slot. 'sampler select +1' scrolls through the sampler slots. 'sampler select' open a popup menu to select the new default sampler slot.",
                 "alias": "sampler_default"
             },
             "sampler_start_rec":
             {
-                "description": "TODO"
+                "description": "start to record (from the deck, or from mic or master if specified) in order to create a new sample file"
             },
             "sampler_stop":
             {
-                "description": "TODO"
+                "description": "stop the selected sample. syntax 'sampler_stop' stops the default sample. 'sampler_stop 4' stops the fourth sampler slot. 'sampler_stop all' stops all samples."
             },
             "sampler_stop_rec":
             {
-                "description": "TODO"
+                "description": "stop the recording and save the result in a sample file"
             },
             "sampler_used":
             {
-                "description": "TODO",
+                "description": "check if a sample is playing (or if used with 'sampler_used 4' check if exactly 4 samples are playing)",
                 "alias": "get_sampler_used"
             },
             "sampler_velocity":
@@ -3514,15 +3517,15 @@ const vdjscript_list =
             },
             "sampler_volume":
             {
-                "description": "TODO"
+                "description": "'sampler_volume' sets the volume of the sample that has the focus, on the selected deck.\n'sampler_volume 1' sets the volume of the sample in slot 1 in the current bank.\n'sampler_volume \"siren\"' sets the volume of the sample 'siren.vdjsample'."
             },
             "sampler_volume_master":
             {
-                "description": "TODO"
+                "description": "'sampler_volume_master' sets the master volume of the sampler"
             },
             "sampler_volume_nogroup":
             {
-                "description": "TODO"
+                "description": "sets the volume of the sample without changing the volume of other samples in the same group"
             },
             "scratchbank_assign":
             {
@@ -3542,7 +3545,7 @@ const vdjscript_list =
             },
             "scratchbank_unload":
             {
-                "description": "TODO",
+                "description": "Unload the song previously loaded using scratchbank_load_to_deck from deck and load back the last song",
                 "alias": "sampler_unload_from_deck"
             }
         },
@@ -3550,94 +3553,94 @@ const vdjscript_list =
         {
             "can_sandbox":
             {
-                "description": "TODO"
+                "description": "returns true if virtualdj can be sandboxed.\nsandbox cannot be activated while you have effects or samples active, or video, or if you're scratching, or if you have more than one deck playing with the volume up."
             },
             "sandbox":
             {
-                "description": "TODO"
+                "description": "activate/deactivate sandbox mode.\nin sandbox mode, the master output continues to play what it was playing without being affected by your actions, and you can move both decks to whatever position you want, in order to prelisten your upcomming mix."
             }
         },
         "sync":
         {
             "auto_bpm_transition":
             {
-                "description": "TODO"
+                "description": "When pressed, the bpm of the song is gradually moved to the bpm of the other deck while keeping both songs at the same bpm\nWhen smartPlay or autoBPMMatch are on, it will move to the bpm of the other deck at normal speed\nWhen using parameter 'source_original', 'target_original' or 'target_current' you can force which bpm it will transition to"
             },
             "auto_bpm_transition_options":
             {
-                "description": "TODO"
+                "description": "Enable/Disable certain features of the auto_bpm_transition.\nFirst parameter can be 'length', 'loop', 'stems', 'master_tempo', 'autostart'\nWhen selecting stems to disable, use 'auto_bpm_transition_options stems vocal' for example"
             },
             "auto_sync_settings":
             {
-                "description": "TODO"
+                "description": "Set some pre-defined values for the main automatic sync settings (auto match bpm, auto match key, auto sync, auto pitch lock) depending on the skin category"
             },
             "beatlock":
             {
-                "description": "TODO"
+                "description": "When beatlock is activated, the songs are kept synchronized, even when moving the pitch, scratching, etc..."
             },
             "get_bpm_match":
             {
-                "description": "TODO"
+                "description": "Returns 0.5 when bpm's are synchronized"
             },
             "is_sync":
             {
-                "description": "TODO"
+                "description": "on when tracks are synchronized (bpm and phase while playing, bpm when not playing)"
             },
             "match_bpm":
             {
-                "description": "TODO"
+                "description": "set the pitch to match the BPM of the other deck."
             },
             "match_gain":
             {
-                "description": "TODO"
+                "description": "set the gain to match the other deck."
             },
             "phrase_sync":
             {
-                "description": "TODO"
+                "description": "shift by a number of beat to match the phrase of the other deck (default 4:4, but can specify 'phrase_sync 16' for example)"
             },
             "play_onbeat":
             {
-                "description": "TODO"
+                "description": "instantly synchronize the song with the other deck, using local beat information instead of the global beatgrid, but don't change the pitch."
             },
             "play_sync":
             {
-                "description": "TODO"
+                "description": "play the song instantly synchronized with the other deck."
             },
             "play_sync_onbeat":
             {
-                "description": "TODO",
+                "description": "instantly synchronize the song with the other deck, using local beat information instead of the global beatgrid.",
                 "alias": "sync_nocbg"
             },
             "quantize_all":
             {
-                "description": "TODO"
+                "description": "Set all quantize options"
             },
             "smart_fader":
             {
-                "description": "TODO"
+                "description": "When smart fader is activated, songs are synchronized while using the crossfader, and the tempo moves toward the tempo of the song that is being faded into"
             },
             "sync":
             {
-                "description": "TODO"
+                "description": "smoothly synchronize the song with the other deck."
             },
             "sync_hint":
             {
-                "description": "TODO"
+                "description": "sync_hint 'pitch' returns true if the pitch should be matched. Then sync_hint 'phase' returns true if the phase should be synced"
             }
         },
         "text":
         {
             "countdown":
             {
-                "description": "TODO"
+                "description": "Count down to a specific date or time. Example: countdown '2025/01/01 00:00'\nSecond parameter can be used to optionally format the return value. Use %full, %HH, %MM, %SS, %DD"
             },
             "get_status":
             {
-                "description": "TODO"
+                "description": "get information about background tasks"
             },
             "get_text":
             {
-                "description": "TODO"
+                "description": "get some text. You can use the inverted apostrophe to query VDJScript results within the text: \"get text 'You are listening to `get loaded_song \"title\"` at `volume` volume.\".\\nVDJScript returning booleans (buttons) will be displayed as \"on\" or \"off\".\\nVDJScript returning values (sliders) will be displayed as a percentage.\\n(you can also (but it's being deprecated in VDJ7) use % shortcuts for some common queries: \"get text 'you are listening to %title by %author'\")"
             },
             "stopwatch":
             {
@@ -3652,7 +3655,7 @@ const vdjscript_list =
         {
             "get_hastimecode":
             {
-                "description": "TODO"
+                "description": "returns true if the current soundconfig includes some timecode inputs"
             },
             "get_timecode_quality":
             {
@@ -3660,115 +3663,115 @@ const vdjscript_list =
             },
             "invert_timecode":
             {
-                "description": "TODO"
+                "description": "Invert timecode control (for 1 timecode source, switch it through available decks, for 2 timecode sources, from 1 to 3, 2 to 4)"
             },
             "timecode_active":
             {
-                "description": "TODO"
+                "description": "Select if the deck is controlled by a timecode signal.\n(note: You can use 'timecode_active x' where x is the turntable number, to assign the same turntable to control several decks at once: 'deck 1 timecode_active 1 on & deck 2 timecode_active 1 on')"
             },
             "timecode_bypass":
             {
-                "description": "TODO"
+                "description": "Use the timecode turntable as linein input"
             },
             "timecode_cd_mode":
             {
-                "description": "TODO"
+                "description": "Force timecode to CD mode (use when using a vinyl timecode on a cd or other digital device)"
             },
             "timecode_config":
             {
-                "description": "TODO"
+                "description": "Open the timecode config window"
             },
             "timecode_mode":
             {
-                "description": "TODO"
+                "description": "Set the timecode mode: 'smart', 'absolute', 'relative'."
             },
             "timecode_motor_enable":
             {
-                "description": "TODO"
+                "description": "Hybrid turntables that send midi messages to indicate if motor is enabled can use this"
             },
             "timecode_options":
             {
-                "description": "TODO"
+                "description": "Show some timecode options"
             },
             "timecode_pitch":
             {
-                "description": "TODO"
+                "description": "For controllers that send the pitch through midi, let the timecode engine know the pitch slider's position"
             },
             "timecode_reset_pitch":
             {
-                "description": "TODO"
+                "description": "Reset the \"software\" pitch to 100%, so that the deck pitch matches the turntable pitch exactly, and needle-drop is truly absolute"
             }
         },
         "video":
         {
             "has_video_mix":
             {
-                "description": "TODO"
+                "description": "return true if video output is using transition and video-crossfader with one or more video sources, false if it's playing audio-only and using a source plugin"
             },
             "is_audioonlyvisualisation":
             {
-                "description": "TODO"
+                "description": "return true if this deck has the audio only visualisation running on it"
             },
             "is_video":
             {
-                "description": "TODO"
+                "description": "return true if this deck has some video"
             },
             "leftvideo":
             {
-                "description": "TODO"
+                "description": "assign this deck to the left of the video crossfader: \"deck 3 leftvideo\" or \"leftvideo +1\" or \"leftvideo 'auto'\"."
             },
             "leftvideo_button":
             {
-                "description": "TODO"
+                "description": "simple button to control the left video source: \"deck 3 leftvideo_button\"."
             },
             "over_video":
             {
-                "description": "TODO",
+                "description": "force this deck's video output on the video master",
                 "alias": "overvideo"
             },
             "rightvideo":
             {
-                "description": "TODO"
+                "description": "assign this deck to the right of the video crossfader: \"deck 3 rightvideo\" or \"rightvideo +1\" or \"rightvideo 'auto'\"."
             },
             "rightvideo_button":
             {
-                "description": "TODO"
+                "description": "simple button to control the right video source: \"deck 3 rightvideo_button\"."
             },
             "video":
             {
-                "description": "TODO"
+                "description": "open or close the video window"
             },
             "video_crossfader":
             {
-                "description": "TODO"
+                "description": "set the video crossfader"
             },
             "video_crossfader_auto":
             {
-                "description": "TODO"
+                "description": "move the video crossfader automatically according to which side is playing, cueing, scratching, etc..."
             },
             "video_crossfader_link":
             {
-                "description": "TODO"
+                "description": "link or unlink the video crossfader to the audio crossfader"
             },
             "video_delay":
             {
-                "description": "TODO"
+                "description": "set a delay between video or audio to synchronize output (in milliseconds)"
             },
             "video_fadetoblack":
             {
-                "description": "TODO"
+                "description": "activate/deactivate fade-to-black on volume sliders"
             },
             "video_level":
             {
-                "description": "TODO"
+                "description": "fade-to-black independent slider for the left or right video deck"
             },
             "video_output":
             {
-                "description": "TODO"
+                "description": "Show menu to select on which monitor to open the video output.\nYou can also specify a specific output: \"video_output 1\" to open video output on the first monitor\nTo just show or hide the output use \"video_output on\" or \"video_output off\". To toggle output, use \"video_output ? video_output off : video_output on\""
             },
             "video_transition":
             {
-                "description": "TODO"
+                "description": "Launch a transition from one video deck to the other.\nYou can specify the duration of the transition: 'video_transition 1000ms'\nYou can specify the direction of the transition: 'video_transition \"left\"' or 'video_transition \"left\" 1000ms'\nYou can specify the location to transition to using a percentage (or assign it to a slider): 'video_transition 50%' or 'video_transition 1000ms 50%'"
             }
         }
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VDJScriptList VdjBuild="8709">
+<VDJScriptList VdjBuild="8673">
   <Item>
     <Category>flow</Category>
     <Action>down</Action>
@@ -893,6 +893,7 @@
   <Item>
     <Category>audio_volumes</Category>
     <Action>fake_pfl</Action>
+    <Description>tell VirtualDJ to disable pfl switch from skin, when pfl can only be controlled from controller or mixer</Description>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
@@ -1211,108 +1212,135 @@
   <Item>
     <Category>browser</Category>
     <Action>add_favoritefolder</Action>
+    <Description>make the selected folder a favorite folder (monitored folders).</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>add_filterfolder</Action>
+    <Description>create a new filter folder.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>add_list</Action>
     <Alias>add_virtualfolder</Alias>
+    <Description>create a new list (virtual folder).</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>add_to_list</Action>
     <Alias>virtualfolder_add</Alias>
+    <Description>Add the currently selected songs in the browser to the specified List. &apos;add_to_list &quot;my_list&quot;&apos;</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_analyze</Action>
+    <Description>reanalyze the current file selected in the browser use &apos;browsed_file_analyze multi&apos; to do a scan for multiple bpms</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_color</Action>
+    <Description>set the color of the file currently selected in the browser. Example: browsed_file_color &quot;red&quot; Use browsed_file_color &quot;reset&quot; to clear the color and set the color back to default</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_info</Action>
+    <Description>Open the Tag Editor for the browsed song.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_prepare_stems</Action>
+    <Description>prepare stems for the file(s) currently selected in the browser</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_reload_tag</Action>
+    <Description>Reload tag of file currently selected in browser. This will overwrite changes made in the VirtualDJ database by what is saved in the file&apos;s tag.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_rename</Action>
+    <Description>rename the current file selected in the browser</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_reveal</Action>
+    <Description>open the OS file manager to the browsed song</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_enter</Action>
+    <Description>if focus is on songs, load the selected song. if focus is on folders, change focus to songs.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_export</Action>
+    <Description>Export the current list of files to a CSV or HTML file</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_folder</Action>
+    <Description>if focus is on songs, change focus to folders. if focus is on folders, open or close the subfolders of the selected folder.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_geniusdj</Action>
+    <Description>Lookup recommendations based on the items currently selected in the browser Use &apos;browser_geniusdj playing&apos; to use the currently playing track instead of the track selected in the browser</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_gotofolder</Action>
+    <Description>&apos;browser_gotofolder&apos; goes to the folder containing the current file. &apos;browser_gotofolder &quot;/my_path/my_folder&quot;&apos; goes to the specified folder. &apos;browser_gotofolder 4&apos; goes to the fourth virtual/ favorite folder.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_isactive</Action>
+    <Description>return true when the browser was used by a controller in the past 6 seconds</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_move</Action>
+    <Description>browser_move +1 : Moves the currently selected song in a playlist down browser_move &apos;top&apos; or browser_move &apos;bottom&apos; : Moves the selected song to the top or the bottom of the list</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_open_folder</Action>
+    <Description>Expand selected folder in browser when closed, or close folder when opened. You can also use &apos;browser_open_folder off&apos; to always close the folder, or &apos;browser_open_folder on&apos; to open a folder</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_options</Action>
+    <Description>show the context menu about the browser filters, root folders, database, etc</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_padding</Action>
+    <Description>Change the padding around lines in folder and list views. Example: browser_padding 50%</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_remove</Action>
+    <Description>Remove the selected song from playlist</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_scroll</Action>
+    <Description>scroll through the songs or folders. &apos;browser_scroll +1&apos; or &apos;browser_scroll -1&apos; to scroll one line, or &quot;browser_scroll &apos;top&apos;&quot;, &quot;browser_scroll &apos;bottom&apos;&quot; to scroll to the beginning or end</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_shortcut</Action>
+    <Description>&apos;browser_shortcut&apos;: assign the current folder as a new shortcut
+&apos;browser_shortcut X&apos;: go to the folder assigned to the Xth shortcut</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_sort</Action>
+    <Description>Sort the browser files on the specified column: &apos;browser_sort &quot;artist&quot;&apos;, &apos;browser_sort &quot;lastplay&quot;&apos;,... To sort in descending order, add a - in front of the column name: &apos;browser_sort &quot;-bpm&quot;&apos; To explicitly sort in ascending order, add a + in front of the column name: &apos;browser_sort &quot;+bpm&quot;&apos; To reset the sort order of a playlist to it&apos;s original order, use &apos;browser_sort &quot;Original Sort Order&quot;&apos;</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browser_window</Action>
+    <Description>Change the active browser zone. &quot;browser_window &apos;folders&apos;&quot;, &quot;browser_window &apos;songs&apos;&quot;, &quot;browser_window &apos;sideview&apos;&quot;, or &quot;browser_window &apos;automix&apos;&quot;, &quot;browser_window &apos;sidelist&apos;&quot;, &quot;browser_window &apos;sampler&apos;&quot; Cycle through available browser zones. &quot;browser_window + 1&quot;, &quot;browser_window - 1&quot; Cycle through specified zones. Example &quot;browser_window &apos;folders,songs&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>browser</Category>
@@ -1322,100 +1350,124 @@
   <Item>
     <Category>browser</Category>
     <Action>clear_search</Action>
+    <Description>clear the search string</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>edit_comment</Action>
+    <Description>open a window to edit the comment on the selected track.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>edit_search</Action>
+    <Description>put the keyboard focus in the search zone but keep the actual search string.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>edit_singer</Action>
+    <Description>Pops up the dialog to change the singer of the currently selected song in the karaoke list</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>file_count</Action>
+    <Description>Get number of files currently shown in browser You can also use &apos;automix&apos;, &apos;sideview&apos;, &apos;karaoke&apos; or &apos;sidelist&apos; as parameter to get the count in other lists. &quot;file_count automix&quot;</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>file_info</Action>
+    <Description>Open the Tag Editor for the specified or loaded song.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>font_size</Action>
+    <Description>Change browser font size. Example: font_size +1</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>goto_last_folder</Action>
+    <Description>Go back to the last browsed folder</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>grid_view</Action>
+    <Description>put the browser in grid-view mode, optimized for touch screens</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>has_linked_tracks</Action>
+    <Description>Returns true when track has links to other tracks. On a button can be used to show the linked tracks in the sideview You can also use &apos;has_linked_tracks browsed&apos; to get the result for the currently browsed track Passing a script that returns a full file path is also possible using &apos;has_linked_tracks `script`&apos;</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>has_quick_filter</Action>
+    <Description>Return true if quick filter with given index exists</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>info_options</Action>
     <Alias>infos_options</Alias>
+    <Description>show the context menu about the info panel fields and prelisten behavior</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>karaoke_add</Action>
+    <Description>Add the songs selected in the browser to the karaoke list</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>karaoke_load</Action>
+    <Description>Load the folder or playlist selected in the browser in the karaoke list Use &quot;karaoke_load &apos;append&apos;&quot; to add the selected folder to the karaoke list instead of replacing the existing karaoke</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>load</Action>
+    <Description>load the selected song on the deck. you can also specify a fullpath to load &apos;load &quot;path_to_my_song&quot;&apos;.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>load_deck_set</Action>
+    <Description>Reload a previously saved deck_set file</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>load_next</Action>
+    <Description>Load next track. You can use &apos;load_next keepplay&apos; to start playing the loaded song if the currently loaded song was playing</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>load_previous</Action>
+    <Description>Load previous track</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>load_pulse</Action>
+    <Description>return a brief false then true again when a new song is loaded</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>load_pulse_active</Action>
+    <Description>return true when a new song becomes audible for the specified duration. Can be delayed using the second parameter. &apos;load_pulse_active 1000ms 5000ms&apos; will return true for 1 second, 5 seconds after a new song becomes audible</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>loaded</Action>
+    <Description>return true if a song is loaded on the deck</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>log_search</Action>
+    <Description>log the current search in the SearchLog.txt file, so you can easily search for your failed requests once the gig is over.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>mark_linked_tracks</Action>
     <Alias>mark_related_tracks</Alias>
+    <Description>Mark the tracks in deck 1 and 2 as linked. (Linked tracks can be shown in the remixes tab of the sideview)</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>not_played</Action>
+    <Description>don&apos;t mark the song on this deck as &apos;played&apos;.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
@@ -1424,74 +1476,92 @@
   <Item>
     <Category>browser</Category>
     <Action>playlist_load</Action>
+    <Description>Load the folder or playlist selected in the browser in the playlist. Use &quot;playlist_load &apos;append&apos;&quot; to add the selected folder to the playlist instead of replacing the existing playlist</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>quick_filter</Action>
+    <Description>Apply or remove a quick filter on the list of song shown in the browser</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>rating</Action>
+    <Description>Get or set the rating for the current song</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>recurse_folder</Action>
+    <Description>display the content of both the selected folder and all its subfolders in the browser list.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>save_deck_set</Action>
+    <Description>Save the current configuration (which song is loaded on which deck) in a file</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>search</Action>
+    <Description>put the keyboard focus on the search zone, or, if a text parameter is specified, search for this text.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>search_add</Action>
+    <Description>add the specified text to the search query</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>search_delete</Action>
+    <Description>remove the last character from the search query</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>search_folder</Action>
+    <Description>open a dialog to search for folders or playlists by name</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>search_options</Action>
+    <Description>popup the list of search options. to set one directly, you can use &apos;search_options &quot;composer&quot;&apos; to toggle search of the field on or off</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>search_playlists</Action>
+    <Description>open a dialog to search which list contains a specific song by default it searches for the song selected in the browser. Use &quot;search_playlists deck&quot; to search for the song loaded on the deck.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>set_browsed_file_bpm</Action>
+    <Description>set the bpm of the selected songs to the set value: &apos;set_bpm 129.3&apos;, or relative to the actual value: &apos;set_bpm 50%&apos;</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sidelist_add</Action>
+    <Description>Add the songs selected in the browser to the sidelist</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sidelist_clear</Action>
+    <Description>clear the sidelist.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sidelist_load</Action>
+    <Description>Load the folder or playlist selected in the browser in the sidelist Use &quot;sidelist_load &apos;append&apos;&quot; to add the selected folder to the sidelist instead of replacing the existing sidelist</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sidelist_load_and_keep</Action>
+    <Description>load the first song from the sidelist.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sidelist_load_and_remove</Action>
+    <Description>load the first song from the sidelist, and remove it from the sidelist.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sidereco_options</Action>
+    <Description>Show a menu to select what should be displayed in the sideview recommendation panel</Description>
   </Item>
   <Item>
     <Category>browser</Category>
@@ -1504,34 +1574,42 @@
   <Item>
     <Category>browser</Category>
     <Action>sideview</Action>
+    <Description>Show a specific folder in the sideview. Available sideviews are automix,sidelist,karaoke,sampler,clone Use &apos;sideview +1&apos; or &apos;sideview -1&apos; to scroll between available sideviews</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sideview_options</Action>
+    <Description>show the context menu to add or remove folders shortcuts to the sideView</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sideview_sort</Action>
+    <Description>Sort the sideview on the specified column: &apos;sideview_sort &quot;artist&quot;&apos;, &apos;sideview_sort &quot;lastplay&quot;&apos;,...</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sideview_title</Action>
+    <Description>Show the title of the folder selected in sideview</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>sideview_triggerpad</Action>
+    <Description>set the sideview sampler in triggerpad mode or in list mode</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>undo_load</Action>
+    <Description>Unload the song and reload the previous song. Use &apos;undo_load any&apos; to unload from the last deck a song was loaded on. Otherwise the deck the action is called from is used.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>unload</Action>
+    <Description>unload the song from the deck.</Description>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>view_options</Action>
+    <Description>popup the list of view options. to set one directly, you can use &apos;view_options &quot;showkaraoke&quot; on&apos; etc...</Description>
   </Item>
   <Item>
     <Category>config</Category>
@@ -1540,18 +1618,22 @@
   <Item>
     <Category>config</Category>
     <Action>auto_cue</Action>
+    <Description>set the auto_cue mode: &quot;off&quot;, &quot;on&quot;, &quot;always&quot;.</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>auto_match_bpm</Action>
+    <Description>when Auto Match BPM is on, songs are automatically set to the same BPM when loaded</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>auto_match_key</Action>
+    <Description>when Auto Match KEY is on, songs are automatically set to a compatible KEY when loaded, if possible</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>auto_pitch_lock</Action>
+    <Description>when Auto Pitch Lock is on, pitch_lock engages whenever BPMs are matched, so that moving manually one pitch slider will move the other in order to keep the match</Description>
   </Item>
   <Item>
     <Category>config</Category>
@@ -1560,39 +1642,50 @@
   <Item>
     <Category>config</Category>
     <Action>eventscheduler</Action>
+    <Description>Open the Event Scheduler</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>eventscheduler_start</Action>
+    <Description>Start the Event Scheduler (can specify one specific saved schedule: eventscheduler_start &apos;summer_wedding&apos;)</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>fader_start</Action>
+    <Description>enable or disable fader start</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>get_lemode</Action>
+    <Description>return true if we are running a LimitedEdition</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>play_mode</Action>
+    <Description>set the mode for play/stop/cue buttons: &apos;play_mode &quot;numark&quot;&apos;, or &apos;play_mode &quot;pioneer&quot;&apos;.</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>quantize_loop</Action>
+    <Description>when quantize_loop is on, loops automatically align according to the globalQuantize setting</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>quantize_setcue</Action>
+    <Description>when quantize_setcue is on, setting cues automatically align according to the globalQuantize setting</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>save_config</Action>
     <Alias>saveregistryconfig</Alias>
+    <Description>save your config changes now (usually changes are saved automatically when you close virtualdj)</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>setting</Action>
+    <Description>read or write a specific setting (see config window for the list of all settings names)
+Example: setting &quot;jogSensitivityScratch&quot; 80% 
+Example: setting &quot;videoRandomTransition&quot; on</Description>
   </Item>
   <Item>
     <Category>config</Category>
@@ -1601,48 +1694,61 @@
   <Item>
     <Category>config</Category>
     <Action>setting_reset</Action>
+    <Description>reset a setting to its default value</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>setting_setdefault</Action>
+    <Description>change the default value for a setting during this session</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>setting_setsession</Action>
+    <Description>force a specific value for a setting during this session</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>setting_setsession_deck</Action>
+    <Description>force a specific value for a setting during this session for a specific deck</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>settings</Action>
     <Alias>config</Alias>
+    <Description>open the configuration window.</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>smart_cue</Action>
+    <Description>when smart_cue is on, songs are automatically re-synchronized when jumped to a new position or cue</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>smart_loop</Action>
+    <Description>when smart_loop is on, loop are automatically adjusted to sound perfect</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>smart_play</Action>
     <Alias>auto_sync</Alias>
+    <Description>when smart_play is on, songs are automatically synchronized when started</Description>
   </Item>
   <Item>
     <Category>config</Category>
     <Action>smart_scratch</Action>
+    <Description>when smart_scratch is on, backward scratching is automatically muted, only forward scratching will be heard</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>action_deck</Action>
+    <Description>return true if the button calling this action is on the specified deck: &apos;action_deck 1 ? actionA : actionB&apos;</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>assign_controller</Action>
+    <Description>Assign a specific controller to this deck. 
+&apos;deck 1 assign_controller &quot;CDJ400&quot; 2&apos; assigns the second CDJ400 to deck 1
+Or in a controller mapping &apos;deck 1 assign_controller&apos; will assign the controller the action was executed from to deck 1.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1651,6 +1757,10 @@
   <Item>
     <Category>controllers</Category>
     <Action>controller_mapping</Action>
+    <Description>Assign a mapping to a controller
+&apos;controller_mapping &quot;My Mapping&quot;&apos; assigns the mapping &apos;My Mapping&apos; to the controller the command was executed on
+&apos;controller_mapping &quot;CDJ400&quot; &quot;My Mapping&quot;&apos; assigns the mapping &apos;My Mapping&apos; to all CDJ400s
+&apos;controller_mapping &quot;CDJ400&quot; &quot;My Mapping&quot; 2&apos; assigns the mapping &apos;My Mapping&apos; to the second CDJ400</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1663,10 +1773,13 @@
   <Item>
     <Category>controllers</Category>
     <Action>device_side</Action>
+    <Description>Assign a different action for a button or slider of a device depending on which side of the device it is on: &quot;device_side &apos;left&apos; ? action_for_left : action_for_right&quot;
+For more than 2-deck controllers, you can use &quot;device_side 1 ? action1 : device_side 2 ? action2 ? device_side 3 ? action3 : etc...&quot;</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>display_time</Action>
+    <Description>set the mode to display time: &quot;total&quot;, &quot;remain&quot;, &quot;elapsed&quot;, +1 or -1.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1699,6 +1812,10 @@
   <Item>
     <Category>controllers</Category>
     <Action>effect_fxsendreturndeck_multi</Action>
+    <Description>Select which source to apply fx to for a specific send/return channel in case there are more than one
+&apos;deck 1 effect_fxsendreturndeck_multi master&apos; : Apply master fx on the first fx send/return pair
+&apos;deck 2 effect_fxsendreturndeck_multi mic&apos; : Apply mic fx on the second fx send/return pair
+&apos;deck 2 effect_fxsendreturndeck_multi 4&apos; : Apply deck 4 fx on the second fx send/return pair</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1711,10 +1828,12 @@
   <Item>
     <Category>controllers</Category>
     <Action>get_controller_image</Action>
+    <Description>Use in controller mappings to get the cover art from deck for use on controllers with screens</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>get_controller_name</Action>
+    <Description>return the name(s) of the controller(s) assigned to this deck</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1723,6 +1842,7 @@
   <Item>
     <Category>controllers</Category>
     <Action>get_denon_cuepoints</Action>
+    <Description>&apos;get_denon_cuepoints 100&apos; for a led bar with 100 leds. Number must match the number of leds in the led bar in the definition.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1731,6 +1851,7 @@
   <Item>
     <Category>controllers</Category>
     <Action>get_display</Action>
+    <Description>get some text to display. depending on the latest action, it can be the name of an effect, the folder being browsed, the title of the current song, etc... for multiline displays, you can add the line number: &quot;get display 1&quot;, &quot;get display 2&quot;.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1767,50 +1888,63 @@
   <Item>
     <Category>controllers</Category>
     <Action>get_rotation_cue</Action>
+    <Description>get the angle of the cue point on the disc</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>get_rotation_slip</Action>
+    <Description>get the angle of the slip point on the disc when slip is active, or regular get_rotation otherwise</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>invert_controllers</Action>
+    <Description>Invert the deck of the controllers</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>keyboard_shortcuts</Action>
+    <Description>Map to CTRL or ALT. While pressed will show keyboard overlay in browser. Double-press to activate sticky keys.
+Accepts time to delay showing overlay (keyboard_shortcuts 500ms). In scripts can also be used to turn on or off the overlay manually (keyboard_shortcuts on)</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>menu</Action>
+    <Description>display a menu on the controller&apos;s screen, that allows to change the behaviour of the menu_buttons. you can navigate through the menu using the browser_scroll action&apos;.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>menu_button</Action>
+    <Description>defines a button whose behaviour can be changed by a menu. Syntax: &apos;menu_button 1 &quot;hotcue,sampler,effect,loop&quot;&apos;.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>menu_cycledisplay</Action>
+    <Description>on single-line controllers, cycle display when no menu is shown between artist - title, artist or title</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>midiclock_active</Action>
+    <Description>Toggle sending midiclock to the specified controller</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>miditovst_active</Action>
+    <Description>Toggle sending midi from a specific controller to the specified deck&apos;s VST instruments or effects</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>mixer_order</Action>
+    <Description>For controllers with 4 decks, specify the order of the decks, from left to right. Default: &quot;mixer_order 3124&quot;</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>motor_switch</Action>
+    <Description>assign this deck to be controlled by the motorized wheel</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>motorwheel_instant_play</Action>
+    <Description>when set to on, the song will start instantly, bypassing the ramp up time the motor takes to reach its full rotation speed (the drawback is that then you cannot hold the disc still when your start the motor)</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1819,14 +1953,20 @@
   <Item>
     <Category>controllers</Category>
     <Action>numark_waveform_zoom</Action>
+    <Description>Set numark waveform zoom (value from 0 to 3, or +1, -1 to step through zoom levels)</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>os2l_button</Action>
+    <Description>Send a command to a DMX software over OS2L: &apos;os2l_button &quot;blackout&quot;&apos;, &apos;os2l_button &quot;fog machine&quot; while_pressed&apos;, etc.
+If you want to specify a page, you can use &apos;os2l_button &quot;mypage&quot; &quot;mybutton&quot;&apos;.
+If the DMX software doesn&apos;t send feedback commands, os2l_button acts as a flash button (it sends &apos;on&apos; when pressed, &apos;off&apos; when released) - use &apos;os2l_button &quot;mybutton&quot; on&apos; to not send commands on release.
+If the DMX software sends feedback commands, os2l_button acts as a toggle button (it sends the opposite of the last feedback when pressed, nothing on release) - use &apos;os2l_button &quot;mybutton&quot; while_pressed&apos; to send a command on release.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>os2l_cmd</Action>
+    <Description>Send a numeric command to a DMX software over OS2L: &apos;os2l_cmd 42 on&apos; or &apos;os2l_cmd 43 50%&apos;</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1835,6 +1975,10 @@
   <Item>
     <Category>controllers</Category>
     <Action>os2l_scene</Action>
+    <Description>similar to os2l_button, but sends &apos;on&apos; to the DMX software only if the button was not active yet, and only if the deck is audible. (requires feedback from the DMX software)
+when the deck is not audible, the scene will be queued and started when the deck becomes audible
+os2l_scene &quot;scene1&quot;
+os2l_scene &quot;mypage&quot; &quot;myscene&quot;</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1847,22 +1991,27 @@
   <Item>
     <Category>controllers</Category>
     <Action>pioneer_cue</Action>
+    <Description>On when playing or paused on cue, blinking when paused and not on cue, off when no track loaded</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>pioneer_play</Action>
+    <Description>On when playing, off when no track loaded, blinking when paused or playing with cue stutter</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>refresh_controller</Action>
+    <Description>refresh the display of the specified controller (or all if none specified).</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>reinit_controller</Action>
+    <Description>Reinit the specified controller (or all if none specified), going through the exit and init sequences (you can specify a delay between exit and init: &quot;reinit_controllers &apos;mycontroller&apos; 200ms&quot;.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>rescan_controllers</Action>
+    <Description>rescan for newly connected controllers.</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1879,18 +2028,25 @@
   <Item>
     <Category>controllers</Category>
     <Action>select_master_output</Action>
+    <Description>Select if the audio should be played on the computer speakers or on the controller audio output</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>set_deck</Action>
+    <Description>use script or implicit variable to affect which deck the action is applied to
+example: &apos;set_deck `get_var varname` &amp; play&apos;</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>shift</Action>
+    <Description>set or query the built-in shift variable, used for controllers</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
     <Action>show_text</Action>
+    <Description>Show text on controller display. (If your controller uses get_display for the displays)
+&quot;show_text &apos;Line 1|Line 2&apos; 3000ms&quot; will show 2 lines of text for 3 seconds (time optional, | separates lines)
+&quot;show_text &apos;$myvar$&apos;&quot; shows the contents of the variable $myvar</Description>
   </Item>
   <Item>
     <Category>controllers</Category>
@@ -1899,6 +2055,7 @@
   <Item>
     <Category>cues</Category>
     <Action>cue</Action>
+    <Description>if playing, go to the last cue point and continue playing. if paused, set the current position as cue point, and preview the cue as long as pressed. if in loop, change loop_in to the cue point but keep the loop&apos;s length. you can specify a number (&apos;cue 1&apos;, &apos;cue 57&apos;) to work with several cues.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
@@ -1908,34 +2065,50 @@
     <Category>cues</Category>
     <Action>cue_button</Action>
     <Alias>cue_3button</Alias>
+    <Description>act like cue_stop, cue_play or cue_cup depending on the cueMode setting</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_color</Action>
+    <Description>query or set the color of a cue point
+Query example: cue_color 1
+Set example: cue_color 1 &apos;yellow&apos;</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_countdown</Action>
+    <Description>count down to the next cue (or end) in beats
+use &apos;cue_countdown color&apos; or &apos;cue_countdown name&apos; to get the name or color of the next cue point</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_counter</Action>
+    <Description>count up or down to the nearest cue point in beats
+use &apos;cue_counter color&apos; or &apos;cue_counter name&apos; to get the name or color of the nearest cue point</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_countup</Action>
+    <Description>count up from the last cue point (or start) in beats
+use &apos;cue_countup color&apos; or &apos;cue_countup name&apos; to get the name or color of the last cue point</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_cup</Action>
+    <Description>if playing, rewind to the last cue point, and start again on release. if paused, set the current position as cue point.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_display</Action>
+    <Description>Show information about a cue point based on the cueDisplay config option.
+Example: &apos;cue_display 1&apos;
+Can also be used to modify the cueDisplay option by using +1 or -1 as parameter: &apos;cue_display +1&apos;
+The cueDisplay option can also be set by name: &apos;cue_display name&apos;</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_loop</Action>
+    <Description>Jump to a cue and stay in a loop. Use cue_loop_hold to select if loop is temporary, or stays until pressed again. When the cueLoopAutoSync option is enabled, jumping to the cue is beat synchronized</Description>
   </Item>
   <Item>
     <Category>cues</Category>
@@ -1944,202 +2117,261 @@
   <Item>
     <Category>cues</Category>
     <Action>cue_loop_hold</Action>
+    <Description>Toggle cue_loop between looping while pressed and turn loop on/off</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_name</Action>
+    <Description>&quot;cue_name 1&quot; returns the name of cue point #1, or changes the cue point when pressed</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_play</Action>
+    <Description>if playing, pause and go to the last cue point. if paused, set the current position as cue point, and preview the cue as long as pressed. if you kept pressed more than 2s (or the time specified), it will continue playing once you release. syntax: &apos;cue_play 1 1000ms&apos;</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_pos</Action>
+    <Description>&quot;cue_pos 1&quot; returns the position of cue point #1 as a percentage
+&quot;cue_pos 1 msec&quot;, &quot;cue_pos 1 sec&quot;, &quot;cue_pos 1 min&quot; returns the position of cue point #1, msec, sec and min parts
+&quot;cue_pos 1 mseconly&quot; returns the position of cue point #1 in milliseconds
+&quot;cue_pos 1 beats&quot; returns the position of the cue point in number of beats from first beat</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_select</Action>
+    <Description>Select the nth cue point as default cue point for cue, hotcue, etc.. actions. Does not change position to the selected cue point.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cue_stop</Action>
+    <Description>if playing, pause and go to the last cue point. if paused, set the current position as cue point, and preview the cue as long as pressed. you can specify a number (&apos;cue_stop 1&apos;, &apos;cue_stop 57&apos;) to work with several cues.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>cues_options</Action>
+    <Description>Show some options about cues</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>delete_cue</Action>
+    <Description>Deletes a stored cue point. If no cue number is specified, it will delete the currently active cue point</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>get_cue</Action>
+    <Description>returns the currently active cue, or 0 if no cue point is active</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>goto_cue</Action>
+    <Description>Go to the specified cue. Example &quot;goto_cue 1&quot;, &quot;goto_cue +1&quot;, &quot;goto_cue -1&quot;
+&quot;goto_cue&quot; will jump to the currently selected/last used cue.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>has_cue</Action>
+    <Description>returns true if the specified cue number is set</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>hot_cue</Action>
     <Alias>hotcue</Alias>
+    <Description>if no cue point is set, or if &apos;cue&apos;, &apos;cue_stop&apos; or &apos;cue_play&apos; is pressed, set one at the current position. otherwise go to the cue point and start or continue playing. if in loop, set the cue point as new loop_in but keep loop_length. you can specify a number (&apos;hot_cue 1&apos;, &apos;hot_cue 57&apos;) to work with several cues.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>lock_cues</Action>
+    <Description>lock/unlock the cues for this particular song, so that cue actions cannot inadvertently modify them while you&apos;re playing</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>set_cue</Action>
+    <Description>store the current position in the cue. if one parameter is given, it&apos;s the number of the cue to use. if two parameters are given, the second is the position to store, in ms, in beats, or in percentage of the song length.</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>shift_all_cues</Action>
+    <Description>shift all the cues of the song from the given amount (can be used to fix the cues from v7 imported files in case the automatic fix didn&apos;t work properly): &apos;shift_all_cues -10ms&apos;</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>silent_cue</Action>
+    <Description>Mute track when enabled until a hot cue is activated</Description>
   </Item>
   <Item>
     <Category>cues</Category>
     <Action>sort_cues</Action>
+    <Description>sort cue points chronologically</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>cross_assign</Action>
+    <Description>assign this deck to a side of the crossfader: &quot;deck 3 cross_assign &apos;left&apos;&quot; or &quot;deck 3 cross_assign &apos;thru&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>get_deck_color</Action>
+    <Description>return blue or red if the deck is the left deck or right deck (and gray otherwise). Can be used with a darkness modifier: &apos;get_deck_color 50%&apos;
+Use &apos;get_deck_color &quot;absolute&quot;&apos; or &apos;get_deck_color &quot;absolute&quot; 50%&apos; to get a color based on actual deck rather than left/right (red for deck 1, blue for deck 2, orange for deck 3, green for deck 4)</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>invert_deck</Action>
+    <Description>switch leftdeck between deck 1 and deck 3 or rightdeck between deck 2 and deck 4
+&quot;invert_deck&quot; to swap the calling deck, or &quot;invert_deck &apos;left&apos;&quot;, &quot;invert_deck &apos;right&apos;&quot; to specifically switch left or right deck</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>leftcross</Action>
+    <Description>assign this deck to the left of the crossfader: &quot;deck 3 leftcross&quot;
+&quot;deck 3 leftcross &apos;only&apos;&quot; to assign only deck 3 to left of the crossfader
+&quot;leftcross &apos;none&apos;&quot; to disable the left crossfader</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>leftdeck</Action>
+    <Description>select this deck to be the left deck: &quot;deck 3 leftdeck&quot; or &quot;leftdeck +1&quot;</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>masterdeck</Action>
+    <Description>select/unselect this deck as &apos;master deck&apos;. When a master deck is set, all synchronization operations will take the master deck as reference. (for skins with more than 2 decks)</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>masterdeck_auto</Action>
+    <Description>remove the masterdeck selection and put back automatic masterdeck behavior</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>pfl</Action>
+    <Description>select if this deck is sent to the headphones. (can be used with a slider or a % to specify the volume: &apos;pfl 75%&apos;)</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>rightcross</Action>
+    <Description>assign this deck to the right of the crossfader: &quot;deck 3 rightcross&quot;</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>rightdeck</Action>
+    <Description>select this deck to be the right deck: &quot;deck 3 rightdeck&quot; or &quot;rightdeck +1&quot;</Description>
   </Item>
   <Item>
     <Category>deck_select</Category>
     <Action>select</Action>
+    <Description>select this deck as &apos;working deck&apos;. the beat of the working deck will be shown in front in the display, and shortcuts and actions with no specified deck will affect this deck.\nUnless PFL has been set manually, the PFL will also follow the working deck.</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_crossfader_high</Action>
+    <Description>crossfade the treble between both decks</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_crossfader_low</Action>
+    <Description>crossfade the bass between both decks</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_crossfader_mid</Action>
     <Alias>eq_crossfader_med</Alias>
+    <Description>crossfade the center frequencies between both decks.</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_high</Action>
     <Alias>eq_high_slider</Alias>
+    <Description>change the amount of HiHat, Vocal or High (depending on EQ control mode).</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_high_freq</Action>
+    <Description>set the treble equalizer</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_kill_high</Action>
+    <Description>mute the treble</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_kill_low</Action>
+    <Description>mute the bass.</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_kill_mid</Action>
     <Alias>eq_kill_med</Alias>
+    <Description>mute the medium.</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_low</Action>
     <Alias>eq_low_slider</Alias>
+    <Description>change the amount of Kick or Low in the mix (depending on EQ control mode).</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_low_freq</Action>
+    <Description>set the bass equalizer</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_mid</Action>
-    <Alias>eq_med
-eq_mid_slider</Alias>
+    <Alias>eq_med | eq_mid_slider</Alias>
+    <Description>change the amount of Melody, Vocals or Medium (depending on EQ control mode).</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_mid_freq</Action>
+    <Description>set the medium equalizer</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_mode</Action>
+    <Description>Select the behavior of the EQs knobs (frequency, modernEQ or EZRemix)
+Can be used to switch between Frequency and your preferred stems mode using &apos;eq_mode +1&apos;
+To change the eq mode only for a single deck, use &quot;eq_mode +1 deck&quot; (or &quot;deck 1 eq_mode +1 deck&quot; to specify deck 1 in your script)
+To select a specific behavior, you can use &quot;eq_mode frequency&quot;, &quot;eq_mode modernEQ&quot;, &quot;eq_mode ezRemix&quot; or &quot;eq_mode stems&quot;</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>eq_reset</Action>
+    <Description>reset the equalizer.</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>filter</Action>
     <Alias>filter_slider</Alias>
+    <Description>apply the selected colorfx to the sound (nothing applied at 50%, and more applied the farther from the center)</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>filter_activate</Action>
+    <Description>enable or disable the deck filter</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>filter_label</Action>
+    <Description>get the text to display under the filter knob
+(use filter_label &quot;clean&quot; to always get the value, and filter_label &quot;name&quot; to always get the name)</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>filter_resonance</Action>
+    <Description>change the resonance of the filter</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>filter_selectcolorfx</Action>
+    <Description>Select the color effect controlled by the filter knob</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>has_stems</Action>
+    <Description>Return true if the track has stems available. Can also be called with &apos;has_stems &quot;2.0&quot;&apos; to check for new engine, or &apos;has_stems &quot;ready&quot;&apos; to check if stems are ready at the current playing position</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
@@ -2156,38 +2388,49 @@ eq_mid_slider</Alias>
   <Item>
     <Category>equalizer</Category>
     <Action>mute_stem</Action>
+    <Description>mute one stem. Stem names are: &quot;HiHat&quot;, &quot;Vocal&quot;, &quot;Instru&quot;, &quot;Bass&quot;, &quot;Kick&quot;, or you can use aggregate stems: &quot;Melody&quot; (Instru+Bass), &quot;Rhythm&quot; (HiHat+Kick), &quot;MeloRhythm&quot; (Instru+Bass+HiHat+Kick)</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>only_stem</Action>
+    <Description>keep only one stem. Stem names are: &quot;HiHat&quot;, &quot;Vocal&quot;, &quot;Instru&quot;, &quot;Bass&quot;, &quot;Kick&quot;, or you can use aggregate stems: &quot;Melody&quot; (Instru+Bass), &quot;Rhythm&quot; (HiHat+Kick), &quot;MeloRhythm&quot; (Instru+Bass+HiHat+Kick)</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>stem</Action>
+    <Description>Change the amount of a stem in the mix. Stem names are: &quot;HiHat&quot;, &quot;Vocal&quot;, &quot;Instru&quot;, &quot;Bass&quot;, &quot;Kick&quot;, or you can use aggregate stems: &quot;Melody&quot; (Instru+Bass), &quot;Rhythm&quot; (HiHat+Kick), &quot;MeloVocal&quot; (Melody/Vocal), &quot;MeloRhythm&quot; (Melody/Rhythm).
+To get kill on left side and isolate on right side of the slider, you can use &quot;FullVocal&quot;, &quot;FullMelo&quot; and &quot;FullRhythm&quot;
+To map a slider to always control the equalizer, regardless of EQ mode, you can use &quot;stem FreqHi&quot;, &quot;stem FreqMid&quot;, and &quot;stem FreqLo&quot;</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>stem_color</Action>
+    <Description>get the default color of a specific stem</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>stem_pad</Action>
+    <Description>mute a stem (or isolate if pressed with Shift). Stem names are: &quot;HiHat&quot;, &quot;Vocal&quot;, &quot;Instru&quot;, &quot;Bass&quot;, &quot;Kick&quot;, &quot;Rhythm&quot;, &quot;MeloRhythm&quot;, &quot;Acapella&quot;, &quot;Instrumental&quot;</Description>
   </Item>
   <Item>
     <Category>equalizer</Category>
     <Action>stems_bleed</Action>
+    <Description>Control how much the fast stems separation algorithm will allow bleeding. The action affects one of the four bleeding values (MuteVocal, MuteInstru, OnlyVocal, OnlyInstru) depending on what is currently muted or isolated on the deck. (NOTE: this does nothing on the regular HiQuality algorithm)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>browsed_song</Action>
+    <Description>set a property of the currently browsed file: &quot;browsed_song &apos;rating&apos; 5&quot;, ...</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>browsed_song_hashtag</Action>
+    <Description>add or remove a hash tag from user1, user2 or comment of the currently browsed file: &quot;browsed_song_hashtag &apos;user 1&apos; &apos;#high_energy&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_activedeck</Action>
+    <Description>get the number of the sync master deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2196,6 +2439,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_arm</Action>
+    <Description>get the position of the turntable arm</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2204,6 +2448,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_artist_before_feat</Action>
+    <Description>Return artist of the track, with &apos;featuring&apos; stripped</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2212,58 +2457,79 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_artist_title_separator</Action>
+    <Description>Return a dash ( - ) if there is both an artist and a title</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_askthedj</Action>
+    <Description>Returns the latest request from ask the dj (requires askTheDJMonitoring setting to be on always)
+Use &apos;get_askthedj 2&apos; to get the second latest request, etc.</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_askthedj_unread</Action>
+    <Description>Returns the number of unread Ask The DJ requests (requires askTheDJMonitoring setting to be on always)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_automix</Action>
+    <Description>get the position of the automix crossfader</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_bar</Action>
+    <Description>returns the current bar number (1 bar = 4 beats)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beat</Action>
+    <Description>get the intensity of the beat at the current position (0% to 100%).</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beat2</Action>
+    <Description>get the intensity of the beats from both decks at the same time.</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beat_bar</Action>
+    <Description>get the position in % in the 4:4 bar (or in 4:16 if called with &apos;get beat_bar 16&apos;)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beat_counter</Action>
+    <Description>get the position of the beat counter</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beat_num</Action>
+    <Description>&quot;get_beat_num&quot; returns a value between 1 and 4 indicating the beat in the measure
+&quot;get_beat_num 1 4&quot; returns true when the first beat of the measure is currently playing
+&quot;get_beat_num 1&quot; returns true when the first beat of a 4-beat measure is currently playing (works from 1 to 4)
+&quot;get_beat_num 16&quot; returns a percentage indicating the beat position in a 16-beat phrase (works with any phrase number larger than 4)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beatdiff</Action>
+    <Description>Get the distance between the beat from this deck and the beat from the active deck
+50% means the deck are aligned, 0% means this deck is late half a beat, 100% means it is ahead half a beat
+&apos;get_beatdiff 4&apos; will return the distance percentage between bars instead of beats</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beatgrid</Action>
+    <Description>get the intensity of the beat based on the beatgrid (100% if on the beat, 0% if halfway between to beats).</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_beatpos</Action>
+    <Description>get the current position in beatgrid coordinate (27.5 would mean halfway between the 27th and 28th beats in the song).</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_bpm</Action>
+    <Description>Get the bpm of the song
+Use &apos;get_bpm absolute&apos; to get the original bpm of the song (not changing when changing the pitch)</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2284,6 +2550,8 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_color</Action>
+    <Description>&apos;get_browsed_color 0 red 255&apos; (item, component, default)
+&apos;get_browsed_color 0 white&apos; (item, default) returns color for selected item. This includes color filters. (For manually selected color only, use &apos;get_browsed_song color&apos; instead)</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2296,10 +2564,12 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_filepath</Action>
+    <Description>get the filepath of the song currently selected in the browser</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_folder</Action>
+    <Description>get the name of the folder selected in the browser</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2308,6 +2578,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_folder_path</Action>
+    <Description>get the full path of the folder selected in the browser</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2320,6 +2591,8 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_folder_selection_index</Action>
+    <Description>&apos;get_browsed_folder_selection 1 3&apos; returns true if the first line is the selected line in a browser 3 lines high
+&apos;get_browsed_folder_selection 3&apos; returns the line number of the selected line in a browser 3 lines high (between 1 and 3)</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2348,10 +2621,13 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_selection_index</Action>
+    <Description>&apos;get_browsed_selection 1 3&apos; returns true if the first line is the selected line in a browser 3 lines high
+&apos;get_browsed_selection 3&apos; returns the line number of the selected line in a browser 3 lines high (between 1 and 3)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_browsed_song</Action>
+    <Description>get a property from the currently browsed file: &quot;get_browsed_song &apos;title&apos;&quot;, &quot;get browsed_song &apos;playcount&apos;&quot;, etc...</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2364,6 +2640,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_build</Action>
+    <Description>Returns build number</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2380,6 +2657,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_deck</Action>
+    <Description>get the number of the deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2388,18 +2666,22 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_deck_letter</Action>
+    <Description>get the letter of the deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_decks</Action>
+    <Description>get the total number of decks of the current skin (can also be used with argument to compare: &apos;get_decks 4&apos; returns true if &apos;get_decks&apos; would return 4, false otherwise)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_defaultdeck</Action>
+    <Description>get the number of the default deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_featuring_after_artist</Action>
+    <Description>Return featuring artist, stripped from artist or title field</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2408,6 +2690,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_filepath</Action>
+    <Description>get the filepath of the song on the deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2416,10 +2699,12 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_firstbeat</Action>
+    <Description>get the position of the first beat (in milliseconds)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_firstbeat_local</Action>
+    <Description>get the position of the first beat in the current phrase 16 beats (in milliseconds)</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2429,30 +2714,37 @@ eq_mid_slider</Alias>
     <Category>get</Category>
     <Action>get_hasheadphones</Action>
     <Alias>get_hasheadphone</Alias>
+    <Description>True when a headphones output is configured in sound setup, or when the controller has a headphone volume control</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_hasinput</Action>
+    <Description>returns true if the current soundconfig includes any input (mic, linein or timecode)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_haslinein</Action>
+    <Description>returns true if the current soundconfig includes some linein inputs</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_hasmaster</Action>
+    <Description>True when a master output is configured in sound setup, false for external mixer configurations</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_hasmic</Action>
+    <Description>returns true if the current soundconfig includes a mic input</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_hwnd</Action>
+    <Description>return the Windows handle to VirtualDJ&apos;s window</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_leftdeck</Action>
+    <Description>get the number of the left deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2461,10 +2753,13 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_loaded_song</Action>
+    <Description>get a property from the song loaded on the deck: &quot;deck 2 get_loaded_song &apos;album&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_loaded_song_color</Action>
+    <Description>&apos;get_loaded_song_color red 255&apos; (component, default color)
+&apos;get_loaded_song_color white&apos; (default color) returns color for the loaded track. This includes color filters. (For manually selected color only, use &apos;get_loaded_song color&apos; instead)</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2473,94 +2768,130 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_phrase_num</Action>
+    <Description>&quot;get_phrase_num&quot; returns a value between 1 and 4 indicating the measure number
+&quot;get_phrase_num 1&quot; returns true when the first measure of the phrase is currently playing</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_plugindeck</Action>
+    <Description>For use in plugins. Returns 1,2,etc... when plugin is active on a deck, 0 for master, -1 for sampler, -2 for mic</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_position</Action>
+    <Description>get the position in the song</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_message</Action>
+    <Description>get the message displayed on the record page</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_min</Action>
+    <Description>get the minutes of the recording time</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_ms</Action>
+    <Description>get the milliseconds of the recording time</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_msf</Action>
+    <Description>get the frames of the recording time</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_sec</Action>
+    <Description>get the seconds of the recording time</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_size</Action>
+    <Description>get the current size of the recording file</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_record_time</Action>
+    <Description>get the time already spent recording</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_remix_after_title</Action>
+    <Description>Return remix of the track loaded on the deck like &quot;(remix)&quot; Remix will automatically be extracted from title if remix field is empty</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_rightdeck</Action>
+    <Description>get the number of the right deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_rotation</Action>
+    <Description>get the angle of the disc</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_song_event</Action>
+    <Description>Provide analysis about current and coming events in the song. Can be used when writing visualisation plugins.
+The first parameter is &quot;current&quot; or &quot;next&quot; to get the current or the coming event.
+The second parameter can be &quot;hasbeats&quot;, &quot;volume&quot;, &quot;volume_end&quot;, &quot;remaining&quot;</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_songlength</Action>
+    <Description>get the length in seconds of the song on the deck</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_spectrum_band</Action>
+    <Description>get the level of a single spectrum band. &apos;get_spectrum_band 1&apos;
+Use &apos;deck master&apos; in front to get spectrum of the master deck &apos;deck master get_spectrum_band 1&apos;
+By default there are 32 bands, to use a smaller number of bands, use &apos;get_spectrum_band 1 3&apos; to get the first of 3 bands
+The third parameter can be used to get a spectrum of stems &apos;get_spectrum_band 1 32 vocals&apos;</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time</Action>
+    <Description>get the elapsed time (or remaining or total depending on &quot;display_time&quot;), in milliseconds.
+Use &apos;get time 1000&apos; to get another unit than ms (1000=ms, 25=1/25th of seconds, 44100=frames, etc). 
+Use &quot;elapsed&quot;, &quot;remain&quot; or &quot;total&quot; to bypass the setting of display_time. Use &quot;absolute&quot; not to take the pitch into account.
+On texts, use &quot;short&quot; to hide the decimals. Example: get_time &quot;remain&quot; &quot;short&quot;</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time_hour</Action>
+    <Description>Get the hours of the elapsed time (or remaining or total, depending on &quot;display_time&quot;)
+Use &apos;get_time_hour &quot;absolute&quot;&apos; if you don&apos;t want to take the pitch variations into account
+You can write &apos;get_time_hour &quot;elapsed&quot;&apos; or &quot;remain&quot; or &quot;total&quot; to bypass the setting of display_time</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time_min</Action>
+    <Description>get the minutes of the elapsed time (or remaining or total, depending on &quot;display_time&quot;). use &apos;get time_min &quot;absolute&quot;&apos; if you don&apos;t want to take the pitch variations in account. you can write &apos;get time_min &quot;elapsed&quot;&apos; or &quot;remain&quot; or &quot;total&quot; to bypass the setting of display_time</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time_ms</Action>
+    <Description>get the 1/100th seconds of the elapsed time (or remaining or total, depending on &quot;display_time&quot;)
+use &apos;get_time_ms 1000&apos; to get the actual milliseconds</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time_msf</Action>
+    <Description>get the MSF frame of the elapsed time (or remaining or total, depending on &quot;display_time&quot;).</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time_sec</Action>
+    <Description>get the seconds of the elapsed time (or remaining or total, depending on &quot;display_time&quot;).</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_time_sign</Action>
+    <Description>Get the sign (-1 or +1) of the elapsed time (or remaining or total, depending on &quot;display_time&quot;)
+You can write &apos;get_time_sign &quot;elapsed&quot;&apos; or &quot;remain&quot; or &quot;total&quot; to bypass the setting of display_time</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2573,26 +2904,32 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_title_before_remix</Action>
+    <Description>Return title of the track. If remix is empty, the part in brackets in the title is removed (and shown by get_remix_after_title)</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_title_remix</Action>
+    <Description>Return combination of title and remix: &quot;Title (Remix)&quot;.</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_totaltime_min</Action>
+    <Description>get the minutes of the length of the song</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_totaltime_ms</Action>
+    <Description>get the 1/100th seconds of the length of the song</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_totaltime_msf</Action>
+    <Description>get the frames of the length of the song</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_totaltime_sec</Action>
+    <Description>get the seconds of the length of the song</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2601,14 +2938,17 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>get_vdj_folder</Action>
+    <Description>return the home folder of VirtualDJ.</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_version</Action>
+    <Description>Returns version as text such as &quot;2025&quot;</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>get_volume</Action>
+    <Description>get the volume applied by both the volume sliders and the crossfader</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2617,14 +2957,17 @@ eq_mid_slider</Alias>
   <Item>
     <Category>get</Category>
     <Action>has_aux</Action>
+    <Description>returns true if the current soundconfig includes a aux input</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>loaded_song</Action>
+    <Description>set a property of the currently loaded file: &quot;loaded_song &apos;rating&apos; 5&quot;, ...</Description>
   </Item>
   <Item>
     <Category>get</Category>
     <Action>loaded_song_hashtag</Action>
+    <Description>add or remove a hash tag from user1, user2 or comment of the currently loaded song: &quot;loaded_song_hashtag &apos;user 1&apos; &apos;#high_energy&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>get</Category>
@@ -2633,34 +2976,43 @@ eq_mid_slider</Alias>
   <Item>
     <Category>karaoke</Category>
     <Action>get_karaoke_background_song</Action>
+    <Description>Get info about the background song playing in karaoke mode</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>get_next_karaoke_song</Action>
+    <Description>Get info about the upcoming karaoke tracks
+Example &apos;get_next_karaoke_song &quot;singer&quot; +1&apos;</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>has_karaoke_next</Action>
+    <Description>On when karaoke mode is active and there is still another singer queued</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>is_karaoke_idle</Action>
+    <Description>On when karaoke mode is active but not playing. (Background music may be playing)</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>is_karaoke_playing</Action>
+    <Description>On when karaoke track is playing and karaoke mode is active. Off when background music is playing</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>karaoke</Action>
+    <Description>Start or stop automatic karaoke loading and background music</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>karaoke_options</Action>
+    <Description>show the contextmenu with the karaoke options</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
     <Action>karaoke_show</Action>
+    <Description>show the singer list on the video output</Description>
   </Item>
   <Item>
     <Category>karaoke</Category>
@@ -2673,183 +3025,242 @@ eq_mid_slider</Alias>
   <Item>
     <Category>key</Category>
     <Action>get_key</Action>
+    <Description>get the key of the current song, based on keyDisplay option
+Use get_key &quot;musical&quot; or get_key &quot;harmonic&quot; to get a specific display independent of keyDisplay option</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>get_key_color</Action>
+    <Description>Return color of the current key of the track in the specified deck</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>get_key_modifier</Action>
+    <Description>get the number of semitone up or down currently applied to the song</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>get_key_modifier_text</Action>
+    <Description>get the number of semitone up or down currently applied to the song</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>key</Action>
+    <Description>change the key of the song, from -12 (one octave down) to +12 (one octave up), only in multiple of semitones.</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>key_lock</Action>
     <Alias>keylock</Alias>
+    <Description>activate/deactivate the key lock (to make the pitch slider change the speed of the song, but keep the key of the song like it is now).</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>key_match_button</Action>
+    <Description>Match key to the other deck&apos;s key on first press, or reset key to normal on second press</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>key_match_menu</Action>
+    <Description>Open a menu to select a different key for the current song</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>key_move</Action>
+    <Description>move the key up or down from the given amount of semitones.</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>key_smooth</Action>
+    <Description>change the key of the song, from -6 (half octave down) to +6 (half octave up), allowing not only multiple of semitones.
+use key_smooth full for full octave up or down</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>keycue_pad</Action>
+    <Description>change the key depending on the pad and play the current cue point</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>keycue_pad_color</Action>
+    <Description>green for the selected key, magenta for lower keys, orange for higher keys and white for no key change</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>keycue_pad_jump</Action>
+    <Description>when on, keycue_pad will jump to the cue point on each press, when off, keycue_pad will only modify the key without jumping to the cue point</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>keycue_pad_page</Action>
+    <Description>change the offset of the key change by keycue_pad actions</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>match_key</Action>
+    <Description>change the key of the song to match the given key. you can use standard notation (&apos;match_key &quot;A#m&quot;&apos;) or numeric (&apos;match_key &quot;03A&quot;&apos;). if no given key, it will use the other deck. the change will be the smallest change to make it compatible with the given key.</Description>
   </Item>
   <Item>
     <Category>key</Category>
     <Action>set_key</Action>
+    <Description>change the key of the song to match the given key. you can use standard notation (&apos;set_key &quot;A#m&quot;&apos;) or numeric (&apos;set key &quot;03A&quot;&apos;). if no given key, it will use the other deck. the change will match the exact key.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>get_active_loop</Action>
+    <Description>get the number of beats in the current loop</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>get_loop</Action>
+    <Description>get the number of beats in the current loop or the default loop size if no loop is active</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>get_loop_in_time</Action>
+    <Description>Get time (in ms) of the start of the loop
+Use &quot;get_loop_in_time 1.0&quot; to return the time in seconds instead of milliseconds
+Use &quot;get_loop_in_time on&quot; to return the loop in time even when no loop is active</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>get_loop_out_time</Action>
+    <Description>Get time (in ms) of the end of the loop
+Use &quot;get_loop_out_time 1.0&quot; to return the time in seconds instead of milliseconds
+Use &quot;get_loop_out_time on&quot; to return the loop out time even when no loop is active</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>get_saved_loop</Action>
+    <Description>get information about a saved loop: get_saved_loop &apos;pos&apos;, get_saved_loop &apos;length&apos;, get_saved_loop &apos;name&apos;</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop</Action>
+    <Description>set or remove a loop. &apos;loop 4&apos;, &apos;loop 0.5&apos; set a loop in beats. &apos;loop 10ms&apos; set a loop in ms. &apos;loop 200%&apos; multiply by 2 the size of the loop. &apos;loop 50%&apos; divides by 2. &apos;loop&apos; alone set a loop at the actual position with the same beat size as the last set loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_adjust</Action>
+    <Description>use the jogwheel to adjust the loop.
+loop_adjust &apos;move&apos;, loop_adjust &apos;out&apos;, loop_adjust &apos;in&apos; activate a specific loop adjust mode
+loop_adjust -1, loop_adjust +1 emulate moving the jog when loop adjust is active</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_back</Action>
+    <Description>When loop back mode is enabled, starting a loop sets the end point of the loop, looping what you just heard. When disabled, starting a loop sets the start point of the loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_button</Action>
+    <Description>one-button smart loop: Set the loop in on the first press, set the loop out on second press, remove the loop on third press.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_color</Action>
+    <Description>query or set the color of a saved loop
+Query example: loop_color 1
+Set example: loop_color 1 &apos;yellow&apos;</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_delete</Action>
+    <Description>&apos;loop_delete 1&apos; Delete the saved loop in slot 1</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_double</Action>
+    <Description>doubles the length of the loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_exit</Action>
+    <Description>remove the loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_half</Action>
+    <Description>halves the length of the loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_in</Action>
+    <Description>if not in loop, set the beginning of a loop. if in loop, jump back to the beginning of the loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_length</Action>
+    <Description>change the length of the loop. &apos;loop_length 15ms&apos; set the length in ms, &apos;loop_length 0.5&apos; set the length in beats, &apos;loop_length +100%&apos; set the length in percentage of the actual length.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_load</Action>
+    <Description>&apos;loop_load 1&apos; Load the saved loop from slot 1
+&apos;loop_load &quot;myloop&quot;&apos; Load saved loop named &quot;myloop&quot;</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_load_prepare</Action>
+    <Description>&apos;loop_load_prepare 1&apos; Activate/Deactivate the saved loop in slot 1 without jumping to the start point
+&apos;loop_load_prepare &quot;myloop&quot;&apos; Activate/Deactivate stored loop named &quot;myloop&quot; without jumping to the start point</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_move</Action>
+    <Description>move the loop without changing its length. &apos;loop_move +10ms&apos; set the distance in ms, &apos;loop_move +2&apos; set the distance in beats, &apos;loop_move +50%&apos; set the distance in percentage of the actual length.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_options</Action>
+    <Description>Show some options about loops</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_out</Action>
+    <Description>if not in loop, set the deck in loop, starting from the last set loop_in point or stutter point. if in loop, exit the loop.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_pad</Action>
+    <Description>Use &apos;loop_pad 1&apos; to &apos;loop_pad 8&apos; to trigger a loop of predefined length, depending on loop_pad_page and loop_pad_mode</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_pad_mode</Action>
+    <Description>Cycle through the different loop modes for use with loop_pad. 1=On/Off 2=Hold 3=Roll</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_pad_page</Action>
+    <Description>Cycle through the different lengths of loops for use with loop_pad</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_position</Action>
+    <Description>Get relative position in loop (from 0% to 100%)</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_roll</Action>
+    <Description>&quot;loop_roll 0.25&quot; for 1/4th beat loop roll
+&quot;loop_roll video&quot; to toggle video loop roll on or off</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_roll_mode</Action>
+    <Description>If loop roll mode is active, when the loop exits, the song continues from the position it should have been if no looping had been done</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_save</Action>
+    <Description>&apos;loop_save 1&apos; Save current loop in saved loop slot 1
+&apos;loop_save &quot;myloop&quot;&apos; Save current loop and name it &quot;myloop&quot;</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>loop_select</Action>
+    <Description>set the loop size (or default loop size if no loop is active). If no parameter is provided, a popup list of loop values to choose from will be displayed.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
@@ -2866,66 +3277,93 @@ eq_mid_slider</Alias>
   <Item>
     <Category>loop</Category>
     <Action>reloop</Action>
+    <Description>jump to the loop_in point.</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>reloop_exit</Action>
+    <Description>if in loop, remove the loop. otherwise, reactivate the last used loop. Highlights when a loop had been used</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>repeat_song</Action>
+    <Description>When active, song will restart from beginning when finished</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>saved_loop</Action>
+    <Description>&apos;saved_loop 1&apos; Load the saved loop in slot 1 or set if it doesn&apos;t exist
+&apos;saved_loop &quot;myloop&quot;&apos; Load saved loop named &quot;myloop&quot; or set if it doesn&apos;t exist</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>saved_loop_autotrigger</Action>
+    <Description>&apos;saved_loop_autotrigger 1&apos; Activate/Deactivate auto-trigger of loop when the play position arrives at the saved loop</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>saved_loop_display</Action>
+    <Description>Show information about a saved loop based on the savedLoopDisplay config option.
+Example: &apos;saved_loop_display 1&apos;
+Can also be used to modify the savedLoopDisplay option by using +1 or -1 as parameter: &apos;saved_loop_display +1&apos;</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>saved_loop_prepare</Action>
+    <Description>&apos;saved_loop_prepare 1&apos; Activate/Deactivate the saved loop in slot 1 without jumping to the start point or set if it doesn&apos;t exist
+&apos;saved_loop_prepare &quot;myloop&quot;&apos; Activate/Deactivate stored loop named &quot;myloop&quot; without jumping to the start point or set if it doesn&apos;t exist</Description>
   </Item>
   <Item>
     <Category>loop</Category>
     <Action>slicer</Action>
+    <Description>&quot;slicer 1&quot; to &quot;slicer 8&quot; for 8 slicer buttons
+&quot;slicer 1 &apos;hold&apos;&quot; to hold the current position on first activate
+&quot;slicer &apos;length&apos; +1&quot; to increase length
+&quot;slicer &apos;step&apos; +1&quot; to increase step size
+&quot;slicer video&quot; to toggle video slicer on or off</Description>
   </Item>
   <Item>
     <Category>macro</Category>
     <Action>macro_play</Action>
+    <Description>playback a previously recorded macro</Description>
   </Item>
   <Item>
     <Category>macro</Category>
     <Action>macro_record</Action>
+    <Description>Start or stop recording a macro</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad</Action>
+    <Description>activate the ith pad from the current pad page</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_bank2</Action>
+    <Description>Switch between showing pads 1-8 or 9-16 on skins that support it</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_button_color</Action>
+    <Description>returns the color of the ith pad as should be used on a controller button (changing the color for standby/active/pressed according to the controller&apos;s RGB capability).
+if the pad is active and has no color, white is returned.
+if the pad is inactive and has a color, and the controller support full RGB pads, a dimmed color is returned.
+if the pad is active and has a color, and the controller doesn&apos;t support full RGB pads, the color is blinking.</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_color</Action>
+    <Description>return the color of the ith pad (without auto-dim)</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_edit</Action>
+    <Description>edit the current pads page</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_has_16pads</Action>
+    <Description>Returns true when a controller is connected with a 4x4 pad layout</Description>
   </Item>
   <Item>
     <Category>pads</Category>
@@ -2950,24 +3388,29 @@ eq_mid_slider</Alias>
   <Item>
     <Category>pads</Category>
     <Action>pad_menu</Action>
+    <Description>open the menu for this pad page</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_page</Action>
     <Alias>pad_pages</Alias>
+    <Description>Syntax: &apos;pad_page 1&apos; to activate a the first page, &apos;pad_page 1 hotcues&apos; to override the default for a page, &apos;pad_page btn1&apos; for first button (that could be page 1 or page 5 depending on shift), &apos;pad_page&apos; to show the dropdown menu</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_page_select</Action>
     <Alias>pad_page_favorite_select</Alias>
+    <Description>Select the pad page for this slot</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_param</Action>
+    <Description>change the param 1 of the pads</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_param2</Action>
+    <Description>change the param 2 of the pads</Description>
   </Item>
   <Item>
     <Category>pads</Category>
@@ -2976,68 +3419,95 @@ eq_mid_slider</Alias>
   <Item>
     <Category>pads</Category>
     <Action>pad_pressure</Action>
+    <Description>change the pressure applied on the ith pad</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>pad_pushed</Action>
+    <Description>returns true if the pad is pushed (useful for custom color actions not using auto-dim)</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>padfx</Action>
+    <Description>Activate/deactivate named effect with a single key. Effect parameters can be specified as well.
+&apos;padfx &quot;echo&quot; 40% 90%&apos; to start/stop the echo effect with first parameter at 40% and second parameter at 90%. When the effect is stopped, the parameters return to their original values.
+&apos;padfx &quot;echo&quot; 40% 90% smart_pressed&apos; smart_pressed works as a toggle when pressing the button shortly, or as a temporary while holding the button pressed
+&apos;padfx &quot;echo&quot; 40% 90% &quot;TRAIL:on&quot;&apos; after the sliders, it is possible to add strings to disable or enable switch parameters by defining their name, a colon and &quot;on&quot; to enable or &quot;off&quot; to disable
+&apos;padfx &quot;echo out&quot; 80% &quot;solostem:vocal&quot;&apos; as the last parameter, you can add solostem:stemname to only let that stem be audible while applying the effect
+&apos;padfx &quot;echo out&quot; &quot;mutestem:rhythm&quot;&apos; as the last parameter, you can add mutestem:stemname to mute that stem while applying the effect
+&apos;padfx &quot;reverb&quot; &quot;stemfx:vocal&quot;&apos; as the last parameter, you can add stemfx:stemname to apply the effect only to that stem (other stems will continue playing normally)
+ stem names can be Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal,MeloRhythm</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>padfx_single</Action>
+    <Description>Same as padfx, but turns off the previous padfx before activating the current effect</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>padshift</Action>
+    <Description>the &apos;pad&apos; action automatically change action on shift, but if you want to manually force the use of the shift action, you can use padshift instead</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>padshift_button_color</Action>
+    <Description>the &apos;pad_button_color&apos; action automatically change action on shift, but if you want to manually force the use of the shift action, you can use padshift_button_color instead</Description>
   </Item>
   <Item>
     <Category>pads</Category>
     <Action>padshift_pressure</Action>
+    <Description>the &apos;pad_pressure&apos; action automatically change action on shift, but if you want to manually force the use of the shift action, you can use padshift_pressure instead</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>backspin</Action>
+    <Description>Do a backspin. It is possible to specify the length: &apos;backspin 5000ms&apos; or &apos;backspin 4bt&apos;</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>brakespeed</Action>
+    <Description>vinyl brake speed, the larger, the longer it takes for the record to get from playing to stopped</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>get_pitch</Action>
+    <Description>Get the pitch from -100% to +100%, centered on 0%</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>get_pitch_value</Action>
+    <Description>Get the pitch from 0% to 200%, centered on 100%</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>get_pitch_zero</Action>
+    <Description>Is true if the pitch is zero, with an optional precision parameter: &apos;get pitch_zero 5%&apos; (the % is relative to the pitch range. Use &quot;get pitch_zero &apos;absolute&apos; 0.1%&quot; to use absolute precision)</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>master_tempo</Action>
+    <Description>activate/deactivate the master tempo (to make the pitch slider change the speed of the song, but keep the original key of the song).</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>pitch</Action>
     <Alias>pitch2 | pitch2_slider | pitch_slider</Alias>
+    <Description>Set the pitch of the deck. Without parameters it can be assigned to sliders
+Used with a number, it gives the position on the slider (and therefore account for pitch_range). (&apos;pitch 0.25&apos; set pitch at -10% if pitch range is 20%)
+Used with a percent it gives an absolute position.  &apos;pitch 112%&apos; set pitch at +12%
+Relative values are possible too. &apos;pitch +0.1%&apos;, &apos;pitch +0.1 bpm&apos;
+When used with &apos;bpm&apos;, the pitch is set to match the bpm. &apos;pitch 130 bpm&apos; set pitch to match 130 bpm</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>pitch_bend</Action>
+    <Description>slow down or speed up the song: &apos;pitch_bend +3%&apos;. you can make the bend to increase slowly by specifying a second time parameter: &apos;pitch_bend +1% 500ms&apos; will start at +1% and will double every 500ms.</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>pitch_lock</Action>
     <Alias>pitchlock</Alias>
+    <Description>when Pitch Lock is on, moving the pitch slider on one deck will move the slider on the other deck to keep the sync</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
@@ -3046,127 +3516,171 @@ eq_mid_slider</Alias>
   <Item>
     <Category>pitch</Category>
     <Action>pitch_range</Action>
+    <Description>set the range for the pitch slider. &apos;pitch_range 12%&apos; set the range from -12% to +12%. 
+&apos;pitch_range +1&apos; scrolls through the default pitch ranges. &apos;pitch_range &quot;12,16,25&quot; +1&apos; scrolls through the provided list of pitch ranges.
+&apos;pitch_range +1 deck&apos; changes the pitch range only for the specific deck</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>pitch_relative</Action>
+    <Description>set the pitch of the deck, to be used by hardware controllers if you prefer the change to be relative to the software pitch position</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>pitch_reset</Action>
+    <Description>Slowly brings the pitch back to 0%. You can specify the speed in % per second (default uses the pitchResetSpeed option): &apos;pitch_reset 5%&apos;
+You can also specify the speed in ms or beats: &apos;pitch_reset 500ms&apos; or &apos;pitch_reset 4bt&apos;</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>pitch_zero</Action>
+    <Description>Set pitch to 0% (normal playing speed)
+Use &apos;pitch_zero &quot;center&quot;&apos; on controllers that send a message when the pitch slider is at the center. This prevents unwanted behavior in gradual or relative mode.</Description>
   </Item>
   <Item>
     <Category>pitch</Category>
     <Action>startupspeed</Action>
+    <Description>vinyl startup speed, the larger, the longer it takes for the record to get from stopped to playing</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_3slots_layout</Action>
+    <Description>Change between the 1-slot and 3-slots layout for effects</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_active</Action>
     <Alias>effect_activate</Alias>
+    <Description>activate/deactivate the effect on a specific slot. example: effect_active 1 &apos;flanger&apos; on or effect_active 1</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_active</Action>
+    <Description>Activate the effect selected using effect_arm_select on the deck selected using effect_arm_deck</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_beats</Action>
+    <Description>Change the speed of the effect selected using effect_arm_select on the deck selected using effect_arm_deck</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_bpm</Action>
+    <Description>Get the bpm of the deck selected using effect_arm_deck</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_deck</Action>
+    <Description>For controllers with a deck selection switch for effects, select the deck effects will be activated on using effect_arm_active
+Use &apos;effect_arm_deck single&apos; to allow only one deck at a time to be armed
+Use &apos;effect_arm_deck master&apos; to select master instead of a deck. &apos;sampler&apos;, &apos;mic&apos;, and &apos;aux&apos; also supported</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_select</Action>
+    <Description>For controllers with a effect selection switch, select the effect that will be activated using effect_arm_active</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_slider</Action>
+    <Description>Move the effect parameter of the effect selected using effect_arm_select on the deck selected using effect_arm_deck
+Use &quot;effect_arm_slider 1 2&quot; to move the second slider of the first slot</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_slider_label</Action>
+    <Description>Get the effect parameter label of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.
+Use &apos;effect_arm_slider_label 1 short&apos; to get the short label</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_slider_name</Action>
+    <Description>Get the effect parameter name of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.
+Use &apos;effect_arm_slider_name 1 short&apos; to get the short label</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_slider_text</Action>
+    <Description>Get the effect parameter text of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_slot</Action>
+    <Description>Toggle if a slot will be activated by using effect_arm_active</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_arm_stem</Action>
+    <Description>Select/unselect a stem to be used with &quot;stems&quot; as slot for effect_ actions
+Accepted stem names are Vocal, HiHat, Bass, Instru, Kick. They can be combined using &quot;+&quot;</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_bank_load</Action>
+    <Description>load the effects in deck fx slots 1 to 6 from the bank specified by the parameter</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_bank_save</Action>
+    <Description>save the effects in deck fx slots 1 to 6 to the bank specified by the parameter</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_beats</Action>
+    <Description>set the beat parameter for certain effects</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_beats_all</Action>
+    <Description>set the beat parameter for 1, 3 or 6 slots depending on skin6FxLayout and skin3FxLayout settings</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_bpm_deck</Action>
+    <Description>set/get a custom bpm for plugins activated on this deck. Use &apos;effect_bpm_deck off&apos; to reset and use the bpm of the song or &apos;effect_bpm_deck 120&apos; to set it to 120 bpm</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_bpm_deck_tap</Action>
+    <Description>tap a custom bpm for plugins activated on this deck. Use &apos;effect_bpm_deck off&apos; to reset and use the bpm of the song</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_button</Action>
+    <Description>&apos;effect_button 1 2&apos; button 2 on slot 1
+&apos;effect_button 2&apos; button 2 on slot 1</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_clone</Action>
+    <Description>Load into this deck all 3 slots from the current left or right deck</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_colorfx</Action>
+    <Description>&apos;effect_colorfx 1 &quot;echo&quot;&apos; to use echo on custom color fx slot 1 (up to 4 custom slots available)</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_colorslider</Action>
+    <Description>Control the effect from center position off, to full on either left or right</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_command</Action>
+    <Description>send a command to this effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_disable_all</Action>
+    <Description>&apos;deck 1 effect_disable_all&apos; Disables all effects on deck 1
+&apos;deck master effect_disable_all&apos; Disables all master effects
+&apos;effect_disable_all sampler&apos; Disables all sampler effects. &apos;aux&apos; or &apos;mic&apos; can be used for mic or aux effects</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_dock_gui</Action>
+    <Description>dock/undock this effect&apos;s control window</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
@@ -3175,6 +3689,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>plugins</Category>
     <Action>effect_has_button</Action>
+    <Description>&apos;effect_has_slider 1 2 on&apos; -&gt; returns true if there is a second button on slot 1</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
@@ -3183,137 +3698,190 @@ eq_mid_slider</Alias>
   <Item>
     <Category>plugins</Category>
     <Action>effect_has_slider</Action>
+    <Description>effect_has_slider 1 2 on -&gt; returns true if there is a second slider on slot 1
+effect_has_slider 1 -&gt; returns true if there is a first slider on slot 0</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_mixfx</Action>
+    <Description>Associate an effect with the crossfader</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_mixfx_activate</Action>
+    <Description>Toggle mix fx on or off. Use effect_mixfx_select to select</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_mixfx_select</Action>
+    <Description>Select the mix fx when moving the crossfader</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_releaseslider</Action>
+    <Description>Control the effect release specific slider</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_releaseslider_active</Action>
+    <Description>Control the effect release specific slider and auto activate the effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_select</Action>
+    <Description>effect_select 2 &quot;echo&quot; -&gt; select effect echo in slot 2
+effect_select 1 -1 -&gt; select previous effect in slot 1
+effect_select +1 -&gt; select next effect in slot 1
+effect_select -&gt; show popup window for slot 1
+effect_select 1 -&gt; show popup window for slot 1
+effect_select 1 0.2 -&gt; select the 2/10th effect from the list in slot 1
+effect_select &quot;audioonlyvisualisation&quot; -&gt; select visualisation used when song has no video
+effect_select deactivates the previous plugin in the specified slot</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_select_multi</Action>
+    <Description>effect_select_multi 2 &quot;echo&quot; -&gt; select effect echo in slot 2
+effect_select_multi 1 -1 -&gt; select previous effect in slot 1
+effect_select_multi +1 -&gt; select next effect in slot 1
+effect_select_multi -&gt; show popup window for slot 1
+effect_select_multi 1 -&gt; show popup window for slot 1
+effect_select_multi 1 0.2 -&gt; select the 2/10th effect from the list in slot 1
+effect_select_multi &quot;video&quot; -&gt; select effect in the video effect slot
+effect_select_multi does not deactivate the previous plugin in the specified slot</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_select_popup</Action>
+    <Description>Same as effect_select, but shows the selection drop-down temporarily for easier selection</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_select_toggle</Action>
+    <Description>Same as effect_select, but will turn on the new effect if the previous effect was on</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_show_gui</Action>
+    <Description>show the control window for this effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_slider</Action>
     <Alias>effect_slider_slider</Alias>
+    <Description>Move the n-th slider on the given effect
+&quot;effect_slider 1 2 50%&quot; : Set slider id 2 on slot 1 to 50%
+&quot;effect_slider 1 0%&quot; : set slider id 1 on slot 1 to 0%</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_slider_active</Action>
     <Alias>effect_slider_activate</Alias>
+    <Description>move a slider and activate the effect as long as the mouse is down</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_slider_reset</Action>
+    <Description>return this plugin slider to its default value</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_slider_skip_length</Action>
+    <Description>Move the n-th slider on the given effect, excluding a length slider if present
+&quot;effect_slider_skip_length 1 2 50%&quot; : Set slider 2 (excluding length) on slot 1 to 50%
+&quot;effect_slider_skip_length 1 0%&quot; : set slider 1 (excluding length) on slot 1 to 0%</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_stems</Action>
+    <Description>Apply effects only to the selected stems. &apos;effect_stems vocal on&apos;
+Stems are Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal or MeloRhythm</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effect_stems_color</Action>
+    <Description>Get the color for the effect_stems button</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>effects_used</Action>
+    <Description>Active when there are any effects activated. Use &quot;effects_used &apos;deck&apos;&quot; to get the effects on the selected deck, or &quot;effects_used &apos;master&apos;&quot; to get effects activated on master.</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_button_count</Action>
+    <Description>get the number of buttons on this effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_button_name</Action>
+    <Description>get the name of the xth button of the currently selected effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_button_shortname</Action>
+    <Description>get the short name of the xth button of the currently selected effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_name</Action>
+    <Description>get the name of the currently selected effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_count</Action>
+    <Description>get the number of slider on this effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_default</Action>
+    <Description>returns the default value for this slider</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_label</Action>
+    <Description>get the label to display under this slider control</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_label_full</Action>
+    <Description>get the label to display under this slider control</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_name</Action>
+    <Description>get the name of the xth slider of the currently selected effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_shortname</Action>
+    <Description>get the shortname to display under this slider control</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_slider_text</Action>
+    <Description>get the full text associated with this slider control</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_string</Action>
     <Alias>effect_string</Alias>
+    <Description>get the text displayed by this effect. Some effects allow setting text as well</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_string_name</Action>
+    <Description>get the label to display for this effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effect_title</Action>
+    <Description>get the title of the currently selected effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_effects_used</Action>
+    <Description>Returns the number of effects currently active</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
@@ -3322,18 +3890,22 @@ eq_mid_slider</Alias>
   <Item>
     <Category>plugins</Category>
     <Action>get_video_fx_slider_label</Action>
+    <Description>get the text to display under this slider control</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_videofx_name</Action>
+    <Description>get the name of the currently selected video effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>get_videotrans_name</Action>
+    <Description>get the name of the currently selected video transition</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>is_releasefx</Action>
+    <Description>query if this effect is in the release effect slot</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
@@ -3342,301 +3914,391 @@ eq_mid_slider</Alias>
   <Item>
     <Category>plugins</Category>
     <Action>show_pluginpage</Action>
+    <Description>show or hide the plugin control windows in the browser area</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_fx</Action>
+    <Description>activate/deactivate the selected video effect</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_fx_button</Action>
+    <Description>push the n-th button of the video effect plugin</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_fx_clear</Action>
+    <Description>deactivate all the active video effects</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_fx_select</Action>
+    <Description>select a video effect plugin. you can specify by name (&apos;video_fx_select &quot;my_plugin&quot;&apos;), relative (&apos;video_fx_select +1&apos;) or without parameters to open a popup window listing the available plugins</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_fx_slider</Action>
     <Alias>video_fx_slider_slider</Alias>
+    <Description>move the n-th slider of the video effect plugin</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_source</Action>
+    <Description>activate video if not active yet, and open the shader selection dialog if shader is the source</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_source_select</Action>
+    <Description>select the plugin used for video source. you can specify by name (&apos;video_source_select &quot;webcam&quot;&apos;), relative (&apos;video_source_select +1&apos;) or without parameters to open a popup window listing the available plugins</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_transition_button</Action>
+    <Description>push the n-th button of the video transition plugin</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_transition_select</Action>
+    <Description>select the plugin used for video transitions. you can specify by name (&apos;video_transition_select &quot;my_plugin&quot;&apos;), relative (&apos;video_transition_select +1&apos;) or without parameters to open a popup window listing the available plugins</Description>
   </Item>
   <Item>
     <Category>plugins</Category>
     <Action>video_transition_slider</Action>
     <Alias>video_transition_slider_slider</Alias>
+    <Description>move the n-th slider of the video transition plugin</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>adjust_cbg</Action>
+    <Description>adjust the beat grid. &apos;adjust_cbg +2&apos; moves the start bar from 4:4. &apos;adjust_cbg +10%&apos; moves the actual bars.</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>beat_tap</Action>
+    <Description>tap on a few beats to set a new bpm for the song if the application didn&apos;t got it right on the first time.</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>edit_bpm</Action>
+    <Description>open the BPM Editor to edit the bpm and beat grid</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>edit_poi</Action>
+    <Description>open the POI Editor to edit the cue points, and other points of interest</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>goto_mixpoint</Action>
+    <Description>Jump to the specified mix point (&quot;StartTempo&quot;, &quot;EndTempo&quot;, &quot;StartCut&quot;, &quot;EndCut&quot;, &quot;StartFade&quot;, &quot;EndFade&quot;, &quot;StartSound&quot;, &quot;EndSound&quot;)
+Example: goto_mixpoint &quot;StartCut&quot;</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>reanalyze</Action>
+    <Description>reanalyze bpm etc... for the file loaded on the deck
+&apos;reanalyze multi&apos; can be used to scan for multiple bpm&apos;s</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>set_bpm</Action>
+    <Description>set the bpm of the song to the set value: &apos;set_bpm 129.3&apos;, or relative to the actual value: &apos;set_bpm 50%&apos;.</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>set_firstbeat</Action>
+    <Description>moves the first beat to the current position, adjusting the beat-grid</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>set_loadpoint</Action>
+    <Description>Set the point where the track will start when loaded</Description>
   </Item>
   <Item>
     <Category>poi</Category>
     <Action>set_mixpoint</Action>
+    <Description>Move the specified mix point to the current position (&quot;StartTempo&quot;, &quot;EndTempo&quot;, &quot;StartCut&quot;, &quot;EndCut&quot;, &quot;StartFade&quot;, &quot;EndFade&quot;, &quot;StartSound&quot;, &quot;EndSound&quot;)
+Example: set_mixpoint &quot;StartTempo&quot;</Description>
   </Item>
   <Item>
     <Category>prelisten</Category>
     <Action>prelisten</Action>
     <Alias>preview</Alias>
+    <Description>Pre-listen the selected track</Description>
   </Item>
   <Item>
     <Category>prelisten</Category>
     <Action>prelisten_options</Action>
+    <Description>Show a context menu with the prelisten player options</Description>
   </Item>
   <Item>
     <Category>prelisten</Category>
     <Action>prelisten_output</Action>
+    <Description>Set this deck to be used for the prelisten player
+Example: &quot;deck 1 prelisten_output&quot;, or to put it back to default: &quot;prelisten_output &apos;auto&apos;&quot;</Description>
   </Item>
   <Item>
     <Category>prelisten</Category>
     <Action>prelisten_pos</Action>
+    <Description>move the position of the prelisten player</Description>
   </Item>
   <Item>
     <Category>prelisten</Category>
     <Action>prelisten_stop</Action>
+    <Description>Stop the prelisten player</Description>
   </Item>
   <Item>
     <Category>record</Category>
     <Action>broadcast</Action>
+    <Description>start or stop to broadcast
+Optionally add parameter to specify &quot;video&quot;, &quot;direct&quot;, &quot;server&quot; or &quot;podcast&quot;. Without parameters it will use the last used mode.</Description>
   </Item>
   <Item>
     <Category>record</Category>
     <Action>broadcast_message</Action>
+    <Description>set or get the broadcast message.</Description>
   </Item>
   <Item>
     <Category>record</Category>
     <Action>record</Action>
+    <Description>start recording the session.</Description>
   </Item>
   <Item>
     <Category>record</Category>
     <Action>record_config</Action>
+    <Description>open the record configuration panel</Description>
   </Item>
   <Item>
     <Category>record</Category>
     <Action>record_cut</Action>
+    <Description>cut the current recording to a new file (or new track if recording to CD)</Description>
   </Item>
   <Item>
     <Category>record</Category>
     <Action>record_vu</Action>
+    <Description>show the volume of what&apos;s being recorded</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sample_color</Action>
+    <Description>get the color for the specified sample (with auto-dim)</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sample_info</Action>
+    <Description>get additional information about the sample, such as &apos;get_sample_info 1 fullpath&apos;
+In addition to the regular column names, &apos;group&apos; is also supported, and &apos;length&apos; returns beat values for loops</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sample_name</Action>
     <Alias>get_sample_slot_name</Alias>
+    <Description>get the name of the specified sample</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sampler_bank</Action>
+    <Description>get the name of the currently loaded sampler bank</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sampler_bank_count</Action>
+    <Description>get the number of sample banks</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sampler_bank_id</Action>
+    <Description>get the number of the currently loaded sampler bank</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sampler_count</Action>
+    <Description>get the number of slots in the current sampler bank</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>get_sampler_slot</Action>
+    <Description>get the number of the sampler slot that currently has the focus</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_abort_rec</Action>
+    <Description>cancel the recording and delete the sample file</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_assign</Action>
+    <Description>&apos;sampler_assign 1 &quot;path to vdjsample&quot;&apos; adds the sample to sample slot 1. (For use in drag&amp;drop in pad page)</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_bank</Action>
+    <Description>Select a new sampler bank. Can be called either by name (sampler_bank &quot;birthday&quot;), by number (sampler_bank 2) or can be assigned to a rotary knob (sampler_bank) or buttons (sampler_bank +1)</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_color</Action>
+    <Description>get the color of the sample on this slot if it has one
+The sample number takes the sampler_pad_page into account, so should be used in combination with sampler_pad</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_edit</Action>
+    <Description>edit the given sample in the SampleEditor</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_group_color</Action>
+    <Description>get the color of a sampler group</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_group_mute</Action>
+    <Description>mute/unmute a sample group. You can specify the group by name, or by group index</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_group_name</Action>
+    <Description>get the name of a sampler group</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_group_volume</Action>
+    <Description>change the volume of all the samples in the give group. You can specify the group by name, or by group index</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_has_group</Action>
+    <Description>returns true if the specified group (specified by name or by index) exists in the current samplebank</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_load_to_deck</Action>
+    <Description>Load the sample from the selected slot to the deck</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_loaded</Action>
+    <Description>&apos;sampler_loaded 1&apos; returns true when there is a sample loaded in slot 1, otherwise returns false</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_loop</Action>
+    <Description>use &apos;sampler_loop -1&apos; or &apos;sampler_loop +1&apos; to change the length of a playing sample
+use &apos;sampler_loop &quot;current&quot; 1&apos; to set the sample to loop for 1 beat or &apos;sampler_loop 1 1&apos; to set sample 1 to 1 beat loop
+use &apos;sampler_loop &quot;current&quot; 0.5 &quot;play&quot; while_pressed&apos; to loop the sample as long as long as the button is pressed for 0.5 beats</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_mode</Action>
     <Alias>sampler_rapidfire</Alias>
+    <Description>set the global trigger mode for the sampler: &quot;sampler_mode &apos;on/off&apos;&quot;, &apos;hold&apos;, &apos;stutter&apos; or &apos;unmute&apos;
+set trigger mode for a specific sample: &quot;sampler_mode 1 &apos;on/off&apos;&quot; to set sample 1 mode or &quot;sampler_mode 1 +1&quot; to cycle</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_mute</Action>
+    <Description>mute/unmute this sample</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_options</Action>
+    <Description>popup the sample menu.
+can also be used with &apos;sampler_options &quot;locked&quot;&apos; or &apos;sampler_options &quot;stemswap&quot;&apos; to change the bank&apos;s settings.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_output</Action>
+    <Description>Select sampler output channel. &apos;deck master sampler_output&apos;, &apos;sampler_output &quot;headphones&quot;&apos;, &apos;deck 1 sampler_output&apos;, &apos;sampler_output &quot;popup&quot;&apos;</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_pad</Action>
+    <Description>&apos;sampler_pad 1&apos; triggers the sample in slot 1, based on the play mode for that sample slot</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_pad_page</Action>
+    <Description>show next page of samples if the bank has more than 8 samples</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_pad_shift</Action>
+    <Description>&apos;sampler_pad_shift 1&apos; stop sample when playing, delete sample otherwise</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_pad_volume</Action>
+    <Description>&apos;sampler_pad_volume 1&apos; sets the volume of the sample on the first pad
+&apos;sampler_pad_volume &quot;siren&quot;&apos; sets the volume of the sample &apos;siren.vdjsample&apos;.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_pfl</Action>
+    <Description>Select if the sampler is sent to the headphones. (can be used with a slider or a % to specify the volume: &apos;sampler_pfl 75%&apos;)</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_play</Action>
+    <Description>play the selected sample. syntax &apos;sampler_play&apos; plays the default sample. 
+&apos;sampler_play 4&apos; plays the fourth sample.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_play_stop</Action>
+    <Description>play the selected sample if it&apos;s not already playing, or stop it if it&apos;s already playing.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_play_stutter</Action>
+    <Description>play the selected sample. if already playing, restart from begining.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_position</Action>
+    <Description>get the current position of the sample</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_rec</Action>
+    <Description>On first press, start to record a new sample. On second press, stop to record
+Use &apos;sampler_rec &quot;mic&quot;&apos; to record a sample from microphone, or &apos;sampler_rec &quot;master&quot;&apos; to record from master output
+If the deck is on loop, a loop sample will immediately be created. If the deck is playing, it will record what&apos;s playing until the stop. If the deck is paused, it sets the &apos;entry point&apos;, and the second push will set the &apos;exit point&apos; and use the deck&apos;s file between those two points.
+&apos;sampler_rec 1&apos; or &apos;sampler_rec 1 &quot;mic&quot;&apos; will store the sample in the first slot of the &quot;Record&quot; sample bank, so that it can be used immediately after recording</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_rec_delete</Action>
+    <Description>delete a recording from the &quot;Recordings&quot; bank
+&quot;sampler_rec_delete 3&quot; would delete the sample previously recorded using &quot;sampler_rec 3&quot;</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_select</Action>
     <Alias>sampler_default</Alias>
+    <Description>select which sample is the default sampler slot for that deck. syntax &apos;sampler select 5&apos; selects the fifth sampler slot. &apos;sampler select +1&apos; scrolls through the sampler slots. &apos;sampler select&apos; open a popup menu to select the new default sampler slot.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_start_rec</Action>
+    <Description>start to record (from the deck, or from mic or master if specified) in order to create a new sample file</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_stop</Action>
+    <Description>stop the selected sample. syntax &apos;sampler_stop&apos; stops the default sample. &apos;sampler_stop 4&apos; stops the fourth sampler slot. &apos;sampler_stop all&apos; stops all samples.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_stop_rec</Action>
+    <Description>stop the recording and save the result in a sample file</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_used</Action>
     <Alias>get_sampler_used</Alias>
+    <Description>check if a sample is playing (or if used with &apos;sampler_used 4&apos; check if exactly 4 samples are playing)</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
@@ -3645,14 +4307,19 @@ eq_mid_slider</Alias>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_volume</Action>
+    <Description>&apos;sampler_volume&apos; sets the volume of the sample that has the focus, on the selected deck.
+&apos;sampler_volume 1&apos; sets the volume of the sample in slot 1 in the current bank.
+&apos;sampler_volume &quot;siren&quot;&apos; sets the volume of the sample &apos;siren.vdjsample&apos;.</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_volume_master</Action>
+    <Description>&apos;sampler_volume_master&apos; sets the master volume of the sampler</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
     <Action>sampler_volume_nogroup</Action>
+    <Description>sets the volume of the sample without changing the volume of other samples in the same group</Description>
   </Item>
   <Item>
     <Category>sampler</Category>
@@ -3674,91 +4341,120 @@ eq_mid_slider</Alias>
     <Category>sampler</Category>
     <Action>scratchbank_unload</Action>
     <Alias>sampler_unload_from_deck</Alias>
+    <Description>Unload the song previously loaded using scratchbank_load_to_deck from deck and load back the last song</Description>
   </Item>
   <Item>
     <Category>sandbox</Category>
     <Action>can_sandbox</Action>
+    <Description>returns true if virtualdj can be sandboxed.
+sandbox cannot be activated while you have effects or samples active, or video, or if you&apos;re scratching, or if you have more than one deck playing with the volume up.</Description>
   </Item>
   <Item>
     <Category>sandbox</Category>
     <Action>sandbox</Action>
+    <Description>activate/deactivate sandbox mode.
+in sandbox mode, the master output continues to play what it was playing without being affected by your actions, and you can move both decks to whatever position you want, in order to prelisten your upcomming mix.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>auto_bpm_transition</Action>
+    <Description>When pressed, the bpm of the song is gradually moved to the bpm of the other deck while keeping both songs at the same bpm
+When smartPlay or autoBPMMatch are on, it will move to the bpm of the other deck at normal speed
+When using parameter &apos;source_original&apos;, &apos;target_original&apos; or &apos;target_current&apos; you can force which bpm it will transition to</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>auto_bpm_transition_options</Action>
+    <Description>Enable/Disable certain features of the auto_bpm_transition.
+First parameter can be &apos;length&apos;, &apos;loop&apos;, &apos;stems&apos;, &apos;master_tempo&apos;, &apos;autostart&apos;
+When selecting stems to disable, use &apos;auto_bpm_transition_options stems vocal&apos; for example</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>auto_sync_settings</Action>
+    <Description>Set some pre-defined values for the main automatic sync settings (auto match bpm, auto match key, auto sync, auto pitch lock) depending on the skin category</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>beatlock</Action>
+    <Description>When beatlock is activated, the songs are kept synchronized, even when moving the pitch, scratching, etc...</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>get_bpm_match</Action>
+    <Description>Returns 0.5 when bpm&apos;s are synchronized</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>is_sync</Action>
+    <Description>on when tracks are synchronized (bpm and phase while playing, bpm when not playing)</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>match_bpm</Action>
+    <Description>set the pitch to match the BPM of the other deck.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>match_gain</Action>
+    <Description>set the gain to match the other deck.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>phrase_sync</Action>
+    <Description>shift by a number of beat to match the phrase of the other deck (default 4:4, but can specify &apos;phrase_sync 16&apos; for example)</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>play_onbeat</Action>
+    <Description>instantly synchronize the song with the other deck, using local beat information instead of the global beatgrid, but don&apos;t change the pitch.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>play_sync</Action>
+    <Description>play the song instantly synchronized with the other deck.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>play_sync_onbeat</Action>
     <Alias>sync_nocbg</Alias>
+    <Description>instantly synchronize the song with the other deck, using local beat information instead of the global beatgrid.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>quantize_all</Action>
+    <Description>Set all quantize options</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>smart_fader</Action>
+    <Description>When smart fader is activated, songs are synchronized while using the crossfader, and the tempo moves toward the tempo of the song that is being faded into</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>sync</Action>
+    <Description>smoothly synchronize the song with the other deck.</Description>
   </Item>
   <Item>
     <Category>sync</Category>
     <Action>sync_hint</Action>
+    <Description>sync_hint &apos;pitch&apos; returns true if the pitch should be matched. Then sync_hint &apos;phase&apos; returns true if the phase should be synced</Description>
   </Item>
   <Item>
     <Category>text</Category>
     <Action>countdown</Action>
+    <Description>Count down to a specific date or time. Example: countdown &apos;2025/01/01 00:00&apos;
+Second parameter can be used to optionally format the return value. Use %full, %HH, %MM, %SS, %DD</Description>
   </Item>
   <Item>
     <Category>text</Category>
     <Action>get_status</Action>
+    <Description>get information about background tasks</Description>
   </Item>
   <Item>
     <Category>text</Category>
     <Action>get_text</Action>
+    <Description>get some text. You can use the inverted apostrophe to query VDJScript results within the text: &quot;get text &apos;You are listening to `get loaded_song &quot;title&quot;` at `volume` volume.&quot;.\nVDJScript returning booleans (buttons) will be displayed as &quot;on&quot; or &quot;off&quot;.\nVDJScript returning values (sliders) will be displayed as a percentage.\n(you can also (but it&apos;s being deprecated in VDJ7) use % shortcuts for some common queries: &quot;get text &apos;you are listening to %title by %author&apos;&quot;)</Description>
   </Item>
   <Item>
     <Category>text</Category>
@@ -3771,6 +4467,7 @@ eq_mid_slider</Alias>
   <Item>
     <Category>timecode</Category>
     <Action>get_hastimecode</Action>
+    <Description>returns true if the current soundconfig includes some timecode inputs</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
@@ -3779,110 +4476,143 @@ eq_mid_slider</Alias>
   <Item>
     <Category>timecode</Category>
     <Action>invert_timecode</Action>
+    <Description>Invert timecode control (for 1 timecode source, switch it through available decks, for 2 timecode sources, from 1 to 3, 2 to 4)</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_active</Action>
+    <Description>Select if the deck is controlled by a timecode signal.
+(note: You can use &apos;timecode_active x&apos; where x is the turntable number, to assign the same turntable to control several decks at once: &apos;deck 1 timecode_active 1 on &amp; deck 2 timecode_active 1 on&apos;)</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_bypass</Action>
+    <Description>Use the timecode turntable as linein input</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_cd_mode</Action>
+    <Description>Force timecode to CD mode (use when using a vinyl timecode on a cd or other digital device)</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_config</Action>
+    <Description>Open the timecode config window</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_mode</Action>
+    <Description>Set the timecode mode: &apos;smart&apos;, &apos;absolute&apos;, &apos;relative&apos;.</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_motor_enable</Action>
+    <Description>Hybrid turntables that send midi messages to indicate if motor is enabled can use this</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_options</Action>
+    <Description>Show some timecode options</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_pitch</Action>
+    <Description>For controllers that send the pitch through midi, let the timecode engine know the pitch slider&apos;s position</Description>
   </Item>
   <Item>
     <Category>timecode</Category>
     <Action>timecode_reset_pitch</Action>
+    <Description>Reset the &quot;software&quot; pitch to 100%, so that the deck pitch matches the turntable pitch exactly, and needle-drop is truly absolute</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>has_video_mix</Action>
+    <Description>return true if video output is using transition and video-crossfader with one or more video sources, false if it&apos;s playing audio-only and using a source plugin</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>is_audioonlyvisualisation</Action>
+    <Description>return true if this deck has the audio only visualisation running on it</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>is_video</Action>
+    <Description>return true if this deck has some video</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>leftvideo</Action>
+    <Description>assign this deck to the left of the video crossfader: &quot;deck 3 leftvideo&quot; or &quot;leftvideo +1&quot; or &quot;leftvideo &apos;auto&apos;&quot;.</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>leftvideo_button</Action>
+    <Description>simple button to control the left video source: &quot;deck 3 leftvideo_button&quot;.</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>over_video</Action>
     <Alias>overvideo</Alias>
+    <Description>force this deck&apos;s video output on the video master</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>rightvideo</Action>
+    <Description>assign this deck to the right of the video crossfader: &quot;deck 3 rightvideo&quot; or &quot;rightvideo +1&quot; or &quot;rightvideo &apos;auto&apos;&quot;.</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>rightvideo_button</Action>
+    <Description>simple button to control the right video source: &quot;deck 3 rightvideo_button&quot;.</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video</Action>
+    <Description>open or close the video window</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_crossfader</Action>
+    <Description>set the video crossfader</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_crossfader_auto</Action>
+    <Description>move the video crossfader automatically according to which side is playing, cueing, scratching, etc...</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_crossfader_link</Action>
+    <Description>link or unlink the video crossfader to the audio crossfader</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_delay</Action>
+    <Description>set a delay between video or audio to synchronize output (in milliseconds)</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_fadetoblack</Action>
+    <Description>activate/deactivate fade-to-black on volume sliders</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_level</Action>
+    <Description>fade-to-black independent slider for the left or right video deck</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_output</Action>
+    <Description>Show menu to select on which monitor to open the video output.
+You can also specify a specific output: &quot;video_output 1&quot; to open video output on the first monitor
+To just show or hide the output use &quot;video_output on&quot; or &quot;video_output off&quot;. To toggle output, use &quot;video_output ? video_output off : video_output on&quot;</Description>
   </Item>
   <Item>
     <Category>video</Category>
     <Action>video_transition</Action>
+    <Description>Launch a transition from one video deck to the other.
+You can specify the duration of the transition: &apos;video_transition 1000ms&apos;
+You can specify the direction of the transition: &apos;video_transition &quot;left&quot;&apos; or &apos;video_transition &quot;left&quot; 1000ms&apos;
+You can specify the location to transition to using a percentage (or assign it to a slider): &apos;video_transition 50%&apos; or &apos;video_transition 1000ms 50%&apos;</Description>
   </Item>
 </VDJScriptList>
