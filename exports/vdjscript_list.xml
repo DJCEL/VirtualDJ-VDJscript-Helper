@@ -3,12 +3,14 @@
   <Item>
     <Category>flow</Category>
     <Action>down</Action>
-    <Description>execute different actions depending if the key if pressed or released: &apos;down ? action1 : action2&apos;</Description>
+    <Description>execute different actions depending if the key is pressed or released.</Description>
+    <Examples>&apos;down ? action1 : action2&apos;</Examples>
   </Item>
   <Item>
     <Category>flow</Category>
     <Action>isrepeat</Action>
-    <Description>execute different actions depending if the key is being repeated or if it&apos;s the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down): &apos;isrepeat ? nothing : goto_cue&apos;)</Description>
+    <Description>execute different actions depending if the key is being repeated or if it&apos;s the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))</Description>
+    <Examples>&apos;isrepeat ? nothing : goto_cue&apos;</Examples>
   </Item>
   <Item>
     <Category>flow</Category>
@@ -18,7 +20,8 @@
   <Item>
     <Category>flow</Category>
     <Action>up</Action>
-    <Description>execute different actions depending if the key if pressed or released: &apos;up ? action1 : action2&apos;</Description>
+    <Description>execute different actions depending if the key is pressed or released.</Description>
+    <Examples>&apos;up ? action1 : action2&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -39,7 +42,8 @@
     <Category>param</Category>
     <Action>constant</Action>
     <Alias>get_constant</Alias>
-    <Description>Return the specified value Example: &apos;get constant 75%&apos; always returns 75%</Description>
+    <Description>Return the specified value. &apos;get constant 75%&apos; always returns 75%</Description>
+    <Examples>&apos;get constant 75%&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -50,6 +54,7 @@
     <Category>param</Category>
     <Action>fadeout</Action>
     <Description>&apos;loop &amp; fadeout 10000ms 3000ms&apos; will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: &apos;fadeout 10000ms 3000ms `loop`&apos;</Description>
+    <Examples>&apos;loop &amp; fadeout 10000ms 3000ms&apos; | &apos;fadeout 10000ms 3000ms `loop`&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -61,17 +66,20 @@
     <Category>param</Category>
     <Action>param_1_x</Action>
     <Description>invert the value of the calling slider/encoder/button (calculate 1/x) &apos;param_1_x &amp; effect slider&apos;</Description>
+    <Examples>&apos;param_1_x &amp; effect_slider&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_add</Action>
     <Description>add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: &apos;param_add `get_var a` `get_var b`&apos;</Description>
+    <Examples>&apos;param_add `get_var a` `get_var b`&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_bigger</Action>
     <Alias>param_greater</Alias>
     <Description>check if the value of the calling slider/encoder/button is bigger than something: &apos;param_bigger 0 ? sampler loop 200% : sampler loop 50%&apos; compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: &apos;param_bigger pitch pitch_slider&apos;</Description>
+    <Examples>&apos;param_bigger 0 ? sampler_loop 200% : sampler_loop 50%&apos; | &apos;param_bigger pitch pitch_slider&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>

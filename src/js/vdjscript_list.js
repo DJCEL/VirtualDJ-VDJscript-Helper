@@ -7,11 +7,13 @@ const vdjscript_list =
         {
             "down":
             {
-                "description": "execute different actions depending if the key if pressed or released: 'down ? action1 : action2'"
+                "description": "execute different actions depending if the key is pressed or released.",
+                "examples": "'down ? action1 : action2'"
             },
             "isrepeat":
             {
-                "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down): 'isrepeat ? nothing : goto_cue')"
+                "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))",
+                "examples": "'isrepeat ? nothing : goto_cue'"
             },
             "nothing":
             {
@@ -19,18 +21,21 @@ const vdjscript_list =
             },
             "up":
             {
-                "description": "execute different actions depending if the key if pressed or released: 'up ? action1 : action2'"
+                "description": "execute different actions depending if the key is released or pressed.",
+                "examples": "'up ? action1 : action2'"
             }
         },
         "param":
         {
             "blink":
             {
-                "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'"
+                "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'",
+                "examples": "'blink 1000ms' | 'blink 1bt' | 'blink 1bt 25%'"
             },
             "color":
             {
-                "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)"
+                "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
+                "examples": "'color red' | 'color \"#C08040\"' | 'color 0.8 0.5 0.25' | 'color 75% red' | 'color 0.66'"
             },
             "color_mix":
             {
@@ -38,8 +43,9 @@ const vdjscript_list =
             },
             "constant":
             {
-                "description": "Return the specified value Example: 'get constant 75%' always returns 75%",
-                "alias": "get_constant"
+                "description": "Return the specified value. 'get constant 75%' always returns 75%",
+                "alias": "get_constant",
+                "examples": "'get constant 75%'"
             },
             "dim":
             {
@@ -47,7 +53,8 @@ const vdjscript_list =
             },
             "fadeout":
             {
-                "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'"
+                "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'",
+                "examples": "'loop & fadeout 10000ms 3000ms' | 'fadeout 10000ms 3000ms `loop`'"
             },
             "false":
             {
@@ -56,20 +63,24 @@ const vdjscript_list =
             },
             "param_1_x":
             {
-                "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'"
+                "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'",
+                "examples": "'param_1_x & effect_slider'"
             },
             "param_add":
             {
-                "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'"
+                "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'",
+                "examples": "'param_add `get_var a` `get_var b`'"
             },
             "param_bigger":
             {
                 "description": "check if the value of the calling slider/encoder/button is bigger than something: 'param_bigger 0 ? sampler loop 200% : sampler loop 50%' compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: 'param_bigger pitch pitch_slider'",
-                "alias": "param_greater"
+                "alias": "param_greater",
+                "examples": "'param_bigger 0 ? sampler_loop 200% : sampler_loop 50%' | 'param_bigger pitch pitch_slider'"
             },
             "param_cast":
             {
-                "description": "cast the value of the previous query action into a new type: 'pitch_range & param_cast \"percentage\"'. Valid types are 'integer', 'float', 'percentage', 'ms', 'boolean', 'beats', 'text'. casting to text can also optionally limit the number of characters: 'get_browsed_song \"artist\" & param_cast \"text\" 5' to format a number as text with a specific number of digits: 'get_bpm & param_cast \"000\"' param_cast 'int_trunc' : provides the integer part of a number without rounding to the nearest integer param_cast 'frac' : provides the decimal part of a number. param_cast 'relative' and param_cast 'absolute' : change the parameter to be a relative or absolute value"
+                "description": "cast the value of the previous query action into a new type: 'pitch_range & param_cast \"percentage\"'. Valid types are 'integer', 'float', 'percentage', 'ms', 'boolean', 'beats', 'text'. casting to text can also optionally limit the number of characters: 'get_browsed_song \"artist\" & param_cast \"text\" 5' to format a number as text with a specific number of digits: 'get_bpm & param_cast \"000\"' param_cast 'int_trunc' : provides the integer part of a number without rounding to the nearest integer param_cast 'frac' : provides the decimal part of a number. param_cast 'relative' and param_cast 'absolute' : change the parameter to be a relative or absolute value",
+                "examples": "'pitch_range & param_cast \"percentage\"' | 'get_browsed_song \"artist\" & param_cast \"text\" 5' | 'get_bpm & param_cast \"000\"'"
             },
             "param_contains":
             {

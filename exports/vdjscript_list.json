@@ -4,12 +4,14 @@
     {
       "category": "flow",
       "action": "down",
-      "description": "execute different actions depending if the key if pressed or released: 'down ? action1 : action2'"
+      "description": "execute different actions depending if the key is pressed or released.",
+      "examples": "'down ? action1 : action2'"
     },
     {
       "category": "flow",
       "action": "isrepeat",
-      "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down): 'isrepeat ? nothing : goto_cue')"
+      "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))",
+      "examples": "'isrepeat ? nothing : goto_cue'"
     },
     {
       "category": "flow",
@@ -19,7 +21,8 @@
     {
       "category": "flow",
       "action": "up",
-      "description": "execute different actions depending if the key if pressed or released: 'up ? action1 : action2'"
+      "description": "execute different actions depending if the key is pressed or released.",
+      "examples": "'up ? action1 : action2'"
     },
     {
       "category": "param",
@@ -39,8 +42,9 @@
     {
       "category": "param",
       "action": "constant",
-      "description": "Return the specified value Example: 'get constant 75%' always returns 75%",
-      "alias": "get_constant"
+      "description": "Return the specified value. 'get constant 75%' always returns 75%",
+      "alias": "get_constant",
+      "examples": "'get constant 75%'"
     },
     {
       "category": "param",
@@ -50,7 +54,8 @@
     {
       "category": "param",
       "action": "fadeout",
-      "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'"
+      "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'",
+      "examples": "'loop & fadeout 10000ms 3000ms' | 'fadeout 10000ms 3000ms `loop`'"
     },
     {
       "category": "param",
@@ -61,18 +66,21 @@
     {
       "category": "param",
       "action": "param_1_x",
-      "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'"
+      "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'",
+      "examples": "'param_1_x & effect_slider'"
     },
     {
       "category": "param",
       "action": "param_add",
-      "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'"
+      "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'",
+      "examples": "'param_add `get_var a` `get_var b`'"
     },
     {
       "category": "param",
       "action": "param_bigger",
       "description": "check if the value of the calling slider/encoder/button is bigger than something: 'param_bigger 0 ? sampler loop 200% : sampler loop 50%' compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: 'param_bigger pitch pitch_slider'",
-      "alias": "param_greater"
+      "alias": "param_greater",
+      "examples": "'param_bigger 0 ? sampler_loop 200% : sampler_loop 50%' | 'param_bigger pitch pitch_slider'"
     },
     {
       "category": "param",
