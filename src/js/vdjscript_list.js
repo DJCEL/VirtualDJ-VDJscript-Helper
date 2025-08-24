@@ -1127,7 +1127,7 @@ const vdjscript_list =
             },
             "browser_shortcut":
             {
-                "description": "'browser_shortcut': assign the current folder as a new shortcut\n'browser_shortcut X': go to the folder assigned to the Xth shortcut"
+                "description": "'browser_shortcut': assign the current folder as a new shortcut. 'browser_shortcut X': go to the folder assigned to the Xth shortcut"
             },
             "browser_sort":
             {
@@ -1418,7 +1418,7 @@ const vdjscript_list =
             },
             "setting":
             {
-                "description": "read or write a specific setting (see config window for the list of all settings names)\nExample: setting \"jogSensitivityScratch\" 80% \nExample: setting \"videoRandomTransition\" on"
+                "description": "read or write a specific setting (see config window for the list of all settings names). Example: setting \"jogSensitivityScratch\" 80% . Example: setting \"videoRandomTransition\" on"
             },
             "setting_ismodified":
             {
@@ -1471,7 +1471,7 @@ const vdjscript_list =
             },
             "assign_controller":
             {
-                "description": "Assign a specific controller to this deck. \n'deck 1 assign_controller \"CDJ400\" 2' assigns the second CDJ400 to deck 1\nOr in a controller mapping 'deck 1 assign_controller' will assign the controller the action was executed from to deck 1."
+                "description": "Assign a specific controller to this deck. . 'deck 1 assign_controller \"CDJ400\" 2' assigns the second CDJ400 to deck 1. Or in a controller mapping 'deck 1 assign_controller' will assign the controller the action was executed from to deck 1."
             },
             "controller_battery":
             {
@@ -1479,7 +1479,7 @@ const vdjscript_list =
             },
             "controller_mapping":
             {
-                "description": "Assign a mapping to a controller\n'controller_mapping \"My Mapping\"' assigns the mapping 'My Mapping' to the controller the command was executed on\n'controller_mapping \"CDJ400\" \"My Mapping\"' assigns the mapping 'My Mapping' to all CDJ400s\n'controller_mapping \"CDJ400\" \"My Mapping\" 2' assigns the mapping 'My Mapping' to the second CDJ400"
+                "description": "Assign a mapping to a controller. 'controller_mapping \"My Mapping\"' assigns the mapping 'My Mapping' to the controller the command was executed on. 'controller_mapping \"CDJ400\" \"My Mapping\"' assigns the mapping 'My Mapping' to all CDJ400s. 'controller_mapping \"CDJ400\" \"My Mapping\" 2' assigns the mapping 'My Mapping' to the second CDJ400"
             },
             "controllerscreen_deck":
             {
@@ -1491,7 +1491,7 @@ const vdjscript_list =
             },
             "device_side":
             {
-                "description": "Assign a different action for a button or slider of a device depending on which side of the device it is on: \"device_side 'left' ? action_for_left : action_for_right\"\nFor more than 2-deck controllers, you can use \"device_side 1 ? action1 : device_side 2 ? action2 ? device_side 3 ? action3 : etc...\""
+                "description": "Assign a different action for a button or slider of a device depending on which side of the device it is on: \"device_side 'left' ? action_for_left : action_for_right\". For more than 2-deck controllers, you can use \"device_side 1 ? action1 : device_side 2 ? action2 ? device_side 3 ? action3 : etc...\""
             },
             "display_time":
             {
@@ -1527,7 +1527,7 @@ const vdjscript_list =
             },
             "effect_fxsendreturndeck_multi":
             {
-                "description": "Select which source to apply fx to for a specific send/return channel in case there are more than one\n'deck 1 effect_fxsendreturndeck_multi master' : Apply master fx on the first fx send/return pair\n'deck 2 effect_fxsendreturndeck_multi mic' : Apply mic fx on the second fx send/return pair\n'deck 2 effect_fxsendreturndeck_multi 4' : Apply deck 4 fx on the second fx send/return pair"
+                "description": "Select which source to apply fx to for a specific send/return channel in case there are more than one. 'deck 1 effect_fxsendreturndeck_multi master' : Apply master fx on the first fx send/return pair. 'deck 2 effect_fxsendreturndeck_multi mic' : Apply mic fx on the second fx send/return pair. 'deck 2 effect_fxsendreturndeck_multi 4' : Apply deck 4 fx on the second fx send/return pair"
             },
             "effect_fxsendreturnenable":
             {
@@ -1607,7 +1607,7 @@ const vdjscript_list =
             },
             "keyboard_shortcuts":
             {
-                "description": "Map to CTRL or ALT. While pressed will show keyboard overlay in browser. Double-press to activate sticky keys.\nAccepts time to delay showing overlay (keyboard_shortcuts 500ms). In scripts can also be used to turn on or off the overlay manually (keyboard_shortcuts on)"
+                "description": "Map to CTRL or ALT. While pressed will show keyboard overlay in browser. Double-press to activate sticky keys.. Accepts time to delay showing overlay (keyboard_shortcuts 500ms). In scripts can also be used to turn on or off the overlay manually (keyboard_shortcuts on)"
             },
             "menu":
             {
@@ -1651,7 +1651,7 @@ const vdjscript_list =
             },
             "os2l_button":
             {
-                "description": "Send a command to a DMX software over OS2L: 'os2l_button \"blackout\"', 'os2l_button \"fog machine\" while_pressed', etc.\nIf you want to specify a page, you can use 'os2l_button \"mypage\" \"mybutton\"'.\nIf the DMX software doesn't send feedback commands, os2l_button acts as a flash button (it sends 'on' when pressed, 'off' when released) - use 'os2l_button \"mybutton\" on' to not send commands on release.\nIf the DMX software sends feedback commands, os2l_button acts as a toggle button (it sends the opposite of the last feedback when pressed, nothing on release) - use 'os2l_button \"mybutton\" while_pressed' to send a command on release."
+                "description": "Send a command to a DMX software over OS2L: 'os2l_button \"blackout\"', 'os2l_button \"fog machine\" while_pressed', etc.. If you want to specify a page, you can use 'os2l_button \"mypage\" \"mybutton\"'.. If the DMX software doesn't send feedback commands, os2l_button acts as a flash button (it sends 'on' when pressed, 'off' when released) - use 'os2l_button \"mybutton\" on' to not send commands on release.. If the DMX software sends feedback commands, os2l_button acts as a toggle button (it sends the opposite of the last feedback when pressed, nothing on release) - use 'os2l_button \"mybutton\" while_pressed' to send a command on release."
             },
             "os2l_cmd":
             {
@@ -1663,7 +1663,7 @@ const vdjscript_list =
             },
             "os2l_scene":
             {
-                "description": "similar to os2l_button, but sends 'on' to the DMX software only if the button was not active yet, and only if the deck is audible. (requires feedback from the DMX software)\nwhen the deck is not audible, the scene will be queued and started when the deck becomes audible\nos2l_scene \"scene1\"\nos2l_scene \"mypage\" \"myscene\""
+                "description": "similar to os2l_button, but sends 'on' to the DMX software only if the button was not active yet, and only if the deck is audible. (requires feedback from the DMX software). when the deck is not audible, the scene will be queued and started when the deck becomes audible. os2l_scene \"scene1\". os2l_scene \"mypage\" \"myscene\""
             },
             "phase_movement":
             {
@@ -1711,7 +1711,7 @@ const vdjscript_list =
             },
             "set_deck":
             {
-                "description": "use script or implicit variable to affect which deck the action is applied to\nexample: 'set_deck `get_var varname` & play'"
+                "description": "use script or implicit variable to affect which deck the action is applied to. example: 'set_deck `get_var varname` & play'"
             },
             "shift":
             {
@@ -1719,7 +1719,7 @@ const vdjscript_list =
             },
             "show_text":
             {
-                "description": "Show text on controller display. (If your controller uses get_display for the displays)\n\"show_text 'Line 1|Line 2' 3000ms\" will show 2 lines of text for 3 seconds (time optional, | separates lines)\n\"show_text '$myvar$'\" shows the contents of the variable $myvar"
+                "description": "Show text on controller display. (If your controller uses get_display for the displays). \"show_text 'Line 1|Line 2' 3000ms\" will show 2 lines of text for 3 seconds (time optional, | separates lines). \"show_text '$myvar$'\" shows the contents of the variable $myvar"
             },
             "v7_status":
             {
@@ -1743,19 +1743,19 @@ const vdjscript_list =
             },
             "cue_color":
             {
-                "description": "query or set the color of a cue point\nQuery example: cue_color 1\nSet example: cue_color 1 'yellow'"
+                "description": "query or set the color of a cue point. Query example: cue_color 1. Set example: cue_color 1 'yellow'"
             },
             "cue_countdown":
             {
-                "description": "count down to the next cue (or end) in beats\nuse 'cue_countdown color' or 'cue_countdown name' to get the name or color of the next cue point"
+                "description": "count down to the next cue (or end) in beats. use 'cue_countdown color' or 'cue_countdown name' to get the name or color of the next cue point"
             },
             "cue_counter":
             {
-                "description": "count up or down to the nearest cue point in beats\nuse 'cue_counter color' or 'cue_counter name' to get the name or color of the nearest cue point"
+                "description": "count up or down to the nearest cue point in beats. use 'cue_counter color' or 'cue_counter name' to get the name or color of the nearest cue point"
             },
             "cue_countup":
             {
-                "description": "count up from the last cue point (or start) in beats\nuse 'cue_countup color' or 'cue_countup name' to get the name or color of the last cue point"
+                "description": "count up from the last cue point (or start) in beats. use 'cue_countup color' or 'cue_countup name' to get the name or color of the last cue point"
             },
             "cue_cup":
             {
@@ -1763,7 +1763,7 @@ const vdjscript_list =
             },
             "cue_display":
             {
-                "description": "Show information about a cue point based on the cueDisplay config option.\nExample: 'cue_display 1'\nCan also be used to modify the cueDisplay option by using +1 or -1 as parameter: 'cue_display +1'\nThe cueDisplay option can also be set by name: 'cue_display name'"
+                "description": "Show information about a cue point based on the cueDisplay config option.. Example: 'cue_display 1'. Can also be used to modify the cueDisplay option by using +1 or -1 as parameter: 'cue_display +1'. The cueDisplay option can also be set by name: 'cue_display name'"
             },
             "cue_loop":
             {
@@ -1787,7 +1787,7 @@ const vdjscript_list =
             },
             "cue_pos":
             {
-                "description": "\"cue_pos 1\" returns the position of cue point #1 as a percentage\n\"cue_pos 1 msec\", \"cue_pos 1 sec\", \"cue_pos 1 min\" returns the position of cue point #1, msec, sec and min parts\n\"cue_pos 1 mseconly\" returns the position of cue point #1 in milliseconds\n\"cue_pos 1 beats\" returns the position of the cue point in number of beats from first beat"
+                "description": "\"cue_pos 1\" returns the position of cue point #1 as a percentage. \"cue_pos 1 msec\", \"cue_pos 1 sec\", \"cue_pos 1 min\" returns the position of cue point #1, msec, sec and min parts. \"cue_pos 1 mseconly\" returns the position of cue point #1 in milliseconds. \"cue_pos 1 beats\" returns the position of the cue point in number of beats from first beat"
             },
             "cue_select":
             {
@@ -1811,7 +1811,7 @@ const vdjscript_list =
             },
             "goto_cue":
             {
-                "description": "Go to the specified cue. Example \"goto_cue 1\", \"goto_cue +1\", \"goto_cue -1\"\n\"goto_cue\" will jump to the currently selected/last used cue."
+                "description": "Go to the specified cue. Example \"goto_cue 1\", \"goto_cue +1\", \"goto_cue -1\". \"goto_cue\" will jump to the currently selected/last used cue."
             },
             "has_cue":
             {
@@ -1851,15 +1851,15 @@ const vdjscript_list =
             },
             "get_deck_color":
             {
-                "description": "return blue or red if the deck is the left deck or right deck (and gray otherwise). Can be used with a darkness modifier: 'get_deck_color 50%'\nUse 'get_deck_color \"absolute\"' or 'get_deck_color \"absolute\" 50%' to get a color based on actual deck rather than left/right (red for deck 1, blue for deck 2, orange for deck 3, green for deck 4)"
+                "description": "return blue or red if the deck is the left deck or right deck (and gray otherwise). Can be used with a darkness modifier: 'get_deck_color 50%'. Use 'get_deck_color \"absolute\"' or 'get_deck_color \"absolute\" 50%' to get a color based on actual deck rather than left/right (red for deck 1, blue for deck 2, orange for deck 3, green for deck 4)"
             },
             "invert_deck":
             {
-                "description": "switch leftdeck between deck 1 and deck 3 or rightdeck between deck 2 and deck 4\n\"invert_deck\" to swap the calling deck, or \"invert_deck 'left'\", \"invert_deck 'right'\" to specifically switch left or right deck"
+                "description": "switch leftdeck between deck 1 and deck 3 or rightdeck between deck 2 and deck 4. \"invert_deck\" to swap the calling deck, or \"invert_deck 'left'\", \"invert_deck 'right'\" to specifically switch left or right deck"
             },
             "leftcross":
             {
-                "description": "assign this deck to the left of the crossfader: \"deck 3 leftcross\"\n\"deck 3 leftcross 'only'\" to assign only deck 3 to left of the crossfader\n\"leftcross 'none'\" to disable the left crossfader"
+                "description": "assign this deck to the left of the crossfader: \"deck 3 leftcross\". \"deck 3 leftcross 'only'\" to assign only deck 3 to left of the crossfader. \"leftcross 'none'\" to disable the left crossfader"
             },
             "leftdeck":
             {
@@ -1887,7 +1887,7 @@ const vdjscript_list =
             },
             "select":
             {
-                "description": "select this deck as 'working deck'. the beat of the working deck will be shown in front in the display, and shortcuts and actions with no specified deck will affect this deck.\\nUnless PFL has been set manually, the PFL will also follow the working deck."
+                "description": "select this deck as 'working deck'. the beat of the working deck will be shown in front in the display, and shortcuts and actions with no specified deck will affect this deck.\. Unless PFL has been set manually, the PFL will also follow the working deck."
             }
         },
         "equalizer":
@@ -1947,7 +1947,7 @@ const vdjscript_list =
             },
             "eq_mode":
             {
-                "description": "Select the behavior of the EQs knobs (frequency, modernEQ or EZRemix)\nCan be used to switch between Frequency and your preferred stems mode using 'eq_mode +1'\nTo change the eq mode only for a single deck, use \"eq_mode +1 deck\" (or \"deck 1 eq_mode +1 deck\" to specify deck 1 in your script)\nTo select a specific behavior, you can use \"eq_mode frequency\", \"eq_mode modernEQ\", \"eq_mode ezRemix\" or \"eq_mode stems\""
+                "description": "Select the behavior of the EQs knobs (frequency, modernEQ or EZRemix). Can be used to switch between Frequency and your preferred stems mode using 'eq_mode +1'. To change the eq mode only for a single deck, use \"eq_mode +1 deck\" (or \"deck 1 eq_mode +1 deck\" to specify deck 1 in your script). To select a specific behavior, you can use \"eq_mode frequency\", \"eq_mode modernEQ\", \"eq_mode ezRemix\" or \"eq_mode stems\""
             },
             "eq_reset":
             {
@@ -1964,7 +1964,7 @@ const vdjscript_list =
             },
             "filter_label":
             {
-                "description": "get the text to display under the filter knob\n(use filter_label \"clean\" to always get the value, and filter_label \"name\" to always get the name)"
+                "description": "get the text to display under the filter knob. (use filter_label \"clean\" to always get the value, and filter_label \"name\" to always get the name)"
             },
             "filter_resonance":
             {
@@ -2000,7 +2000,7 @@ const vdjscript_list =
             },
             "stem":
             {
-                "description": "Change the amount of a stem in the mix. Stem names are: \"HiHat\", \"Vocal\", \"Instru\", \"Bass\", \"Kick\", or you can use aggregate stems: \"Melody\" (Instru+Bass), \"Rhythm\" (HiHat+Kick), \"MeloVocal\" (Melody/Vocal), \"MeloRhythm\" (Melody/Rhythm).\nTo get kill on left side and isolate on right side of the slider, you can use \"FullVocal\", \"FullMelo\" and \"FullRhythm\"\nTo map a slider to always control the equalizer, regardless of EQ mode, you can use \"stem FreqHi\", \"stem FreqMid\", and \"stem FreqLo\""
+                "description": "Change the amount of a stem in the mix. Stem names are: \"HiHat\", \"Vocal\", \"Instru\", \"Bass\", \"Kick\", or you can use aggregate stems: \"Melody\" (Instru+Bass), \"Rhythm\" (HiHat+Kick), \"MeloVocal\" (Melody/Vocal), \"MeloRhythm\" (Melody/Rhythm).. To get kill on left side and isolate on right side of the slider, you can use \"FullVocal\", \"FullMelo\" and \"FullRhythm\". To map a slider to always control the equalizer, regardless of EQ mode, you can use \"stem FreqHi\", \"stem FreqMid\", and \"stem FreqLo\""
             },
             "stem_color":
             {
@@ -2055,7 +2055,7 @@ const vdjscript_list =
             },
             "get_askthedj":
             {
-                "description": "Returns the latest request from ask the dj (requires askTheDJMonitoring setting to be on always)\nUse 'get_askthedj 2' to get the second latest request, etc."
+                "description": "Returns the latest request from ask the dj (requires askTheDJMonitoring setting to be on always). Use 'get_askthedj 2' to get the second latest request, etc."
             },
             "get_askthedj_unread":
             {
@@ -2087,11 +2087,11 @@ const vdjscript_list =
             },
             "get_beat_num":
             {
-                "description": "\"get_beat_num\" returns a value between 1 and 4 indicating the beat in the measure\n\"get_beat_num 1 4\" returns true when the first beat of the measure is currently playing\n\"get_beat_num 1\" returns true when the first beat of a 4-beat measure is currently playing (works from 1 to 4)\n\"get_beat_num 16\" returns a percentage indicating the beat position in a 16-beat phrase (works with any phrase number larger than 4)"
+                "description": "\"get_beat_num\" returns a value between 1 and 4 indicating the beat in the measure. \"get_beat_num 1 4\" returns true when the first beat of the measure is currently playing. \"get_beat_num 1\" returns true when the first beat of a 4-beat measure is currently playing (works from 1 to 4). \"get_beat_num 16\" returns a percentage indicating the beat position in a 16-beat phrase (works with any phrase number larger than 4)"
             },
             "get_beatdiff":
             {
-                "description": "Get the distance between the beat from this deck and the beat from the active deck\n50% means the deck are aligned, 0% means this deck is late half a beat, 100% means it is ahead half a beat\n'get_beatdiff 4' will return the distance percentage between bars instead of beats"
+                "description": "Get the distance between the beat from this deck and the beat from the active deck. 50% means the deck are aligned, 0% means this deck is late half a beat, 100% means it is ahead half a beat. 'get_beatdiff 4' will return the distance percentage between bars instead of beats"
             },
             "get_beatgrid":
             {
@@ -2103,7 +2103,7 @@ const vdjscript_list =
             },
             "get_bpm":
             {
-                "description": "Get the bpm of the song\nUse 'get_bpm absolute' to get the original bpm of the song (not changing when changing the pitch)"
+                "description": "Get the bpm of the song. Use 'get_bpm absolute' to get the original bpm of the song (not changing when changing the pitch)"
             },
             "get_browsed_album":
             {
@@ -2123,7 +2123,7 @@ const vdjscript_list =
             },
             "get_browsed_color":
             {
-                "description": "'get_browsed_color 0 red 255' (item, component, default)\n'get_browsed_color 0 white' (item, default) returns color for selected item. This includes color filters. (For manually selected color only, use 'get_browsed_song color' instead)"
+                "description": "'get_browsed_color 0 red 255' (item, component, default). 'get_browsed_color 0 white' (item, default) returns color for selected item. This includes color filters. (For manually selected color only, use 'get_browsed_song color' instead)"
             },
             "get_browsed_comment":
             {
@@ -2159,7 +2159,7 @@ const vdjscript_list =
             },
             "get_browsed_folder_selection_index":
             {
-                "description": "'get_browsed_folder_selection 1 3' returns true if the first line is the selected line in a browser 3 lines high\n'get_browsed_folder_selection 3' returns the line number of the selected line in a browser 3 lines high (between 1 and 3)"
+                "description": "'get_browsed_folder_selection 1 3' returns true if the first line is the selected line in a browser 3 lines high. 'get_browsed_folder_selection 3' returns the line number of the selected line in a browser 3 lines high (between 1 and 3)"
             },
             "get_browsed_folder_tab":
             {
@@ -2187,7 +2187,7 @@ const vdjscript_list =
             },
             "get_browsed_selection_index":
             {
-                "description": "'get_browsed_selection 1 3' returns true if the first line is the selected line in a browser 3 lines high\n'get_browsed_selection 3' returns the line number of the selected line in a browser 3 lines high (between 1 and 3)"
+                "description": "'get_browsed_selection 1 3' returns true if the first line is the selected line in a browser 3 lines high. 'get_browsed_selection 3' returns the line number of the selected line in a browser 3 lines high (between 1 and 3)"
             },
             "get_browsed_song":
             {
@@ -2304,7 +2304,7 @@ const vdjscript_list =
             },
             "get_loaded_song_color":
             {
-                "description": "'get_loaded_song_color red 255' (component, default color)\n'get_loaded_song_color white' (default color) returns color for the loaded track. This includes color filters. (For manually selected color only, use 'get_loaded_song color' instead)"
+                "description": "'get_loaded_song_color red 255' (component, default color). 'get_loaded_song_color white' (default color) returns color for the loaded track. This includes color filters. (For manually selected color only, use 'get_loaded_song color' instead)"
             },
             "get_membership":
             {
@@ -2312,7 +2312,7 @@ const vdjscript_list =
             },
             "get_phrase_num":
             {
-                "description": "\"get_phrase_num\" returns a value between 1 and 4 indicating the measure number\n\"get_phrase_num 1\" returns true when the first measure of the phrase is currently playing"
+                "description": "\"get_phrase_num\" returns a value between 1 and 4 indicating the measure number. \"get_phrase_num 1\" returns true when the first measure of the phrase is currently playing"
             },
             "get_plugindeck":
             {
@@ -2364,7 +2364,7 @@ const vdjscript_list =
             },
             "get_song_event":
             {
-                "description": "Provide analysis about current and coming events in the song. Can be used when writing visualisation plugins.\nThe first parameter is \"current\" or \"next\" to get the current or the coming event.\nThe second parameter can be \"hasbeats\", \"volume\", \"volume_end\", \"remaining\""
+                "description": "Provide analysis about current and coming events in the song. Can be used when writing visualisation plugins.. The first parameter is \"current\" or \"next\" to get the current or the coming event.. The second parameter can be \"hasbeats\", \"volume\", \"volume_end\", \"remaining\""
             },
             "get_songlength":
             {
@@ -2372,15 +2372,15 @@ const vdjscript_list =
             },
             "get_spectrum_band":
             {
-                "description": "get the level of a single spectrum band. 'get_spectrum_band 1'\nUse 'deck master' in front to get spectrum of the master deck 'deck master get_spectrum_band 1'\nBy default there are 32 bands, to use a smaller number of bands, use 'get_spectrum_band 1 3' to get the first of 3 bands\nThe third parameter can be used to get a spectrum of stems 'get_spectrum_band 1 32 vocals'"
+                "description": "get the level of a single spectrum band. 'get_spectrum_band 1'. Use 'deck master' in front to get spectrum of the master deck 'deck master get_spectrum_band 1'. By default there are 32 bands, to use a smaller number of bands, use 'get_spectrum_band 1 3' to get the first of 3 bands. The third parameter can be used to get a spectrum of stems 'get_spectrum_band 1 32 vocals'"
             },
             "get_time":
             {
-                "description": "get the elapsed time (or remaining or total depending on \"display_time\"), in milliseconds.\nUse 'get time 1000' to get another unit than ms (1000=ms, 25=1/25th of seconds, 44100=frames, etc). \nUse \"elapsed\", \"remain\" or \"total\" to bypass the setting of display_time. Use \"absolute\" not to take the pitch into account.\nOn texts, use \"short\" to hide the decimals. Example: get_time \"remain\" \"short\""
+                "description": "get the elapsed time (or remaining or total depending on \"display_time\"), in milliseconds.. Use 'get time 1000' to get another unit than ms (1000=ms, 25=1/25th of seconds, 44100=frames, etc). . Use \"elapsed\", \"remain\" or \"total\" to bypass the setting of display_time. Use \"absolute\" not to take the pitch into account.. On texts, use \"short\" to hide the decimals. Example: get_time \"remain\" \"short\""
             },
             "get_time_hour":
             {
-                "description": "Get the hours of the elapsed time (or remaining or total, depending on \"display_time\")\nUse 'get_time_hour \"absolute\"' if you don't want to take the pitch variations into account\nYou can write 'get_time_hour \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
+                "description": "Get the hours of the elapsed time (or remaining or total, depending on \"display_time\"). Use 'get_time_hour \"absolute\"' if you don't want to take the pitch variations into account. You can write 'get_time_hour \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
             },
             "get_time_min":
             {
@@ -2388,7 +2388,7 @@ const vdjscript_list =
             },
             "get_time_ms":
             {
-                "description": "get the 1/100th seconds of the elapsed time (or remaining or total, depending on \"display_time\")\nuse 'get_time_ms 1000' to get the actual milliseconds"
+                "description": "get the 1/100th seconds of the elapsed time (or remaining or total, depending on \"display_time\"). use 'get_time_ms 1000' to get the actual milliseconds"
             },
             "get_time_msf":
             {
@@ -2400,7 +2400,7 @@ const vdjscript_list =
             },
             "get_time_sign":
             {
-                "description": "Get the sign (-1 or +1) of the elapsed time (or remaining or total, depending on \"display_time\")\nYou can write 'get_time_sign \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
+                "description": "Get the sign (-1 or +1) of the elapsed time (or remaining or total, depending on \"display_time\"). You can write 'get_time_sign \"elapsed\"' or \"remain\" or \"total\" to bypass the setting of display_time"
             },
             "get_title":
             {
@@ -2479,7 +2479,7 @@ const vdjscript_list =
             },
             "get_next_karaoke_song":
             {
-                "description": "Get info about the upcoming karaoke tracks\nExample 'get_next_karaoke_song \"singer\" +1'"
+                "description": "Get info about the upcoming karaoke tracks. Example 'get_next_karaoke_song \"singer\" +1'"
             },
             "has_karaoke_next":
             {
@@ -2518,7 +2518,7 @@ const vdjscript_list =
             },
             "get_key":
             {
-                "description": "get the key of the current song, based on keyDisplay option\nUse get_key \"musical\" or get_key \"harmonic\" to get a specific display independent of keyDisplay option"
+                "description": "get the key of the current song, based on keyDisplay option. Use get_key \"musical\" or get_key \"harmonic\" to get a specific display independent of keyDisplay option"
             },
             "get_key_color":
             {
@@ -2555,7 +2555,7 @@ const vdjscript_list =
             },
             "key_smooth":
             {
-                "description": "change the key of the song, from -6 (half octave down) to +6 (half octave up), allowing not only multiple of semitones.\nuse key_smooth full for full octave up or down"
+                "description": "change the key of the song, from -6 (half octave down) to +6 (half octave up), allowing not only multiple of semitones.. use key_smooth full for full octave up or down"
             },
             "keycue_pad":
             {
@@ -2594,11 +2594,11 @@ const vdjscript_list =
             },
             "get_loop_in_time":
             {
-                "description": "Get time (in ms) of the start of the loop\nUse \"get_loop_in_time 1.0\" to return the time in seconds instead of milliseconds\nUse \"get_loop_in_time on\" to return the loop in time even when no loop is active"
+                "description": "Get time (in ms) of the start of the loop. Use \"get_loop_in_time 1.0\" to return the time in seconds instead of milliseconds. Use \"get_loop_in_time on\" to return the loop in time even when no loop is active"
             },
             "get_loop_out_time":
             {
-                "description": "Get time (in ms) of the end of the loop\nUse \"get_loop_out_time 1.0\" to return the time in seconds instead of milliseconds\nUse \"get_loop_out_time on\" to return the loop out time even when no loop is active"
+                "description": "Get time (in ms) of the end of the loop. Use \"get_loop_out_time 1.0\" to return the time in seconds instead of milliseconds. Use \"get_loop_out_time on\" to return the loop out time even when no loop is active"
             },
             "get_saved_loop":
             {
@@ -2610,7 +2610,7 @@ const vdjscript_list =
             },
             "loop_adjust":
             {
-                "description": "use the jogwheel to adjust the loop.\nloop_adjust 'move', loop_adjust 'out', loop_adjust 'in' activate a specific loop adjust mode\nloop_adjust -1, loop_adjust +1 emulate moving the jog when loop adjust is active"
+                "description": "use the jogwheel to adjust the loop.. loop_adjust 'move', loop_adjust 'out', loop_adjust 'in' activate a specific loop adjust mode. loop_adjust -1, loop_adjust +1 emulate moving the jog when loop adjust is active"
             },
             "loop_back":
             {
@@ -2622,7 +2622,7 @@ const vdjscript_list =
             },
             "loop_color":
             {
-                "description": "query or set the color of a saved loop\nQuery example: loop_color 1\nSet example: loop_color 1 'yellow'"
+                "description": "query or set the color of a saved loop. Query example: loop_color 1. Set example: loop_color 1 'yellow'"
             },
             "loop_delete":
             {
@@ -2650,11 +2650,11 @@ const vdjscript_list =
             },
             "loop_load":
             {
-                "description": "'loop_load 1' Load the saved loop from slot 1\n'loop_load \"myloop\"' Load saved loop named \"myloop\""
+                "description": "'loop_load 1' Load the saved loop from slot 1. 'loop_load \"myloop\"' Load saved loop named \"myloop\""
             },
             "loop_load_prepare":
             {
-                "description": "'loop_load_prepare 1' Activate/Deactivate the saved loop in slot 1 without jumping to the start point\n'loop_load_prepare \"myloop\"' Activate/Deactivate stored loop named \"myloop\" without jumping to the start point"
+                "description": "'loop_load_prepare 1' Activate/Deactivate the saved loop in slot 1 without jumping to the start point. 'loop_load_prepare \"myloop\"' Activate/Deactivate stored loop named \"myloop\" without jumping to the start point"
             },
             "loop_move":
             {
@@ -2686,7 +2686,7 @@ const vdjscript_list =
             },
             "loop_roll":
             {
-                "description": "\"loop_roll 0.25\" for 1/4th beat loop roll\n\"loop_roll video\" to toggle video loop roll on or off"
+                "description": "\"loop_roll 0.25\" for 1/4th beat loop roll. \"loop_roll video\" to toggle video loop roll on or off"
             },
             "loop_roll_mode":
             {
@@ -2694,7 +2694,7 @@ const vdjscript_list =
             },
             "loop_save":
             {
-                "description": "'loop_save 1' Save current loop in saved loop slot 1\n'loop_save \"myloop\"' Save current loop and name it \"myloop\""
+                "description": "'loop_save 1' Save current loop in saved loop slot 1. 'loop_save \"myloop\"' Save current loop and name it \"myloop\""
             },
             "loop_select":
             {
@@ -2726,7 +2726,7 @@ const vdjscript_list =
             },
             "saved_loop":
             {
-                "description": "'saved_loop 1' Load the saved loop in slot 1 or set if it doesn't exist\n'saved_loop \"myloop\"' Load saved loop named \"myloop\" or set if it doesn't exist"
+                "description": "'saved_loop 1' Load the saved loop in slot 1 or set if it doesn't exist. 'saved_loop \"myloop\"' Load saved loop named \"myloop\" or set if it doesn't exist"
             },
             "saved_loop_autotrigger":
             {
@@ -2734,15 +2734,15 @@ const vdjscript_list =
             },
             "saved_loop_display":
             {
-                "description": "Show information about a saved loop based on the savedLoopDisplay config option.\nExample: 'saved_loop_display 1'\nCan also be used to modify the savedLoopDisplay option by using +1 or -1 as parameter: 'saved_loop_display +1'"
+                "description": "Show information about a saved loop based on the savedLoopDisplay config option.. Example: 'saved_loop_display 1'. Can also be used to modify the savedLoopDisplay option by using +1 or -1 as parameter: 'saved_loop_display +1'"
             },
             "saved_loop_prepare":
             {
-                "description": "'saved_loop_prepare 1' Activate/Deactivate the saved loop in slot 1 without jumping to the start point or set if it doesn't exist\n'saved_loop_prepare \"myloop\"' Activate/Deactivate stored loop named \"myloop\" without jumping to the start point or set if it doesn't exist"
+                "description": "'saved_loop_prepare 1' Activate/Deactivate the saved loop in slot 1 without jumping to the start point or set if it doesn't exist. 'saved_loop_prepare \"myloop\"' Activate/Deactivate stored loop named \"myloop\" without jumping to the start point or set if it doesn't exist"
             },
             "slicer":
             {
-                "description": "\"slicer 1\" to \"slicer 8\" for 8 slicer buttons\n\"slicer 1 'hold'\" to hold the current position on first activate\n\"slicer 'length' +1\" to increase length\n\"slicer 'step' +1\" to increase step size\n\"slicer video\" to toggle video slicer on or off"
+                "description": "\"slicer 1\" to \"slicer 8\" for 8 slicer buttons. \"slicer 1 'hold'\" to hold the current position on first activate. \"slicer 'length' +1\" to increase length. \"slicer 'step' +1\" to increase step size. \"slicer video\" to toggle video slicer on or off"
             }
         },
         "macro":
@@ -2768,7 +2768,7 @@ const vdjscript_list =
             },
             "pad_button_color":
             {
-                "description": "returns the color of the ith pad as should be used on a controller button (changing the color for standby/active/pressed according to the controller's RGB capability).\nif the pad is active and has no color, white is returned.\nif the pad is inactive and has a color, and the controller support full RGB pads, a dimmed color is returned.\nif the pad is active and has a color, and the controller doesn't support full RGB pads, the color is blinking."
+                "description": "returns the color of the ith pad as should be used on a controller button (changing the color for standby/active/pressed according to the controller's RGB capability).. if the pad is active and has no color, white is returned.. if the pad is inactive and has a color, and the controller support full RGB pads, a dimmed color is returned.. if the pad is active and has a color, and the controller doesn't support full RGB pads, the color is blinking."
             },
             "pad_color":
             {
@@ -2838,7 +2838,7 @@ const vdjscript_list =
             },
             "padfx":
             {
-                "description": "Activate/deactivate named effect with a single key. Effect parameters can be specified as well.\n'padfx \"echo\" 40% 90%' to start/stop the echo effect with first parameter at 40% and second parameter at 90%. When the effect is stopped, the parameters return to their original values.\n'padfx \"echo\" 40% 90% smart_pressed' smart_pressed works as a toggle when pressing the button shortly, or as a temporary while holding the button pressed\n'padfx \"echo\" 40% 90% \"TRAIL:on\"' after the sliders, it is possible to add strings to disable or enable switch parameters by defining their name, a colon and \"on\" to enable or \"off\" to disable\n'padfx \"echo out\" 80% \"solostem:vocal\"' as the last parameter, you can add solostem:stemname to only let that stem be audible while applying the effect\n'padfx \"echo out\" \"mutestem:rhythm\"' as the last parameter, you can add mutestem:stemname to mute that stem while applying the effect\n'padfx \"reverb\" \"stemfx:vocal\"' as the last parameter, you can add stemfx:stemname to apply the effect only to that stem (other stems will continue playing normally)\n stem names can be Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal,MeloRhythm"
+                "description": "Activate/deactivate named effect with a single key. Effect parameters can be specified as well.. 'padfx \"echo\" 40% 90%' to start/stop the echo effect with first parameter at 40% and second parameter at 90%. When the effect is stopped, the parameters return to their original values.. 'padfx \"echo\" 40% 90% smart_pressed' smart_pressed works as a toggle when pressing the button shortly, or as a temporary while holding the button pressed. 'padfx \"echo\" 40% 90% \"TRAIL:on\"' after the sliders, it is possible to add strings to disable or enable switch parameters by defining their name, a colon and \"on\" to enable or \"off\" to disable. 'padfx \"echo out\" 80% \"solostem:vocal\"' as the last parameter, you can add solostem:stemname to only let that stem be audible while applying the effect. 'padfx \"echo out\" \"mutestem:rhythm\"' as the last parameter, you can add mutestem:stemname to mute that stem while applying the effect. 'padfx \"reverb\" \"stemfx:vocal\"' as the last parameter, you can add stemfx:stemname to apply the effect only to that stem (other stems will continue playing normally).  stem names can be Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal,MeloRhythm"
             },
             "padfx_single":
             {
@@ -2885,7 +2885,7 @@ const vdjscript_list =
             },
             "pitch":
             {
-                "description": "Set the pitch of the deck. Without parameters it can be assigned to sliders\nUsed with a number, it gives the position on the slider (and therefore account for pitch_range). ('pitch 0.25' set pitch at -10% if pitch range is 20%)\nUsed with a percent it gives an absolute position.  'pitch 112%' set pitch at +12%\nRelative values are possible too. 'pitch +0.1%', 'pitch +0.1 bpm'\nWhen used with 'bpm', the pitch is set to match the bpm. 'pitch 130 bpm' set pitch to match 130 bpm",
+                "description": "Set the pitch of the deck. Without parameters it can be assigned to sliders. Used with a number, it gives the position on the slider (and therefore account for pitch_range). ('pitch 0.25' set pitch at -10% if pitch range is 20%). Used with a percent it gives an absolute position.  'pitch 112%' set pitch at +12%. Relative values are possible too. 'pitch +0.1%', 'pitch +0.1 bpm'. When used with 'bpm', the pitch is set to match the bpm. 'pitch 130 bpm' set pitch to match 130 bpm",
                 "alias": "pitch2 | pitch2_slider | pitch_slider"
             },
             "pitch_bend":
@@ -2903,7 +2903,7 @@ const vdjscript_list =
             },
             "pitch_range":
             {
-                "description": "set the range for the pitch slider. 'pitch_range 12%' set the range from -12% to +12%. \n'pitch_range +1' scrolls through the default pitch ranges. 'pitch_range \"12,16,25\" +1' scrolls through the provided list of pitch ranges.\n'pitch_range +1 deck' changes the pitch range only for the specific deck"
+                "description": "set the range for the pitch slider. 'pitch_range 12%' set the range from -12% to +12%. . 'pitch_range +1' scrolls through the default pitch ranges. 'pitch_range \"12,16,25\" +1' scrolls through the provided list of pitch ranges.. 'pitch_range +1 deck' changes the pitch range only for the specific deck"
             },
             "pitch_relative":
             {
@@ -2911,11 +2911,11 @@ const vdjscript_list =
             },
             "pitch_reset":
             {
-                "description": "Slowly brings the pitch back to 0%. You can specify the speed in % per second (default uses the pitchResetSpeed option): 'pitch_reset 5%'\nYou can also specify the speed in ms or beats: 'pitch_reset 500ms' or 'pitch_reset 4bt'"
+                "description": "Slowly brings the pitch back to 0%. You can specify the speed in % per second (default uses the pitchResetSpeed option): 'pitch_reset 5%'. You can also specify the speed in ms or beats: 'pitch_reset 500ms' or 'pitch_reset 4bt'"
             },
             "pitch_zero":
             {
-                "description": "Set pitch to 0% (normal playing speed)\nUse 'pitch_zero \"center\"' on controllers that send a message when the pitch slider is at the center. This prevents unwanted behavior in gradual or relative mode."
+                "description": "Set pitch to 0% (normal playing speed). Use 'pitch_zero \"center\"' on controllers that send a message when the pitch slider is at the center. This prevents unwanted behavior in gradual or relative mode."
             },
             "startupspeed":
             {
@@ -2947,7 +2947,7 @@ const vdjscript_list =
             },
             "effect_arm_deck":
             {
-                "description": "For controllers with a deck selection switch for effects, select the deck effects will be activated on using effect_arm_active\nUse 'effect_arm_deck single' to allow only one deck at a time to be armed\nUse 'effect_arm_deck master' to select master instead of a deck. 'sampler', 'mic', and 'aux' also supported"
+                "description": "For controllers with a deck selection switch for effects, select the deck effects will be activated on using effect_arm_active. Use 'effect_arm_deck single' to allow only one deck at a time to be armed. Use 'effect_arm_deck master' to select master instead of a deck. 'sampler', 'mic', and 'aux' also supported"
             },
             "effect_arm_select":
             {
@@ -2955,15 +2955,15 @@ const vdjscript_list =
             },
             "effect_arm_slider":
             {
-                "description": "Move the effect parameter of the effect selected using effect_arm_select on the deck selected using effect_arm_deck\nUse \"effect_arm_slider 1 2\" to move the second slider of the first slot"
+                "description": "Move the effect parameter of the effect selected using effect_arm_select on the deck selected using effect_arm_deck. Use \"effect_arm_slider 1 2\" to move the second slider of the first slot"
             },
             "effect_arm_slider_label":
             {
-                "description": "Get the effect parameter label of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.\nUse 'effect_arm_slider_label 1 short' to get the short label"
+                "description": "Get the effect parameter label of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.. Use 'effect_arm_slider_label 1 short' to get the short label"
             },
             "effect_arm_slider_name":
             {
-                "description": "Get the effect parameter name of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.\nUse 'effect_arm_slider_name 1 short' to get the short label"
+                "description": "Get the effect parameter name of the effect selected using effect_arm_select on the deck selected using effect_arm_deck.. Use 'effect_arm_slider_name 1 short' to get the short label"
             },
             "effect_arm_slider_text":
             {
@@ -2975,7 +2975,7 @@ const vdjscript_list =
             },
             "effect_arm_stem":
             {
-                "description": "Select/unselect a stem to be used with \"stems\" as slot for effect_ actions\nAccepted stem names are Vocal, HiHat, Bass, Instru, Kick. They can be combined using \"+\""
+                "description": "Select/unselect a stem to be used with \"stems\" as slot for effect_ actions. Accepted stem names are Vocal, HiHat, Bass, Instru, Kick. They can be combined using \"+\""
             },
             "effect_bank_load":
             {
@@ -3003,7 +3003,7 @@ const vdjscript_list =
             },
             "effect_button":
             {
-                "description": "'effect_button 1 2' button 2 on slot 1\n'effect_button 2' button 2 on slot 1"
+                "description": "'effect_button 1 2' button 2 on slot 1. 'effect_button 2' button 2 on slot 1"
             },
             "effect_clone":
             {
@@ -3023,7 +3023,7 @@ const vdjscript_list =
             },
             "effect_disable_all":
             {
-                "description": "'deck 1 effect_disable_all' Disables all effects on deck 1\n'deck master effect_disable_all' Disables all master effects\n'effect_disable_all sampler' Disables all sampler effects. 'aux' or 'mic' can be used for mic or aux effects"
+                "description": "'deck 1 effect_disable_all' Disables all effects on deck 1. 'deck master effect_disable_all' Disables all master effects. 'effect_disable_all sampler' Disables all sampler effects. 'aux' or 'mic' can be used for mic or aux effects"
             },
             "effect_dock_gui":
             {
@@ -3043,7 +3043,7 @@ const vdjscript_list =
             },
             "effect_has_slider":
             {
-                "description": "effect_has_slider 1 2 on -> returns true if there is a second slider on slot 1\neffect_has_slider 1 -> returns true if there is a first slider on slot 0"
+                "description": "effect_has_slider 1 2 on -> returns true if there is a second slider on slot 1. effect_has_slider 1 -> returns true if there is a first slider on slot 0"
             },
             "effect_mixfx":
             {
@@ -3067,11 +3067,11 @@ const vdjscript_list =
             },
             "effect_select":
             {
-                "description": "effect_select 2 \"echo\" -> select effect echo in slot 2\neffect_select 1 -1 -> select previous effect in slot 1\neffect_select +1 -> select next effect in slot 1\neffect_select -> show popup window for slot 1\neffect_select 1 -> show popup window for slot 1\neffect_select 1 0.2 -> select the 2/10th effect from the list in slot 1\neffect_select \"audioonlyvisualisation\" -> select visualisation used when song has no video\neffect_select deactivates the previous plugin in the specified slot"
+                "description": "effect_select 2 \"echo\" -> select effect echo in slot 2. effect_select 1 -1 -> select previous effect in slot 1. effect_select +1 -> select next effect in slot 1. effect_select -> show popup window for slot 1. effect_select 1 -> show popup window for slot 1. effect_select 1 0.2 -> select the 2/10th effect from the list in slot 1. effect_select \"audioonlyvisualisation\" -> select visualisation used when song has no video. effect_select deactivates the previous plugin in the specified slot"
             },
             "effect_select_multi":
             {
-                "description": "effect_select_multi 2 \"echo\" -> select effect echo in slot 2\neffect_select_multi 1 -1 -> select previous effect in slot 1\neffect_select_multi +1 -> select next effect in slot 1\neffect_select_multi -> show popup window for slot 1\neffect_select_multi 1 -> show popup window for slot 1\neffect_select_multi 1 0.2 -> select the 2/10th effect from the list in slot 1\neffect_select_multi \"video\" -> select effect in the video effect slot\neffect_select_multi does not deactivate the previous plugin in the specified slot"
+                "description": "effect_select_multi 2 \"echo\" -> select effect echo in slot 2. effect_select_multi 1 -1 -> select previous effect in slot 1. effect_select_multi +1 -> select next effect in slot 1. effect_select_multi -> show popup window for slot 1. effect_select_multi 1 -> show popup window for slot 1. effect_select_multi 1 0.2 -> select the 2/10th effect from the list in slot 1. effect_select_multi \"video\" -> select effect in the video effect slot. effect_select_multi does not deactivate the previous plugin in the specified slot"
             },
             "effect_select_popup":
             {
@@ -3087,7 +3087,7 @@ const vdjscript_list =
             },
             "effect_slider":
             {
-                "description": "Move the n-th slider on the given effect\n\"effect_slider 1 2 50%\" : Set slider id 2 on slot 1 to 50%\n\"effect_slider 1 0%\" : set slider id 1 on slot 1 to 0%",
+                "description": "Move the n-th slider on the given effect. \"effect_slider 1 2 50%\" : Set slider id 2 on slot 1 to 50%. \"effect_slider 1 0%\" : set slider id 1 on slot 1 to 0%",
                 "alias": "effect_slider_slider"
             },
             "effect_slider_active":
@@ -3101,11 +3101,11 @@ const vdjscript_list =
             },
             "effect_slider_skip_length":
             {
-                "description": "Move the n-th slider on the given effect, excluding a length slider if present\n\"effect_slider_skip_length 1 2 50%\" : Set slider 2 (excluding length) on slot 1 to 50%\n\"effect_slider_skip_length 1 0%\" : set slider 1 (excluding length) on slot 1 to 0%"
+                "description": "Move the n-th slider on the given effect, excluding a length slider if present. \"effect_slider_skip_length 1 2 50%\" : Set slider 2 (excluding length) on slot 1 to 50%. \"effect_slider_skip_length 1 0%\" : set slider 1 (excluding length) on slot 1 to 0%"
             },
             "effect_stems":
             {
-                "description": "Apply effects only to the selected stems. 'effect_stems vocal on'\nStems are Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal or MeloRhythm"
+                "description": "Apply effects only to the selected stems. 'effect_stems vocal on'. Stems are Vocal,HiHat,Bass,Instru,Kick,Melody,Rhythm,MeloVocal or MeloRhythm"
             },
             "effect_stems_color":
             {
@@ -3267,11 +3267,11 @@ const vdjscript_list =
             },
             "goto_mixpoint":
             {
-                "description": "Jump to the specified mix point (\"StartTempo\", \"EndTempo\", \"StartCut\", \"EndCut\", \"StartFade\", \"EndFade\", \"StartSound\", \"EndSound\")\nExample: goto_mixpoint \"StartCut\""
+                "description": "Jump to the specified mix point (\"StartTempo\", \"EndTempo\", \"StartCut\", \"EndCut\", \"StartFade\", \"EndFade\", \"StartSound\", \"EndSound\"). Example: goto_mixpoint \"StartCut\""
             },
             "reanalyze":
             {
-                "description": "reanalyze bpm etc... for the file loaded on the deck\n'reanalyze multi' can be used to scan for multiple bpm's"
+                "description": "reanalyze bpm etc... for the file loaded on the deck. 'reanalyze multi' can be used to scan for multiple bpm's"
             },
             "set_bpm":
             {
@@ -3287,7 +3287,7 @@ const vdjscript_list =
             },
             "set_mixpoint":
             {
-                "description": "Move the specified mix point to the current position (\"StartTempo\", \"EndTempo\", \"StartCut\", \"EndCut\", \"StartFade\", \"EndFade\", \"StartSound\", \"EndSound\")\nExample: set_mixpoint \"StartTempo\""
+                "description": "Move the specified mix point to the current position (\"StartTempo\", \"EndTempo\", \"StartCut\", \"EndCut\", \"StartFade\", \"EndFade\", \"StartSound\", \"EndSound\"). Example: set_mixpoint \"StartTempo\""
             }
         },
         "prelisten":
@@ -3303,7 +3303,7 @@ const vdjscript_list =
             },
             "prelisten_output":
             {
-                "description": "Set this deck to be used for the prelisten player\nExample: \"deck 1 prelisten_output\", or to put it back to default: \"prelisten_output 'auto'\""
+                "description": "Set this deck to be used for the prelisten player. Example: \"deck 1 prelisten_output\", or to put it back to default: \"prelisten_output 'auto'\""
             },
             "prelisten_pos":
             {
@@ -3318,7 +3318,7 @@ const vdjscript_list =
         {
             "broadcast":
             {
-                "description": "start or stop to broadcast\nOptionally add parameter to specify \"video\", \"direct\", \"server\" or \"podcast\". Without parameters it will use the last used mode."
+                "description": "start or stop to broadcast. Optionally add parameter to specify \"video\", \"direct\", \"server\" or \"podcast\". Without parameters it will use the last used mode."
             },
             "broadcast_message":
             {
@@ -3349,7 +3349,7 @@ const vdjscript_list =
             },
             "get_sample_info":
             {
-                "description": "get additional information about the sample, such as 'get_sample_info 1 fullpath'\nIn addition to the regular column names, 'group' is also supported, and 'length' returns beat values for loops"
+                "description": "get additional information about the sample, such as 'get_sample_info 1 fullpath'. In addition to the regular column names, 'group' is also supported, and 'length' returns beat values for loops"
             },
             "get_sample_name":
             {
@@ -3390,7 +3390,7 @@ const vdjscript_list =
             },
             "sampler_color":
             {
-                "description": "get the color of the sample on this slot if it has one\nThe sample number takes the sampler_pad_page into account, so should be used in combination with sampler_pad"
+                "description": "get the color of the sample on this slot if it has one. The sample number takes the sampler_pad_page into account, so should be used in combination with sampler_pad"
             },
             "sampler_edit":
             {
@@ -3426,11 +3426,11 @@ const vdjscript_list =
             },
             "sampler_loop":
             {
-                "description": "use 'sampler_loop -1' or 'sampler_loop +1' to change the length of a playing sample\nuse 'sampler_loop \"current\" 1' to set the sample to loop for 1 beat or 'sampler_loop 1 1' to set sample 1 to 1 beat loop\nuse 'sampler_loop \"current\" 0.5 \"play\" while_pressed' to loop the sample as long as long as the button is pressed for 0.5 beats"
+                "description": "use 'sampler_loop -1' or 'sampler_loop +1' to change the length of a playing sample. use 'sampler_loop \"current\" 1' to set the sample to loop for 1 beat or 'sampler_loop 1 1' to set sample 1 to 1 beat loop. use 'sampler_loop \"current\" 0.5 \"play\" while_pressed' to loop the sample as long as long as the button is pressed for 0.5 beats"
             },
             "sampler_mode":
             {
-                "description": "set the global trigger mode for the sampler: \"sampler_mode 'on/off'\", 'hold', 'stutter' or 'unmute'\nset trigger mode for a specific sample: \"sampler_mode 1 'on/off'\" to set sample 1 mode or \"sampler_mode 1 +1\" to cycle",
+                "description": "set the global trigger mode for the sampler: \"sampler_mode 'on/off'\", 'hold', 'stutter' or 'unmute'. set trigger mode for a specific sample: \"sampler_mode 1 'on/off'\" to set sample 1 mode or \"sampler_mode 1 +1\" to cycle",
                 "alias": "sampler_rapidfire"
             },
             "sampler_mute":
@@ -3439,7 +3439,7 @@ const vdjscript_list =
             },
             "sampler_options":
             {
-                "description": "popup the sample menu.\ncan also be used with 'sampler_options \"locked\"' or 'sampler_options \"stemswap\"' to change the bank's settings."
+                "description": "popup the sample menu.. can also be used with 'sampler_options \"locked\"' or 'sampler_options \"stemswap\"' to change the bank's settings."
             },
             "sampler_output":
             {
@@ -3459,7 +3459,7 @@ const vdjscript_list =
             },
             "sampler_pad_volume":
             {
-                "description": "'sampler_pad_volume 1' sets the volume of the sample on the first pad\n'sampler_pad_volume \"siren\"' sets the volume of the sample 'siren.vdjsample'."
+                "description": "'sampler_pad_volume 1' sets the volume of the sample on the first pad. 'sampler_pad_volume \"siren\"' sets the volume of the sample 'siren.vdjsample'."
             },
             "sampler_pfl":
             {
@@ -3467,7 +3467,7 @@ const vdjscript_list =
             },
             "sampler_play":
             {
-                "description": "play the selected sample. syntax 'sampler_play' plays the default sample. \n'sampler_play 4' plays the fourth sample."
+                "description": "play the selected sample. syntax 'sampler_play' plays the default sample. . 'sampler_play 4' plays the fourth sample."
             },
             "sampler_play_stop":
             {
@@ -3483,11 +3483,11 @@ const vdjscript_list =
             },
             "sampler_rec":
             {
-                "description": "On first press, start to record a new sample. On second press, stop to record\nUse 'sampler_rec \"mic\"' to record a sample from microphone, or 'sampler_rec \"master\"' to record from master output\nIf the deck is on loop, a loop sample will immediately be created. If the deck is playing, it will record what's playing until the stop. If the deck is paused, it sets the 'entry point', and the second push will set the 'exit point' and use the deck's file between those two points.\n'sampler_rec 1' or 'sampler_rec 1 \"mic\"' will store the sample in the first slot of the \"Record\" sample bank, so that it can be used immediately after recording"
+                "description": "On first press, start to record a new sample. On second press, stop to record. Use 'sampler_rec \"mic\"' to record a sample from microphone, or 'sampler_rec \"master\"' to record from master output. If the deck is on loop, a loop sample will immediately be created. If the deck is playing, it will record what's playing until the stop. If the deck is paused, it sets the 'entry point', and the second push will set the 'exit point' and use the deck's file between those two points.. 'sampler_rec 1' or 'sampler_rec 1 \"mic\"' will store the sample in the first slot of the \"Record\" sample bank, so that it can be used immediately after recording"
             },
             "sampler_rec_delete":
             {
-                "description": "delete a recording from the \"Recordings\" bank\n\"sampler_rec_delete 3\" would delete the sample previously recorded using \"sampler_rec 3\""
+                "description": "delete a recording from the \"Recordings\" bank. \"sampler_rec_delete 3\" would delete the sample previously recorded using \"sampler_rec 3\""
             },
             "sampler_select":
             {
@@ -3517,7 +3517,7 @@ const vdjscript_list =
             },
             "sampler_volume":
             {
-                "description": "'sampler_volume' sets the volume of the sample that has the focus, on the selected deck.\n'sampler_volume 1' sets the volume of the sample in slot 1 in the current bank.\n'sampler_volume \"siren\"' sets the volume of the sample 'siren.vdjsample'."
+                "description": "'sampler_volume' sets the volume of the sample that has the focus, on the selected deck.. 'sampler_volume 1' sets the volume of the sample in slot 1 in the current bank.. 'sampler_volume \"siren\"' sets the volume of the sample 'siren.vdjsample'."
             },
             "sampler_volume_master":
             {
@@ -3553,22 +3553,22 @@ const vdjscript_list =
         {
             "can_sandbox":
             {
-                "description": "returns true if virtualdj can be sandboxed.\nsandbox cannot be activated while you have effects or samples active, or video, or if you're scratching, or if you have more than one deck playing with the volume up."
+                "description": "returns true if virtualdj can be sandboxed.. sandbox cannot be activated while you have effects or samples active, or video, or if you're scratching, or if you have more than one deck playing with the volume up."
             },
             "sandbox":
             {
-                "description": "activate/deactivate sandbox mode.\nin sandbox mode, the master output continues to play what it was playing without being affected by your actions, and you can move both decks to whatever position you want, in order to prelisten your upcomming mix."
+                "description": "activate/deactivate sandbox mode.. in sandbox mode, the master output continues to play what it was playing without being affected by your actions, and you can move both decks to whatever position you want, in order to prelisten your upcomming mix."
             }
         },
         "sync":
         {
             "auto_bpm_transition":
             {
-                "description": "When pressed, the bpm of the song is gradually moved to the bpm of the other deck while keeping both songs at the same bpm\nWhen smartPlay or autoBPMMatch are on, it will move to the bpm of the other deck at normal speed\nWhen using parameter 'source_original', 'target_original' or 'target_current' you can force which bpm it will transition to"
+                "description": "When pressed, the bpm of the song is gradually moved to the bpm of the other deck while keeping both songs at the same bpm. When smartPlay or autoBPMMatch are on, it will move to the bpm of the other deck at normal speed. When using parameter 'source_original', 'target_original' or 'target_current' you can force which bpm it will transition to"
             },
             "auto_bpm_transition_options":
             {
-                "description": "Enable/Disable certain features of the auto_bpm_transition.\nFirst parameter can be 'length', 'loop', 'stems', 'master_tempo', 'autostart'\nWhen selecting stems to disable, use 'auto_bpm_transition_options stems vocal' for example"
+                "description": "Enable/Disable certain features of the auto_bpm_transition.. First parameter can be 'length', 'loop', 'stems', 'master_tempo', 'autostart'. When selecting stems to disable, use 'auto_bpm_transition_options stems vocal' for example"
             },
             "auto_sync_settings":
             {
@@ -3632,7 +3632,7 @@ const vdjscript_list =
         {
             "countdown":
             {
-                "description": "Count down to a specific date or time. Example: countdown '2025/01/01 00:00'\nSecond parameter can be used to optionally format the return value. Use %full, %HH, %MM, %SS, %DD"
+                "description": "Count down to a specific date or time. Example: countdown '2025/01/01 00:00'. Second parameter can be used to optionally format the return value. Use %full, %HH, %MM, %SS, %DD"
             },
             "get_status":
             {
@@ -3640,7 +3640,7 @@ const vdjscript_list =
             },
             "get_text":
             {
-                "description": "get some text. You can use the inverted apostrophe to query VDJScript results within the text: \"get text 'You are listening to `get loaded_song \"title\"` at `volume` volume.\".\\nVDJScript returning booleans (buttons) will be displayed as \"on\" or \"off\".\\nVDJScript returning values (sliders) will be displayed as a percentage.\\n(you can also (but it's being deprecated in VDJ7) use % shortcuts for some common queries: \"get text 'you are listening to %title by %author'\")"
+                "description": "get some text. You can use the inverted apostrophe to query VDJScript results within the text: \"get text 'You are listening to `get loaded_song \"title\"` at `volume` volume.\".\. VDJScript returning booleans (buttons) will be displayed as \"on\" or \"off\".\. VDJScript returning values (sliders) will be displayed as a percentage.\. (you can also (but it's being deprecated in VDJ7) use % shortcuts for some common queries: \"get text 'you are listening to %title by %author'\")"
             },
             "stopwatch":
             {
@@ -3667,7 +3667,7 @@ const vdjscript_list =
             },
             "timecode_active":
             {
-                "description": "Select if the deck is controlled by a timecode signal.\n(note: You can use 'timecode_active x' where x is the turntable number, to assign the same turntable to control several decks at once: 'deck 1 timecode_active 1 on & deck 2 timecode_active 1 on')"
+                "description": "Select if the deck is controlled by a timecode signal.. (note: You can use 'timecode_active x' where x is the turntable number, to assign the same turntable to control several decks at once: 'deck 1 timecode_active 1 on & deck 2 timecode_active 1 on')"
             },
             "timecode_bypass":
             {
@@ -3767,11 +3767,11 @@ const vdjscript_list =
             },
             "video_output":
             {
-                "description": "Show menu to select on which monitor to open the video output.\nYou can also specify a specific output: \"video_output 1\" to open video output on the first monitor\nTo just show or hide the output use \"video_output on\" or \"video_output off\". To toggle output, use \"video_output ? video_output off : video_output on\""
+                "description": "Show menu to select on which monitor to open the video output.. You can also specify a specific output: \"video_output 1\" to open video output on the first monitor. To just show or hide the output use \"video_output on\" or \"video_output off\". To toggle output, use \"video_output ? video_output off : video_output on\""
             },
             "video_transition":
             {
-                "description": "Launch a transition from one video deck to the other.\nYou can specify the duration of the transition: 'video_transition 1000ms'\nYou can specify the direction of the transition: 'video_transition \"left\"' or 'video_transition \"left\" 1000ms'\nYou can specify the location to transition to using a percentage (or assign it to a slider): 'video_transition 50%' or 'video_transition 1000ms 50%'"
+                "description": "Launch a transition from one video deck to the other.. You can specify the duration of the transition: 'video_transition 1000ms'. You can specify the direction of the transition: 'video_transition \"left\"' or 'video_transition \"left\" 1000ms'. You can specify the location to transition to using a percentage (or assign it to a slider): 'video_transition 50%' or 'video_transition 1000ms 50%'"
             }
         }
     }
