@@ -20,18 +20,20 @@
   <Item>
     <Category>flow</Category>
     <Action>up</Action>
-    <Description>execute different actions depending if the key is pressed or released.</Description>
+    <Description>execute different actions depending if the key is released or pressed.</Description>
     <Examples>&apos;up ? action1 : action2&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>blink</Action>
     <Description>turn on and off the LED, once per second.You can specify the speed: &apos;blink 1000ms&apos; Speed can also be specified in number of beats: &apos;blink 1bt&apos;.The time blinking can also be specified: &apos;blink 1bt 25%&apos;</Description>
+    <Examples>&apos;blink 1000ms&apos; | &apos;blink 1bt&apos; | &apos;blink 1bt 25%&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>color</Action>
     <Description>color &apos;red&apos; color &quot;#C08040&quot; color 0.8 0.5 0.25 color 75% &apos;red&apos; (returns a dimmed red) color 0.66 (returns a gray)</Description>
+    <Examples>&apos;color red&apos; | &apos;color &quot;#C08040&quot;&apos; | &apos;color 0.8 0.5 0.25&apos; | &apos;color 75% red&apos; | &apos;color 0.66&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -85,6 +87,7 @@
     <Category>param</Category>
     <Action>param_cast</Action>
     <Description>cast the value of the previous query action into a new type: &apos;pitch_range &amp; param_cast &quot;percentage&quot;&apos;. Valid types are &apos;integer&apos;, &apos;float&apos;, &apos;percentage&apos;, &apos;ms&apos;, &apos;boolean&apos;, &apos;beats&apos;, &apos;text&apos;. casting to text can also optionally limit the number of characters: &apos;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&apos; to format a number as text with a specific number of digits: &apos;get_bpm &amp; param_cast &quot;000&quot;&apos; param_cast &apos;int_trunc&apos; : provides the integer part of a number without rounding to the nearest integer param_cast &apos;frac&apos; : provides the decimal part of a number. param_cast &apos;relative&apos; and param_cast &apos;absolute&apos; : change the parameter to be a relative or absolute value</Description>
+    <Examples>&apos;pitch_range &amp; param_cast &quot;percentage&quot;&apos; | &apos;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&apos; | &apos;get_bpm &amp; param_cast &quot;000&quot;&apos;</Examples>
   </Item>
   <Item>
     <Category>param</Category>

@@ -52,7 +52,7 @@
                         <td>flow</td>
                         <td>up</td>
                         <td></td>
-                        <td>execute different actions depending if the key is pressed or released.</td>
+                        <td>execute different actions depending if the key is released or pressed.</td>
                         <td>&#039;up ? action1 : action2&#039;</td>
                         </tr>
                         <tr>
@@ -60,14 +60,14 @@
                         <td>blink</td>
                         <td></td>
                         <td>turn on and off the LED, once per second.You can specify the speed: &#039;blink 1000ms&#039; Speed can also be specified in number of beats: &#039;blink 1bt&#039;.The time blinking can also be specified: &#039;blink 1bt 25%&#039;</td>
-                        <td></td>
+                        <td>&#039;blink 1000ms&#039;<br><br>&#039;blink 1bt&#039; | &#039;blink 1bt 25%&#039;</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>color</td>
                         <td></td>
                         <td>color &#039;red&#039; color &quot;#C08040&quot; color 0.8 0.5 0.25 color 75% &#039;red&#039; (returns a dimmed red) color 0.66 (returns a gray)</td>
-                        <td></td>
+                        <td>&#039;color red&#039;<br><br>&#039;color &quot;#C08040&quot;&#039; | &#039;color 0.8 0.5 0.25&#039; | &#039;color 75% red&#039; | &#039;color 0.66&#039;</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -130,7 +130,7 @@
                         <td>param_cast</td>
                         <td></td>
                         <td>cast the value of the previous query action into a new type: &#039;pitch_range &amp; param_cast &quot;percentage&quot;&#039;. Valid types are &#039;integer&#039;, &#039;float&#039;, &#039;percentage&#039;, &#039;ms&#039;, &#039;boolean&#039;, &#039;beats&#039;, &#039;text&#039;. casting to text can also optionally limit the number of characters: &#039;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&#039; to format a number as text with a specific number of digits: &#039;get_bpm &amp; param_cast &quot;000&quot;&#039; param_cast &#039;int_trunc&#039; : provides the integer part of a number without rounding to the nearest integer param_cast &#039;frac&#039; : provides the decimal part of a number. param_cast &#039;relative&#039; and param_cast &#039;absolute&#039; : change the parameter to be a relative or absolute value</td>
-                        <td></td>
+                        <td>&#039;pitch_range &amp; param_cast &quot;percentage&quot;&#039;<br><br>&#039;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&#039; | &#039;get_bpm &amp; param_cast &quot;000&quot;&#039;</td>
                         </tr>
                         <tr>
                         <td>param</td>
