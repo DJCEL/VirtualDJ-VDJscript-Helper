@@ -1,6 +1,7 @@
 const vdjscript_list =
 {
     "VdjBuild": "8709",
+    "Version": "2",
     "Items":
     {
         "flow":
@@ -1030,109 +1031,109 @@ const vdjscript_list =
         {
             "add_favoritefolder":
             {
-                "description": "TODO"
+                "description": "make the selected folder a favorite folder (monitored folders)."
             },
             "add_filterfolder":
             {
-                "description": "TODO"
+                "description": "create a new filter folder."
             },
             "add_list":
             {
-                "description": "TODO",
+                "description": "create a new list (virtual folder).",
                 "alias": "add_virtualfolder"
             },
             "add_to_list":
             {
-                "description": "TODO",
+                "description": "Add the currently selected songs in the browser to the specified List. 'add_to_list \"my_list\"'",
                 "alias": "virtualfolder_add"
             },
             "browsed_file_analyze":
             {
-                "description": "TODO"
+                "description": "reanalyze the current file selected in the browser use 'browsed_file_analyze multi' to do a scan for multiple bpms"
             },
             "browsed_file_color":
             {
-                "description": "TODO"
+                "description": "set the color of the file currently selected in the browser. Example: browsed_file_color \"red\" Use browsed_file_color \"reset\" to clear the color and set the color back to default"
             },
             "browsed_file_info":
             {
-                "description": "TODO"
+                "description": "Open the Tag Editor for the browsed song."
             },
             "browsed_file_prepare_stems":
             {
-                "description": "TODO"
+                "description": "prepare stems for the file(s) currently selected in the browser"
             },
             "browsed_file_reload_tag":
             {
-                "description": "TODO"
+                "description": "Reload tag of file currently selected in browser. This will overwrite changes made in the VirtualDJ database by what is saved in the file's tag."
             },
             "browsed_file_rename":
             {
-                "description": "TODO"
+                "description": "rename the current file selected in the browser"
             },
             "browsed_file_reveal":
             {
-                "description": "TODO"
+                "description": "open the OS file manager to the browsed song"
             },
             "browser_enter":
             {
-                "description": "TODO"
+                "description": "if focus is on songs, load the selected song. if focus is on folders, change focus to songs."
             },
             "browser_export":
             {
-                "description": "TODO"
+                "description": "Export the current list of files to a CSV or HTML file"
             },
             "browser_folder":
             {
-                "description": "TODO"
+                "description": "if focus is on songs, change focus to folders. if focus is on folders, open or close the subfolders of the selected folder."
             },
             "browser_geniusdj":
             {
-                "description": "TODO"
+                "description": "Lookup recommendations based on the items currently selected in the browser Use 'browser_geniusdj playing' to use the currently playing track instead of the track selected in the browser"
             },
             "browser_gotofolder":
             {
-                "description": "TODO"
+                    "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder."
             },
             "browser_isactive":
             {
-                "description": "TODO"
+                "description": "return true when the browser was used by a controller in the past 6 seconds"
             },
             "browser_move":
             {
-                "description": "TODO"
+                "description": "browser_move +1 : Moves the currently selected song in a playlist down browser_move 'top' or browser_move 'bottom' : Moves the selected song to the top or the bottom of the list"
             },
             "browser_open_folder":
             {
-                "description": "TODO"
+                "description": "Expand selected folder in browser when closed, or close folder when opened. You can also use 'browser_open_folder off' to always close the folder, or 'browser_open_folder on' to open a folder"
             },
             "browser_options":
             {
-                "description": "TODO"
+                "description": "show the context menu about the browser filters, root folders, database, etc"
             },
             "browser_padding":
             {
-                "description": "TODO"
+                "description": "Change the padding around lines in folder and list views. Example: browser_padding 50%"
             },
             "browser_remove":
             {
-                "description": "TODO"
+                "description": "Remove the selected song from playlist"
             },
             "browser_scroll":
             {
-                "description": "TODO"
+                "description": "scroll through the songs or folders. 'browser_scroll +1' or 'browser_scroll -1' to scroll one line, or \"browser_scroll 'top'\", \"browser_scroll 'bottom'\" to scroll to the beginning or end"
             },
             "browser_shortcut":
             {
-                "description": "TODO"
+                "description": "'browser_shortcut': assign the current folder as a new shortcut\n'browser_shortcut X': go to the folder assigned to the Xth shortcut"
             },
             "browser_sort":
             {
-                "description": "TODO"
+                "description": "Sort the browser files on the specified column: 'browser_sort \"artist\"', 'browser_sort \"lastplay\"',... To sort in descending order, add a - in front of the column name: 'browser_sort \"-bpm\"' To explicitly sort in ascending order, add a + in front of the column name: 'browser_sort \"+bpm\"' To reset the sort order of a playlist to it's original order, use 'browser_sort \"Original Sort Order\"'"
             },
             "browser_window":
             {
-                "description": "TODO"
+                    "description": "Change the active browser zone. \"browser_window 'folders'\", \"browser_window 'songs'\", \"browser_window 'sideview'\", or \"browser_window 'automix'\", \"browser_window 'sidelist'\", \"browser_window 'sampler'\" Cycle through available browser zones. \"browser_window + 1\", \"browser_window - 1\" Cycle through specified zones. Example \"browser_window 'folders,songs'\""
             },
             "browser_zoom":
             {
@@ -1141,101 +1142,101 @@ const vdjscript_list =
             },
             "clear_search":
             {
-                "description": "TODO"
+                "description": "clear the search string"
             },
             "edit_comment":
             {
-                "description": "TODO"
+                "description": "open a window to edit the comment on the selected track."
             },
             "edit_search":
             {
-                "description": "TODO"
+                "description": "put the keyboard focus in the search zone but keep the actual search string."
             },
             "edit_singer":
             {
-                "description": "TODO"
+                "description": "Pops up the dialog to change the singer of the currently selected song in the karaoke list"
             },
             "file_count":
             {
-                "description": "TODO"
+                "description": "Get number of files currently shown in browser You can also use 'automix', 'sideview', 'karaoke' or 'sidelist' as parameter to get the count in other lists. \"file_count automix\""
             },
             "file_info":
             {
-                "description": "TODO"
+                "description": "Open the Tag Editor for the specified or loaded song."
             },
             "font_size":
             {
-                "description": "TODO"
+                "description": "Change browser font size. Example: font_size +1"
             },
             "goto_last_folder":
             {
-                "description": "TODO"
+                "description": "Go back to the last browsed folder"
             },
             "grid_view":
             {
-                "description": "TODO"
+                "description": "put the browser in grid-view mode, optimized for touch screens"
             },
             "has_linked_tracks":
             {
-                "description": "TODO"
+                "description": "Returns true when track has links to other tracks. On a button can be used to show the linked tracks in the sideview You can also use 'has_linked_tracks browsed' to get the result for the currently browsed track Passing a script that returns a full file path is also possible using 'has_linked_tracks `script`'"
             },
             "has_quick_filter":
             {
-                "description": "TODO"
+                "description": "Return true if quick filter with given index exists"
             },
             "info_options":
             {
-                "description": "TODO",
+                "description": "show the context menu about the info panel fields and prelisten behavior",
                 "alias": "infos_options"
             },
             "karaoke_add":
             {
-                "description": "TODO"
+                "description": "Add the songs selected in the browser to the karaoke list"
             },
             "karaoke_load":
             {
-                "description": "TODO"
+                "description": "Load the folder or playlist selected in the browser in the karaoke list Use \"karaoke_load 'append'\" to add the selected folder to the karaoke list instead of replacing the existing karaoke"
             },
             "load":
             {
-                "description": "TODO"
+                "description": "load the selected song on the deck. you can also specify a fullpath to load 'load \"path_to_my_song\"'."
             },
             "load_deck_set":
             {
-                "description": "TODO"
+                "description": "Reload a previously saved deck_set file"
             },
             "load_next":
             {
-                "description": "TODO"
+                "description": "Load next track. You can use 'load_next keepplay' to start playing the loaded song if the currently loaded song was playing"
             },
             "load_previous":
             {
-                "description": "TODO"
+                "description": "Load previous track"
             },
             "load_pulse":
             {
-                "description": "TODO"
+                "description": "return a brief false then true again when a new song is loaded"
             },
             "load_pulse_active":
             {
-                "description": "TODO"
+                "description": "return true when a new song becomes audible for the specified duration. Can be delayed using the second parameter. 'load_pulse_active 1000ms 5000ms' will return true for 1 second, 5 seconds after a new song becomes audible"
             },
             "loaded":
             {
-                "description": "TODO"
+                "description": "return true if a song is loaded on the deck"
             },
             "log_search":
             {
-                "description": "TODO"
+                "description": "log the current search in the SearchLog.txt file, so you can easily search for your failed requests once the gig is over."
             },
             "mark_linked_tracks":
             {
-                "description": "TODO",
+                "description": "Mark the tracks in deck 1 and 2 as linked. (Linked tracks can be shown in the remixes tab of the sideview)",
                 "alias": "mark_related_tracks"
             },
             "not_played":
             {
-                "description": "TODO"
+                "description": "don't mark the song on this deck as 'played'."
             },
             "page":
             {
@@ -1243,75 +1244,75 @@ const vdjscript_list =
             },
             "playlist_load":
             {
-                "description": "TODO"
+                "description": "Load the folder or playlist selected in the browser in the playlist. Use \"playlist_load 'append'\" to add the selected folder to the playlist instead of replacing the existing playlist"
             },
             "quick_filter":
             {
-                "description": "TODO"
+                "description": "Apply or remove a quick filter on the list of song shown in the browser"
             },
             "rating":
             {
-                "description": "TODO"
+                "description": "Get or set the rating for the current song"
             },
             "recurse_folder":
             {
-                "description": "TODO"
+                "description": "display the content of both the selected folder and all its subfolders in the browser list."
             },
             "save_deck_set":
             {
-                "description": "TODO"
+                "description": "Save the current configuration (which song is loaded on which deck) in a file"
             },
             "search":
             {
-                "description": "TODO"
+                "description": "put the keyboard focus on the search zone, or, if a text parameter is specified, search for this text."
             },
             "search_add":
             {
-                "description": "TODO"
+                "description": "add the specified text to the search query"
             },
             "search_delete":
             {
-                "description": "TODO"
+                "description": "remove the last character from the search query"
             },
             "search_folder":
             {
-                "description": "TODO"
+                "description": "open a dialog to search for folders or playlists by name"
             },
             "search_options":
             {
-                "description": "TODO"
+                "description": "popup the list of search options. to set one directly, you can use 'search_options \"composer\"' to toggle search of the field on or off"
             },
             "search_playlists":
             {
-                "description": "TODO"
+                "description": "open a dialog to search which list contains a specific song by default it searches for the song selected in the browser. Use \"search_playlists deck\" to search for the song loaded on the deck."
             },
             "set_browsed_file_bpm":
             {
-                "description": "TODO"
+                "description": "set the bpm of the selected songs to the set value: 'set_bpm 129.3', or relative to the actual value: 'set_bpm 50%'"
             },
             "sidelist_add":
             {
-                "description": "TODO"
+                "description": "Add the songs selected in the browser to the sidelist"
             },
             "sidelist_clear":
             {
-                "description": "TODO"
+                "description": "clear the sidelist."
             },
             "sidelist_load":
             {
-                "description": "TODO"
+                "description": "Load the folder or playlist selected in the browser in the sidelist Use \"sidelist_load 'append'\" to add the selected folder to the sidelist instead of replacing the existing sidelist"
             },
             "sidelist_load_and_keep":
             {
-                "description": "TODO"
+                "description": "load the first song from the sidelist."
             },
             "sidelist_load_and_remove":
             {
-                "description": "TODO"
+                "description": "load the first song from the sidelist, and remove it from the sidelist."
             },
             "sidereco_options":
             {
-                "description": "TODO"
+                "description": "Show a menu to select what should be displayed in the sideview recommendation panel"
             },
             "sidereco_song":
             {
@@ -1323,35 +1324,35 @@ const vdjscript_list =
             },
             "sideview":
             {
-                "description": "TODO"
+                "description": "Show a specific folder in the sideview. Available sideviews are automix,sidelist,karaoke,sampler,clone Use 'sideview +1' or 'sideview -1' to scroll between available sideviews"
             },
             "sideview_options":
             {
-                "description": "TODO"
+                "description": "show the context menu to add or remove folders shortcuts to the sideView"
             },
             "sideview_sort":
             {
-                "description": "TODO"
+                "description": "Sort the sideview on the specified column: 'sideview_sort \"artist\"', 'sideview_sort \"lastplay\"',..."
             },
             "sideview_title":
             {
-                "description": "TODO"
+                "description": "Show the title of the folder selected in sideview"
             },
             "sideview_triggerpad":
             {
-                "description": "TODO"
+                "description": "set the sideview sampler in triggerpad mode or in list mode"
             },
             "undo_load":
             {
-                "description": "TODO"
+                "description": "Unload the song and reload the previous song. Use 'undo_load any' to unload from the last deck a song was loaded on. Otherwise the deck the action is called from is used."
             },
             "unload":
             {
-                "description": "TODO"
+                "description": "unload the song from the deck."
             },
             "view_options":
             {
-                "description": "TODO"
+                "description": "popup the list of view options. to set one directly, you can use 'view_options \"showkaraoke\" on' etc..."
             }
         },
         "config":
@@ -1936,7 +1937,7 @@ const vdjscript_list =
             "eq_mid":
             {
                 "description": "TODO",
-                "alias": "eq_med\neq_mid_slider"
+                "alias": "eq_med | eq_mid_slider"
             },
             "eq_mid_freq":
             {
