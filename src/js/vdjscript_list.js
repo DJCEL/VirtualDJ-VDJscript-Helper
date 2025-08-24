@@ -3772,7 +3772,3 @@ const vdjscript_list =
         }
     }
 }
-
-
-
-
