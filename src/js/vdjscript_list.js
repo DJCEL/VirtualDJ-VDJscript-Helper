@@ -92,7 +92,8 @@ const vdjscript_list =
             },
             "param_equal":
             {
-                "description": "Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` \"string\". For example: param_equal `get_browsed_song 'type'` \"audio\""
+                "description": "Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` \"string\". For example: param_equal `get_browsed_song 'type'` \"audio\"",
+                "examples" : "'param_equal `get_browsed_song 'type'` \"audio\"'"
             },
             "param_invert":
             {
@@ -3786,4 +3787,5 @@ const vdjscript_list =
             }
         }
     }
+
 }
