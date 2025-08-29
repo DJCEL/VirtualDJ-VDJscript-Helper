@@ -1,4 +1,4 @@
-"Category","Action","Alias","Description","Examples"
+"Category","Verb","Alias","Description","Examples"
 "flow","down","","execute different actions depending if the key is pressed or released.","'down ? action1 : action2'"
 "flow","isrepeat","","execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))","'isrepeat ? nothing : goto_cue'"
 "flow","nothing","","Do nothing.",""
