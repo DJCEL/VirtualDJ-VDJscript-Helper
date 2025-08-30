@@ -8,12 +8,12 @@ const vdjscript_list =
             "down":
             {
                 "description": "execute different actions depending if the key is pressed or released.",
-                "examples": "'down ? action1 : action2'"
+                "examples": "down ? action1 : action2"
             },
             "isrepeat":
             {
                 "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))",
-                "examples": "'isrepeat ? nothing : goto_cue'"
+                "examples": "isrepeat ? nothing : goto_cue"
             },
             "nothing":
             {
@@ -22,7 +22,7 @@ const vdjscript_list =
             "up":
             {
                 "description": "execute different actions depending if the key is released or pressed.",
-                "examples": "'up ? action1 : action2'"
+                "examples": "up ? action1 : action2"
             }
         },
         "param":
@@ -30,22 +30,23 @@ const vdjscript_list =
             "blink":
             {
                 "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'",
-                "examples": "'blink 1000ms' | 'blink 1bt' | 'blink 1bt 25%'"
+                "examples": "blink 1000ms | blink 1bt | blink 1bt 25%"
             },
             "color":
             {
                 "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
-                "examples": "'color red' | 'color \"#C08040\"' | 'color 0.8 0.5 0.25' | 'color 75% red' | 'color 0.66'"
+                "examples": "color red | color \"#C08040\" | color 0.8 0.5 0.25 | color 75% red | color 0.66"
             },
             "color_mix":
             {
-                "description": "Mix two colors based on an action in the third parameter color_mix white red `get_limiter`"
+                "description": "Mix two colors based on an action in the third parameter",
+                "examples": "color_mix white red `get_limiter`"
             },
             "constant":
             {
                 "description": "Return the specified value. 'get constant 75%' always returns 75%",
                 "alias": "get_constant",
-                "examples": "'get constant 75%'"
+                "examples": "get constant 75%"
             },
             "dim":
             {
@@ -54,33 +55,34 @@ const vdjscript_list =
             "fadeout":
             {
                 "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'",
-                "examples": "'loop & fadeout 10000ms 3000ms' | 'fadeout 10000ms 3000ms `loop`'"
+                "examples": "loop & fadeout 10000ms 3000ms | fadeout 10000ms 3000ms `loop`"
             },
             "false":
             {
                 "description": "returns false",
-                "alias": "no | off"
+                "alias": "no | off",
+                "examples": "effect_active false"
             },
             "param_1_x":
             {
-                "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'",
-                "examples": "'param_1_x & effect_slider'"
+                "description": "invert the value of the calling slider/encoder/button (calculate 1/x)",
+                "examples": "param_1_x & effect_slider"
             },
             "param_add":
             {
                 "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'",
-                "examples": "'param_add `get_var a` `get_var b`'"
+                "examples": "param_add `get_var a` `get_var b`"
             },
             "param_bigger":
             {
                 "description": "check if the value of the calling slider/encoder/button is bigger than something: 'param_bigger 0 ? sampler loop 200% : sampler loop 50%' compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: 'param_bigger pitch pitch_slider'",
                 "alias": "param_greater",
-                "examples": "'param_bigger 0 ? sampler_loop 200% : sampler_loop 50%' | 'param_bigger pitch pitch_slider'"
+                "examples": "param_bigger 0 ? action1 : action2 | param_bigger 0 ? sampler_loop 200% : sampler_loop 50% | param_bigger pitch pitch_slider"
             },
             "param_cast":
             {
                 "description": "cast the value of the previous query action into a new type: 'pitch_range & param_cast \"percentage\"'. Valid types are 'integer', 'float', 'percentage', 'ms', 'boolean', 'beats', 'text'. casting to text can also optionally limit the number of characters: 'get_browsed_song \"artist\" & param_cast \"text\" 5' to format a number as text with a specific number of digits: 'get_bpm & param_cast \"000\"' param_cast 'int_trunc' : provides the integer part of a number without rounding to the nearest integer param_cast 'frac' : provides the decimal part of a number. param_cast 'relative' and param_cast 'absolute' : change the parameter to be a relative or absolute value",
-                "examples": "'pitch_range & param_cast \"percentage\"' | 'get_browsed_song \"artist\" & param_cast \"text\" 5' | 'get_bpm & param_cast \"000\"'"
+                "examples": "pitch_range & param_cast \"percentage\" | get_browsed_song \"artist\" & param_cast \"text\" 5 | get_bpm & param_cast \"000\""
             },
             "param_contains":
             {
@@ -93,11 +95,12 @@ const vdjscript_list =
             "param_equal":
             {
                 "description": "Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` \"string\". For example: param_equal `get_browsed_song 'type'` \"audio\"",
-                "examples" : "'param_equal `get_browsed_song 'type'` \"audio\"'"
+                "examples": "param_equal `action param` \"string\" | param_equal `get_browsed_song 'type'` \"audio\""
             },
             "param_invert":
             {
-                "description": "invert the value of the calling slider/encoder/button (1-x): 'param_invert & pitch_slider'"
+                "description": "invert the value of the calling slider/encoder/button (1-x)",
+                "examples": "param_invert & pitch_slider"
             },
             "param_lowercase":
             {
@@ -105,27 +108,33 @@ const vdjscript_list =
             },
             "param_make_discrete":
             {
-                "description": "useful for smooth endless encoders, to make them discrete Example: 'param_make_discrete 0.1 & param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%'"
+                "description": "useful for smooth endless encoders, to make them discrete.",
+                "examples": "param_make_discrete 0.1 & param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%"
             },
             "param_mod":
             {
-                "description": "wrap the value of the calling slider/encoder if more than the given value"
+                "description": "wrap the value of the calling slider/encoder if more than the given value",
+                "examples": "param_mod & effect_slider"
             },
             "param_multiply":
             {
-                "description": "multiply the value of the calling slider/encoder/button by the given value: 'param_multiply 300% & effect slider' The parameter can also be an action 'cue_pos 0 & param_multiply \"get_time total 1000\"'"
+                "description": "multiply the value of the calling slider/encoder/button by the given value. param_multiply value & action. The parameter can also be an action 'cue_pos 0 & param_multiply \"get_time total 1000\"'",
+                "examples": "param_multiply 300% & effect_slider | cue_pos 0 & param_multiply \"get_time total 1000\""
             },
             "param_pingpong":
             {
-                "description": "transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale"
+                "description": "transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale",
+                "examples": "param_pingpong & effect_slider"
             },
             "param_pow":
             {
-                "description": "param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root."
+                "description": "param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.",
+                "examples": "param_pow 0.5 & effect_slider"
             },
             "param_smaller":
             {
-                "description": "check if the value of the calling slider/encoder/button is smaller than something: 'param_smaller 0 ? sampler loop 200% : sampler loop 50%'"
+                "description": "check if the value of the calling slider/encoder/button is smaller than something: 'param_smaller 0 ? sampler loop 200% : sampler loop 50%'",
+                "examples": "param_smaller 0 ? action1 : action2 | param_smaller 0 ? sampler loop 200% : sampler loop 50%"
             },
             "param_ucfirst":
             {
@@ -137,12 +146,14 @@ const vdjscript_list =
             },
             "pulse":
             {
-                "description": "return true when the previous action turns to true only for the duration specified: 'is_using 'equalizer' & pulse 2000ms'"
+                "description": "return true when the previous action turns to true only for the duration specified.",
+                "examples": "is_using 'equalizer' & pulse 2000ms"
             },
             "true":
             {
                 "description": "returns true",
-                "alias": "on | yes"
+                "alias": "on | yes",
+                "examples": "effect_active true"
             }
         },
         "repeat":
@@ -169,11 +180,13 @@ const vdjscript_list =
             },
             "repeat_stop":
             {
-                "description": "stop a previous repeat_start or repeat_start_instant action: 'repeat_stop 'myrepeatname''"
+                "description": "stop a previous repeat_start or repeat_start_instant action.",
+                "examples": "repeat_stop 'myrepeatname'"
             },
             "wait":
             {
-                "description": "wait for the specified amount of time between two script actions: 'wait 1bt & pause', 'wait 500ms & play'"
+                "description": "wait for the specified amount of time between two script actions.",
+                "examples": "wait 1bt & pause | wait 500ms & play"
             }
         },
         "skin":
@@ -208,11 +221,12 @@ const vdjscript_list =
             },
             "is_using":
             {
-                "description": "check if a particular feature is being used('filter', 'equalizer', 'loop', 'cue', 'sample', 'pads', 'effect', 'load') "
+                "description": "check if a particular feature is being used ('filter', 'equalizer', 'loop', 'cue', 'sample', 'pads', 'effect', 'load') "
             },
             "load_skin":
             {
-                "description": "load a new skin. Use syntax \" load_skin ':newvariation' \" to load a different variation inside the same skin file."
+                "description": "load a new skin. Use syntax \" load_skin ':newvariation' \" to load a different variation inside the same skin file.",
+                "samples": "load_skin 'myskin'"
             },
             "lock_panel":
             {
@@ -221,7 +235,8 @@ const vdjscript_list =
             },
             "multibutton":
             {
-                "description": "Click on the named multibutton: 'multibutton \"my_button\"'"
+                "description": "Click on the named multibutton",
+                "examples": "multibutton 'my_button'"
             },
             "multibutton_select":
             {
@@ -229,7 +244,8 @@ const vdjscript_list =
             },
             "rack":
             {
-                "description": "Open/close a unit in specified rack. Example: \"rack 'rack1' 'unit1'\""
+                "description": "Open/close a unit in specified rack.",
+                "examples": "rack 'rack1' 'unit1'"
             },
             "rack_prioritize":
             {
@@ -253,8 +269,9 @@ const vdjscript_list =
             },
             "skin_panel":
             {
-                "description": "show or hide a panel on the skin. \"skin_panel 'my_panel' on\"",
-                "alias": "skin_pannel"
+                "description": "show or hide a panel on the skin.",
+                "alias": "skin_pannel",
+                "examples": "skin_panel 'my_panel' on"
             },
             "skin_panelgroup":
             {
@@ -299,7 +316,8 @@ const vdjscript_list =
             },
             "get_clock":
             {
-                "description": "get the current time (use 'get_clock 12' to display AM/PM)"
+                "description": "get the current time (use 'get_clock 12' to display AM/PM)",
+                "examples": "get_clock | get_clock 12"
             },
             "get_cpu":
             {
@@ -372,11 +390,13 @@ const vdjscript_list =
             },
             "cycle":
             {
-                "description": "syntax: 'cycle \"my_var\" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle \"my_var\" -42' decrements my_var, and goes to 41 after it reached 0."
+                "description": "syntax: 'cycle \"my_var\" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle \"my_var\" -42' decrements my_var, and goes to 41 after it reached 0.",
+                "examples": "cycle \"my_var\" 42 | cycle \"my_var\" -42"
             },
             "get_var":
             {
-                "description": "get the value of the specified variable"
+                "description": "get the value of the specified variable",
+                examples: "get_var \"my_var\""
             },
             "set":
             {
@@ -384,7 +404,9 @@ const vdjscript_list =
             },
             "set_var":
             {
-                "description": "set the value of the specified variable"
+                "description": "set the value of the specified variable",
+                examples: "set_var \"my_var\" 5"
+
             },
             "set_var_dialog":
             {
@@ -392,19 +414,23 @@ const vdjscript_list =
             },
             "toggle":
             {
-                "description": "syntax: 'toggle \"my_var\"'. toggle my_var between true and false."
+                "description": "syntax: 'toggle \"my_var\"'. toggle my_var between true and false.",
+                "examples": "toggle \"my_var\""
             },
             "var":
             {
-                "description": "var \"my_var\" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: 'var \"my_var\" 1 ? my_action1 : my_action2' execute my_action1 is my_var is 1, or my_action2 otherwise"
+                "description": "var \"my_var\" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: 'var \"my_var\" 1 ? my_action1 : my_action2' execute my_action1 is my_var is 1, or my_action2 otherwise",
+                "examples": "var \"my_var\" ? my_action1 : my_action2 | var \"my_var\" 1 ? my_action1 : my_action2"
             },
             "var_equal":
             {
-                "description": "syntax: 'var_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: 'var_equal \"this_var\" \"that_var\" ? action1 : action2' execute action1 if this_var equals that_var, execute action2 otherwise"
+                "description": "syntax: 'var_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: 'var_equal \"this_var\" \"that_var\" ? action1 : action2' execute action1 if this_var equals that_var, execute action2 otherwise",
+                "examples": "var_equal \"my_var\" 42 ? action1 : action2 | var_equal \"my_var1\" \"my_var2\" ? action1 : action2"
             },
             "var_greater":
             {
-                "description": "syntax: 'var_greater \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise."
+                "description": "syntax: 'var_greater \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise.",
+                "examples": "var_greater \"my_var\" 42 ? action1 : action2"
             },
             "var_list":
             {
@@ -412,11 +438,13 @@ const vdjscript_list =
             },
             "var_not_equal":
             {
-                "description": "syntax: 'var_not_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise."
+                "description": "syntax: 'var_not_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise.",
+                "examples": "var_not_equal \"my_var\" 42 ? action1 : action2"
             },
             "var_smaller":
             {
-                "description": "syntax: 'var_smaller \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise."
+                "description": "syntax: 'var_smaller \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise.",
+                "examples": "var_smaller \"my_var\" 42 ? action1 : action2"
             }
         },
         "window":
