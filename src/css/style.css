@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 850px;
+    max-width: 1024px;
     max-height: 600px;
     margin: auto;
     background-color: #2c2c2c;
@@ -47,7 +47,7 @@ h1 {
     }
 
 .vdjscriptlist_container {
-    width: 800px;
+    width: 1000px;
     max-height: 380px;
     display: flex;
     gap: 10px;

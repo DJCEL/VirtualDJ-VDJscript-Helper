@@ -5,13 +5,13 @@
       "category": "flow",
       "action": "down",
       "description": "execute different actions depending if the key is pressed or released.",
-      "examples": "'down ? action1 : action2'"
+      "examples": "down ? action1 : action2"
     },
     {
       "category": "flow",
       "action": "isrepeat",
       "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))",
-      "examples": "'isrepeat ? nothing : goto_cue'"
+      "examples": "isrepeat ? nothing : goto_cue"
     },
     {
       "category": "flow",
@@ -22,31 +22,32 @@
       "category": "flow",
       "action": "up",
       "description": "execute different actions depending if the key is released or pressed.",
-      "examples": "'up ? action1 : action2'"
+      "examples": "up ? action1 : action2"
     },
     {
       "category": "param",
       "action": "blink",
       "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'",
-      "examples": "'blink 1000ms' | 'blink 1bt' | 'blink 1bt 25%'"
+      "examples": "blink 1000ms | blink 1bt | blink 1bt 25%"
     },
     {
       "category": "param",
       "action": "color",
       "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
-      "examples": "'color red' | 'color \"#C08040\"' | 'color 0.8 0.5 0.25' | 'color 75% red' | 'color 0.66'"
+      "examples": "color red | color \"#C08040\" | color 0.8 0.5 0.25 | color 75% red | color 0.66"
     },
     {
       "category": "param",
       "action": "color_mix",
-      "description": "Mix two colors based on an action in the third parameter color_mix white red `get_limiter`"
+      "description": "Mix two colors based on an action in the third parameter",
+      "examples": "color_mix white red `get_limiter`"
     },
     {
       "category": "param",
       "action": "constant",
       "description": "Return the specified value. 'get constant 75%' always returns 75%",
       "alias": "get_constant",
-      "examples": "'get constant 75%'"
+      "examples": "get constant 75%"
     },
     {
       "category": "param",
@@ -57,38 +58,39 @@
       "category": "param",
       "action": "fadeout",
       "description": "'loop & fadeout 10000ms 3000ms' will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: 'fadeout 10000ms 3000ms `loop`'",
-      "examples": "'loop & fadeout 10000ms 3000ms' | 'fadeout 10000ms 3000ms `loop`'"
+      "examples": "loop & fadeout 10000ms 3000ms | fadeout 10000ms 3000ms `loop`"
     },
     {
       "category": "param",
       "action": "false",
       "description": "returns false",
-      "alias": "no | off"
+      "alias": "no | off",
+      "examples": "effect_active false"
     },
     {
       "category": "param",
       "action": "param_1_x",
-      "description": "invert the value of the calling slider/encoder/button (calculate 1/x) 'param_1_x & effect slider'",
-      "examples": "'param_1_x & effect_slider'"
+      "description": "invert the value of the calling slider/encoder/button (calculate 1/x)",
+      "examples": "param_1_x & effect_slider"
     },
     {
       "category": "param",
       "action": "param_add",
       "description": "add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: 'param_add `get_var a` `get_var b`'",
-      "examples": "'param_add `get_var a` `get_var b`'"
+      "examples": "param_add `get_var a` `get_var b`"
     },
     {
       "category": "param",
       "action": "param_bigger",
       "description": "check if the value of the calling slider/encoder/button is bigger than something: 'param_bigger 0 ? sampler loop 200% : sampler loop 50%' compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: 'param_bigger pitch pitch_slider'",
       "alias": "param_greater",
-      "examples": "'param_bigger 0 ? sampler_loop 200% : sampler_loop 50%' | 'param_bigger pitch pitch_slider'"
+      "examples": "param_bigger 0 ? action1 : action2 | param_bigger 0 ? sampler_loop 200% : sampler_loop 50% | param_bigger pitch pitch_slider"
     },
     {
       "category": "param",
       "action": "param_cast",
       "description": "cast the value of the previous query action into a new type: 'pitch_range & param_cast \"percentage\"'. Valid types are 'integer', 'float', 'percentage', 'ms', 'boolean', 'beats', 'text'. casting to text can also optionally limit the number of characters: 'get_browsed_song \"artist\" & param_cast \"text\" 5' to format a number as text with a specific number of digits: 'get_bpm & param_cast \"000\"' param_cast 'int_trunc' : provides the integer part of a number without rounding to the nearest integer param_cast 'frac' : provides the decimal part of a number. param_cast 'relative' and param_cast 'absolute' : change the parameter to be a relative or absolute value",
-      "examples": "'pitch_range & param_cast \"percentage\"' | 'get_browsed_song \"artist\" & param_cast \"text\" 5' | 'get_bpm & param_cast \"000\"'"
+      "examples": "pitch_range & param_cast \"percentage\" | get_browsed_song \"artist\" & param_cast \"text\" 5 | get_bpm & param_cast \"000\""
     },
     {
       "category": "param",
@@ -103,12 +105,14 @@
     {
       "category": "param",
       "action": "param_equal",
-      "description": "Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` \"string\". For example: param_equal `get_browsed_song 'type'` \"audio\""
+      "description": "Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` \"string\". For example: param_equal `get_browsed_song 'type'` \"audio\"",
+      "examples": "param_equal 0.5 ? action1 : action2 | param_equal `action param` \"string\" | param_equal `get_browsed_song 'type'` \"audio\""
     },
     {
       "category": "param",
       "action": "param_invert",
-      "description": "invert the value of the calling slider/encoder/button (1-x): 'param_invert & pitch_slider'"
+      "description": "invert the value of the calling slider/encoder/button (1-x)",
+      "examples": "param_invert & pitch_slider"
     },
     {
       "category": "param",
@@ -118,32 +122,38 @@
     {
       "category": "param",
       "action": "param_make_discrete",
-      "description": "useful for smooth endless encoders, to make them discrete Example: 'param_make_discrete 0.1 & param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%'"
+      "description": "useful for smooth endless encoders, to make them discrete.",
+      "examples": "param_make_discrete 0.1 & param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%"
     },
     {
       "category": "param",
       "action": "param_mod",
-      "description": "wrap the value of the calling slider/encoder if more than the given value"
+      "description": "wrap the value of the calling slider/encoder if more than the given value",
+      "examples": "param_mod & effect_slider"
     },
     {
       "category": "param",
       "action": "param_multiply",
-      "description": "multiply the value of the calling slider/encoder/button by the given value: 'param_multiply 300% & effect slider' The parameter can also be an action 'cue_pos 0 & param_multiply \"get_time total 1000\"'"
+      "description": "multiply the value of the calling slider/encoder/button by the given value. param_multiply value & action. The parameter can also be an action 'cue_pos 0 & param_multiply \"get_time total 1000\"'",
+      "examples": "param_multiply 300% & effect_slider | cue_pos 0 & param_multiply \"get_time total 1000\""
     },
     {
       "category": "param",
       "action": "param_pingpong",
-      "description": "transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale"
+      "description": "transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale",
+      "examples": "param_pingpong & effect_slider"
     },
     {
       "category": "param",
       "action": "param_pow",
-      "description": "param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root."
+      "description": "param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.",
+      "examples": "param_pow 0.5 & effect_slider"
     },
     {
       "category": "param",
       "action": "param_smaller",
-      "description": "check if the value of the calling slider/encoder/button is smaller than something: 'param_smaller 0 ? sampler loop 200% : sampler loop 50%'"
+      "description": "check if the value of the calling slider/encoder/button is smaller than something: 'param_smaller 0 ? sampler loop 200% : sampler loop 50%'",
+      "examples": "param_smaller 0 ? action1 : action2 | param_smaller 0 ? sampler loop 200% : sampler loop 50%"
     },
     {
       "category": "param",
@@ -158,13 +168,15 @@
     {
       "category": "param",
       "action": "pulse",
-      "description": "return true when the previous action turns to true only for the duration specified: 'is_using 'equalizer' & pulse 2000ms'"
+      "description": "return true when the previous action turns to true only for the duration specified.",
+      "examples": "is_using 'equalizer' & pulse 2000ms"
     },
     {
       "category": "param",
       "action": "true",
       "description": "returns true",
-      "alias": "on | yes"
+      "alias": "on | yes",
+      "examples": "effect_active true"
     },
     {
       "category": "repeat",
@@ -194,12 +206,14 @@
     {
       "category": "repeat",
       "action": "repeat_stop",
-      "description": "stop a previous repeat_start or repeat_start_instant action: 'repeat_stop 'myrepeatname''"
+      "description": "stop a previous repeat_start or repeat_start_instant action.",
+      "examples": "repeat_stop 'myrepeatname'"
     },
     {
       "category": "repeat",
       "action": "wait",
-      "description": "wait for the specified amount of time between two script actions: 'wait 1bt & pause', 'wait 500ms & play'"
+      "description": "wait for the specified amount of time between two script actions.",
+      "examples": "wait 1bt & pause | wait 500ms & play"
     },
     {
       "category": "skin",
@@ -236,7 +250,7 @@
     {
       "category": "skin",
       "action": "is_using",
-      "description": "check if a particular feature is being used('filter', 'equalizer', 'loop', 'cue', 'sample', 'pads', 'effect', 'load') "
+      "description": "check if a particular feature is being used ('filter', 'equalizer', 'loop', 'cue', 'sample', 'pads', 'effect', 'load') "
     },
     {
       "category": "skin",
@@ -252,7 +266,8 @@
     {
       "category": "skin",
       "action": "multibutton",
-      "description": "Click on the named multibutton: 'multibutton \"my_button\"'"
+      "description": "Click on the named multibutton",
+      "examples": "multibutton 'my_button'"
     },
     {
       "category": "skin",
@@ -262,7 +277,8 @@
     {
       "category": "skin",
       "action": "rack",
-      "description": "Open/close a unit in specified rack. Example: \"rack 'rack1' 'unit1'\""
+      "description": "Open/close a unit in specified rack.",
+      "examples": "rack 'rack1' 'unit1'"
     },
     {
       "category": "skin",
@@ -290,8 +306,9 @@
     {
       "category": "skin",
       "action": "skin_panel",
-      "description": "show or hide a panel on the skin. \"skin_panel 'my_panel' on\"",
-      "alias": "skin_pannel"
+      "description": "show or hide a panel on the skin.",
+      "alias": "skin_pannel",
+      "examples": "skin_panel 'my_panel' on"
     },
     {
       "category": "skin",
@@ -340,7 +357,8 @@
     {
       "category": "system",
       "action": "get_clock",
-      "description": "get the current time (use 'get_clock 12' to display AM/PM)"
+      "description": "get the current time (use 'get_clock 12' to display AM/PM)",
+      "examples": "get_clock | get_clock 12"
     },
     {
       "category": "system",
@@ -425,22 +443,26 @@
     {
       "category": "variables",
       "action": "cycle",
-      "description": "syntax: 'cycle \"my_var\" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle \"my_var\" -42' decrements my_var, and goes to 41 after it reached 0."
+      "description": "syntax: 'cycle \"my_var\" 42'. increment my_var, and goes back to 0 when it reaches 42. 'cycle \"my_var\" -42' decrements my_var, and goes to 41 after it reached 0.",
+      "examples": "cycle \"my_var\" 42 | cycle \"my_var\" -42"
     },
     {
       "category": "variables",
       "action": "get_var",
-      "description": "get the value of the specified variable"
+      "description": "get the value of the specified variable",
+      "examples": "get_var \"my_var\""
     },
     {
       "category": "variables",
       "action": "set",
-      "description": "set 'varname' 5 sets variable varname to the value 5 set 'varname' 'var2' sets variable varname to the value of variable var2 set 'varname' `play` sets variable varname to the value of the action play"
+      "description": "set 'varname' 5 sets variable varname to the value 5 set 'varname' 'var2' sets variable varname to the value of variable var2 set 'varname' `play` sets variable varname to the value of the action play",
+      "examples": "set 'varname' 5 | set 'varname' 'var2' | set 'varname' `play`"
     },
     {
       "category": "variables",
       "action": "set_var",
-      "description": "set the value of the specified variable"
+      "description": "set the value of the specified variable",
+      "examples": "set_var \"my_var\" 5"
     },
     {
       "category": "variables",
@@ -450,22 +472,26 @@
     {
       "category": "variables",
       "action": "toggle",
-      "description": "syntax: 'toggle \"my_var\"'. toggle my_var between true and false."
+      "description": "syntax: 'toggle \"my_var\"'. toggle my_var between true and false.",
+      "examples": "toggle \"my_var\""
     },
     {
       "category": "variables",
       "action": "var",
-      "description": "var \"my_var\" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: 'var \"my_var\" 1 ? my_action1 : my_action2' execute my_action1 is my_var is 1, or my_action2 otherwise"
+      "description": "var \"my_var\" ? my_action1 : my_action2'. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: 'var \"my_var\" 1 ? my_action1 : my_action2' execute my_action1 is my_var is 1, or my_action2 otherwise",
+      "examples": "var \"my_var\" ? my_action1 : my_action2 | var \"my_var\" 1 ? my_action1 : my_action2"
     },
     {
       "category": "variables",
       "action": "var_equal",
-      "description": "syntax: 'var_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: 'var_equal \"this_var\" \"that_var\" ? action1 : action2' execute action1 if this_var equals that_var, execute action2 otherwise"
+      "description": "syntax: 'var_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: 'var_equal \"this_var\" \"that_var\" ? action1 : action2' execute action1 if this_var equals that_var, execute action2 otherwise",
+      "examples": "var_equal \"my_var\" 42 ? action1 : action2 | var_equal \"my_var1\" \"my_var2\" ? action1 : action2"
     },
     {
       "category": "variables",
       "action": "var_greater",
-      "description": "syntax: 'var_greater \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise."
+      "description": "syntax: 'var_greater \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise.",
+      "examples": "var_greater \"my_var\" 42 ? action1 : action2"
     },
     {
       "category": "variables",
@@ -475,12 +501,14 @@
     {
       "category": "variables",
       "action": "var_not_equal",
-      "description": "syntax: 'var_not_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise."
+      "description": "syntax: 'var_not_equal \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var doesn't equal 42, execute my_action2 otherwise.",
+      "examples": "var_not_equal \"my_var\" 42 ? action1 : action2"
     },
     {
       "category": "variables",
       "action": "var_smaller",
-      "description": "syntax: 'var_smaller \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise."
+      "description": "syntax: 'var_smaller \"my_var\" 42 ? my_action1 : my_action2'. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise.",
+      "examples": "var_smaller \"my_var\" 42 ? action1 : action2"
     },
     {
       "category": "window",
@@ -499,7 +527,8 @@
     },
     {
       "category": "window",
-      "action": "open_stem_creator"
+      "action": "open_stem_creator",
+      "description": "Open the Stems creator editor"
     },
     {
       "category": "window",
@@ -509,12 +538,14 @@
     {
       "category": "audio",
       "action": "beat_juggle",
-      "description": "Alternatively jumps one beat forward and backward 'beat_juggle 0.5' will jump 1/2 beat forward or backward"
+      "description": "Alternatively jumps one beat forward and backward 'beat_juggle 0.5' will jump 1/2 beat forward or backward",
+      "examples": "beat_juggle | beat_juggle 0.5"
     },
     {
       "category": "audio",
       "action": "beatjump",
-      "description": "Jump a certain number of beats as set by beatjump_select 'beatjump +1' to jump forward, or 'beatjump -1' to jump backwards"
+      "description": "Jump a certain number of beats as set by beatjump_select 'beatjump +1' to jump forward, or 'beatjump -1' to jump backwards",
+      "examples": "beatjump +1 | beatjump -1"
     },
     {
       "category": "audio",
@@ -529,7 +560,8 @@
     {
       "category": "audio",
       "action": "beatjump_select",
-      "description": "Select the number of beats the beatjump action will jump 'beatjump_select 4' to set beatjump to 4 beats 'beatjump_select +1' to set the next higher beat size 'beatjump_select 50%' to halve the current beat size 'beatjump_select 200%' to double the current beat size"
+      "description": "Select the number of beats the beatjump action will jump 'beatjump_select 4' to set beatjump to 4 beats 'beatjump_select +1' to set the next higher beat size 'beatjump_select 50%' to halve the current beat size 'beatjump_select 200%' to double the current beat size",
+      "examples": "beatjump_select 4 | beatjump_select +1 | beatjump_select 50% | beatjump_select 200%"
     },
     {
       "category": "audio",
@@ -558,12 +590,14 @@
     {
       "category": "audio",
       "action": "goto",
-      "description": "change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' jumps to 20% of the song's length."
+      "description": "change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' jumps to 20% of the song's length.",
+      "examples": "goto +10ms | goto -4 | goto 20%"
     },
     {
       "category": "audio",
       "action": "goto_bar",
-      "description": "put the song on its nth beat after the downbeat without loosing sync: 'goto_bar 4'"
+      "description": "put the song on its nth beat after the downbeat without loosing sync",
+      "examples": "goto_bar 4"
     },
     {
       "category": "audio",
@@ -736,7 +770,8 @@
     {
       "category": "audio_inputs",
       "action": "mic_talkover",
-      "description": "Lower the volume of all decks while active and activates microphone Use 'mic_talkover while_pressed' to only activate mic as long as button is held Use 'mic_talkover 20% 1000ms' to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)"
+      "description": "Lower the volume of all decks while active and activates microphone Use 'mic_talkover while_pressed' to only activate mic as long as button is held Use 'mic_talkover 20% 1000ms' to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)",
+      "examples": "mic_talkover | mic_talkover while_pressed | mic_talkover 20% 1000ms"
     },
     {
       "category": "audio_scratch",
@@ -761,22 +796,26 @@
       "category": "audio_scratch",
       "action": "jogwheel",
       "description": "used for a jogwheel without touch sensitivity. 'jogwheel +1.0' means a full rotation of the wheel.",
-      "alias": "jog | jog_wheel"
+      "alias": "jog | jog_wheel",
+      "examples": "jogwheel"
     },
     {
       "category": "audio_scratch",
       "action": "motorwheel",
-      "description": "used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel \"move\" +1.0' followed by 'motorwheel \"timestamp\" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false."
+      "description": "used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel \"move\" +1.0' followed by 'motorwheel \"timestamp\" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false.",
+      "examples": "motorwheel"
     },
     {
       "category": "audio_scratch",
       "action": "nudge",
-      "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated)."
+      "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated).",
+      "examples": "nudge +120ms | nudge -120ms"
     },
     {
       "category": "audio_scratch",
       "action": "scratch",
-      "description": "'scratch +120ms' to scratch 120ms forward."
+      "description": "'scratch +120ms' to scratch 120ms forward.",
+      "examples": "scratch +120ms | scratch -120ms"
     },
     {
       "category": "audio_scratch",
@@ -806,13 +845,15 @@
     {
       "category": "audio_scratch",
       "action": "speedwheel",
-      "description": "used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed."
+      "description": "used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed.",
+      "examples": "speedwheel"
     },
     {
       "category": "audio_scratch",
       "action": "touchwheel",
       "description": "used for a jogwheel with touch sensitivity. 'touchwheel +1.0' means a full rotation of the wheel.",
-      "alias": "scratch_wheel | scratchwheel"
+      "alias": "scratch_wheel | scratchwheel",
+      "examples": "touchwheel"
     },
     {
       "category": "audio_scratch",
@@ -850,12 +891,14 @@
       "category": "audio_volumes",
       "action": "crossfader",
       "description": "move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
-      "alias": "crossfader_slider"
+      "alias": "crossfader_slider",
+      "examples": "crossfader 0% | crossfader 100% | crossfader 50%"
     },
     {
       "category": "audio_volumes",
       "action": "crossfader_curve",
-      "description": "select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (\"smooth\", \"full\", \"scratch\", \"cut\"). or you can draw your own curve, using a syntax like 'crossfader_curve \"0 = [1, 0] / 0.5=[1, 1]/1=[0,1]\"'."
+      "description": "select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (\"smooth\", \"full\", \"scratch\", \"cut\"). or you can draw your own curve, using a syntax like 'crossfader_curve \"0 = [1, 0] / 0.5=[1, 1]/1=[0,1]\"'.",
+      "examples": "crossfader_curve \"smooth\" | crossfader_curve \"0=[1,0]/0.5=[1,1]/1=[0,1]\""
     },
     {
       "category": "audio_volumes",
@@ -1240,13 +1283,15 @@
     {
       "category": "browser",
       "action": "add_to_list",
-      "description": "Add the currently selected songs in the browser to the specified List. 'add_to_list \"my_list\"'",
-      "alias": "virtualfolder_add"
+      "description": "Add the currently selected songs in the browser to the specified List.",
+      "alias": "virtualfolder_add",
+      "examples": "add_to_list \"my_list\""
     },
     {
       "category": "browser",
       "action": "browsed_file_analyze",
-      "description": "reanalyze the current file selected in the browser use 'browsed_file_analyze multi' to do a scan for multiple bpms"
+      "description": "reanalyze the current file selected in the browser use 'browsed_file_analyze multi' to do a scan for multiple bpms",
+      "examples": "browsed_file_analyze | browsed_file_analyze multi"
     },
     {
       "category": "browser",
@@ -1301,7 +1346,8 @@
     {
       "category": "browser",
       "action": "browser_gotofolder",
-      "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder."
+      "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder.",
+      "examples": "browser_gotofolder | browser_gotofolder \"/my_path/my_folder\" | browser_gotofolder 4"
     },
     {
       "category": "browser",
@@ -1326,7 +1372,8 @@
     {
       "category": "browser",
       "action": "browser_padding",
-      "description": "Change the padding around lines in folder and list views. Example: browser_padding 50%"
+      "description": "Change the padding around lines in folder and list views.",
+      "examples": "browser_padding 50%"
     },
     {
       "category": "browser",
@@ -1391,7 +1438,8 @@
     {
       "category": "browser",
       "action": "font_size",
-      "description": "Change browser font size. Example: font_size +1"
+      "description": "Change browser font size. Example: font_size +1",
+      "examples": "font_size +1 | font_size -1"
     },
     {
       "category": "browser",

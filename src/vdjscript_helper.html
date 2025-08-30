@@ -99,8 +99,8 @@
             // Update description + input
             let action_data = vdjdata[category][action];
             var description = action_data.description;
-            var alias = (action_data.alias) ? action_data.alias.replace("|", "\n") : "";
-            let examples = (action_data.examples) ? action_data.examples.replace("|", "\n") : "";
+            var alias = (action_data.alias) ? action_data.alias.replaceAll("|", "\n") : "";
+            let examples = (action_data.examples) ? action_data.examples.replaceAll("|", "\n") : "";
             let description_full1 = (examples != "") ? description + "\n\n--- EXAMPLES ---\n" + examples : description;
             var description_full2 = (alias != "") ? description_full1 + "\n\n--- ALIAS ---\n" + alias : description_full1;
             descriptionBox.textContent = description_full2;

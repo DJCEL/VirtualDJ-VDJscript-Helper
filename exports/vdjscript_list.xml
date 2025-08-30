@@ -4,13 +4,13 @@
     <Category>flow</Category>
     <Action>down</Action>
     <Description>execute different actions depending if the key is pressed or released.</Description>
-    <Examples>&apos;down ? action1 : action2&apos;</Examples>
+    <Examples>down ? action1 : action2</Examples>
   </Item>
   <Item>
     <Category>flow</Category>
     <Action>isrepeat</Action>
     <Description>execute different actions depending if the key is being repeated or if it&apos;s the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))</Description>
-    <Examples>&apos;isrepeat ? nothing : goto_cue&apos;</Examples>
+    <Examples>isrepeat ? nothing : goto_cue</Examples>
   </Item>
   <Item>
     <Category>flow</Category>
@@ -21,31 +21,32 @@
     <Category>flow</Category>
     <Action>up</Action>
     <Description>execute different actions depending if the key is released or pressed.</Description>
-    <Examples>&apos;up ? action1 : action2&apos;</Examples>
+    <Examples>up ? action1 : action2</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>blink</Action>
     <Description>turn on and off the LED, once per second.You can specify the speed: &apos;blink 1000ms&apos; Speed can also be specified in number of beats: &apos;blink 1bt&apos;.The time blinking can also be specified: &apos;blink 1bt 25%&apos;</Description>
-    <Examples>&apos;blink 1000ms&apos; | &apos;blink 1bt&apos; | &apos;blink 1bt 25%&apos;</Examples>
+    <Examples>blink 1000ms | blink 1bt | blink 1bt 25%</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>color</Action>
     <Description>color &apos;red&apos; color &quot;#C08040&quot; color 0.8 0.5 0.25 color 75% &apos;red&apos; (returns a dimmed red) color 0.66 (returns a gray)</Description>
-    <Examples>&apos;color red&apos; | &apos;color &quot;#C08040&quot;&apos; | &apos;color 0.8 0.5 0.25&apos; | &apos;color 75% red&apos; | &apos;color 0.66&apos;</Examples>
+    <Examples>color red | color &quot;#C08040&quot; | color 0.8 0.5 0.25 | color 75% red | color 0.66</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>color_mix</Action>
-    <Description>Mix two colors based on an action in the third parameter color_mix white red `get_limiter`</Description>
+    <Description>Mix two colors based on an action in the third parameter</Description>
+    <Examples>color_mix white red `get_limiter`</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>constant</Action>
     <Alias>get_constant</Alias>
     <Description>Return the specified value. &apos;get constant 75%&apos; always returns 75%</Description>
-    <Examples>&apos;get constant 75%&apos;</Examples>
+    <Examples>get constant 75%</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -56,38 +57,39 @@
     <Category>param</Category>
     <Action>fadeout</Action>
     <Description>&apos;loop &amp; fadeout 10000ms 3000ms&apos; will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: &apos;fadeout 10000ms 3000ms `loop`&apos;</Description>
-    <Examples>&apos;loop &amp; fadeout 10000ms 3000ms&apos; | &apos;fadeout 10000ms 3000ms `loop`&apos;</Examples>
+    <Examples>loop &amp; fadeout 10000ms 3000ms | fadeout 10000ms 3000ms `loop`</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>false</Action>
     <Alias>no | off</Alias>
     <Description>returns false</Description>
+    <Examples>effect_active false</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_1_x</Action>
-    <Description>invert the value of the calling slider/encoder/button (calculate 1/x) &apos;param_1_x &amp; effect slider&apos;</Description>
-    <Examples>&apos;param_1_x &amp; effect_slider&apos;</Examples>
+    <Description>invert the value of the calling slider/encoder/button (calculate 1/x)</Description>
+    <Examples>param_1_x &amp; effect_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_add</Action>
     <Description>add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: &apos;param_add `get_var a` `get_var b`&apos;</Description>
-    <Examples>&apos;param_add `get_var a` `get_var b`&apos;</Examples>
+    <Examples>param_add `get_var a` `get_var b`</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_bigger</Action>
     <Alias>param_greater</Alias>
     <Description>check if the value of the calling slider/encoder/button is bigger than something: &apos;param_bigger 0 ? sampler loop 200% : sampler loop 50%&apos; compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: &apos;param_bigger pitch pitch_slider&apos;</Description>
-    <Examples>&apos;param_bigger 0 ? sampler_loop 200% : sampler_loop 50%&apos; | &apos;param_bigger pitch pitch_slider&apos;</Examples>
+    <Examples>param_bigger 0 ? action1 : action2 | param_bigger 0 ? sampler_loop 200% : sampler_loop 50% | param_bigger pitch pitch_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_cast</Action>
     <Description>cast the value of the previous query action into a new type: &apos;pitch_range &amp; param_cast &quot;percentage&quot;&apos;. Valid types are &apos;integer&apos;, &apos;float&apos;, &apos;percentage&apos;, &apos;ms&apos;, &apos;boolean&apos;, &apos;beats&apos;, &apos;text&apos;. casting to text can also optionally limit the number of characters: &apos;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&apos; to format a number as text with a specific number of digits: &apos;get_bpm &amp; param_cast &quot;000&quot;&apos; param_cast &apos;int_trunc&apos; : provides the integer part of a number without rounding to the nearest integer param_cast &apos;frac&apos; : provides the decimal part of a number. param_cast &apos;relative&apos; and param_cast &apos;absolute&apos; : change the parameter to be a relative or absolute value</Description>
-    <Examples>&apos;pitch_range &amp; param_cast &quot;percentage&quot;&apos; | &apos;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&apos; | &apos;get_bpm &amp; param_cast &quot;000&quot;&apos;</Examples>
+    <Examples>pitch_range &amp; param_cast &quot;percentage&quot; | get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5 | get_bpm &amp; param_cast &quot;000&quot;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -103,11 +105,13 @@
     <Category>param</Category>
     <Action>param_equal</Action>
     <Description>Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` &quot;string&quot;. For example: param_equal `get_browsed_song &apos;type&apos;` &quot;audio&quot;</Description>
+    <Examples>param_equal 0.5 ? action1 : action2 | param_equal `action param` &quot;string&quot; | param_equal `get_browsed_song &apos;type&apos;` &quot;audio&quot;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_invert</Action>
-    <Description>invert the value of the calling slider/encoder/button (1-x): &apos;param_invert &amp; pitch_slider&apos;</Description>
+    <Description>invert the value of the calling slider/encoder/button (1-x)</Description>
+    <Examples>param_invert &amp; pitch_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -117,32 +121,38 @@
   <Item>
     <Category>param</Category>
     <Action>param_make_discrete</Action>
-    <Description>useful for smooth endless encoders, to make them discrete Example: &apos;param_make_discrete 0.1 &amp; param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%&apos;</Description>
+    <Description>useful for smooth endless encoders, to make them discrete.</Description>
+    <Examples>param_make_discrete 0.1 &amp; param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_mod</Action>
     <Description>wrap the value of the calling slider/encoder if more than the given value</Description>
+    <Examples>param_mod &amp; effect_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_multiply</Action>
-    <Description>multiply the value of the calling slider/encoder/button by the given value: &apos;param_multiply 300% &amp; effect slider&apos; The parameter can also be an action &apos;cue_pos 0 &amp; param_multiply &quot;get_time total 1000&quot;&apos;</Description>
+    <Description>multiply the value of the calling slider/encoder/button by the given value. param_multiply value &amp; action. The parameter can also be an action &apos;cue_pos 0 &amp; param_multiply &quot;get_time total 1000&quot;&apos;</Description>
+    <Examples>param_multiply 300% &amp; effect_slider | cue_pos 0 &amp; param_multiply &quot;get_time total 1000&quot;</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_pingpong</Action>
     <Description>transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale</Description>
+    <Examples>param_pingpong &amp; effect_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_pow</Action>
     <Description>param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.</Description>
+    <Examples>param_pow 0.5 &amp; effect_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>param_smaller</Action>
     <Description>check if the value of the calling slider/encoder/button is smaller than something: &apos;param_smaller 0 ? sampler loop 200% : sampler loop 50%&apos;</Description>
+    <Examples>param_smaller 0 ? action1 : action2 | param_smaller 0 ? sampler loop 200% : sampler loop 50%</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -157,13 +167,15 @@
   <Item>
     <Category>param</Category>
     <Action>pulse</Action>
-    <Description>return true when the previous action turns to true only for the duration specified: &apos;is_using &apos;equalizer&apos; &amp; pulse 2000ms&apos;</Description>
+    <Description>return true when the previous action turns to true only for the duration specified.</Description>
+    <Examples>is_using &apos;equalizer&apos; &amp; pulse 2000ms</Examples>
   </Item>
   <Item>
     <Category>param</Category>
     <Action>true</Action>
     <Alias>on | yes</Alias>
     <Description>returns true</Description>
+    <Examples>effect_active true</Examples>
   </Item>
   <Item>
     <Category>repeat</Category>
@@ -193,12 +205,14 @@
   <Item>
     <Category>repeat</Category>
     <Action>repeat_stop</Action>
-    <Description>stop a previous repeat_start or repeat_start_instant action: &apos;repeat_stop &apos;myrepeatname&apos;&apos;</Description>
+    <Description>stop a previous repeat_start or repeat_start_instant action.</Description>
+    <Examples>repeat_stop &apos;myrepeatname&apos;</Examples>
   </Item>
   <Item>
     <Category>repeat</Category>
     <Action>wait</Action>
-    <Description>wait for the specified amount of time between two script actions: &apos;wait 1bt &amp; pause&apos;, &apos;wait 500ms &amp; play&apos;</Description>
+    <Description>wait for the specified amount of time between two script actions.</Description>
+    <Examples>wait 1bt &amp; pause | wait 500ms &amp; play</Examples>
   </Item>
   <Item>
     <Category>skin</Category>
@@ -235,7 +249,7 @@
   <Item>
     <Category>skin</Category>
     <Action>is_using</Action>
-    <Description>check if a particular feature is being used(&apos;filter&apos;, &apos;equalizer&apos;, &apos;loop&apos;, &apos;cue&apos;, &apos;sample&apos;, &apos;pads&apos;, &apos;effect&apos;, &apos;load&apos;) </Description>
+    <Description>check if a particular feature is being used (&apos;filter&apos;, &apos;equalizer&apos;, &apos;loop&apos;, &apos;cue&apos;, &apos;sample&apos;, &apos;pads&apos;, &apos;effect&apos;, &apos;load&apos;) </Description>
   </Item>
   <Item>
     <Category>skin</Category>
@@ -251,7 +265,8 @@
   <Item>
     <Category>skin</Category>
     <Action>multibutton</Action>
-    <Description>Click on the named multibutton: &apos;multibutton &quot;my_button&quot;&apos;</Description>
+    <Description>Click on the named multibutton</Description>
+    <Examples>multibutton &apos;my_button&apos;</Examples>
   </Item>
   <Item>
     <Category>skin</Category>
@@ -261,7 +276,8 @@
   <Item>
     <Category>skin</Category>
     <Action>rack</Action>
-    <Description>Open/close a unit in specified rack. Example: &quot;rack &apos;rack1&apos; &apos;unit1&apos;&quot;</Description>
+    <Description>Open/close a unit in specified rack.</Description>
+    <Examples>rack &apos;rack1&apos; &apos;unit1&apos;</Examples>
   </Item>
   <Item>
     <Category>skin</Category>
@@ -290,7 +306,8 @@
     <Category>skin</Category>
     <Action>skin_panel</Action>
     <Alias>skin_pannel</Alias>
-    <Description>show or hide a panel on the skin. &quot;skin_panel &apos;my_panel&apos; on&quot;</Description>
+    <Description>show or hide a panel on the skin.</Description>
+    <Examples>skin_panel &apos;my_panel&apos; on</Examples>
   </Item>
   <Item>
     <Category>skin</Category>
@@ -340,6 +357,7 @@
     <Category>system</Category>
     <Action>get_clock</Action>
     <Description>get the current time (use &apos;get_clock 12&apos; to display AM/PM)</Description>
+    <Examples>get_clock | get_clock 12</Examples>
   </Item>
   <Item>
     <Category>system</Category>
@@ -425,21 +443,25 @@
     <Category>variables</Category>
     <Action>cycle</Action>
     <Description>syntax: &apos;cycle &quot;my_var&quot; 42&apos;. increment my_var, and goes back to 0 when it reaches 42. &apos;cycle &quot;my_var&quot; -42&apos; decrements my_var, and goes to 41 after it reached 0.</Description>
+    <Examples>cycle &quot;my_var&quot; 42 | cycle &quot;my_var&quot; -42</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>get_var</Action>
     <Description>get the value of the specified variable</Description>
+    <Examples>get_var &quot;my_var&quot;</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>set</Action>
     <Description>set &apos;varname&apos; 5 sets variable varname to the value 5 set &apos;varname&apos; &apos;var2&apos; sets variable varname to the value of variable var2 set &apos;varname&apos; `play` sets variable varname to the value of the action play</Description>
+    <Examples>set &apos;varname&apos; 5 | set &apos;varname&apos; &apos;var2&apos; | set &apos;varname&apos; `play`</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>set_var</Action>
     <Description>set the value of the specified variable</Description>
+    <Examples>set_var &quot;my_var&quot; 5</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
@@ -450,21 +472,25 @@
     <Category>variables</Category>
     <Action>toggle</Action>
     <Description>syntax: &apos;toggle &quot;my_var&quot;&apos;. toggle my_var between true and false.</Description>
+    <Examples>toggle &quot;my_var&quot;</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>var</Action>
     <Description>var &quot;my_var&quot; ? my_action1 : my_action2&apos;. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: &apos;var &quot;my_var&quot; 1 ? my_action1 : my_action2&apos; execute my_action1 is my_var is 1, or my_action2 otherwise</Description>
+    <Examples>var &quot;my_var&quot; ? my_action1 : my_action2 | var &quot;my_var&quot; 1 ? my_action1 : my_action2</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>var_equal</Action>
     <Description>syntax: &apos;var_equal &quot;my_var&quot; 42 ? my_action1 : my_action2&apos;. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: &apos;var_equal &quot;this_var&quot; &quot;that_var&quot; ? action1 : action2&apos; execute action1 if this_var equals that_var, execute action2 otherwise</Description>
+    <Examples>var_equal &quot;my_var&quot; 42 ? action1 : action2 | var_equal &quot;my_var1&quot; &quot;my_var2&quot; ? action1 : action2</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>var_greater</Action>
     <Description>syntax: &apos;var_greater &quot;my_var&quot; 42 ? my_action1 : my_action2&apos;. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise.</Description>
+    <Examples>var_greater &quot;my_var&quot; 42 ? action1 : action2</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
@@ -475,11 +501,13 @@
     <Category>variables</Category>
     <Action>var_not_equal</Action>
     <Description>syntax: &apos;var_not_equal &quot;my_var&quot; 42 ? my_action1 : my_action2&apos;. execute my_action1 if my_var doesn&apos;t equal 42, execute my_action2 otherwise.</Description>
+    <Examples>var_not_equal &quot;my_var&quot; 42 ? action1 : action2</Examples>
   </Item>
   <Item>
     <Category>variables</Category>
     <Action>var_smaller</Action>
     <Description>syntax: &apos;var_smaller &quot;my_var&quot; 42 ? my_action1 : my_action2&apos;. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise.</Description>
+    <Examples>var_smaller &quot;my_var&quot; 42 ? action1 : action2</Examples>
   </Item>
   <Item>
     <Category>window</Category>
@@ -499,6 +527,7 @@
   <Item>
     <Category>window</Category>
     <Action>open_stem_creator</Action>
+    <Description>Open the Stems creator editor</Description>
   </Item>
   <Item>
     <Category>window</Category>
@@ -509,11 +538,13 @@
     <Category>audio</Category>
     <Action>beat_juggle</Action>
     <Description>Alternatively jumps one beat forward and backward &apos;beat_juggle 0.5&apos; will jump 1/2 beat forward or backward</Description>
+    <Examples>beat_juggle | beat_juggle 0.5</Examples>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>beatjump</Action>
     <Description>Jump a certain number of beats as set by beatjump_select &apos;beatjump +1&apos; to jump forward, or &apos;beatjump -1&apos; to jump backwards</Description>
+    <Examples>beatjump +1 | beatjump -1</Examples>
   </Item>
   <Item>
     <Category>audio</Category>
@@ -529,6 +560,7 @@
     <Category>audio</Category>
     <Action>beatjump_select</Action>
     <Description>Select the number of beats the beatjump action will jump &apos;beatjump_select 4&apos; to set beatjump to 4 beats &apos;beatjump_select +1&apos; to set the next higher beat size &apos;beatjump_select 50%&apos; to halve the current beat size &apos;beatjump_select 200%&apos; to double the current beat size</Description>
+    <Examples>beatjump_select 4 | beatjump_select +1 | beatjump_select 50% | beatjump_select 200%</Examples>
   </Item>
   <Item>
     <Category>audio</Category>
@@ -558,11 +590,13 @@
     <Category>audio</Category>
     <Action>goto</Action>
     <Description>change the position in the song. &apos;goto +10ms&apos; jumps 10ms forward. &apos;goto -4&apos; jumps 4 beats backward. &apos;goto 20%&apos; jumps to 20% of the song&apos;s length.</Description>
+    <Examples>goto +10ms | goto -4 | goto 20%</Examples>
   </Item>
   <Item>
     <Category>audio</Category>
     <Action>goto_bar</Action>
-    <Description>put the song on its nth beat after the downbeat without loosing sync: &apos;goto_bar 4&apos;</Description>
+    <Description>put the song on its nth beat after the downbeat without loosing sync</Description>
+    <Examples>goto_bar 4</Examples>
   </Item>
   <Item>
     <Category>audio</Category>
@@ -736,6 +770,7 @@
     <Category>audio_inputs</Category>
     <Action>mic_talkover</Action>
     <Description>Lower the volume of all decks while active and activates microphone Use &apos;mic_talkover while_pressed&apos; to only activate mic as long as button is held Use &apos;mic_talkover 20% 1000ms&apos; to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)</Description>
+    <Examples>mic_talkover | mic_talkover while_pressed | mic_talkover 20% 1000ms</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -761,21 +796,25 @@
     <Action>jogwheel</Action>
     <Alias>jog | jog_wheel</Alias>
     <Description>used for a jogwheel without touch sensitivity. &apos;jogwheel +1.0&apos; means a full rotation of the wheel.</Description>
+    <Examples>jogwheel</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>motorwheel</Action>
     <Description>used for a motorized jogwheel. Each time the jogwheel moves, send &apos;motorwheel &quot;move&quot; +1.0&apos; followed by &apos;motorwheel &quot;timestamp&quot; 1000.0&apos;. &apos;move +1.0&apos; means a full platter rotation. &apos;timestamp 1.0&apos; means 1ms since last message. You should query &apos;motorwheel&apos; and turn the motor on when it returns true and off when false.</Description>
+    <Examples>motorwheel</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>nudge</Action>
     <Description>&apos;nudge +120ms&apos; to nudge the song 120ms forward (using mastertempo if it&apos;s activated).</Description>
+    <Examples>nudge +120ms | nudge -120ms</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>scratch</Action>
     <Description>&apos;scratch +120ms&apos; to scratch 120ms forward.</Description>
+    <Examples>scratch +120ms | scratch -120ms</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -806,12 +845,14 @@
     <Category>audio_scratch</Category>
     <Action>speedwheel</Action>
     <Description>used for a precision touchwheel that reports both position and speed. &apos;speedwheel +1.0 1.5&apos; means a full rotation of the wheel, at 150% speed.</Description>
+    <Examples>speedwheel</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
     <Action>touchwheel</Action>
     <Alias>scratch_wheel | scratchwheel</Alias>
     <Description>used for a jogwheel with touch sensitivity. &apos;touchwheel +1.0&apos; means a full rotation of the wheel.</Description>
+    <Examples>touchwheel</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -850,11 +891,13 @@
     <Action>crossfader</Action>
     <Alias>crossfader_slider</Alias>
     <Description>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</Description>
+    <Examples>crossfader 0% | crossfader 100% | crossfader 50%</Examples>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
     <Action>crossfader_curve</Action>
     <Description>select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (&quot;smooth&quot;, &quot;full&quot;, &quot;scratch&quot;, &quot;cut&quot;). or you can draw your own curve, using a syntax like &apos;crossfader_curve &quot;0 = [1, 0] / 0.5=[1, 1]/1=[0,1]&quot;&apos;.</Description>
+    <Examples>crossfader_curve &quot;smooth&quot; | crossfader_curve &quot;0=[1,0]/0.5=[1,1]/1=[0,1]&quot;</Examples>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
@@ -1240,12 +1283,14 @@
     <Category>browser</Category>
     <Action>add_to_list</Action>
     <Alias>virtualfolder_add</Alias>
-    <Description>Add the currently selected songs in the browser to the specified List. &apos;add_to_list &quot;my_list&quot;&apos;</Description>
+    <Description>Add the currently selected songs in the browser to the specified List.</Description>
+    <Examples>add_to_list &quot;my_list&quot;</Examples>
   </Item>
   <Item>
     <Category>browser</Category>
     <Action>browsed_file_analyze</Action>
     <Description>reanalyze the current file selected in the browser use &apos;browsed_file_analyze multi&apos; to do a scan for multiple bpms</Description>
+    <Examples>browsed_file_analyze | browsed_file_analyze multi</Examples>
   </Item>
   <Item>
     <Category>browser</Category>
@@ -1301,6 +1346,7 @@
     <Category>browser</Category>
     <Action>browser_gotofolder</Action>
     <Description>&apos;browser_gotofolder&apos; goes to the folder containing the current file. &apos;browser_gotofolder &quot;/my_path/my_folder&quot;&apos; goes to the specified folder. &apos;browser_gotofolder 4&apos; goes to the fourth virtual/ favorite folder.</Description>
+    <Examples>browser_gotofolder | browser_gotofolder &quot;/my_path/my_folder&quot; | browser_gotofolder 4</Examples>
   </Item>
   <Item>
     <Category>browser</Category>
@@ -1325,7 +1371,8 @@
   <Item>
     <Category>browser</Category>
     <Action>browser_padding</Action>
-    <Description>Change the padding around lines in folder and list views. Example: browser_padding 50%</Description>
+    <Description>Change the padding around lines in folder and list views.</Description>
+    <Examples>browser_padding 50%</Examples>
   </Item>
   <Item>
     <Category>browser</Category>
@@ -1391,6 +1438,7 @@
     <Category>browser</Category>
     <Action>font_size</Action>
     <Description>Change browser font size. Example: font_size +1</Description>
+    <Examples>font_size +1 | font_size -1</Examples>
   </Item>
   <Item>
     <Category>browser</Category>

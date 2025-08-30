@@ -32,14 +32,14 @@
                         <td>down</td>
                         <td></td>
                         <td>execute different actions depending if the key is pressed or released.</td>
-                        <td>&#039;down ? action1 : action2&#039;</td>
+                        <td>down ? action1 : action2</td>
                         </tr>
                         <tr>
                         <td>flow</td>
                         <td>isrepeat</td>
                         <td></td>
                         <td>execute different actions depending if the key is being repeated or if it&#039;s the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))</td>
-                        <td>&#039;isrepeat ? nothing : goto_cue&#039;</td>
+                        <td>isrepeat ? nothing : goto_cue</td>
                         </tr>
                         <tr>
                         <td>flow</td>
@@ -53,35 +53,35 @@
                         <td>up</td>
                         <td></td>
                         <td>execute different actions depending if the key is released or pressed.</td>
-                        <td>&#039;up ? action1 : action2&#039;</td>
+                        <td>up ? action1 : action2</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>blink</td>
                         <td></td>
                         <td>turn on and off the LED, once per second.You can specify the speed: &#039;blink 1000ms&#039; Speed can also be specified in number of beats: &#039;blink 1bt&#039;.The time blinking can also be specified: &#039;blink 1bt 25%&#039;</td>
-                        <td>&#039;blink 1000ms&#039;<br><br>&#039;blink 1bt&#039; | &#039;blink 1bt 25%&#039;</td>
+                        <td>blink 1000ms<br><br>blink 1bt | blink 1bt 25%</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>color</td>
                         <td></td>
                         <td>color &#039;red&#039; color &quot;#C08040&quot; color 0.8 0.5 0.25 color 75% &#039;red&#039; (returns a dimmed red) color 0.66 (returns a gray)</td>
-                        <td>&#039;color red&#039;<br><br>&#039;color &quot;#C08040&quot;&#039; | &#039;color 0.8 0.5 0.25&#039; | &#039;color 75% red&#039; | &#039;color 0.66&#039;</td>
+                        <td>color red<br><br>color &quot;#C08040&quot; | color 0.8 0.5 0.25 | color 75% red | color 0.66</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>color_mix</td>
                         <td></td>
-                        <td>Mix two colors based on an action in the third parameter color_mix white red `get_limiter`</td>
-                        <td></td>
+                        <td>Mix two colors based on an action in the third parameter</td>
+                        <td>color_mix white red `get_limiter`</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>constant</td>
                         <td>get_constant</td>
                         <td>Return the specified value. &#039;get constant 75%&#039; always returns 75%</td>
-                        <td>&#039;get constant 75%&#039;</td>
+                        <td>get constant 75%</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -95,42 +95,42 @@
                         <td>fadeout</td>
                         <td></td>
                         <td>&#039;loop &amp; fadeout 10000ms 3000ms&#039; will return 100 % when loop is on, and fade out to 0% after 10 seconds in 3 seconds when loop turns off Alternatively, the action can be entered as the third parameter in backticks: &#039;fadeout 10000ms 3000ms `loop`&#039;</td>
-                        <td>&#039;loop &amp; fadeout 10000ms 3000ms&#039;<br><br>&#039;fadeout 10000ms 3000ms `loop`&#039;</td>
+                        <td>loop &amp; fadeout 10000ms 3000ms<br><br>fadeout 10000ms 3000ms `loop`</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>false</td>
                         <td>no<br><br>off</td>
                         <td>returns false</td>
-                        <td></td>
+                        <td>effect_active false</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_1_x</td>
                         <td></td>
-                        <td>invert the value of the calling slider/encoder/button (calculate 1/x) &#039;param_1_x &amp; effect slider&#039;</td>
-                        <td>&#039;param_1_x &amp; effect_slider&#039;</td>
+                        <td>invert the value of the calling slider/encoder/button (calculate 1/x)</td>
+                        <td>param_1_x &amp; effect_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_add</td>
                         <td></td>
                         <td>add the given value to the value of the calling slider/ encoder / button add the value of the first parameter with the value of the second parameter.Both parameters can be actions instead of values: &#039;param_add `get_var a` `get_var b`&#039;</td>
-                        <td>&#039;param_add `get_var a` `get_var b`&#039;</td>
+                        <td>param_add `get_var a` `get_var b`</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_bigger</td>
                         <td>param_greater</td>
                         <td>check if the value of the calling slider/encoder/button is bigger than something: &#039;param_bigger 0 ? sampler loop 200% : sampler loop 50%&#039; compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: &#039;param_bigger pitch pitch_slider&#039;</td>
-                        <td>&#039;param_bigger 0 ? sampler_loop 200% : sampler_loop 50%&#039;<br><br>&#039;param_bigger pitch pitch_slider&#039;</td>
+                        <td>param_bigger 0 ? action1 : action2<br><br>param_bigger 0 ? sampler_loop 200% : sampler_loop 50% | param_bigger pitch pitch_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_cast</td>
                         <td></td>
                         <td>cast the value of the previous query action into a new type: &#039;pitch_range &amp; param_cast &quot;percentage&quot;&#039;. Valid types are &#039;integer&#039;, &#039;float&#039;, &#039;percentage&#039;, &#039;ms&#039;, &#039;boolean&#039;, &#039;beats&#039;, &#039;text&#039;. casting to text can also optionally limit the number of characters: &#039;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&#039; to format a number as text with a specific number of digits: &#039;get_bpm &amp; param_cast &quot;000&quot;&#039; param_cast &#039;int_trunc&#039; : provides the integer part of a number without rounding to the nearest integer param_cast &#039;frac&#039; : provides the decimal part of a number. param_cast &#039;relative&#039; and param_cast &#039;absolute&#039; : change the parameter to be a relative or absolute value</td>
-                        <td>&#039;pitch_range &amp; param_cast &quot;percentage&quot;&#039;<br><br>&#039;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&#039; | &#039;get_bpm &amp; param_cast &quot;000&quot;&#039;</td>
+                        <td>pitch_range &amp; param_cast &quot;percentage&quot;<br><br>get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5 | get_bpm &amp; param_cast &quot;000&quot;</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -151,14 +151,14 @@
                         <td>param_equal</td>
                         <td></td>
                         <td>Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` &quot;string&quot;. For example: param_equal `get_browsed_song &#039;type&#039;` &quot;audio&quot;</td>
-                        <td></td>
+                        <td>param_equal 0.5 ? action1 : action2<br><br>param_equal `action param` &quot;string&quot; | param_equal `get_browsed_song &#039;type&#039;` &quot;audio&quot;</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_invert</td>
                         <td></td>
-                        <td>invert the value of the calling slider/encoder/button (1-x): &#039;param_invert &amp; pitch_slider&#039;</td>
-                        <td></td>
+                        <td>invert the value of the calling slider/encoder/button (1-x)</td>
+                        <td>param_invert &amp; pitch_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -171,43 +171,43 @@
                         <td>param</td>
                         <td>param_make_discrete</td>
                         <td></td>
-                        <td>useful for smooth endless encoders, to make them discrete Example: &#039;param_make_discrete 0.1 &amp; param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%&#039;</td>
-                        <td></td>
+                        <td>useful for smooth endless encoders, to make them discrete.</td>
+                        <td>param_make_discrete 0.1 &amp; param_bigger 0 ? loop_move +100% : param_smaller 0 ? loop_move - 100%</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_mod</td>
                         <td></td>
                         <td>wrap the value of the calling slider/encoder if more than the given value</td>
-                        <td></td>
+                        <td>param_mod &amp; effect_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_multiply</td>
                         <td></td>
-                        <td>multiply the value of the calling slider/encoder/button by the given value: &#039;param_multiply 300% &amp; effect slider&#039; The parameter can also be an action &#039;cue_pos 0 &amp; param_multiply &quot;get_time total 1000&quot;&#039;</td>
-                        <td></td>
+                        <td>multiply the value of the calling slider/encoder/button by the given value. param_multiply value &amp; action. The parameter can also be an action &#039;cue_pos 0 &amp; param_multiply &quot;get_time total 1000&quot;&#039;</td>
+                        <td>param_multiply 300% &amp; effect_slider<br><br>cue_pos 0 &amp; param_multiply &quot;get_time total 1000&quot;</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_pingpong</td>
                         <td></td>
                         <td>transform the value of the calling slider/encoder from a linear scale to a forth-and-back scale</td>
-                        <td></td>
+                        <td>param_pingpong &amp; effect_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_pow</td>
                         <td></td>
                         <td>param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.</td>
-                        <td></td>
+                        <td>param_pow 0.5 &amp; effect_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_smaller</td>
                         <td></td>
                         <td>check if the value of the calling slider/encoder/button is smaller than something: &#039;param_smaller 0 ? sampler loop 200% : sampler loop 50%&#039;</td>
-                        <td></td>
+                        <td>param_smaller 0 ? action1 : action2<br><br>param_smaller 0 ? sampler loop 200% : sampler loop 50%</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -227,15 +227,15 @@
                         <td>param</td>
                         <td>pulse</td>
                         <td></td>
-                        <td>return true when the previous action turns to true only for the duration specified: &#039;is_using &#039;equalizer&#039; &amp; pulse 2000ms&#039;</td>
-                        <td></td>
+                        <td>return true when the previous action turns to true only for the duration specified.</td>
+                        <td>is_using &#039;equalizer&#039; &amp; pulse 2000ms</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>true</td>
                         <td>on<br><br>yes</td>
                         <td>returns true</td>
-                        <td></td>
+                        <td>effect_active true</td>
                         </tr>
                         <tr>
                         <td>repeat</td>
@@ -276,15 +276,15 @@
                         <td>repeat</td>
                         <td>repeat_stop</td>
                         <td></td>
-                        <td>stop a previous repeat_start or repeat_start_instant action: &#039;repeat_stop &#039;myrepeatname&#039;&#039;</td>
-                        <td></td>
+                        <td>stop a previous repeat_start or repeat_start_instant action.</td>
+                        <td>repeat_stop &#039;myrepeatname&#039;</td>
                         </tr>
                         <tr>
                         <td>repeat</td>
                         <td>wait</td>
                         <td></td>
-                        <td>wait for the specified amount of time between two script actions: &#039;wait 1bt &amp; pause&#039;, &#039;wait 500ms &amp; play&#039;</td>
-                        <td></td>
+                        <td>wait for the specified amount of time between two script actions.</td>
+                        <td>wait 1bt &amp; pause<br><br>wait 500ms &amp; play</td>
                         </tr>
                         <tr>
                         <td>skin</td>
@@ -339,7 +339,7 @@
                         <td>skin</td>
                         <td>is_using</td>
                         <td></td>
-                        <td>check if a particular feature is being used(&#039;filter&#039;, &#039;equalizer&#039;, &#039;loop&#039;, &#039;cue&#039;, &#039;sample&#039;, &#039;pads&#039;, &#039;effect&#039;, &#039;load&#039;) </td>
+                        <td>check if a particular feature is being used (&#039;filter&#039;, &#039;equalizer&#039;, &#039;loop&#039;, &#039;cue&#039;, &#039;sample&#039;, &#039;pads&#039;, &#039;effect&#039;, &#039;load&#039;) </td>
                         <td></td>
                         </tr>
                         <tr>
@@ -360,8 +360,8 @@
                         <td>skin</td>
                         <td>multibutton</td>
                         <td></td>
-                        <td>Click on the named multibutton: &#039;multibutton &quot;my_button&quot;&#039;</td>
-                        <td></td>
+                        <td>Click on the named multibutton</td>
+                        <td>multibutton &#039;my_button&#039;</td>
                         </tr>
                         <tr>
                         <td>skin</td>
@@ -374,8 +374,8 @@
                         <td>skin</td>
                         <td>rack</td>
                         <td></td>
-                        <td>Open/close a unit in specified rack. Example: &quot;rack &#039;rack1&#039; &#039;unit1&#039;&quot;</td>
-                        <td></td>
+                        <td>Open/close a unit in specified rack.</td>
+                        <td>rack &#039;rack1&#039; &#039;unit1&#039;</td>
                         </tr>
                         <tr>
                         <td>skin</td>
@@ -416,8 +416,8 @@
                         <td>skin</td>
                         <td>skin_panel</td>
                         <td>skin_pannel</td>
-                        <td>show or hide a panel on the skin. &quot;skin_panel &#039;my_panel&#039; on&quot;</td>
-                        <td></td>
+                        <td>show or hide a panel on the skin.</td>
+                        <td>skin_panel &#039;my_panel&#039; on</td>
                         </tr>
                         <tr>
                         <td>skin</td>
@@ -487,7 +487,7 @@
                         <td>get_clock</td>
                         <td></td>
                         <td>get the current time (use &#039;get_clock 12&#039; to display AM/PM)</td>
-                        <td></td>
+                        <td>get_clock<br><br>get_clock 12</td>
                         </tr>
                         <tr>
                         <td>system</td>
@@ -606,28 +606,28 @@
                         <td>cycle</td>
                         <td></td>
                         <td>syntax: &#039;cycle &quot;my_var&quot; 42&#039;. increment my_var, and goes back to 0 when it reaches 42. &#039;cycle &quot;my_var&quot; -42&#039; decrements my_var, and goes to 41 after it reached 0.</td>
-                        <td></td>
+                        <td>cycle &quot;my_var&quot; 42<br><br>cycle &quot;my_var&quot; -42</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>get_var</td>
                         <td></td>
                         <td>get the value of the specified variable</td>
-                        <td></td>
+                        <td>get_var &quot;my_var&quot;</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>set</td>
                         <td></td>
                         <td>set &#039;varname&#039; 5 sets variable varname to the value 5 set &#039;varname&#039; &#039;var2&#039; sets variable varname to the value of variable var2 set &#039;varname&#039; `play` sets variable varname to the value of the action play</td>
-                        <td></td>
+                        <td>set &#039;varname&#039; 5<br><br>set &#039;varname&#039; &#039;var2&#039; | set &#039;varname&#039; `play`</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>set_var</td>
                         <td></td>
                         <td>set the value of the specified variable</td>
-                        <td></td>
+                        <td>set_var &quot;my_var&quot; 5</td>
                         </tr>
                         <tr>
                         <td>variables</td>
@@ -641,28 +641,28 @@
                         <td>toggle</td>
                         <td></td>
                         <td>syntax: &#039;toggle &quot;my_var&quot;&#039;. toggle my_var between true and false.</td>
-                        <td></td>
+                        <td>toggle &quot;my_var&quot;</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>var</td>
                         <td></td>
                         <td>var &quot;my_var&quot; ? my_action1 : my_action2&#039;. execute my_action1 if my_var is true (non zero), execute my_action2 otherwise. You can also compare var with a specific value: &#039;var &quot;my_var&quot; 1 ? my_action1 : my_action2&#039; execute my_action1 is my_var is 1, or my_action2 otherwise</td>
-                        <td></td>
+                        <td>var &quot;my_var&quot; ? my_action1 : my_action2<br><br>var &quot;my_var&quot; 1 ? my_action1 : my_action2</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>var_equal</td>
                         <td></td>
                         <td>syntax: &#039;var_equal &quot;my_var&quot; 42 ? my_action1 : my_action2&#039;. execute my_action1 if my_var equals 42, execute my_action2 otherwise. syntax: &#039;var_equal &quot;this_var&quot; &quot;that_var&quot; ? action1 : action2&#039; execute action1 if this_var equals that_var, execute action2 otherwise</td>
-                        <td></td>
+                        <td>var_equal &quot;my_var&quot; 42 ? action1 : action2<br><br>var_equal &quot;my_var1&quot; &quot;my_var2&quot; ? action1 : action2</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>var_greater</td>
                         <td></td>
                         <td>syntax: &#039;var_greater &quot;my_var&quot; 42 ? my_action1 : my_action2&#039;. execute my_action1 if my_var is greater than 42, execute my_action2 otherwise.</td>
-                        <td></td>
+                        <td>var_greater &quot;my_var&quot; 42 ? action1 : action2</td>
                         </tr>
                         <tr>
                         <td>variables</td>
@@ -676,14 +676,14 @@
                         <td>var_not_equal</td>
                         <td></td>
                         <td>syntax: &#039;var_not_equal &quot;my_var&quot; 42 ? my_action1 : my_action2&#039;. execute my_action1 if my_var doesn&#039;t equal 42, execute my_action2 otherwise.</td>
-                        <td></td>
+                        <td>var_not_equal &quot;my_var&quot; 42 ? action1 : action2</td>
                         </tr>
                         <tr>
                         <td>variables</td>
                         <td>var_smaller</td>
                         <td></td>
                         <td>syntax: &#039;var_smaller &quot;my_var&quot; 42 ? my_action1 : my_action2&#039;. execute my_action1 if my_var is smaller than 42, execute my_action2 otherwise.</td>
-                        <td></td>
+                        <td>var_smaller &quot;my_var&quot; 42 ? action1 : action2</td>
                         </tr>
                         <tr>
                         <td>window</td>
@@ -710,7 +710,7 @@
                         <td>window</td>
                         <td>open_stem_creator</td>
                         <td></td>
-                        <td></td>
+                        <td>Open the Stems creator editor</td>
                         <td></td>
                         </tr>
                         <tr>
@@ -725,14 +725,14 @@
                         <td>beat_juggle</td>
                         <td></td>
                         <td>Alternatively jumps one beat forward and backward &#039;beat_juggle 0.5&#039; will jump 1/2 beat forward or backward</td>
-                        <td></td>
+                        <td>beat_juggle<br><br>beat_juggle 0.5</td>
                         </tr>
                         <tr>
                         <td>audio</td>
                         <td>beatjump</td>
                         <td></td>
                         <td>Jump a certain number of beats as set by beatjump_select &#039;beatjump +1&#039; to jump forward, or &#039;beatjump -1&#039; to jump backwards</td>
-                        <td></td>
+                        <td>beatjump +1<br><br>beatjump -1</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -753,7 +753,7 @@
                         <td>beatjump_select</td>
                         <td></td>
                         <td>Select the number of beats the beatjump action will jump &#039;beatjump_select 4&#039; to set beatjump to 4 beats &#039;beatjump_select +1&#039; to set the next higher beat size &#039;beatjump_select 50%&#039; to halve the current beat size &#039;beatjump_select 200%&#039; to double the current beat size</td>
-                        <td></td>
+                        <td>beatjump_select 4<br><br>beatjump_select +1 | beatjump_select 50% | beatjump_select 200%</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -795,14 +795,14 @@
                         <td>goto</td>
                         <td></td>
                         <td>change the position in the song. &#039;goto +10ms&#039; jumps 10ms forward. &#039;goto -4&#039; jumps 4 beats backward. &#039;goto 20%&#039; jumps to 20% of the song&#039;s length.</td>
-                        <td></td>
+                        <td>goto +10ms<br><br>goto -4 | goto 20%</td>
                         </tr>
                         <tr>
                         <td>audio</td>
                         <td>goto_bar</td>
                         <td></td>
-                        <td>put the song on its nth beat after the downbeat without loosing sync: &#039;goto_bar 4&#039;</td>
-                        <td></td>
+                        <td>put the song on its nth beat after the downbeat without loosing sync</td>
+                        <td>goto_bar 4</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -1047,7 +1047,7 @@
                         <td>mic_talkover</td>
                         <td></td>
                         <td>Lower the volume of all decks while active and activates microphone Use &#039;mic_talkover while_pressed&#039; to only activate mic as long as button is held Use &#039;mic_talkover 20% 1000ms&#039; to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)</td>
-                        <td></td>
+                        <td>mic_talkover<br><br>mic_talkover while_pressed | mic_talkover 20% 1000ms</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
@@ -1082,28 +1082,28 @@
                         <td>jogwheel</td>
                         <td>jog<br><br>jog_wheel</td>
                         <td>used for a jogwheel without touch sensitivity. &#039;jogwheel +1.0&#039; means a full rotation of the wheel.</td>
-                        <td></td>
+                        <td>jogwheel</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
                         <td>motorwheel</td>
                         <td></td>
                         <td>used for a motorized jogwheel. Each time the jogwheel moves, send &#039;motorwheel &quot;move&quot; +1.0&#039; followed by &#039;motorwheel &quot;timestamp&quot; 1000.0&#039;. &#039;move +1.0&#039; means a full platter rotation. &#039;timestamp 1.0&#039; means 1ms since last message. You should query &#039;motorwheel&#039; and turn the motor on when it returns true and off when false.</td>
-                        <td></td>
+                        <td>motorwheel</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
                         <td>nudge</td>
                         <td></td>
                         <td>&#039;nudge +120ms&#039; to nudge the song 120ms forward (using mastertempo if it&#039;s activated).</td>
-                        <td></td>
+                        <td>nudge +120ms<br><br>nudge -120ms</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
                         <td>scratch</td>
                         <td></td>
                         <td>&#039;scratch +120ms&#039; to scratch 120ms forward.</td>
-                        <td></td>
+                        <td>scratch +120ms<br><br>scratch -120ms</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
@@ -1145,14 +1145,14 @@
                         <td>speedwheel</td>
                         <td></td>
                         <td>used for a precision touchwheel that reports both position and speed. &#039;speedwheel +1.0 1.5&#039; means a full rotation of the wheel, at 150% speed.</td>
-                        <td></td>
+                        <td>speedwheel</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
                         <td>touchwheel</td>
                         <td>scratch_wheel<br><br>scratchwheel</td>
                         <td>used for a jogwheel with touch sensitivity. &#039;touchwheel +1.0&#039; means a full rotation of the wheel.</td>
-                        <td></td>
+                        <td>touchwheel</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
@@ -1201,14 +1201,14 @@
                         <td>crossfader</td>
                         <td>crossfader_slider</td>
                         <td>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</td>
-                        <td></td>
+                        <td>crossfader 0%<br><br>crossfader 100% | crossfader 50%</td>
                         </tr>
                         <tr>
                         <td>audio_volumes</td>
                         <td>crossfader_curve</td>
                         <td></td>
                         <td>select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (&quot;smooth&quot;, &quot;full&quot;, &quot;scratch&quot;, &quot;cut&quot;). or you can draw your own curve, using a syntax like &#039;crossfader_curve &quot;0 = [1, 0] / 0.5=[1, 1]/1=[0,1]&quot;&#039;.</td>
-                        <td></td>
+                        <td>crossfader_curve &quot;smooth&quot;<br><br>crossfader_curve &quot;0=[1,0]/0.5=[1,1]/1=[0,1]&quot;</td>
                         </tr>
                         <tr>
                         <td>audio_volumes</td>
@@ -1739,15 +1739,15 @@
                         <td>browser</td>
                         <td>add_to_list</td>
                         <td>virtualfolder_add</td>
-                        <td>Add the currently selected songs in the browser to the specified List. &#039;add_to_list &quot;my_list&quot;&#039;</td>
-                        <td></td>
+                        <td>Add the currently selected songs in the browser to the specified List.</td>
+                        <td>add_to_list &quot;my_list&quot;</td>
                         </tr>
                         <tr>
                         <td>browser</td>
                         <td>browsed_file_analyze</td>
                         <td></td>
                         <td>reanalyze the current file selected in the browser use &#039;browsed_file_analyze multi&#039; to do a scan for multiple bpms</td>
-                        <td></td>
+                        <td>browsed_file_analyze<br><br>browsed_file_analyze multi</td>
                         </tr>
                         <tr>
                         <td>browser</td>
@@ -1824,7 +1824,7 @@
                         <td>browser_gotofolder</td>
                         <td></td>
                         <td>&#039;browser_gotofolder&#039; goes to the folder containing the current file. &#039;browser_gotofolder &quot;/my_path/my_folder&quot;&#039; goes to the specified folder. &#039;browser_gotofolder 4&#039; goes to the fourth virtual/ favorite folder.</td>
-                        <td></td>
+                        <td>browser_gotofolder<br><br>browser_gotofolder &quot;/my_path/my_folder&quot; | browser_gotofolder 4</td>
                         </tr>
                         <tr>
                         <td>browser</td>
@@ -1858,8 +1858,8 @@
                         <td>browser</td>
                         <td>browser_padding</td>
                         <td></td>
-                        <td>Change the padding around lines in folder and list views. Example: browser_padding 50%</td>
-                        <td></td>
+                        <td>Change the padding around lines in folder and list views.</td>
+                        <td>browser_padding 50%</td>
                         </tr>
                         <tr>
                         <td>browser</td>
@@ -1950,7 +1950,7 @@
                         <td>font_size</td>
                         <td></td>
                         <td>Change browser font size. Example: font_size +1</td>
-                        <td></td>
+                        <td>font_size +1<br><br>font_size -1</td>
                         </tr>
                         <tr>
                         <td>browser</td>
