@@ -13,7 +13,7 @@ const vdjscript_list =
             "isrepeat":
             {
                 "description": "execute different actions depending if the key is being repeated or if it's the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))",
-                "examples": "isrepeat ? nothing : goto_cue"
+                "examples": "isrepeat ? action1 : action2 | isrepeat ? nothing : goto_cue"
             },
             "nothing":
             {
@@ -129,7 +129,7 @@ const vdjscript_list =
             "param_pow":
             {
                 "description": "param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.",
-                "examples": "param_pow 0.5 & effect_slider"
+                "examples": "param_pow 2 & effect_slider | param_pow 0.5 & effect_slider"
             },
             "param_smaller":
             {
@@ -2952,7 +2952,8 @@ const vdjscript_list =
             },
             "pitch_bend":
             {
-                "description": "slow down or speed up the song: 'pitch_bend +3%'. you can make the bend to increase slowly by specifying a second time parameter: 'pitch_bend +1% 500ms' will start at +1% and will double every 500ms."
+                "description": "slow down or speed up the song: 'pitch_bend +3%'. you can make the bend to increase slowly by specifying a second time parameter: 'pitch_bend +1% 500ms' will start at +1% and will double every 500ms.",
+                "examples": "pitch_bend +3% | pitch_bend +1% 500ms"
             },
             "pitch_lock":
             {
@@ -2965,7 +2966,8 @@ const vdjscript_list =
             },
             "pitch_range":
             {
-                "description": "set the range for the pitch slider. 'pitch_range 12%' set the range from -12% to +12%. . 'pitch_range +1' scrolls through the default pitch ranges. 'pitch_range \"12,16,25\" +1' scrolls through the provided list of pitch ranges.. 'pitch_range +1 deck' changes the pitch range only for the specific deck"
+                "description": "set the range for the pitch slider. 'pitch_range 12%' set the range from -12% to +12%. . 'pitch_range +1' scrolls through the default pitch ranges. 'pitch_range \"12,16,25\" +1' scrolls through the provided list of pitch ranges.. 'pitch_range +1 deck' changes the pitch range only for the specific deck",
+                "examples": "pitch_range 12% | pitch_range +1 | pitch_range \"12,16,25\" +1 | pitch_range +1 deck"
             },
             "pitch_relative":
             {
@@ -2992,8 +2994,9 @@ const vdjscript_list =
             },
             "effect_active":
             {
-                "description": "activate/deactivate the effect on a specific slot. example: effect_active 1 'flanger' on or effect_active 1",
-                "alias": "effect_activate"
+                "description": "Activate/deactivate the effect on a specific slot",
+                "alias": "effect_activate",
+                "examples": "effect_active 1 'flanger' on | effect_active 1"
             },
             "effect_arm_active":
             {
@@ -3073,7 +3076,8 @@ const vdjscript_list =
             },
             "effect_colorfx":
             {
-                "description": "'effect_colorfx 1 \"echo\"' to use echo on custom color fx slot 1 (up to 4 custom slots available)"
+                "description": "'effect_colorfx 1 \"echo\"' to use echo on custom color fx slot 1 (up to 4 custom slots available)",
+                "examples": "effect_colorfx 1 \"echo\""
             },
             "effect_colorslider":
             {
@@ -3150,7 +3154,8 @@ const vdjscript_list =
             "effect_slider":
             {
                 "description": "Move the n-th slider on the given effect. \"effect_slider 1 2 50%\" : Set slider id 2 on slot 1 to 50%. \"effect_slider 1 0%\" : set slider id 1 on slot 1 to 0%",
-                "alias": "effect_slider_slider"
+                "alias": "effect_slider_slider",
+                "examples": "effect_slider | effect_slider 1 2 50% | effect_slider 1 0%"
             },
             "effect_slider_active":
             {
