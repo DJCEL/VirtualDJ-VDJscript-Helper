@@ -39,7 +39,7 @@
                         <td>isrepeat</td>
                         <td></td>
                         <td>execute different actions depending if the key is being repeated or if it&#039;s the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))</td>
-                        <td>isrepeat ? nothing : goto_cue</td>
+                        <td>isrepeat ? action1 : action2<br><br>isrepeat ? nothing : goto_cue</td>
                         </tr>
                         <tr>
                         <td>flow</td>
@@ -60,14 +60,14 @@
                         <td>blink</td>
                         <td></td>
                         <td>turn on and off the LED, once per second.You can specify the speed: &#039;blink 1000ms&#039; Speed can also be specified in number of beats: &#039;blink 1bt&#039;.The time blinking can also be specified: &#039;blink 1bt 25%&#039;</td>
-                        <td>blink 1000ms<br><br>blink 1bt | blink 1bt 25%</td>
+                        <td>blink 1000ms<br><br>blink 1bt<br><br>blink 1bt 25%</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>color</td>
                         <td></td>
                         <td>color &#039;red&#039; color &quot;#C08040&quot; color 0.8 0.5 0.25 color 75% &#039;red&#039; (returns a dimmed red) color 0.66 (returns a gray)</td>
-                        <td>color red<br><br>color &quot;#C08040&quot; | color 0.8 0.5 0.25 | color 75% red | color 0.66</td>
+                        <td>color red<br><br>color &quot;#C08040&quot;<br><br>color 0.8 0.5 0.25<br><br>color 75% red<br><br>color 0.66</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -123,14 +123,14 @@
                         <td>param_bigger</td>
                         <td>param_greater</td>
                         <td>check if the value of the calling slider/encoder/button is bigger than something: &#039;param_bigger 0 ? sampler loop 200% : sampler loop 50%&#039; compare value of the first parameter with the value of the second parameter. Both parameters can be actions instead of values: &#039;param_bigger pitch pitch_slider&#039;</td>
-                        <td>param_bigger 0 ? action1 : action2<br><br>param_bigger 0 ? sampler_loop 200% : sampler_loop 50% | param_bigger pitch pitch_slider</td>
+                        <td>param_bigger 0 ? action1 : action2<br><br>param_bigger 0 ? sampler_loop 200% : sampler_loop 50%<br><br>param_bigger pitch pitch_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>param_cast</td>
                         <td></td>
                         <td>cast the value of the previous query action into a new type: &#039;pitch_range &amp; param_cast &quot;percentage&quot;&#039;. Valid types are &#039;integer&#039;, &#039;float&#039;, &#039;percentage&#039;, &#039;ms&#039;, &#039;boolean&#039;, &#039;beats&#039;, &#039;text&#039;. casting to text can also optionally limit the number of characters: &#039;get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5&#039; to format a number as text with a specific number of digits: &#039;get_bpm &amp; param_cast &quot;000&quot;&#039; param_cast &#039;int_trunc&#039; : provides the integer part of a number without rounding to the nearest integer param_cast &#039;frac&#039; : provides the decimal part of a number. param_cast &#039;relative&#039; and param_cast &#039;absolute&#039; : change the parameter to be a relative or absolute value</td>
-                        <td>pitch_range &amp; param_cast &quot;percentage&quot;<br><br>get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5 | get_bpm &amp; param_cast &quot;000&quot;</td>
+                        <td>pitch_range &amp; param_cast &quot;percentage&quot;<br><br>get_browsed_song &quot;artist&quot; &amp; param_cast &quot;text&quot; 5<br><br>get_bpm &amp; param_cast &quot;000&quot;</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -151,7 +151,7 @@
                         <td>param_equal</td>
                         <td></td>
                         <td>Check if the value of the calling slider/encoder/button is equal to something To compare a string with the result of an action, use param_equal `action param` &quot;string&quot;. For example: param_equal `get_browsed_song &#039;type&#039;` &quot;audio&quot;</td>
-                        <td>param_equal 0.5 ? action1 : action2<br><br>param_equal `action param` &quot;string&quot; | param_equal `get_browsed_song &#039;type&#039;` &quot;audio&quot;</td>
+                        <td>param_equal 0.5 ? action1 : action2<br><br>param_equal `action param` &quot;string&quot;<br><br>param_equal `get_browsed_song &#039;type&#039;` &quot;audio&quot;</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -200,7 +200,7 @@
                         <td>param_pow</td>
                         <td></td>
                         <td>param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.</td>
-                        <td>param_pow 0.5 &amp; effect_slider</td>
+                        <td>param_pow 2 &amp; effect_slider<br><br>param_pow 0.5 &amp; effect_slider</td>
                         </tr>
                         <tr>
                         <td>param</td>
@@ -620,7 +620,7 @@
                         <td>set</td>
                         <td></td>
                         <td>set &#039;varname&#039; 5 sets variable varname to the value 5 set &#039;varname&#039; &#039;var2&#039; sets variable varname to the value of variable var2 set &#039;varname&#039; `play` sets variable varname to the value of the action play</td>
-                        <td>set &#039;varname&#039; 5<br><br>set &#039;varname&#039; &#039;var2&#039; | set &#039;varname&#039; `play`</td>
+                        <td>set &#039;varname&#039; 5<br><br>set &#039;varname&#039; &#039;var2&#039;<br><br>set &#039;varname&#039; `play`</td>
                         </tr>
                         <tr>
                         <td>variables</td>
@@ -753,7 +753,7 @@
                         <td>beatjump_select</td>
                         <td></td>
                         <td>Select the number of beats the beatjump action will jump &#039;beatjump_select 4&#039; to set beatjump to 4 beats &#039;beatjump_select +1&#039; to set the next higher beat size &#039;beatjump_select 50%&#039; to halve the current beat size &#039;beatjump_select 200%&#039; to double the current beat size</td>
-                        <td>beatjump_select 4<br><br>beatjump_select +1 | beatjump_select 50% | beatjump_select 200%</td>
+                        <td>beatjump_select 4<br><br>beatjump_select +1<br><br>beatjump_select 50%<br><br>beatjump_select 200%</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -795,7 +795,7 @@
                         <td>goto</td>
                         <td></td>
                         <td>change the position in the song. &#039;goto +10ms&#039; jumps 10ms forward. &#039;goto -4&#039; jumps 4 beats backward. &#039;goto 20%&#039; jumps to 20% of the song&#039;s length.</td>
-                        <td>goto +10ms<br><br>goto -4 | goto 20%</td>
+                        <td>goto +10ms<br><br>goto -4<br><br>goto 20%</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -1047,7 +1047,7 @@
                         <td>mic_talkover</td>
                         <td></td>
                         <td>Lower the volume of all decks while active and activates microphone Use &#039;mic_talkover while_pressed&#039; to only activate mic as long as button is held Use &#039;mic_talkover 20% 1000ms&#039; to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)</td>
-                        <td>mic_talkover<br><br>mic_talkover while_pressed | mic_talkover 20% 1000ms</td>
+                        <td>mic_talkover<br><br>mic_talkover while_pressed<br><br>mic_talkover 20% 1000ms</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
@@ -1096,7 +1096,7 @@
                         <td>nudge</td>
                         <td></td>
                         <td>&#039;nudge +120ms&#039; to nudge the song 120ms forward (using mastertempo if it&#039;s activated).</td>
-                        <td>nudge +120ms<br><br>nudge -120ms</td>
+                        <td>nudge +120ms<br><br>nudge -120ms<br><br>nudge +1<br><br>nudge +1.0<br><br>nudge +100%</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
@@ -1157,7 +1157,7 @@
                         <tr>
                         <td>audio_scratch</td>
                         <td>touchwheel_touch</td>
-                        <td>scratch_wheel_touch<br><br>scratchwheel_touch | speedwheel_touch</td>
+                        <td>scratch_wheel_touch<br><br>scratchwheel_touch<br><br>speedwheel_touch</td>
                         <td>use when the touchwheel is touched, to hold the song and start to scratch.</td>
                         <td></td>
                         </tr>
@@ -1201,7 +1201,7 @@
                         <td>crossfader</td>
                         <td>crossfader_slider</td>
                         <td>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</td>
-                        <td>crossfader 0%<br><br>crossfader 100% | crossfader 50%</td>
+                        <td>crossfader 0%<br><br>crossfader 100%<br><br>crossfader 50%<br><br>crossfader 0.5</td>
                         </tr>
                         <tr>
                         <td>audio_volumes</td>
@@ -1444,7 +1444,7 @@
                         <tr>
                         <td>audio_volumes</td>
                         <td>level</td>
-                        <td>level_slider<br><br>volume | volume_slider</td>
+                        <td>level_slider<br><br>volume<br><br>volume_slider</td>
                         <td>set the volume of the deck</td>
                         <td></td>
                         </tr>
@@ -1824,7 +1824,7 @@
                         <td>browser_gotofolder</td>
                         <td></td>
                         <td>&#039;browser_gotofolder&#039; goes to the folder containing the current file. &#039;browser_gotofolder &quot;/my_path/my_folder&quot;&#039; goes to the specified folder. &#039;browser_gotofolder 4&#039; goes to the fourth virtual/ favorite folder.</td>
-                        <td>browser_gotofolder<br><br>browser_gotofolder &quot;/my_path/my_folder&quot; | browser_gotofolder 4</td>
+                        <td>browser_gotofolder<br><br>browser_gotofolder &quot;/my_path/my_folder&quot;<br><br>browser_gotofolder 4</td>
                         </tr>
                         <tr>
                         <td>browser</td>
@@ -4860,7 +4860,7 @@
                         <tr>
                         <td>pitch</td>
                         <td>pitch</td>
-                        <td>pitch2<br><br>pitch2_slider | pitch_slider</td>
+                        <td>pitch2<br><br>pitch2_slider<br><br>pitch_slider</td>
                         <td>Set the pitch of the deck. Without parameters it can be assigned to sliders. Used with a number, it gives the position on the slider (and therefore account for pitch_range). (&#039;pitch 0.25&#039; set pitch at -10% if pitch range is 20%). Used with a percent it gives an absolute position.  &#039;pitch 112%&#039; set pitch at +12%. Relative values are possible too. &#039;pitch +0.1%&#039;, &#039;pitch +0.1 bpm&#039;. When used with &#039;bpm&#039;, the pitch is set to match the bpm. &#039;pitch 130 bpm&#039; set pitch to match 130 bpm</td>
                         <td></td>
                         </tr>
@@ -4869,7 +4869,7 @@
                         <td>pitch_bend</td>
                         <td></td>
                         <td>slow down or speed up the song: &#039;pitch_bend +3%&#039;. you can make the bend to increase slowly by specifying a second time parameter: &#039;pitch_bend +1% 500ms&#039; will start at +1% and will double every 500ms.</td>
-                        <td></td>
+                        <td>pitch_bend +3%<br><br>pitch_bend +1% 500ms</td>
                         </tr>
                         <tr>
                         <td>pitch</td>
@@ -4890,7 +4890,7 @@
                         <td>pitch_range</td>
                         <td></td>
                         <td>set the range for the pitch slider. &#039;pitch_range 12%&#039; set the range from -12% to +12%. . &#039;pitch_range +1&#039; scrolls through the default pitch ranges. &#039;pitch_range &quot;12,16,25&quot; +1&#039; scrolls through the provided list of pitch ranges.. &#039;pitch_range +1 deck&#039; changes the pitch range only for the specific deck</td>
-                        <td></td>
+                        <td>pitch_range 12%<br><br>pitch_range +1<br><br>pitch_range &quot;12,16,25&quot; +1<br><br>pitch_range +1 deck</td>
                         </tr>
                         <tr>
                         <td>pitch</td>
@@ -4931,8 +4931,8 @@
                         <td>plugins</td>
                         <td>effect_active</td>
                         <td>effect_activate</td>
-                        <td>activate/deactivate the effect on a specific slot. example: effect_active 1 &#039;flanger&#039; on or effect_active 1</td>
-                        <td></td>
+                        <td>Activate/deactivate the effect on a specific slot</td>
+                        <td>effect_active 1 &#039;flanger&#039; on<br><br>effect_active 1</td>
                         </tr>
                         <tr>
                         <td>plugins</td>
@@ -5072,7 +5072,7 @@
                         <td>effect_colorfx</td>
                         <td></td>
                         <td>&#039;effect_colorfx 1 &quot;echo&quot;&#039; to use echo on custom color fx slot 1 (up to 4 custom slots available)</td>
-                        <td></td>
+                        <td>effect_colorfx 1 &quot;echo&quot;</td>
                         </tr>
                         <tr>
                         <td>plugins</td>
@@ -5205,7 +5205,7 @@
                         <td>effect_slider</td>
                         <td>effect_slider_slider</td>
                         <td>Move the n-th slider on the given effect. &quot;effect_slider 1 2 50%&quot; : Set slider id 2 on slot 1 to 50%. &quot;effect_slider 1 0%&quot; : set slider id 1 on slot 1 to 0%</td>
-                        <td></td>
+                        <td>effect_slider<br><br>effect_slider 1 2 50%<br><br>effect_slider 1 0%</td>
                         </tr>
                         <tr>
                         <td>plugins</td>

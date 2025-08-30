@@ -10,7 +10,7 @@
     <Category>flow</Category>
     <Action>isrepeat</Action>
     <Description>execute different actions depending if the key is being repeated or if it&apos;s the first message (on Windows, keyboard shortcuts are usually auto-repeated while held down))</Description>
-    <Examples>isrepeat ? nothing : goto_cue</Examples>
+    <Examples>isrepeat ? action1 : action2 | isrepeat ? nothing : goto_cue</Examples>
   </Item>
   <Item>
     <Category>flow</Category>
@@ -146,7 +146,7 @@
     <Category>param</Category>
     <Action>param_pow</Action>
     <Description>param_pow y : computes the power of the caller to the power of y. Can be 0.5 for calculating square root.</Description>
-    <Examples>param_pow 0.5 &amp; effect_slider</Examples>
+    <Examples>param_pow 2 &amp; effect_slider | param_pow 0.5 &amp; effect_slider</Examples>
   </Item>
   <Item>
     <Category>param</Category>
@@ -808,7 +808,7 @@
     <Category>audio_scratch</Category>
     <Action>nudge</Action>
     <Description>&apos;nudge +120ms&apos; to nudge the song 120ms forward (using mastertempo if it&apos;s activated).</Description>
-    <Examples>nudge +120ms | nudge -120ms</Examples>
+    <Examples>nudge +120ms | nudge -120ms | nudge +1 | nudge +1.0 | nudge +100%</Examples>
   </Item>
   <Item>
     <Category>audio_scratch</Category>
@@ -891,7 +891,7 @@
     <Action>crossfader</Action>
     <Alias>crossfader_slider</Alias>
     <Description>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</Description>
-    <Examples>crossfader 0% | crossfader 100% | crossfader 50%</Examples>
+    <Examples>crossfader 0% | crossfader 100% | crossfader 50% | crossfader 0.5</Examples>
   </Item>
   <Item>
     <Category>audio_volumes</Category>
@@ -3456,6 +3456,7 @@
     <Category>pitch</Category>
     <Action>pitch_bend</Action>
     <Description>slow down or speed up the song: &apos;pitch_bend +3%&apos;. you can make the bend to increase slowly by specifying a second time parameter: &apos;pitch_bend +1% 500ms&apos; will start at +1% and will double every 500ms.</Description>
+    <Examples>pitch_bend +3% | pitch_bend +1% 500ms</Examples>
   </Item>
   <Item>
     <Category>pitch</Category>
@@ -3471,6 +3472,7 @@
     <Category>pitch</Category>
     <Action>pitch_range</Action>
     <Description>set the range for the pitch slider. &apos;pitch_range 12%&apos; set the range from -12% to +12%. . &apos;pitch_range +1&apos; scrolls through the default pitch ranges. &apos;pitch_range &quot;12,16,25&quot; +1&apos; scrolls through the provided list of pitch ranges.. &apos;pitch_range +1 deck&apos; changes the pitch range only for the specific deck</Description>
+    <Examples>pitch_range 12% | pitch_range +1 | pitch_range &quot;12,16,25&quot; +1 | pitch_range +1 deck</Examples>
   </Item>
   <Item>
     <Category>pitch</Category>
@@ -3501,7 +3503,8 @@
     <Category>plugins</Category>
     <Action>effect_active</Action>
     <Alias>effect_activate</Alias>
-    <Description>activate/deactivate the effect on a specific slot. example: effect_active 1 &apos;flanger&apos; on or effect_active 1</Description>
+    <Description>Activate/deactivate the effect on a specific slot</Description>
+    <Examples>effect_active 1 &apos;flanger&apos; on | effect_active 1</Examples>
   </Item>
   <Item>
     <Category>plugins</Category>
@@ -3602,6 +3605,7 @@
     <Category>plugins</Category>
     <Action>effect_colorfx</Action>
     <Description>&apos;effect_colorfx 1 &quot;echo&quot;&apos; to use echo on custom color fx slot 1 (up to 4 custom slots available)</Description>
+    <Examples>effect_colorfx 1 &quot;echo&quot;</Examples>
   </Item>
   <Item>
     <Category>plugins</Category>
@@ -3696,6 +3700,7 @@
     <Action>effect_slider</Action>
     <Alias>effect_slider_slider</Alias>
     <Description>Move the n-th slider on the given effect. &quot;effect_slider 1 2 50%&quot; : Set slider id 2 on slot 1 to 50%. &quot;effect_slider 1 0%&quot; : set slider id 1 on slot 1 to 0%</Description>
+    <Examples>effect_slider | effect_slider 1 2 50% | effect_slider 1 0%</Examples>
   </Item>
   <Item>
     <Category>plugins</Category>

@@ -114,12 +114,12 @@
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
                     let action_data = vdjdata[category][action]
-                    let description_tmp = action_data.description.replace("TODO", "");
+                    let description_tmp = action_data.description.replaceAll("TODO", "");
                     let alias_tmp = (action_data.alias) ? action_data.alias : "";
                     let examples_tmp = (action_data.examples) ? action_data.examples : "";
-                    let description = description_tmp.replace(/"/g, '""');
-                    let alias = alias_tmp.replace(/"/g, '""');
-                    let examples = examples_tmp.replace(/"/g, '""');
+                    let description = description_tmp.replaceAll(/"/g, '""');
+                    let alias = alias_tmp.replaceAll(/"/g, '""');
+                    let examples = examples_tmp.replaceAll(/"/g, '""');
                     let row_data = [category, action, alias, description, examples]
                     rows.push(row_data);
                 });
@@ -141,7 +141,7 @@
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
                     let action_data = vdjdata[category][action]
-                    let description = action_data.description.replace("TODO", "");
+                    let description = action_data.description.replaceAll("TODO", "");
                     let alias = (action_data.alias) ? action_data.alias : "";
                     let examples = (action_data.examples) ? action_data.examples : "";
                     let row_data = [category, action, alias, description, examples];
@@ -161,17 +161,17 @@
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
                     let action_data = vdjdata[category][action]
-                    let description = action_data.description.replace("TODO", "");
+                    let description = action_data.description.replaceAll("TODO", "");
                     let alias = (action_data.alias) ? action_data.alias : "";
                     let examples = (action_data.examples) ? action_data.examples : "";
 
                     // Escape XML special characters
                     let escapeXml = (str) => str
-                        .replace(/&/g, "&amp;")
-                        .replace(/</g, "&lt;")
-                        .replace(/>/g, "&gt;")
-                        .replace(/"/g, "&quot;")
-                        .replace(/'/g, "&apos;");
+                        .replaceAll(/&/g, "&amp;")
+                        .replaceAll(/</g, "&lt;")
+                        .replaceAll(/>/g, "&gt;")
+                        .replaceAll(/"/g, "&quot;")
+                        .replaceAll(/'/g, "&apos;");
 
                     xmlContent += `  <Item>\n`;
                     xmlContent += `    <Category>${escapeXml(category)}</Category>\n`;
@@ -206,7 +206,7 @@
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
                     let action_data = vdjdata[category][action]
-                    let description = action_data.description.replace("TODO", "");
+                    let description = action_data.description.replaceAll("TODO", "");
                     let alias = (action_data.alias) ? action_data.alias : "";
                     let examples = (action_data.examples) ? action_data.examples : "";
 
@@ -275,17 +275,17 @@
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
                     let action_data = vdjdata[category][action]
-                    let description = action_data.description.replace("TODO", "");
+                    let description = action_data.description.replaceAll("TODO", "");
                     let alias = (action_data.alias) ? action_data.alias : "";
                     let examples = (action_data.examples) ? action_data.examples : "";
 
                     let escapeHtml = (str) => str
-                        .replace(/&/g, "&amp;")
-                        .replace(/</g, "&lt;")
-                        .replace(/>/g, "&gt;")
-                        .replace(/"/g, "&quot;")
-                        .replace(/'/g, "&#039;")
-                        .replace(" | ", "<br><br>");
+                        .replaceAll(/&/g, "&amp;")
+                        .replaceAll(/</g, "&lt;")
+                        .replaceAll(/>/g, "&gt;")
+                        .replaceAll(/"/g, "&quot;")
+                        .replaceAll(/'/g, "&#039;")
+                        .replaceAll(" | ", "<br><br>");
 
                     htmlContent += `
                         <tr>
