@@ -710,7 +710,7 @@ const vdjscript_list =
             "nudge":
             {
                 "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated).",
-                "examples": "nudge +120ms | nudge -120ms"
+                "examples": "nudge +120ms | nudge -120ms | nudge +1 | nudge +1.0 | nudge +100%"
             },
             "scratch":
             {
@@ -781,7 +781,7 @@ const vdjscript_list =
             {
                 "description": "move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
                 "alias": "crossfader_slider",
-                "examples": "crossfader 0% | crossfader 100% | crossfader 50%"
+                "examples": "crossfader 0% | crossfader 100% | crossfader 50% | crossfader 0.5"
             },
             "crossfader_curve":
             {
