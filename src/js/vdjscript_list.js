@@ -400,7 +400,8 @@ const vdjscript_list =
             },
             "set":
             {
-                "description": "set 'varname' 5 sets variable varname to the value 5 set 'varname' 'var2' sets variable varname to the value of variable var2 set 'varname' `play` sets variable varname to the value of the action play"
+                "description": "set 'varname' 5 sets variable varname to the value 5 set 'varname' 'var2' sets variable varname to the value of variable var2 set 'varname' `play` sets variable varname to the value of the action play",
+                "examples": "set 'varname' 5 | set 'varname' 'var2' | set 'varname' `play`"
             },
             "set_var":
             {
@@ -459,26 +460,28 @@ const vdjscript_list =
             },
             "minimize":
             {
-                "description": "minimize the application in the taskbar."
+                "description": "minimize the application in the taskbar.",
             },
             "open_stem_creator":
             {
-                "description": "TODO"
+                "description": "Open the Stems creator editor",
             },
             "show_window":
             {
-                "description": "on skin with multiple windows, show or hide the specified window"
+                "description": "on skin with multiple windows, show or hide the specified window",
             }
         },
         "audio":
         {
             "beat_juggle":
             {
-                "description": "Alternatively jumps one beat forward and backward 'beat_juggle 0.5' will jump 1/2 beat forward or backward"
+                "description": "Alternatively jumps one beat forward and backward 'beat_juggle 0.5' will jump 1/2 beat forward or backward",
+                "examples": "beat_juggle | beat_juggle 0.5"
             },
             "beatjump":
             {
-                "description": "Jump a certain number of beats as set by beatjump_select 'beatjump +1' to jump forward, or 'beatjump -1' to jump backwards"
+                "description": "Jump a certain number of beats as set by beatjump_select 'beatjump +1' to jump forward, or 'beatjump -1' to jump backwards",
+                "examples": "beatjump +1 | beatjump -1"
             },
             "beatjump_pad":
             {
@@ -490,7 +493,8 @@ const vdjscript_list =
             },
             "beatjump_select":
             {
-                "description": "Select the number of beats the beatjump action will jump 'beatjump_select 4' to set beatjump to 4 beats 'beatjump_select +1' to set the next higher beat size 'beatjump_select 50%' to halve the current beat size 'beatjump_select 200%' to double the current beat size"
+                "description": "Select the number of beats the beatjump action will jump 'beatjump_select 4' to set beatjump to 4 beats 'beatjump_select +1' to set the next higher beat size 'beatjump_select 50%' to halve the current beat size 'beatjump_select 200%' to double the current beat size",
+                "examples": "beatjump_select 4 | beatjump_select +1 | beatjump_select 50% | beatjump_select 200%"
             },
             "clone_deck":
             {
@@ -514,11 +518,13 @@ const vdjscript_list =
             },
             "goto":
             {
-                "description": "change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' jumps to 20% of the song's length."
+                "description": "change the position in the song. 'goto +10ms' jumps 10ms forward. 'goto -4' jumps 4 beats backward. 'goto 20%' jumps to 20% of the song's length.",
+                "examples": "goto +10ms | goto -4 | goto 20%"
             },
             "goto_bar":
             {
-                "description": "put the song on its nth beat after the downbeat without loosing sync: 'goto_bar 4'"
+                "description": "put the song on its nth beat after the downbeat without loosing sync",
+                "examples": "goto_bar 4"
             },
             "goto_first_beat":
             {
@@ -667,7 +673,8 @@ const vdjscript_list =
             },
             "mic_talkover":
             {
-                "description": "Lower the volume of all decks while active and activates microphone Use 'mic_talkover while_pressed' to only activate mic as long as button is held Use 'mic_talkover 20% 1000ms' to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)"
+                "description": "Lower the volume of all decks while active and activates microphone Use 'mic_talkover while_pressed' to only activate mic as long as button is held Use 'mic_talkover 20% 1000ms' to lower deck volumes to 20% and fade to the volume in 1 second. (Defaults are 30% and 400ms)",
+                "examples": "mic_talkover | mic_talkover while_pressed | mic_talkover 20% 1000ms"
             }
         },
         "audio_scratch":
@@ -692,19 +699,23 @@ const vdjscript_list =
             "jogwheel":
             {
                 "description": "used for a jogwheel without touch sensitivity. 'jogwheel +1.0' means a full rotation of the wheel.",
-                "alias": "jog | jog_wheel"
+                "alias": "jog | jog_wheel",
+                "examples": "jogwheel"
             },
             "motorwheel":
             {
-                "description": "used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel \"move\" +1.0' followed by 'motorwheel \"timestamp\" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false."
+                "description": "used for a motorized jogwheel. Each time the jogwheel moves, send 'motorwheel \"move\" +1.0' followed by 'motorwheel \"timestamp\" 1000.0'. 'move +1.0' means a full platter rotation. 'timestamp 1.0' means 1ms since last message. You should query 'motorwheel' and turn the motor on when it returns true and off when false.",
+                "examples": "motorwheel"
             },
             "nudge":
             {
-                "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated)."
+                "description": "'nudge +120ms' to nudge the song 120ms forward (using mastertempo if it's activated).",
+                "examples": "nudge +120ms | nudge -120ms"
             },
             "scratch":
             {
-                "description": "'scratch +120ms' to scratch 120ms forward."
+                "description": "'scratch +120ms' to scratch 120ms forward.",
+                "examples": "scratch +120ms | scratch -120ms"
             },
             "scratch_dna":
             {
@@ -728,12 +739,14 @@ const vdjscript_list =
             },
             "speedwheel":
             {
-                "description": "used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed."
+                "description": "used for a precision touchwheel that reports both position and speed. 'speedwheel +1.0 1.5' means a full rotation of the wheel, at 150% speed.",
+                "examples": "speedwheel"
             },
             "touchwheel":
             {
                 "description": "used for a jogwheel with touch sensitivity. 'touchwheel +1.0' means a full rotation of the wheel.",
-                "alias": "scratch_wheel | scratchwheel"
+                "alias": "scratch_wheel | scratchwheel",
+                "examples": "touchwheel"
             },
             "touchwheel_touch":
             {
@@ -767,11 +780,13 @@ const vdjscript_list =
             "crossfader":
             {
                 "description": "move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
-                "alias": "crossfader_slider"
+                "alias": "crossfader_slider",
+                "examples": "crossfader 0% | crossfader 100% | crossfader 50%"
             },
             "crossfader_curve":
             {
-                "description": "select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (\"smooth\", \"full\", \"scratch\", \"cut\"). or you can draw your own curve, using a syntax like 'crossfader_curve \"0 = [1, 0] / 0.5=[1, 1]/1=[0,1]\"'."
+                "description": "select the curve of the crossfader. enter a value to adjust the slope from a X curve (0%) to a inverted-U curve (100%). you can also specify common curves by name (\"smooth\", \"full\", \"scratch\", \"cut\"). or you can draw your own curve, using a syntax like 'crossfader_curve \"0 = [1, 0] / 0.5=[1, 1]/1=[0,1]\"'.",
+                "examples": "crossfader_curve \"smooth\" | crossfader_curve \"0=[1,0]/0.5=[1,1]/1=[0,1]\""
             },
             "crossfader_disable":
             {
@@ -1086,12 +1101,15 @@ const vdjscript_list =
             },
             "add_to_list":
             {
-                "description": "Add the currently selected songs in the browser to the specified List. 'add_to_list \"my_list\"'",
-                "alias": "virtualfolder_add"
+                "description": "Add the currently selected songs in the browser to the specified List.",
+                "alias": "virtualfolder_add",
+                "examples": "add_to_list \"my_list\""
             },
             "browsed_file_analyze":
             {
-                "description": "reanalyze the current file selected in the browser use 'browsed_file_analyze multi' to do a scan for multiple bpms"
+                "description": "reanalyze the current file selected in the browser use 'browsed_file_analyze multi' to do a scan for multiple bpms",
+                "examples": "browsed_file_analyze | browsed_file_analyze multi"
+
             },
             "browsed_file_color":
             {
@@ -1135,7 +1153,8 @@ const vdjscript_list =
             },
             "browser_gotofolder":
             {
-                "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder."
+                "description": "'browser_gotofolder' goes to the folder containing the current file. 'browser_gotofolder \"/my_path/my_folder\"' goes to the specified folder. 'browser_gotofolder 4' goes to the fourth virtual/ favorite folder.",
+                "examples": "browser_gotofolder | browser_gotofolder \"/my_path/my_folder\" | browser_gotofolder 4"
             },
             "browser_isactive":
             {
@@ -1155,7 +1174,8 @@ const vdjscript_list =
             },
             "browser_padding":
             {
-                "description": "Change the padding around lines in folder and list views. Example: browser_padding 50%"
+                "description": "Change the padding around lines in folder and list views.",
+                "examples": "browser_padding 50%"
             },
             "browser_remove":
             {
@@ -1208,7 +1228,9 @@ const vdjscript_list =
             },
             "font_size":
             {
-                "description": "Change browser font size. Example: font_size +1"
+                "description": "Change browser font size. Example: font_size +1",
+                "examples": "font_size +1 | font_size -1"
+
             },
             "goto_last_folder":
             {
