@@ -29,12 +29,12 @@ const vdjscript_list =
         {
             "blink":
             {
-                "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'",
+                "description": "turn on and off the LED, once per second.You can specify the speed. Speed can also be specified in number of beats. The time blinking can also be specified.",
                 "examples": "blink 1000ms | blink 1bt | blink 1bt 25%"
             },
             "color":
             {
-                "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
+                "description": "returns a RGB color. \"color 75% 'red'\" returns a dimmed red, 'color 0.66' returns a gray",
                 "examples": "color red | color \"#C08040\" | color 0.8 0.5 0.25 | color 75% red | color 0.66"
             },
             "color_mix":
@@ -168,15 +168,18 @@ const vdjscript_list =
             },
             "repeat":
             {
-                "description": "repeat the actions every x ms as long as the key is pressed: 'repeat 1000ms & browser_scroll +1' (default is 500ms if no speed is specified. Second parameter can specify a delay before repeating the first time)"
+                "description": "repeat the actions every x ms as long as the key is pressed (default is 500ms if no speed is specified. Second parameter can specify a delay before repeating the first time)",
+                "examples": "repeat 1000ms & browser_scroll +1"
             },
             "repeat_start":
             {
-                "description": "Repeat an action at a specified interval: 'repeat_start 'myrepeatname' 1000ms 5 & browser_scroll +1' (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed after an interval has passed. The interval can be specified in milliseconds, beats, or can be an action of itself. 'repeat_start 'myrepeatname' 1bt' or 'repeat_start 'myrepeatname `get_var a`'"
+                "description": "Repeat an action at a specified interval (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed after an interval has passed. The interval can be specified in milliseconds, beats, or can be an action of itself.",
+                "examples": "repeat_start 'myrepeatname' 1000ms 5 & browser_scroll +1 | 'repeat_start 'myrepeatname' 1bt' | 'repeat_start 'myrepeatname `get_var a`'"
             },
             "repeat_start_instant":
             {
-                "description": "Repeat an action at a specified interval: 'repeat_start_instant 'myrepeatname' 1000ms 5 & browser_scroll +1' (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed immediately."
+                "description": "Repeat an action at a specified interval (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed immediately.",
+                "examples": "repeat_start_instant 'myrepeatname' 1000ms 5 & browser_scroll +1"
             },
             "repeat_stop":
             {
@@ -225,7 +228,7 @@ const vdjscript_list =
             },
             "load_skin":
             {
-                "description": "load a new skin. Use syntax \" load_skin ':newvariation' \" to load a different variation inside the same skin file.",
+                "description": "load a new skin. Use syntax \"load_skin ':newvariation'\" to load a different variation inside the same skin file.",
                 "samples": "load_skin 'myskin'"
             },
             "lock_panel":
@@ -253,11 +256,13 @@ const vdjscript_list =
             },
             "rack_solo":
             {
-                "description": "Open/close a unit in full size on the specified rack. Closing the unit will re-open the previous configuration. Example: \"rack_solo 'rack1' 'unit1'\""
+                "description": "Open/close a unit in full size on the specified rack. Closing the unit will re-open the previous configuration.",
+                "examples": "rack_solo 'rack1' 'unit1'"
             },
             "show_splitpanel":
             {
-                "description": "Show/hide the specified split panel Examples: \"show_splitpanel 'sidelist'\", \"show_splitpanel 'sideview' on\", \"show_splitpanel 'sidelist' 50 %\""
+                "description": "Show/hide the specified split panel",
+                "examples": "show_splitpanel 'sidelist' | show_splitpanel 'sideview' on | show_splitpanel 'sidelist' 50 %"
             },
             "skin_empty_buttons":
             {

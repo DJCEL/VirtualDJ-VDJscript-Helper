@@ -27,13 +27,13 @@
     {
       "category": "param",
       "action": "blink",
-      "description": "turn on and off the LED, once per second.You can specify the speed: 'blink 1000ms' Speed can also be specified in number of beats: 'blink 1bt'.The time blinking can also be specified: 'blink 1bt 25%'",
+      "description": "turn on and off the LED, once per second.You can specify the speed. Speed can also be specified in number of beats. The time blinking can also be specified.",
       "examples": "blink 1000ms | blink 1bt | blink 1bt 25%"
     },
     {
       "category": "param",
       "action": "color",
-      "description": "color 'red' color \"#C08040\" color 0.8 0.5 0.25 color 75% 'red' (returns a dimmed red) color 0.66 (returns a gray)",
+      "description": "returns a RGB color. color 75% 'red' (returns a dimmed red), color 0.66 (returns a gray)",
       "examples": "color red | color \"#C08040\" | color 0.8 0.5 0.25 | color 75% red | color 0.66"
     },
     {
