@@ -59,14 +59,14 @@
                         <td>param</td>
                         <td>blink</td>
                         <td></td>
-                        <td>turn on and off the LED, once per second.You can specify the speed: &#039;blink 1000ms&#039; Speed can also be specified in number of beats: &#039;blink 1bt&#039;.The time blinking can also be specified: &#039;blink 1bt 25%&#039;</td>
+                        <td>turn on and off the LED, once per second.You can specify the speed. Speed can also be specified in number of beats. The time blinking can also be specified.</td>
                         <td>blink 1000ms<br><br>blink 1bt<br><br>blink 1bt 25%</td>
                         </tr>
                         <tr>
                         <td>param</td>
                         <td>color</td>
                         <td></td>
-                        <td>color &#039;red&#039; color &quot;#C08040&quot; color 0.8 0.5 0.25 color 75% &#039;red&#039; (returns a dimmed red) color 0.66 (returns a gray)</td>
+                        <td>returns a RGB color. &quot;color 75% &#039;red&#039;&quot; returns a dimmed red, &#039;color 0.66&#039; returns a gray</td>
                         <td>color red<br><br>color &quot;#C08040&quot;<br><br>color 0.8 0.5 0.25<br><br>color 75% red<br><br>color 0.66</td>
                         </tr>
                         <tr>
@@ -255,22 +255,22 @@
                         <td>repeat</td>
                         <td>repeat</td>
                         <td></td>
-                        <td>repeat the actions every x ms as long as the key is pressed: &#039;repeat 1000ms &amp; browser_scroll +1&#039; (default is 500ms if no speed is specified. Second parameter can specify a delay before repeating the first time)</td>
-                        <td></td>
+                        <td>repeat the actions every x ms as long as the key is pressed (default is 500ms if no speed is specified. Second parameter can specify a delay before repeating the first time)</td>
+                        <td>repeat 1000ms &amp; browser_scroll +1</td>
                         </tr>
                         <tr>
                         <td>repeat</td>
                         <td>repeat_start</td>
                         <td></td>
-                        <td>Repeat an action at a specified interval: &#039;repeat_start &#039;myrepeatname&#039; 1000ms 5 &amp; browser_scroll +1&#039; (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed after an interval has passed. The interval can be specified in milliseconds, beats, or can be an action of itself. &#039;repeat_start &#039;myrepeatname&#039; 1bt&#039; or &#039;repeat_start &#039;myrepeatname `get_var a`&#039;</td>
-                        <td></td>
+                        <td>Repeat an action at a specified interval (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed after an interval has passed. The interval can be specified in milliseconds, beats, or can be an action of itself.</td>
+                        <td>repeat_start &#039;myrepeatname&#039; 1000ms 5 &amp; browser_scroll +1<br><br>&#039;repeat_start &#039;myrepeatname&#039; 1bt&#039;<br><br>&#039;repeat_start &#039;myrepeatname `get_var a`&#039;</td>
                         </tr>
                         <tr>
                         <td>repeat</td>
                         <td>repeat_start_instant</td>
                         <td></td>
-                        <td>Repeat an action at a specified interval: &#039;repeat_start_instant &#039;myrepeatname&#039; 1000ms 5 &amp; browser_scroll +1&#039; (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed immediately.</td>
-                        <td></td>
+                        <td>Repeat an action at a specified interval (first parameter is an identifier name, second parameter is the interval and the third optional parameter can specify a number of times to repeat). The first action will be performed immediately.</td>
+                        <td>repeat_start_instant &#039;myrepeatname&#039; 1000ms 5 &amp; browser_scroll +1</td>
                         </tr>
                         <tr>
                         <td>repeat</td>
@@ -346,7 +346,7 @@
                         <td>skin</td>
                         <td>load_skin</td>
                         <td></td>
-                        <td>load a new skin. Use syntax &quot; load_skin &#039;:newvariation&#039; &quot; to load a different variation inside the same skin file.</td>
+                        <td>load a new skin. Use syntax &quot;load_skin &#039;:newvariation&#039;&quot; to load a different variation inside the same skin file.</td>
                         <td></td>
                         </tr>
                         <tr>
@@ -388,15 +388,15 @@
                         <td>skin</td>
                         <td>rack_solo</td>
                         <td></td>
-                        <td>Open/close a unit in full size on the specified rack. Closing the unit will re-open the previous configuration. Example: &quot;rack_solo &#039;rack1&#039; &#039;unit1&#039;&quot;</td>
-                        <td></td>
+                        <td>Open/close a unit in full size on the specified rack. Closing the unit will re-open the previous configuration.</td>
+                        <td>rack_solo &#039;rack1&#039; &#039;unit1&#039;</td>
                         </tr>
                         <tr>
                         <td>skin</td>
                         <td>show_splitpanel</td>
                         <td></td>
-                        <td>Show/hide the specified split panel Examples: &quot;show_splitpanel &#039;sidelist&#039;&quot;, &quot;show_splitpanel &#039;sideview&#039; on&quot;, &quot;show_splitpanel &#039;sidelist&#039; 50 %&quot;</td>
-                        <td></td>
+                        <td>Show/hide the specified split panel</td>
+                        <td>show_splitpanel &#039;sidelist&#039;<br><br>show_splitpanel &#039;sideview&#039; on<br><br>show_splitpanel &#039;sidelist&#039; 50 %</td>
                         </tr>
                         <tr>
                         <td>skin</td>
@@ -423,8 +423,8 @@
                         <td>skin</td>
                         <td>skin_panelgroup</td>
                         <td>skin_pannelgroup</td>
-                        <td>change which panel from a skin panel group is shown. syntax &quot;skin_panelgroup &#039;groupname&#039; &#039;panelname&#039;&quot; or &quot;skin_panelgroup &#039;groupname&#039; +1&quot; or &quot;skin_panelgroup &#039;groupname&#039; 0.75&quot;</td>
-                        <td></td>
+                        <td>change which panel from a skin panel group is shown.</td>
+                        <td>skin_panelgroup &#039;groupname&#039; &#039;panelname&#039;<br><br>skin_panelgroup &#039;groupname&#039; +1<br><br>skin_panelgroup &#039;groupname&#039; 0.75</td>
                         </tr>
                         <tr>
                         <td>skin</td>
@@ -472,7 +472,7 @@
                         <td>system</td>
                         <td>debug</td>
                         <td></td>
-                        <td>display the value of the parameter (you can use this to see what values controllers are sending, for example)</td>
+                        <td>display the value of the parameter. (you can use this to see what values controllers are sending, for example)</td>
                         <td></td>
                         </tr>
                         <tr>
@@ -486,7 +486,7 @@
                         <td>system</td>
                         <td>get_clock</td>
                         <td></td>
-                        <td>get the current time (use &#039;get_clock 12&#039; to display AM/PM)</td>
+                        <td>get the current time. (use &#039;get_clock 12&#039; to display AM/PM)</td>
                         <td>get_clock<br><br>get_clock 12</td>
                         </tr>
                         <tr>
@@ -500,8 +500,8 @@
                         <td>system</td>
                         <td>get_date</td>
                         <td></td>
-                        <td>get the current date (use &#039;get_date &quot;format&quot;&#039; to get the date in a specific format. format can include %Y, %m, %d for year, month and day, %A for weekday)</td>
-                        <td></td>
+                        <td>get the current date. (use &#039;get_date &quot;format&quot;&#039; to get the date in a specific format. format can include %Y, %m, %d for year, month and day, %A for weekday)</td>
+                        <td>get_date &quot;%Y-%m-%d&quot;</td>
                         </tr>
                         <tr>
                         <td>system</td>
@@ -563,8 +563,8 @@
                         <td>system</td>
                         <td>is_pc</td>
                         <td>is_windows</td>
-                        <td>return true if the computer is a PC, false if it&#039;s a MAC (example: &lt;panel visible=&quot;is_pc&quot; /&gt;)</td>
-                        <td></td>
+                        <td>return true if the computer is a PC, false if it&#039;s a MAC</td>
+                        <td>&lt;panel visible=&quot;is_pc&quot; /&gt;</td>
                         </tr>
                         <tr>
                         <td>system</td>
@@ -844,7 +844,7 @@
                         <td>seek</td>
                         <td></td>
                         <td>move into the song while the button is pressed. &#039;seek +2&#039; moves beat by beat, skipping 2 beats every 10ms. &#039;seek +420ms&#039; moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside.</td>
-                        <td></td>
+                        <td>seek +2<br><br>seek +420ms</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -857,8 +857,8 @@
                         <td>audio</td>
                         <td>songpos_remain</td>
                         <td></td>
-                        <td>get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value: &#039;songpos_remain 500ms ? blink&#039;.</td>
-                        <td></td>
+                        <td>get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value</td>
+                        <td>songpos_remain 500ms ? blink</td>
                         </tr>
                         <tr>
                         <td>audio</td>
@@ -921,7 +921,7 @@
                         <td>pause</td>
                         <td></td>
                         <td>pause the deck.</td>
-                        <td></td>
+                        <td>pause<br><br>deck 1 pause</td>
                         </tr>
                         <tr>
                         <td>audio_controls</td>
@@ -935,7 +935,7 @@
                         <td>play</td>
                         <td></td>
                         <td>start the deck.</td>
-                        <td></td>
+                        <td>play<br><br>deck 1 play</td>
                         </tr>
                         <tr>
                         <td>audio_controls</td>
@@ -970,7 +970,7 @@
                         <td>stop</td>
                         <td></td>
                         <td>stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points.</td>
-                        <td></td>
+                        <td>stop<br><br>deck 1 stop</td>
                         </tr>
                         <tr>
                         <td>audio_controls</td>
@@ -998,7 +998,7 @@
                         <td>linein</td>
                         <td></td>
                         <td>Activate or deactivate the linein on this deck. You can also specify a linein number to assign another linein: &quot;deck 1 linein 2 on&quot; Or you can assign the microphone or aux input: &quot;deck 3 linein &#039;mic&#039; on&quot; or &quot;deck 3 linein &#039;aux&#039; on&quot; If you don&#039;t want the line in to become the master deck automatically, you can use &quot;deck 3 linein &#039;trs&#039;&quot;</td>
-                        <td></td>
+                        <td>deck 1 linein 2 on<br><br>deck 3 linein &#039;mic&#039; on<br><br>deck 3 linein &#039;aux&#039; on<br><br>deck 3 linein &#039;trs&#039;</td>
                         </tr>
                         <tr>
                         <td>audio_inputs</td>
@@ -1067,8 +1067,8 @@
                         <td>audio_scratch</td>
                         <td>get_slip_time</td>
                         <td></td>
-                        <td>Get the time where the song will be when slip mode is de-activated in milliseconds Alternatively, use get_slip_time &quot;min&quot;, get_slip_time &quot;sec&quot; and get_slip_time &quot;msec&quot;</td>
-                        <td></td>
+                        <td>Get the time where the song will be when slip mode is de-activated in milliseconds.</td>
+                        <td>get_slip_time<br><br>get_slip_time &quot;min&quot;<br><br>get_slip_time &quot;sec&quot;<br><br>get_slip_time &quot;msec&quot;</td>
                         </tr>
                         <tr>
                         <td>audio_scratch</td>
@@ -1180,7 +1180,7 @@
                         <td>auto_crossfade</td>
                         <td>auto_crossfader</td>
                         <td>Automatically crossfade to the other deck. You can specify the duration of the crossfade in ms: &#039;auto_crossfade 2000ms&#039; Assigned to a slider, or specifying a specific position, it will move the crossfader slowly to that position: &#039;auto_crossfade 50%&#039; or &#039;auto_crossfade 1000ms 50%&#039;</td>
-                        <td></td>
+                        <td>auto_crossfade 2000ms<br><br>auto_crossfade 50%<br><br>auto_crossfade 1000ms 50%</td>
                         </tr>
                         <tr>
                         <td>audio_volumes</td>
@@ -1200,7 +1200,7 @@
                         <td>audio_volumes</td>
                         <td>crossfader</td>
                         <td>crossfader_slider</td>
-                        <td>move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</td>
+                        <td>move the crossfader from 0% to 100%. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.</td>
                         <td>crossfader 0%<br><br>crossfader 100%<br><br>crossfader 50%<br><br>crossfader 0.5</td>
                         </tr>
                         <tr>
