@@ -74,6 +74,9 @@
         });
 
         function selectCategory(category, element) {
+            //console.log(category);
+            let category_data = vdjdata[category];
+
             // Highlight selected category
             [...categoryList.children].forEach(li => li.classList.remove("active"));
             element.classList.add("active");
@@ -84,7 +87,7 @@
             actionInput.value = "";
 
             // Load actions for this category
-            Object.keys(vdjdata[category]).forEach(act => {
+            Object.keys(category_data).forEach(act => {
                 const li = document.createElement("li");
                 li.textContent = act;
                 li.addEventListener("click", () => selectAction(category, act, li));
@@ -93,12 +96,14 @@
         }
 
         function selectAction(category, action, element) {
+            //console.log(category + " → " + action);
+            let action_data = vdjdata[category][action];
+
             // Highlight selected action
             [...actionList.children].forEach(li => li.classList.remove("active"));
             element.classList.add("active");
 
             // Update description + input
-            let action_data = vdjdata[category][action];
             var description = action_data.description;
             var alias = (action_data.alias) ? action_data.alias.replaceAll("|", "\n") : "";
             let examples = (action_data.examples) ? action_data.examples.replaceAll("|", "\n") : "";
@@ -244,34 +249,34 @@
 
         function ExportHTML() {
             let htmlContent = `
-                    <!DOCTYPE html>
-                    <html>
-                    <head>
-                        <meta charset="UTF-8">
-                        <title>VDJScript List</title>
-                        <style>
-                        body { font-family: Arial, sans-serif; margin: 20px; }
-                        h1 { color: #333; }
-                        table { border-collapse: collapse; width: 100%; }
-                        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-                        th { background-color: #f2f2f2; }
-                        tr:nth-child(even) { background-color: #fafafa; }
-                        </style>
-                    </head>
-                    <body>
-                        <h1>VDJScript List (VdjBuild ${vdjbuildNo})</h1>
-                        <table>
-                        <thead>
-                            <tr>
-                            <th>Category</th>
-                            <th>Action</th>
-                            <th>Alias</th>
-                            <th>Description</th>
-                            <th>Examples</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                    `;
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>VDJScript List</title>
+                            <style>
+                            body { font-family: Arial, sans-serif; margin: 20px; }
+                            h1 { color: #333; }
+                            table { border-collapse: collapse; width: 100%; }
+                            th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+                            th { background-color: #f2f2f2; }
+                            tr:nth-child(even) { background-color: #fafafa; }
+                            </style>
+                        </head>
+                        <body>
+                            <h1>VDJScript List (VdjBuild ${vdjbuildNo})</h1>
+                            <table>
+                            <thead>
+                                <tr>
+                                <th>Category</th>
+                                <th>Action</th>
+                                <th>Alias</th>
+                                <th>Description</th>
+                                <th>Examples</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        `;
 
             Object.keys(vdjdata).forEach(category => {
                 Object.keys(vdjdata[category]).forEach(action => {
@@ -289,22 +294,22 @@
                         .replaceAll(" | ", "<br><br>");
 
                     htmlContent += `
-                        <tr>
-                        <td>${escapeHtml(category)}</td>
-                        <td>${escapeHtml(action)}</td>
-                        <td>${escapeHtml(alias)}</td>
-                        <td>${escapeHtml(description)}</td>
-                        <td>${escapeHtml(examples)}</td>
-                        </tr>`;
+                            <tr>
+                            <td>${escapeHtml(category)}</td>
+                            <td>${escapeHtml(action)}</td>
+                            <td>${escapeHtml(alias)}</td>
+                            <td>${escapeHtml(description)}</td>
+                            <td>${escapeHtml(examples)}</td>
+                            </tr>`;
                 });
             });
 
             htmlContent += `
-                    </tbody>
-                    </table>
-                </body>
-                </html>
-                `;
+                        </tbody>
+                        </table>
+                    </body>
+                    </html>
+                    `;
 
             let blob = new Blob([htmlContent], { type: "text/html;charset=utf-8;" });
             let url = URL.createObjectURL(blob);
