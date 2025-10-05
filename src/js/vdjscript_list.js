@@ -280,8 +280,9 @@ const vdjscript_list =
             },
             "skin_panelgroup":
             {
-                "description": "change which panel from a skin panel group is shown. syntax \"skin_panelgroup 'groupname' 'panelname'\" or \"skin_panelgroup 'groupname' +1\" or \"skin_panelgroup 'groupname' 0.75\"",
-                "alias": "skin_pannelgroup"
+                "description": "change which panel from a skin panel group is shown.",
+                "alias": "skin_pannelgroup",
+                "examples": "skin_panelgroup 'groupname' 'panelname' | skin_panelgroup 'groupname' +1 | skin_panelgroup 'groupname' 0.75",
             },
             "skin_panelgroup_available":
             {
@@ -313,7 +314,7 @@ const vdjscript_list =
         {
             "debug":
             {
-                "description": "display the value of the parameter (you can use this to see what values controllers are sending, for example)"
+                "description": "display the value of the parameter. (you can use this to see what values controllers are sending, for example)"
             },
             "get_battery":
             {
@@ -321,7 +322,7 @@ const vdjscript_list =
             },
             "get_clock":
             {
-                "description": "get the current time (use 'get_clock 12' to display AM/PM)",
+                "description": "get the current time. (use 'get_clock 12' to display AM/PM)",
                 "examples": "get_clock | get_clock 12"
             },
             "get_cpu":
@@ -330,7 +331,8 @@ const vdjscript_list =
             },
             "get_date":
             {
-                "description": "get the current date (use 'get_date \"format\"' to get the date in a specific format. format can include %Y, %m, %d for year, month and day, %A for weekday)"
+                "description": "get the current date. (use 'get_date \"format\"' to get the date in a specific format. format can include %Y, %m, %d for year, month and day, %A for weekday)",
+                "examples": "get_date \"%Y-%m-%d\""
             },
             "get_peak_audio":
             {
@@ -367,8 +369,9 @@ const vdjscript_list =
             },
             "is_pc":
             {
-                "description": "return true if the computer is a PC, false if it's a MAC (example: <panel visible=\"is_pc\" />)",
-                "alias": "is_windows"
+                "description": "return true if the computer is a PC, false if it's a MAC",
+                "alias": "is_windows",
+                "examples": "<panel visible=\"is_pc\" />"
             },
             "open_help":
             {
@@ -553,7 +556,8 @@ const vdjscript_list =
             },
             "seek":
             {
-                "description": "move into the song while the button is pressed. 'seek +2' moves beat by beat, skipping 2 beats every 10ms. 'seek +420ms' moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside."
+                "description": "move into the song while the button is pressed. 'seek +2' moves beat by beat, skipping 2 beats every 10ms. 'seek +420ms' moves from 420ms every 10ms. using skip with a beat number keep the song playing correctly while moving inside.",
+                "examples": "seek +2 | seek +420ms"
             },
             "song_pos":
             {
@@ -561,7 +565,8 @@ const vdjscript_list =
             },
             "songpos_remain":
             {
-                "description": "get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value: 'songpos_remain 500ms ? blink'."
+                "description": "get the remaining time in %. if used with a parameter (in % or ms), returns true if the time left is less or equal than the value",
+                "examples": "songpos_remain 500ms ? blink"
             },
             "songpos_warning":
             {
@@ -600,7 +605,8 @@ const vdjscript_list =
             },
             "pause":
             {
-                "description": "pause the deck."
+                "description": "pause the deck.",
+                "examples": "pause | deck 1 pause"
             },
             "pause_stop":
             {
@@ -608,7 +614,8 @@ const vdjscript_list =
             },
             "play":
             {
-                "description": "start the deck."
+                "description": "start the deck.",
+                "examples": "play | deck 1 play"
             },
             "play_button":
             {
@@ -629,7 +636,8 @@ const vdjscript_list =
             },
             "stop":
             {
-                "description": "stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points."
+                "description": "stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points.",
+                "examples": "stop | deck 1 stop"
             },
             "stop_button":
             {
@@ -649,7 +657,8 @@ const vdjscript_list =
             },
             "linein":
             {
-                "description": "Activate or deactivate the linein on this deck. You can also specify a linein number to assign another linein: \"deck 1 linein 2 on\" Or you can assign the microphone or aux input: \"deck 3 linein 'mic' on\" or \"deck 3 linein 'aux' on\" If you don't want the line in to become the master deck automatically, you can use \"deck 3 linein 'trs'\""
+                "description": "Activate or deactivate the linein on this deck. You can also specify a linein number to assign another linein: \"deck 1 linein 2 on\" Or you can assign the microphone or aux input: \"deck 3 linein 'mic' on\" or \"deck 3 linein 'aux' on\" If you don't want the line in to become the master deck automatically, you can use \"deck 3 linein 'trs'\"",
+                "examples": "deck 1 linein 2 on | deck 3 linein 'mic' on | deck 3 linein 'aux' on | deck 3 linein 'trs'"
             },
             "linein_rec":
             {
@@ -694,7 +703,8 @@ const vdjscript_list =
             },
             "get_slip_time":
             {
-                "description": "Get the time where the song will be when slip mode is de-activated in milliseconds Alternatively, use get_slip_time \"min\", get_slip_time \"sec\" and get_slip_time \"msec\""
+                "description": "Get the time where the song will be when slip mode is de-activated in milliseconds.",
+                "examples": "get_slip_time | get_slip_time \"min\" | get_slip_time \"sec\" | get_slip_time \"msec\""
             },
             "hold":
             {
