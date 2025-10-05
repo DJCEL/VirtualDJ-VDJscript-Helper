@@ -601,26 +601,31 @@ const vdjscript_list =
             },
             "emergency_play":
             {
-                "description": "play something"
+                "description": "play something",
+                "types": "button"
             },
             "pause":
             {
                 "description": "pause the deck.",
-                "examples": "pause | deck 1 pause"
+                "examples": "pause | deck 1 pause",
+                "types": "button"
             },
             "pause_stop":
             {
-                "description": "if playing, pause the deck. if stopped, rewind to beginning of the song, then cycle through all cue points each time pressed."
+                "description": "if playing, pause the deck. if stopped, rewind to beginning of the song, then cycle through all cue points each time pressed.",
+                "types": "button"
             },
             "play":
             {
                 "description": "start the deck.",
-                "examples": "play | deck 1 play"
+                "examples": "play | deck 1 play",
+                "types": "button"
             },
             "play_button":
             {
                 "description": "depending on the play_mode, act like play_stutter (Numark way) or play_pause (Pioneer way).",
-                "alias": "play_3button"
+                "alias": "play_3button",
+                "types": "button"
             },
             "play_options":
             {
@@ -628,21 +633,25 @@ const vdjscript_list =
             },
             "play_pause":
             {
-                "description": "if paused, start the deck. if playing, pause the deck."
+                "description": "if paused, start the deck. if playing, pause the deck.",
+                "types": "button"
             },
             "play_stutter":
             {
-                "description": "if paused, start the deck. if playing, restart from last stutter point."
+                "description": "if paused, start the deck. if playing, restart from last stutter point.",
+                "types": "button"
             },
             "stop":
             {
                 "description": "stop to the last cue point, then on second press to the beginning of the song, then cycle through the cue points.",
-                "examples": "stop | deck 1 stop"
+                "examples": "stop | deck 1 stop",
+                "types": "button"
             },
             "stop_button":
             {
                 "description": "depending on the play_mode, act like pause_stop (Numark way) or stop (Pioneer way).",
-                "alias": "stop_3button"
+                "alias": "stop_3button",
+                "types": "button"
             }
         },
         "audio_inputs":
@@ -782,11 +791,13 @@ const vdjscript_list =
             "auto_crossfade":
             {
                 "description": "Automatically crossfade to the other deck. You can specify the duration of the crossfade in ms: 'auto_crossfade 2000ms' Assigned to a slider, or specifying a specific position, it will move the crossfader slowly to that position: 'auto_crossfade 50%' or 'auto_crossfade 1000ms 50%'",
-                "alias": "auto_crossfader"
+                "alias": "auto_crossfader",
+                "examples": "auto_crossfade 2000ms | auto_crossfade 50% | auto_crossfade 1000ms 50%"
             },
             "booth_volume":
             {
-                "description": "set booth volume"
+                "description": "set booth volume",
+                "types": "slider | knob"
             },
             "colorfx_prefader":
             {
@@ -794,9 +805,10 @@ const vdjscript_list =
             },
             "crossfader":
             {
-                "description": "move the crossfader. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
+                "description": "move the crossfader from 0% to 100%. crossfader 0% will only let the left deck out, crossfader 100% will only let the right deck out.",
                 "alias": "crossfader_slider",
-                "examples": "crossfader 0% | crossfader 100% | crossfader 50% | crossfader 0.5"
+                "examples": "crossfader 0% | crossfader 100% | crossfader 50% | crossfader 0.5",
+                "types": "slider | knob"
             },
             "crossfader_curve":
             {
@@ -846,7 +858,8 @@ const vdjscript_list =
             "gain":
             {
                 "description": "set the gain of a deck",
-                "alias": "gain_slider | power_gain"
+                "alias": "gain_slider | power_gain",
+                "types": "slider | knob"
             },
             "gain_label":
             {
@@ -930,7 +943,8 @@ const vdjscript_list =
             },
             "headphone_volume":
             {
-                "description": "set cue volume"
+                "description": "set cue volume",
+                "types": "slider | knob"
             },
             "is_audible":
             {
@@ -939,7 +953,8 @@ const vdjscript_list =
             "level":
             {
                 "description": "set the volume of the deck",
-                "alias": "level_slider | volume | volume_slider"
+                "alias": "level_slider | volume | volume_slider",
+                "types": "slider | knob"
             },
             "levelfader_curve":
             {
